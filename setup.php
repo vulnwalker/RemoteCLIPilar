@@ -308,7 +308,7 @@ class SetupClass extends Config{
                $errorCode[]= 4;//NULL ABLE
             }
             if(sizeof($errorCode)!=0){
-              $this->fixColumn($databaseName,$arrayStrukturTableFix->colums[$a]->COLUMN_NAME,$arrayStrukturTableFix->colums[$a],$errorCode);
+              $this->fixColumn($databaseName,$arrayStrukturTableFix->tableName,$arrayStrukturTableFix->colums[$a],$errorCode);
             }
           }else{
              $this->addColumn($databaseName,$arrayStrukturTableFix->tableName,$arrayStrukturTableFix->colums[$a])."\n";
@@ -357,11 +357,16 @@ class SetupClass extends Config{
 
     return $namaTable;
   }
-  function fixColumn($databaseName,$columnName,$arrayFixColumn,$arrayErrorCode){
-    for ($i=0; $i < sizeof($arrayErrorCode); $i++) {
-      if($arrayErrorCode[$i] == 1){
-      }
+  function fixColumn($databaseName,$tableName,$arrayFixColumn){
+    if($arrayFixColumn->CHARACTER_SET_NAME != null){
+      $charSet = "CHARACTER SET ".$arrayFixColumn->CHARACTER_SET_NAME." COLLATE ".$arrayFixColumn->COLLATION_NAME."";
     }
+    if($arrayFixColumn->IS_NULLABLE == "NO"){
+      $notNull = "NOT NULL";
+    }
+    $command = "ALTER TABLE $databaseName.$tableName MODIFY ".$arrayFixColumn->COLUMN_NAME." ".$arrayFixColumn->COLUMN_TYPE." $charSet $notNull ;";
+    $this->sqlQuery($command);
+    return $command;
   }
   function addColumn($databaseName,$tableName,$arrayFixColumn){
     if($arrayFixColumn->CHARACTER_SET_NAME != null){
