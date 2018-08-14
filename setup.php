@@ -51,6 +51,9 @@ class SetupClass extends Config{
       case 'checkTrigger':
         echo  $this->checkTrigger($fileName,$checkResult);
         break;
+      case 'checkRoutine':
+        echo  $this->checkRoutine($fileName,$checkResult);
+        break;
       case 'fixStruktur':
         echo  $this->fixStruktur($fileName,$checkResult);
         break;
@@ -111,7 +114,7 @@ class SetupClass extends Config{
          );
          $textJson = json_encode(array(
            "tableName" => $explodeTableName[$i],
-           "dumpFile" =>$this->dumpTable($tableName),
+           "dumpFile" =>$this->dumpTable($explodeTableName[$i]),
            "index" => $arrayIndexTable,
            "colums" => $arrayStuktur
          ),JSON_PRETTY_PRINT);
@@ -123,7 +126,7 @@ class SetupClass extends Config{
     return json_encode($arrayTableStruktur,JSON_PRETTY_PRINT);
   }
   function dumpTable($tableName) {
-    $dumpString = shell_exec("mysqldump -u".$this->userMysql." -p".$this->passwordMysql." --no-data --skip-events --skip-routines --skip-triggers $this->databaseName $tableName");
+    $dumpString = shell_exec("mysqldump -u".$this->userMysql." -p".$this->passwordMysql." --no-data --skip-events --skip-routines --skip-triggers --skip-add-drop-table $this->databaseName $tableName");
     file_put_contents("dump/$tableName".".sql",$dumpString);
     return "dump/$tableName".".sql";
   }
@@ -274,6 +277,50 @@ class SetupClass extends Config{
     return $namaTable;
   }
   function checkTrigger($fileName,$checkResult){
+    $jsonFile = file_get_contents($fileName);
+    $decodeJsonFile = json_decode($jsonFile);
+    $databaseName = $decodeJsonFile[0]->databaseName;
+    $this->connnectionCheckDB = mysqli_connect("localhost",$this->userMysql, $this->passwordMysql, $databaseName);
+    $arrayTrigger = $decodeJsonFile[0]->triggers;
+    for ($i=0; $i < sizeof($arrayTrigger); $i++) {
+      $arrayError = array();
+      $arrayTriggerFix = json_decode(file_get_contents($arrayTrigger[$i]->json_file));
+      $arrayTriggerSource = $this->getTrigger($databaseName,$arrayTriggerFix->TRIGGER_NAME);
+      if($this->sqlRowCount($this->sqlQueryCheckDB("select TRIGGER_NAME,HEX(ACTION_STATEMENT),ACTION_TIMING,EVENT_MANIPULATION,EVENT_OBJECT_TABLE  from information_schema.TRIGGERS where TRIGGER_SCHEMA= '$databaseName' and TRIGGER_NAME = '".$arrayTriggerFix->TRIGGER_NAME."'")) != 0){
+        $triggerNameFix = $arrayTriggerFix->TRIGGER_NAME;
+        $hexActionStatementFix = $arrayTriggerFix->ACTION_STATEMENT;
+        $actionTimingFix = $arrayTriggerFix->ACTION_TIMING;
+        $eventManipulationFix = $arrayTriggerFix->EVENT_MANIPULATION;
+        $eventObjectTableFix = $arrayTriggerFix->EVENT_OBJECT_TABLE;
+        $triggerNameSource = $arrayTriggerSource['TRIGGER_NAME'];
+        $hexActionStatementSource = $arrayTriggerSource['ACTION_STATEMENT'];
+        $actionTimingSource = $arrayTriggerSource['ACTION_TIMING'];
+        $eventManipulationSource = $arrayTriggerSource['EVENT_MANIPULATION'];
+        $eventObjectTableSource = $arrayTriggerSource['EVENT_OBJECT_TABLE'];
+        if($hexActionStatementSource != $hexActionStatementFix){
+          $arrayError[] = "Source TRIGGER DIFFERENT ";
+        }
+        if($actionTimingSource != $actionTimingFix){
+          $arrayError[] = "ACTION TIMMING TRIGGER DIFFERENT ";
+        }
+        if($eventManipulationFix != $eventManipulationSource){
+          $arrayError[] = "EVENT MANIPULATION TRIGGER DIFFERENT ";
+        }
+        if($eventObjectTableSource != $eventObjectTableFix){
+          $arrayError[] = "EVENT OBJECT TABLE TRIGGER DIFFERENT ";
+        }
+        if(sizeof($arrayError) !=0){
+          $err .= $arrayTriggerFix->TRIGGER_NAME." => ".implode(", ",$arrayError)." \n";
+        }else{
+          $err .= $arrayTriggerFix->TRIGGER_NAME." => "."OK \n";
+        }
+      }else{
+        $err .= $arrayTriggerFix->TRIGGER_NAME." => TRIGGER NOT EXITS \n";
+      }
+    }
+    return $err;
+  }
+  function checkRoutine($fileName,$checkResult){
     $jsonFile = file_get_contents($fileName);
     $decodeJsonFile = json_decode($jsonFile);
     $databaseName = $decodeJsonFile[0]->databaseName;

@@ -1,6 +1,6 @@
 {
     "tableName": "buku_induk",
-    "dumpFile": "dump\/admin,anggaran_kas,setting,buku_induk.sql",
+    "dumpFile": "dump\/buku_induk.sql",
     "index": [
         {
             "column_name": "uid",
