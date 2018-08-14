@@ -53,8 +53,8 @@ CREATE TABLE `admin` (
   `ipaddr` varchar(50) COLLATE latin1_general_ci DEFAULT NULL,
   `sesino` int(11) DEFAULT NULL,
   PRIMARY KEY (`uid`),
-  UNIQUE KEY `nama` (`nama`),
-  KEY `password_group_level` (`password`,`group`,`level`)
+  KEY `password_group_level` (`password`,`group`,`level`),
+  KEY `nama` (`nama`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci ROW_FORMAT=COMPACT;
 /*!40101 SET character_set_client = @saved_cs_client */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -67,4 +67,4 @@ CREATE TABLE `admin` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-08-14  9:35:58
+-- Dump completed on 2018-08-14 13:49:46

@@ -331,17 +331,18 @@ class SetupClass extends Config{
           if(!empty($nameColumnSource)){
             $error = array();
             if($keyNameFix != $keyNameSource){
-              $error[] = "KEY NAME DIFFERENT";
+              $error[] = "KEY NAME DIFFERENT $keyNameSource";
             }
             if($nonUniqueFix != $nonUniqueSource){
-              $error[] = "NON UNIQUE DIFFERENT";
+              $error[] = "NON UNIQUE DIFFERENT $nonUniqueSource";
             }
-            if(sizeof($error)){
+            if(sizeof($error) != 0){
               $statusCheckIndex = implode(", ",$error);
+              $statusCheckIndex = $this->fixIndex($databaseName,$arrayStrukturTableFix->tableName,$arrayStrukturTableFix->index[$abc],$arrayStrukturTableFix->index);
             }
           }else{
 
-            $statusCheckIndex = $this->addIndex($databaseName,$arrayStrukturTableFix->tableName,$arrayStrukturTableFix->index[$abc],$arrayStrukturTableFix->index);;
+            $statusCheckIndex = $this->addIndex($databaseName,$arrayStrukturTableFix->tableName,$arrayStrukturTableFix->index[$abc],$arrayStrukturTableFix->index);
           }
           $listCheckIndex .= "\n \t \t INDEX => ".$keyNameFix ."  $statusCheckIndex";
 
@@ -392,7 +393,7 @@ class SetupClass extends Config{
         if($arrayFixIndex->key_name == "PRIMARY"){
           $indexType = "PRIMARY KEY";
           $indexName = $arrayFixIndex->column_name;
-        }elseif($arrayFixIndex->non_uniqe = "1"){
+        }elseif($arrayFixIndex->non_uniqe != "1"){
           $indexType = "UNIQUE INDEX ";
           $indexName = $arrayFixIndex->key_name;
         }else{
@@ -404,7 +405,7 @@ class SetupClass extends Config{
         if($arrayFixIndex->key_name == "PRIMARY"){
           $indexType = "PRIMARY KEY";
           $indexName = $arrayFixIndex->column_name;
-        }elseif($arrayFixIndex->non_uniqe = "1"){
+        }elseif($arrayFixIndex->non_uniqe != "1"){
           $indexType = "UNIQUE INDEX ";
           $indexName = $arrayFixIndex->key_name;
         }else{
@@ -417,6 +418,48 @@ class SetupClass extends Config{
       $this->sqlQuery($command);
     }
     return "FIXED";
+  }
+  function fixIndex($databaseName,$tableName,$arrayFixIndex,$arrayIndexTableFix){
+    $localArrayIndex =array();
+    if(!in_array($arrayFixIndex->key_name,$this->arrayFixIndexTable)){
+      $cek = "ALTER TABLE $databaseName.$tableName DROP INDEX `$arrayFixIndex->key_name`";
+      $this->sqlQuery("ALTER TABLE $databaseName.$tableName DROP INDEX `$arrayFixIndex->key_name`");
+      foreach($arrayIndexTableFix as $item) {
+        if($item->key_name === $arrayFixIndex->key_name) {
+            $this->arrayFixIndexTable[] = $item->key_name ;
+            $localArrayIndex[] = "`".$item->column_name."`";
+        }
+      }
+      if(sizeof($localArrayIndex) > 1){
+        if($arrayFixIndex->key_name == "PRIMARY"){
+          $indexType = "PRIMARY KEY";
+          $indexName = $arrayFixIndex->column_name;
+        }elseif($arrayFixIndex->non_uniqe !="1"){
+          $indexType = "UNIQUE INDEX ";
+          $indexName = $arrayFixIndex->key_name;
+        }else{
+          $indexType = "INDEX ";
+          $indexName = $arrayFixIndex->key_name;
+        }
+        $command = "ALTER TABLE $databaseName.$tableName ADD $indexType `$indexName` (".implode(",",$localArrayIndex).")";
+      }else{
+        if($arrayFixIndex->key_name == "PRIMARY"){
+          $indexType = "PRIMARY KEY";
+          $indexName = $arrayFixIndex->column_name;
+        }elseif($arrayFixIndex->non_uniqe != "1"){
+          $indexType = "UNIQUE INDEX ";
+          $indexName = $arrayFixIndex->key_name;
+        }else{
+          $indexType = "INDEX ";
+          $indexName = $arrayFixIndex->key_name;
+        }
+        $command = "ALTER TABLE $databaseName.$tableName ADD $indexType `$indexName` (`$arrayFixIndex->column_name`)";
+      }
+      $this->sqlQuery($command);
+      $cek .= $command;
+    }
+
+    return $cek;
   }
   function importDatabase($databaseName,$fileName){
       return shell_exec("mysql -u".$this->userMysql." -p".$this->passwordMysql." $databaseName < $fileName ");
