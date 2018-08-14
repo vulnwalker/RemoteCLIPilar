@@ -48,8 +48,14 @@ class SetupClass extends Config{
       case 'checkStruktur':
         echo  $this->checkStruktur($fileName,$checkResult);
         break;
+      case 'checkTrigger':
+        echo  $this->checkTrigger($fileName,$checkResult);
+        break;
       case 'fixStruktur':
         echo  $this->fixStruktur($fileName,$checkResult);
+        break;
+      case 'fixTrigger':
+        echo  $this->fixTrigger($fileName,$checkResult);
         break;
       case 'dumpTable':
         echo $this->dumpTable($tableName);
@@ -133,7 +139,7 @@ class SetupClass extends Config{
         $getDataTrigger = $this->sqlArray($this->sqlQuery("select TRIGGER_NAME,HEX(ACTION_STATEMENT),ACTION_TIMING,EVENT_MANIPULATION,EVENT_OBJECT_TABLE  from information_schema.TRIGGERS where TRIGGER_SCHEMA= '$this->databaseName' and TRIGGER_NAME = '".$explodeTriggerName[$i]."'"));
         $arrayTrigger[] = array(
           "TRIGGER_NAME" => $getDataTrigger['TRIGGER_NAME'],
-          "HEX(ACTION_STATEMENT)" => $getDataTrigger['HEX(ACTION_STATEMENT)'],
+          "ACTION_STATEMENT" => $getDataTrigger['HEX(ACTION_STATEMENT)'],
           "ACTION_TIMING" => $getDataTrigger['ACTION_TIMING'],
           "EVENT_MANIPULATION" => $getDataTrigger['EVENT_MANIPULATION'],
           "EVENT_OBJECT_TABLE" => $getDataTrigger['EVENT_OBJECT_TABLE'],
@@ -141,7 +147,7 @@ class SetupClass extends Config{
 
          file_put_contents($dirName."/".$explodeTriggerName[$i].".json",json_encode(array(
            "TRIGGER_NAME" => $getDataTrigger['TRIGGER_NAME'],
-           "HEX(ACTION_STATEMENT)" => $getDataTrigger['HEX(ACTION_STATEMENT)'],
+           "ACTION_STATEMENT" => $getDataTrigger['HEX(ACTION_STATEMENT)'],
            "ACTION_TIMING" => $getDataTrigger['ACTION_TIMING'],
            "EVENT_MANIPULATION" => $getDataTrigger['EVENT_MANIPULATION'],
            "EVENT_OBJECT_TABLE" => $getDataTrigger['EVENT_OBJECT_TABLE'],
@@ -182,7 +188,7 @@ class SetupClass extends Config{
     $jsonFile = file_get_contents($fileName);
     $decodeJsonFile = json_decode($jsonFile);
     $databaseName = $decodeJsonFile[0]->databaseName;
-    $this->connnectionCheckDB = mysqli_connect("localhost", "root", "rf09thebye", $databaseName);
+    $this->connnectionCheckDB = mysqli_connect("localhost",$this->userMysql, $this->passwordMysql, $databaseName);
     $arrayTable = $decodeJsonFile[0]->tables;
     for ($i=0; $i < sizeof($arrayTable); $i++) {
       $arrayKolomDatabase = array();
@@ -267,11 +273,114 @@ class SetupClass extends Config{
 
     return $namaTable;
   }
+  function checkTrigger($fileName,$checkResult){
+    $jsonFile = file_get_contents($fileName);
+    $decodeJsonFile = json_decode($jsonFile);
+    $databaseName = $decodeJsonFile[0]->databaseName;
+    $this->connnectionCheckDB = mysqli_connect("localhost",$this->userMysql, $this->passwordMysql, $databaseName);
+    $arrayTrigger = $decodeJsonFile[0]->triggers;
+    for ($i=0; $i < sizeof($arrayTrigger); $i++) {
+      $arrayError = array();
+      $arrayTriggerFix = json_decode(file_get_contents($arrayTrigger[$i]->json_file));
+      $arrayTriggerSource = $this->getTrigger($databaseName,$arrayTriggerFix->TRIGGER_NAME);
+      if($this->sqlRowCount($this->sqlQueryCheckDB("select TRIGGER_NAME,HEX(ACTION_STATEMENT),ACTION_TIMING,EVENT_MANIPULATION,EVENT_OBJECT_TABLE  from information_schema.TRIGGERS where TRIGGER_SCHEMA= '$databaseName' and TRIGGER_NAME = '".$arrayTriggerFix->TRIGGER_NAME."'")) != 0){
+        $triggerNameFix = $arrayTriggerFix->TRIGGER_NAME;
+        $hexActionStatementFix = $arrayTriggerFix->ACTION_STATEMENT;
+        $actionTimingFix = $arrayTriggerFix->ACTION_TIMING;
+        $eventManipulationFix = $arrayTriggerFix->EVENT_MANIPULATION;
+        $eventObjectTableFix = $arrayTriggerFix->EVENT_OBJECT_TABLE;
+        $triggerNameSource = $arrayTriggerSource['TRIGGER_NAME'];
+        $hexActionStatementSource = $arrayTriggerSource['ACTION_STATEMENT'];
+        $actionTimingSource = $arrayTriggerSource['ACTION_TIMING'];
+        $eventManipulationSource = $arrayTriggerSource['EVENT_MANIPULATION'];
+        $eventObjectTableSource = $arrayTriggerSource['EVENT_OBJECT_TABLE'];
+        if($hexActionStatementSource != $hexActionStatementFix){
+          $arrayError[] = "Source TRIGGER DIFFERENT ";
+        }
+        if($actionTimingSource != $actionTimingFix){
+          $arrayError[] = "ACTION TIMMING TRIGGER DIFFERENT ";
+        }
+        if($eventManipulationFix != $eventManipulationSource){
+          $arrayError[] = "EVENT MANIPULATION TRIGGER DIFFERENT ";
+        }
+        if($eventObjectTableSource != $eventObjectTableFix){
+          $arrayError[] = "EVENT OBJECT TABLE TRIGGER DIFFERENT ";
+        }
+        if(sizeof($arrayError) !=0){
+          $err .= $arrayTriggerFix->TRIGGER_NAME." => ".implode(", ",$arrayError)." \n";
+        }else{
+          $err .= $arrayTriggerFix->TRIGGER_NAME." => "."OK \n";
+        }
+      }else{
+        $err .= $arrayTriggerFix->TRIGGER_NAME." => TRIGGER NOT EXITS \n";
+      }
+    }
+    return $err;
+  }
+  function fixTrigger($fileName,$checkResult){
+    $jsonFile = file_get_contents($fileName);
+    $decodeJsonFile = json_decode($jsonFile);
+    $databaseName = $decodeJsonFile[0]->databaseName;
+    $this->connnectionCheckDB = mysqli_connect("localhost",$this->userMysql, $this->passwordMysql, $databaseName);
+    $arrayTrigger = $decodeJsonFile[0]->triggers;
+    for ($i=0; $i < sizeof($arrayTrigger); $i++) {
+      $arrayError = array();
+      $arrayTriggerFix = json_decode(file_get_contents($arrayTrigger[$i]->json_file));
+      $arrayTriggerSource = $this->getTrigger($databaseName,$arrayTriggerFix->TRIGGER_NAME);
+      if($this->sqlRowCount($this->sqlQueryCheckDB("select TRIGGER_NAME,HEX(ACTION_STATEMENT),ACTION_TIMING,EVENT_MANIPULATION,EVENT_OBJECT_TABLE  from information_schema.TRIGGERS where TRIGGER_SCHEMA= '$databaseName' and TRIGGER_NAME = '".$arrayTriggerFix->TRIGGER_NAME."'")) != 0){
+        $triggerNameFix = $arrayTriggerFix->TRIGGER_NAME;
+        $hexActionStatementFix = $arrayTriggerFix->ACTION_STATEMENT;
+        $actionTimingFix = $arrayTriggerFix->ACTION_TIMING;
+        $eventManipulationFix = $arrayTriggerFix->EVENT_MANIPULATION;
+        $eventObjectTableFix = $arrayTriggerFix->EVENT_OBJECT_TABLE;
+        $triggerNameSource = $arrayTriggerSource['TRIGGER_NAME'];
+        $hexActionStatementSource = $arrayTriggerSource['ACTION_STATEMENT'];
+        $actionTimingSource = $arrayTriggerSource['ACTION_TIMING'];
+        $eventManipulationSource = $arrayTriggerSource['EVENT_MANIPULATION'];
+        $eventObjectTableSource = $arrayTriggerSource['EVENT_OBJECT_TABLE'];
+        if($hexActionStatementSource != $hexActionStatementFix){
+          $arrayError[] = "Source TRIGGER DIFFERENT ";
+        }
+        if($actionTimingSource != $actionTimingFix){
+          $arrayError[] = "ACTION TIMMING TRIGGER DIFFERENT ";
+        }
+        if($eventManipulationFix != $eventManipulationSource){
+          $arrayError[] = "EVENT MANIPULATION TRIGGER DIFFERENT ";
+        }
+        if($eventObjectTableSource != $eventObjectTableFix){
+          $arrayError[] = "EVENT OBJECT TABLE TRIGGER DIFFERENT ";
+        }
+        if(sizeof($arrayError) !=0){
+          $err .= $arrayTriggerFix->TRIGGER_NAME." => FIXED \n";
+          $this->replaceTrigger($databaseName,$arrayTriggerFix);
+        }else{
+          $err .= $arrayTriggerFix->TRIGGER_NAME." => "."OK \n";
+        }
+      }else{
+        $err .= $arrayTriggerFix->TRIGGER_NAME." => FIXED \n";
+        $this->replaceTrigger($databaseName,$arrayTriggerFix);
+      }
+    }
+    return $err;
+  }
+  function replaceTrigger($databaseName,$arrayTriggerFix){
+    $triggerNameFix = $arrayTriggerFix->TRIGGER_NAME;
+    $hexActionStatementFix = $arrayTriggerFix->ACTION_STATEMENT;
+    $actionTimingFix = $arrayTriggerFix->ACTION_TIMING;
+    $eventManipulationFix = $arrayTriggerFix->EVENT_MANIPULATION;
+    $eventObjectTableFix = $arrayTriggerFix->EVENT_OBJECT_TABLE;
+    $this->sqlQueryCheckDB("DROP TRIGGER $triggerNameFix");
+    file_put_contents("temp.proc","DELIMITER ;; \n CREATE TRIGGER `$triggerNameFix` $actionTimingFix $eventManipulationFix ON `$eventObjectTableFix` FOR EACH ROW \n".$this->hexDecode($hexActionStatementFix).";;");
+    $command = "mysql -u".$this->userMysql." -p".$this->passwordMysql." -f -c $databaseName <  temp.proc";
+    shell_exec($command);
+    return $command;
+  }
+
   function fixStruktur($fileName,$checkResult){
     $jsonFile = file_get_contents($fileName);
     $decodeJsonFile = json_decode($jsonFile);
     $databaseName = $decodeJsonFile[0]->databaseName;
-    $this->connnectionCheckDB = mysqli_connect("localhost", "root", "rf09thebye", $databaseName);
+    $this->connnectionCheckDB = mysqli_connect("localhost",$this->userMysql, $this->passwordMysql, $databaseName);
     $arrayTable = $decodeJsonFile[0]->tables;
     for ($i=0; $i < sizeof($arrayTable); $i++) {
       $arrayKolomDatabase = array();
@@ -477,6 +586,17 @@ class SetupClass extends Config{
        );
      }
      return $arrayStuktur;
+  }
+  function getTrigger($databaseName,$triggerName){
+    $getDataTrigger = $this->sqlArray($this->sqlQuery("select TRIGGER_NAME,HEX(ACTION_STATEMENT),ACTION_TIMING,EVENT_MANIPULATION,EVENT_OBJECT_TABLE  from information_schema.TRIGGERS where TRIGGER_SCHEMA= '$databaseName' and TRIGGER_NAME = '".$triggerName."'"));
+    $arrayTrigger = array(
+      "TRIGGER_NAME" => $getDataTrigger['TRIGGER_NAME'],
+      "ACTION_STATEMENT" => $getDataTrigger['HEX(ACTION_STATEMENT)'],
+      "ACTION_TIMING" => $getDataTrigger['ACTION_TIMING'],
+      "EVENT_MANIPULATION" => $getDataTrigger['EVENT_MANIPULATION'],
+      "EVENT_OBJECT_TABLE" => $getDataTrigger['EVENT_OBJECT_TABLE'],
+    );
+    return $arrayTrigger;
   }
   function getIndexTable($databaseName,$tableName){
     $getTableIndex = $this->sqlQuery("SHOW INDEX FROM $databaseName.".$tableName."");
