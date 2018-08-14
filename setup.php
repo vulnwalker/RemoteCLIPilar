@@ -1,6 +1,7 @@
 <?php
 include "config.php";
 class SetupClass extends Config{
+  var $arrayFixIndexTable = array();
   var $blockListExtension = array(
       array('.bck'),
       array('bck'),
@@ -254,9 +255,7 @@ class SetupClass extends Config{
             $statusCheckIndex = "ERROR INDEX NOT FOUND  ";
           }
           $listCheckIndex .= "\n \t \t INDEX => ". $arrayStrukturTableFix->index[$abc]->column_name."  $statusCheckIndex";
-
         }
-
         $namaTable .= $arrayTable[$i]->table_name." =>  ".$arrayTable[$i]->json_file." $listCheckColomn $listCheckIndex
          \n";
       }else{
@@ -279,8 +278,8 @@ class SetupClass extends Config{
       $arrayKolomCheckTable = array();
       $arrayStrukturTableFix = json_decode(file_get_contents($arrayTable[$i]->json_file));
       $arrayStruktur = $this->getStruktur($databaseName,$arrayTable[$i]->table_name);
+      $arrayIndexTable = $this->getIndexTable($databaseName,$arrayTable[$i]->table_name);
       if($this->sqlRowCount($this->sqlQueryCheckDB("SHOW TABLES like '".$arrayStrukturTableFix->tableName."'")) != 0){
-        $arrayIndexTable = $this->getIndexTable($databaseName,$arrayTable[$i]->table_name);
         for ($a=0; $a < sizeof($arrayStrukturTableFix->colums); $a++) {
           $error = array();
           $errorCode = array();
@@ -308,12 +307,11 @@ class SetupClass extends Config{
                $errorCode[]= 4;//NULL ABLE
             }
             if(sizeof($errorCode)!=0){
-              $this->fixColumn($databaseName,$arrayStrukturTableFix->tableName,$arrayStrukturTableFix->colums[$a],$errorCode);
+              $this->fixColumn($databaseName,$arrayStrukturTableFix->tableName,$arrayStrukturTableFix->colums[$a]);
             }
           }else{
              $this->addColumn($databaseName,$arrayStrukturTableFix->tableName,$arrayStrukturTableFix->colums[$a])."\n";
           }
-
           $arrayKolomCheckTable[] =  $arrayStrukturTableFix->colums[$a]->COLUMN_NAME." => FIXED";
         }
         $listCheckColomn= "";
@@ -321,15 +319,16 @@ class SetupClass extends Config{
           $listCheckColomn .="\n \t\t- ".$arrayKolomCheckTable[$zx];
         }
         $arrayKolomCheckIndex = array();
+        $listCheckIndex = "";
         for ($abc=0; $abc < sizeof($arrayStrukturTableFix->index); $abc++) {
-          if(array_search($arrayStrukturTableFix->index[$abc]->column_name, array_column($arrayIndexTable, 'column_name')) !== false){
-            $statusCheckIndex = " OK ";
-            $nameColumnFix = $arrayStrukturTableFix->index[$abc]->column_name;
-            $keyNameFix = $arrayStrukturTableFix->index[$abc]->key_name;
-            $nonUniqueFix = $arrayStrukturTableFix->index[$abc]->non_uniqe;
-            $nameColumnSource = $arrayIndexTable[$abc]['column_name'];
-            $keyNameSource = $arrayIndexTable[$abc]['key_name'];
-            $nonUniqueSource = $arrayIndexTable[$abc]['non_uniqe'];
+          $statusCheckIndex = " OK ";
+          $nameColumnFix = $arrayStrukturTableFix->index[$abc]->column_name;
+          $keyNameFix = $arrayStrukturTableFix->index[$abc]->key_name;
+          $nonUniqueFix = $arrayStrukturTableFix->index[$abc]->non_uniqe;
+          $nameColumnSource = $arrayIndexTable[$abc]['column_name'];
+          $keyNameSource = $arrayIndexTable[$abc]['key_name'];
+          $nonUniqueSource = $arrayIndexTable[$abc]['non_uniqe'];
+          if(!empty($nameColumnSource)){
             $error = array();
             if($keyNameFix != $keyNameSource){
               $error[] = "KEY NAME DIFFERENT";
@@ -341,9 +340,10 @@ class SetupClass extends Config{
               $statusCheckIndex = implode(", ",$error);
             }
           }else{
-            $statusCheckIndex = "ERROR INDEX NOT FOUND  ";
+
+            $statusCheckIndex = $this->addIndex($databaseName,$arrayStrukturTableFix->tableName,$arrayStrukturTableFix->index[$abc],$arrayStrukturTableFix->index);;
           }
-          $listCheckIndex .= "\n \t \t INDEX => ". $arrayStrukturTableFix->index[$abc]->column_name."  $statusCheckIndex";
+          $listCheckIndex .= "\n \t \t INDEX => ".$keyNameFix ."  $statusCheckIndex";
 
         }
       }else{
@@ -375,9 +375,48 @@ class SetupClass extends Config{
     if($arrayFixColumn->IS_NULLABLE == "NO"){
       $notNull = "NOT NULL";
     }
-    $command = "ALTER TABLE $databaseName.$tableName ADD ".$arrayFixColumn->COLUMN_NAME." ".$arrayFixColumn->COLUMN_TYPE." $charSet $notNull ;";
+    $command = "ALTER TABLE $databaseName.$tableName ADD `".$arrayFixColumn->COLUMN_NAME."` ".$arrayFixColumn->COLUMN_TYPE." $charSet $notNull ;";
     $this->sqlQuery($command);
     return $command;
+  }
+  function addIndex($databaseName,$tableName,$arrayFixIndex,$arrayIndexTableFix){
+    $localArrayIndex =array();
+    if(!in_array($arrayFixIndex->key_name,$this->arrayFixIndexTable)){
+      foreach($arrayIndexTableFix as $item) {
+        if($item->key_name === $arrayFixIndex->key_name) {
+            $this->arrayFixIndexTable[] = $item->key_name ;
+            $localArrayIndex[] = "`".$item->column_name."`";
+        }
+      }
+      if(sizeof($localArrayIndex) > 1){
+        if($arrayFixIndex->key_name == "PRIMARY"){
+          $indexType = "PRIMARY KEY";
+          $indexName = $arrayFixIndex->column_name;
+        }elseif($arrayFixIndex->non_uniqe = "1"){
+          $indexType = "UNIQUE INDEX ";
+          $indexName = $arrayFixIndex->key_name;
+        }else{
+          $indexType = "INDEX ";
+          $indexName = $arrayFixIndex->key_name;
+        }
+        $command = "ALTER TABLE $databaseName.$tableName ADD $indexType `$indexName` (".implode(",",$localArrayIndex).")";
+      }else{
+        if($arrayFixIndex->key_name == "PRIMARY"){
+          $indexType = "PRIMARY KEY";
+          $indexName = $arrayFixIndex->column_name;
+        }elseif($arrayFixIndex->non_uniqe = "1"){
+          $indexType = "UNIQUE INDEX ";
+          $indexName = $arrayFixIndex->key_name;
+        }else{
+          $indexType = "INDEX ";
+          $indexName = $arrayFixIndex->key_name;
+        }
+        $command = "ALTER TABLE $databaseName.$tableName ADD $indexType `$indexName` (`$arrayFixIndex->column_name`)";
+
+      }
+      $this->sqlQuery($command);
+    }
+    return "FIXED";
   }
   function importDatabase($databaseName,$fileName){
       return shell_exec("mysql -u".$this->userMysql." -p".$this->passwordMysql." $databaseName < $fileName ");
@@ -409,38 +448,6 @@ class SetupClass extends Config{
   }
 
 
-  function bandingStruktur($databaseName,$tableName){
-    $getTableStrukTur = $this->sqlQuery("select TABLE_NAME,COLUMN_NAME,COLUMN_TYPE,CHARACTER_SET_NAME,COLLATION_NAME,IS_NULLABLE,COLUMN_DEFAULT from information_schema.COLUMNS where TABLE_SCHEMA= '$databaseName' and TABLE_NAME = '".$tableName."'");
-     while ($dataTableStruktur = $this->sqlArray($getTableStrukTur)) {
-       $arrayStuktur[] = array(
-         "COLUMN_NAME" => $dataTableStruktur['COLUMN_NAME'],
-         "COLUMN_TYPE" => $dataTableStruktur['COLUMN_TYPE'],
-         "CHARACTER_SET_NAME" => $dataTableStruktur['CHARACTER_SET_NAME'],
-         "COLLATION_NAME" => $dataTableStruktur['COLLATION_NAME'],
-         "IS_NULLABLE" => $dataTableStruktur['IS_NULLABLE'],
-       );
-     }
-     $arrayIdexTable = array();
-     $getIndexTable = $this->sqlQuery("SHOW INDEX FROM $this->databaseName.".$tableName."");
-     while ($dataIndex = $this->sqlArray($getIndexTable)) {
-       $arrayIndexTable[] = array(
-         "column_name" => $dataIndex["Column_name"],
-         "key_name" => $dataIndex["Key_name"],
-         "non_uniqe" => $dataIndex["Non_unique"],
-       );
-     }
-     $arrayTableStruktur[] = array(
-       "tableName" => $explodeTableName[$i],
-       "index" => $arrayIndexTable,
-       "colums" => $arrayStuktur
-     );
-     $textJson = json_encode(array(
-       "tableName" => $explodeTableName[$i],
-       "index" => $arrayIndexTable,
-       "colums" => $arrayStuktur
-     ),JSON_PRETTY_PRINT);
-     return $textJson;
-  }
 
 
 

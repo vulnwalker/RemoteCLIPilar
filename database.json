@@ -4,18 +4,6 @@
         {
           "table_name": "admin",
           "json_file": "struktur/admin.json"
-        },
-        {
-          "table_name": "setting",
-          "json_file": "struktur/setting.json"
-        },
-        {
-          "table_name": "buku_induk",
-          "json_file": "struktur/buku_induk.json"
-        },
-        {
-          "table_name": "anggaran_kas",
-          "json_file": "struktur/anggaran_kas.json"
         }
     ]
 }]
