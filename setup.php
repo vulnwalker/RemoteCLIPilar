@@ -60,6 +60,9 @@ class SetupClass extends Config{
       case 'fixTrigger':
         echo  $this->fixTrigger($fileName,$checkResult);
         break;
+      case 'fixRoutine':
+        echo  $this->fixRoutine($fileName,$checkResult);
+        break;
       case 'dumpTable':
         echo $this->dumpTable($tableName);
         break;
@@ -168,18 +171,30 @@ class SetupClass extends Config{
     $explodeRoutineName = explode(",",$routineName);
     for ($i=0; $i < sizeof($explodeRoutineName); $i++) {
       if($this->filterExtension($explodeRoutineName[$i]) == 0){
-        $arrayStuktur = array();
-        $getDataRoutine = $this->sqlArray($this->sqlQuery("select ROUTINE_NAME,HEX(ROUTINE_DEFINITION),ROUTINE_TYPE  from information_schema.RoutineS where Routine_SCHEMA= '$this->databaseName' and Routine_NAME = '".$explodeRoutineName[$i]."'"));
+        $arrayParameter = array();
+        $getDataRoutine = $this->sqlArray($this->sqlQuery("select ROUTINE_NAME,HEX(ROUTINE_DEFINITION),ROUTINE_TYPE  from information_schema.ROUTINES where ROUTINE_SCHEMA= '$this->databaseName' and ROUTINE_NAME = '".$explodeRoutineName[$i]."'"));
+        $getDataParameters = $this->sqlQuery("select PARAMETER_NAME,DTD_IDENTIFIER,ORDINAL_POSITION,CHARACTER_SET_NAME,COLLATION_NAME from information_schema.PARAMETERS where SPECIFIC_SCHEMA = '$this->databaseName' and SPECIFIC_NAME  = '".$explodeRoutineName[$i]."' order by ORDINAL_POSITION");
+        while ($dataParameter = $this->sqlArray($getDataParameters)) {
+          $arrayParameter[] = array(
+            "PARAMETER_NAME" => $dataParameter['PARAMETER_NAME'],
+            "DTD_IDENTIFIER" => $dataParameter['DTD_IDENTIFIER'],
+            "ORDINAL_POSITION" => $dataParameter['ORDINAL_POSITION'],
+            "CHARACTER_SET_NAME" => $dataParameter['CHARACTER_SET_NAME'],
+            "COLLATION_NAME" => $dataParameter['COLLATION_NAME'],
+          );
+        }
         $arrayRoutine[] = array(
           "ROUTINE_NAME" => $getDataRoutine['ROUTINE_NAME'],
-          "HEX(ROUTINE_DEFINITION)" => $getDataRoutine['HEX(ROUTINE_DEFINITION)'],
+          "ROUTINE_DEFINITION" => $getDataRoutine['HEX(ROUTINE_DEFINITION)'],
           "ROUTINE_TYPE" => $getDataRoutine['ROUTINE_TYPE'],
+          "PARAMETERS" => $arrayParameter,
         );
 
          file_put_contents($dirName."/".$explodeRoutineName[$i].".json",json_encode(array(
            "ROUTINE_NAME" => $getDataRoutine['ROUTINE_NAME'],
-           "HEX(ROUTINE_DEFINITION)" => $getDataRoutine['HEX(ROUTINE_DEFINITION)'],
+           "ROUTINE_DEFINITION" => $getDataRoutine['HEX(ROUTINE_DEFINITION)'],
            "ROUTINE_TYPE" => $getDataRoutine['ROUTINE_TYPE'],
+           "PARAMETERS" => $arrayParameter,
          ),JSON_PRETTY_PRINT));
       }
     }
@@ -325,44 +340,172 @@ class SetupClass extends Config{
     $decodeJsonFile = json_decode($jsonFile);
     $databaseName = $decodeJsonFile[0]->databaseName;
     $this->connnectionCheckDB = mysqli_connect("localhost",$this->userMysql, $this->passwordMysql, $databaseName);
-    $arrayTrigger = $decodeJsonFile[0]->triggers;
-    for ($i=0; $i < sizeof($arrayTrigger); $i++) {
+    $arrayRoutine = $decodeJsonFile[0]->routines;
+    for ($i=0; $i < sizeof($arrayRoutine); $i++) {
       $arrayError = array();
-      $arrayTriggerFix = json_decode(file_get_contents($arrayTrigger[$i]->json_file));
-      $arrayTriggerSource = $this->getTrigger($databaseName,$arrayTriggerFix->TRIGGER_NAME);
-      if($this->sqlRowCount($this->sqlQueryCheckDB("select TRIGGER_NAME,HEX(ACTION_STATEMENT),ACTION_TIMING,EVENT_MANIPULATION,EVENT_OBJECT_TABLE  from information_schema.TRIGGERS where TRIGGER_SCHEMA= '$databaseName' and TRIGGER_NAME = '".$arrayTriggerFix->TRIGGER_NAME."'")) != 0){
-        $triggerNameFix = $arrayTriggerFix->TRIGGER_NAME;
-        $hexActionStatementFix = $arrayTriggerFix->ACTION_STATEMENT;
-        $actionTimingFix = $arrayTriggerFix->ACTION_TIMING;
-        $eventManipulationFix = $arrayTriggerFix->EVENT_MANIPULATION;
-        $eventObjectTableFix = $arrayTriggerFix->EVENT_OBJECT_TABLE;
-        $triggerNameSource = $arrayTriggerSource['TRIGGER_NAME'];
-        $hexActionStatementSource = $arrayTriggerSource['ACTION_STATEMENT'];
-        $actionTimingSource = $arrayTriggerSource['ACTION_TIMING'];
-        $eventManipulationSource = $arrayTriggerSource['EVENT_MANIPULATION'];
-        $eventObjectTableSource = $arrayTriggerSource['EVENT_OBJECT_TABLE'];
-        if($hexActionStatementSource != $hexActionStatementFix){
-          $arrayError[] = "Source TRIGGER DIFFERENT ";
+      $arrayRoutineFix = json_decode(file_get_contents($arrayRoutine[$i]->json_file));
+      $arrayRoutineSource = $this->getRoutine($databaseName,$arrayRoutineFix->ROUTINE_NAME);
+      if($this->sqlRowCount($this->sqlQueryCheckDB("select ROUTINE_NAME,HEX(ROUTINE_DEFINITION),ROUTINE_TYPE  from information_schema.ROUTINES where ROUTINE_SCHEMA= '$databaseName' and ROUTINE_NAME = '".$arrayRoutineFix->ROUTINE_NAME."'")) != 0){
+        $arrayParameterFix = array();
+        $arrayParameterSource= array();
+        $routineNameFix = $arrayRoutineFix->ROUTINE_NAME;
+        $routineDefinitionFix = $arrayRoutineFix->ROUTINE_DEFINITION;
+        $routineTypeFix = $arrayRoutineFix->ROUTINE_TYPE;
+        $routineParametersFix = $arrayRoutineFix->PARAMETERS;
+        for ($iRoutineFixParams=0; $iRoutineFixParams < sizeof($routineParametersFix) ; $iRoutineFixParams++) {
+          $arrayParameterFix[] = array(
+            "PARAMETER_NAME" => $routineParametersFix[$iRoutineFixParams]->PARAMETER_NAME,
+            "DTD_IDENTIFIER" => $routineParametersFix[$iRoutineFixParams]->DTD_IDENTIFIER,
+            "ORDINAL_POSITION" => $routineParametersFix[$iRoutineFixParams]->ORDINAL_POSITION,
+            // "CHARACTER_SET_NAME" => $routineParametersFix[$iRoutineFixParams]->CHARACTER_SET_NAME,
+            // "COLLATION_NAME" => $routineParametersFix[$iRoutineFixParams]->COLLATION_NAME,
+          );
         }
-        if($actionTimingSource != $actionTimingFix){
-          $arrayError[] = "ACTION TIMMING TRIGGER DIFFERENT ";
+
+        $routineNameSource = $arrayRoutineSource['ROUTINE_NAME'];
+        $routineDefinitionSource = $arrayRoutineSource['ROUTINE_DEFINITION'];
+        $routineTypeSource = $arrayRoutineSource['ROUTINE_TYPE'];
+        $routineParametersSource = $arrayRoutineSource['PARAMETERS'];
+        for ($iRoutineSourceParams=0; $iRoutineSourceParams < sizeof($routineParametersSource) ; $iRoutineSourceParams++) {
+          $arrayParameterSource[] = array(
+            "PARAMETER_NAME" => $routineParametersSource[$iRoutineSourceParams]['PARAMETER_NAME'],
+            "DTD_IDENTIFIER" => $routineParametersSource[$iRoutineSourceParams]['DTD_IDENTIFIER'],
+            "ORDINAL_POSITION" => $routineParametersSource[$iRoutineSourceParams]['ORDINAL_POSITION'],
+            // "CHARACTER_SET_NAME" => $routineParametersSource[$iRoutineSourceParams]['CHARACTER_SET_NAME'],
+            // "COLLATION_NAME" => $routineParametersSource[$iRoutineSourceParams]['COLLATION_NAME'],
+          );
         }
-        if($eventManipulationFix != $eventManipulationSource){
-          $arrayError[] = "EVENT MANIPULATION TRIGGER DIFFERENT ";
+
+        if($arrayParameterFix != $arrayParameterSource ){
+          $arrayError[] = "PARAMETERS ROUTINE DIFFERENT ";
         }
-        if($eventObjectTableSource != $eventObjectTableFix){
-          $arrayError[] = "EVENT OBJECT TABLE TRIGGER DIFFERENT ";
+
+        if($routineDefinitionFix != $routineDefinitionSource){
+          $arrayError[] = "Source ROUTINE DIFFERENT ";
         }
+        if($routineTypeFix != $routineTypeSource){
+          $arrayError[] = "TYPE ROUTINE DIFFERENT ";
+        }
+
         if(sizeof($arrayError) !=0){
-          $err .= $arrayTriggerFix->TRIGGER_NAME." => ".implode(", ",$arrayError)." \n";
+          $err .= $arrayRoutineFix->ROUTINE_NAME." => ".implode(", ",$arrayError)." \n";
         }else{
-          $err .= $arrayTriggerFix->TRIGGER_NAME." => "."OK \n";
+          $err .= $arrayRoutineFix->ROUTINE_NAME." => "."OK \n";
         }
       }else{
-        $err .= $arrayTriggerFix->TRIGGER_NAME." => TRIGGER NOT EXITS \n";
+        $err .= $arrayRoutineFix->ROUTINE_NAME." => ROUTINE NOT EXITS \n";
       }
     }
     return $err;
+  }
+  function fixRoutine($fileName,$checkResult){
+    $jsonFile = file_get_contents($fileName);
+    $decodeJsonFile = json_decode($jsonFile);
+    $databaseName = $decodeJsonFile[0]->databaseName;
+    $this->connnectionCheckDB = mysqli_connect("localhost",$this->userMysql, $this->passwordMysql, $databaseName);
+    $arrayRoutine = $decodeJsonFile[0]->routines;
+    for ($i=0; $i < sizeof($arrayRoutine); $i++) {
+      $errorStatus = 0;
+      $arrayError = array();
+      $arrayRoutineFix = json_decode(file_get_contents($arrayRoutine[$i]->json_file));
+      $arrayRoutineSource = $this->getRoutine($databaseName,$arrayRoutineFix->ROUTINE_NAME);
+      if($this->sqlRowCount($this->sqlQueryCheckDB("select ROUTINE_NAME,HEX(ROUTINE_DEFINITION),ROUTINE_TYPE  from information_schema.ROUTINES where ROUTINE_SCHEMA= '$databaseName' and ROUTINE_NAME = '".$arrayRoutineFix->ROUTINE_NAME."'")) != 0){
+        $arrayParameterFix = array();
+        $arrayParameterSource= array();
+        $routineNameFix = $arrayRoutineFix->ROUTINE_NAME;
+        $routineDefinitionFix = $arrayRoutineFix->ROUTINE_DEFINITION;
+        $routineTypeFix = $arrayRoutineFix->ROUTINE_TYPE;
+        $routineParametersFix = $arrayRoutineFix->PARAMETERS;
+        for ($iRoutineFixParams=0; $iRoutineFixParams < sizeof($routineParametersFix) ; $iRoutineFixParams++) {
+          $arrayParameterFix[] = array(
+            "PARAMETER_NAME" => $routineParametersFix[$iRoutineFixParams]->PARAMETER_NAME,
+            "DTD_IDENTIFIER" => $routineParametersFix[$iRoutineFixParams]->DTD_IDENTIFIER,
+            "ORDINAL_POSITION" => $routineParametersFix[$iRoutineFixParams]->ORDINAL_POSITION,
+            // "CHARACTER_SET_NAME" => $routineParametersFix[$iRoutineFixParams]->CHARACTER_SET_NAME,
+            // "COLLATION_NAME" => $routineParametersFix[$iRoutineFixParams]->COLLATION_NAME,
+          );
+        }
+
+        $routineNameSource = $arrayRoutineSource['ROUTINE_NAME'];
+        $routineDefinitionSource = $arrayRoutineSource['ROUTINE_DEFINITION'];
+        $routineTypeSource = $arrayRoutineSource['ROUTINE_TYPE'];
+        $routineParametersSource = $arrayRoutineSource['PARAMETERS'];
+        for ($iRoutineSourceParams=0; $iRoutineSourceParams < sizeof($routineParametersSource) ; $iRoutineSourceParams++) {
+          $arrayParameterSource[] = array(
+            "PARAMETER_NAME" => $routineParametersSource[$iRoutineSourceParams]['PARAMETER_NAME'],
+            "DTD_IDENTIFIER" => $routineParametersSource[$iRoutineSourceParams]['DTD_IDENTIFIER'],
+            "ORDINAL_POSITION" => $routineParametersSource[$iRoutineSourceParams]['ORDINAL_POSITION'],
+            // "CHARACTER_SET_NAME" => $routineParametersSource[$iRoutineSourceParams]['CHARACTER_SET_NAME'],
+            // "COLLATION_NAME" => $routineParametersSource[$iRoutineSourceParams]['COLLATION_NAME'],
+          );
+        }
+
+        if($arrayParameterFix != $arrayParameterSource ){
+          $arrayError[] = "PARAMETERS ROUTINE DIFFERENT ";
+        }
+
+        if($routineDefinitionFix != $routineDefinitionSource){
+          $arrayError[] = "Source ROUTINE DIFFERENT ";
+        }
+        if($routineTypeFix != $routineTypeSource){
+          $arrayError[] = "TYPE ROUTINE DIFFERENT ";
+        }
+
+        if(sizeof($arrayError) !=0){
+          $errorStatus = 1;
+          $err .= $arrayRoutineFix->ROUTINE_NAME." => FIXED \n";
+        }else{
+          $err .= $arrayRoutineFix->ROUTINE_NAME." => "."OK \n";
+          $errorStatus = 0;
+        }
+      }else{
+        $errorStatus = 1;
+        $err .= $arrayRoutineFix->ROUTINE_NAME." => FIXED \n";
+      }
+      if($errorStatus == 1){
+        if($arrayRoutineFix->ROUTINE_TYPE == "FUNCTION"){
+          $this->createRoutineFunction($databaseName,$arrayRoutineFix);
+        }else{
+          $this->createRoutineStoreProcedure($databaseName,$arrayRoutineFix);
+
+        }
+      }
+
+    }
+    return $err;
+  }
+
+  function createRoutineFunction($databaseName,$arrayRoutineFix) {
+    $routineNameFix = $arrayRoutineFix->ROUTINE_NAME;
+    $routineDefinitionFix = $arrayRoutineFix->ROUTINE_DEFINITION;
+    $routineTypeFix = $arrayRoutineFix->ROUTINE_TYPE;
+    $routineParametersFix = $arrayRoutineFix->PARAMETERS;
+    for ($iRoutineFixParams=0; $iRoutineFixParams < sizeof($routineParametersFix) ; $iRoutineFixParams++) {
+        if($routineParametersFix[$iRoutineFixParams]->ORDINAL_POSITION == '0' ){
+          $returnFunction = "RETURNS ".$routineParametersFix[$iRoutineFixParams]->DTD_IDENTIFIER;
+        }else{
+          $arrayParameter[] =$routineParametersFix[$iRoutineFixParams]->PARAMETER_NAME." ".$routineParametersFix[$iRoutineFixParams]->DTD_IDENTIFIER." ";
+        }
+    }
+    shell_exec("mysql -u".$this->userMysql." -p".$this->passwordMysql." -D $databaseName  -s -e 'DROP FUNCTION IF EXISTS $routineNameFix' ");
+    file_put_contents("temp.proc","DELIMITER ;; \n CREATE FUNCTION `$routineNameFix` (".implode(",",$arrayParameter).") $returnFunction \n".$this->hexDecode($routineDefinitionFix).";;");
+    $command = "mysql -u".$this->userMysql." -p".$this->passwordMysql." -f -c $databaseName < temp.proc";
+    shell_exec($command);
+    return $comand;
+  }
+  function createRoutineStoreProcedure($databaseName,$arrayRoutineFix) {
+    $routineNameFix = $arrayRoutineFix->ROUTINE_NAME;
+    $routineDefinitionFix = $arrayRoutineFix->ROUTINE_DEFINITION;
+    $routineTypeFix = $arrayRoutineFix->ROUTINE_TYPE;
+    $routineParametersFix = $arrayRoutineFix->PARAMETERS;
+    for ($iRoutineFixParams=0; $iRoutineFixParams < sizeof($routineParametersFix) ; $iRoutineFixParams++) {
+        $arrayParameter[] =$routineParametersFix[$iRoutineFixParams]->PARAMETER_NAME." ".$routineParametersFix[$iRoutineFixParams]->DTD_IDENTIFIER." ";
+    }
+    shell_exec("mysql -u".$this->userMysql." -p".$this->passwordMysql." -D $databaseName  -s -e 'DROP PROCEDURE IF EXISTS $routineNameFix' ");
+    file_put_contents("temp.proc","DELIMITER ;; \n CREATE PROCEDURE `$routineNameFix` (".implode(",",$arrayParameter).")  \n".$this->hexDecode($routineDefinitionFix).";;");
+    $command = "mysql -u".$this->userMysql." -p".$this->passwordMysql." -f -c $databaseName < temp.proc";
+    shell_exec($command);
+    return $comand;
   }
   function fixTrigger($fileName,$checkResult){
     $jsonFile = file_get_contents($fileName);
@@ -644,6 +787,26 @@ class SetupClass extends Config{
       "EVENT_OBJECT_TABLE" => $getDataTrigger['EVENT_OBJECT_TABLE'],
     );
     return $arrayTrigger;
+  }
+  function getRoutine($databaseName,$routineName){
+    $getDataRoutine = $this->sqlArray($this->sqlQuery("select ROUTINE_NAME,HEX(ROUTINE_DEFINITION),ROUTINE_TYPE  from information_schema.ROUTINES where ROUTINE_SCHEMA= '$databaseName' and ROUTINE_NAME = '".$routineName."'"));
+    $getDataParameters = $this->sqlQuery("select PARAMETER_NAME,DTD_IDENTIFIER,ORDINAL_POSITION,CHARACTER_SET_NAME,COLLATION_NAME from information_schema.PARAMETERS where SPECIFIC_SCHEMA = '$databaseName' and SPECIFIC_NAME  = '$routineName' order by ORDINAL_POSITION");
+    while ($dataParameter = $this->sqlArray($getDataParameters)) {
+      $arrayParameter[] = array(
+        "PARAMETER_NAME" => $dataParameter['PARAMETER_NAME'],
+        "DTD_IDENTIFIER" => $dataParameter['DTD_IDENTIFIER'],
+        "ORDINAL_POSITION" => $dataParameter['ORDINAL_POSITION'],
+        "CHARACTER_SET_NAME" => $dataParameter['CHARACTER_SET_NAME'],
+        "COLLATION_NAME" => $dataParameter['COLLATION_NAME'],
+      );
+    }
+    $arrayRoutine = array(
+      "ROUTINE_NAME" => $getDataRoutine['ROUTINE_NAME'],
+      "ROUTINE_DEFINITION" => $getDataRoutine['HEX(ROUTINE_DEFINITION)'],
+      "ROUTINE_TYPE" => $getDataRoutine['ROUTINE_TYPE'],
+      "PARAMETERS" => $arrayParameter,
+    );
+    return $arrayRoutine;
   }
   function getIndexTable($databaseName,$tableName){
     $getTableIndex = $this->sqlQuery("SHOW INDEX FROM $databaseName.".$tableName."");

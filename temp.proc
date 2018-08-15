@@ -1,6 +1,4 @@
 DELIMITER ;; 
- CREATE TRIGGER `anggaran_kas_bef_upd` BEFORE UPDATE ON `anggaran_kas` FOR EACH ROW 
-begin
- set new.total = new.alokasi_jan + new.alokasi_feb + new.alokasi_mar + new.alokasi_apr + new.alokasi_mei + new.alokasi_jun + new.alokasi_jul + new.alokasi_agu + new.alokasi_sep + new.alokasi_okt + new.alokasi_nop + new.alokasi_des;     
-
+ CREATE PROCEDURE `example_procedure` (tes tinyint(2) )  
+BEGIN
 end;;

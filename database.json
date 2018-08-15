@@ -27,5 +27,19 @@
           "trigger_name": "anggaran_kas_bef_upd",
           "json_file": "trigger/anggaran_kas_bef_upd.json"
         }
+    ],
+    "routines": [
+        {
+          "routine_name": "get_bi_rincian",
+          "json_file": "routine/get_bi_rincian.json"
+        },
+        {
+          "routine_name": "get_nilai_buku",
+          "json_file": "routine/get_nilai_buku.json"
+        },
+        {
+          "routine_name": "example_procedure",
+          "json_file": "routine/example_procedure.json"
+        }
     ]
 }]
