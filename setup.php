@@ -25,6 +25,7 @@ class SetupClass extends Config{
       "date:",
       "action:",
       "tableName:",
+      "defaultValue:",
       "triggerName:",
       "routineName:",
       "dirName:",
@@ -115,11 +116,31 @@ class SetupClass extends Config{
            "index" => $arrayIndexTable,
            "colums" => $arrayStuktur
          );
+         $options = getopt(null, array(
+           "defaultValue:",
+         ));
+         foreach ($options as $key => $value) {
+            $$key = $value;
+         }
+         if($defaultValue == "true"){
+          $arrayDefaultValue = array();
+          $getDataInsert =$this->sqlQuery("select * from ".$explodeTableName[$i]."");
+           while ($dataInsert = $this->sqlArray($getDataInsert)) {
+             $arrayKolomTable = array();
+             $arrayValue = array();
+             for ($iDefaultValue=0; $iDefaultValue < sizeof($arrayStuktur) ; $iDefaultValue++) {
+               $arrayKolomTable[] = $arrayStuktur[$iDefaultValue]["COLUMN_NAME"];
+               $arrayValue[] = "'".$dataInsert[$arrayStuktur[$iDefaultValue]["COLUMN_NAME"]]."'";
+             }
+             $arrayDefaultValue[] = "INSERT INTO ".$explodeTableName[$i]." (".implode(",",$arrayKolomTable).") values (".implode(",",$arrayValue).") ";
+           }
+         }
          $textJson = json_encode(array(
            "tableName" => $explodeTableName[$i],
            "dumpFile" =>$this->dumpTable($explodeTableName[$i]),
            "index" => $arrayIndexTable,
-           "colums" => $arrayStuktur
+           "colums" => $arrayStuktur,
+           "default_value" => $arrayDefaultValue
          ),JSON_PRETTY_PRINT);
 
          file_put_contents( $dirName."/".$explodeTableName[$i].".json", $textJson );
@@ -649,7 +670,18 @@ class SetupClass extends Config{
       }else{
          $this->importDatabase($databaseName,$arrayStrukturTableFix->dumpFile);
       }
-
+      $options = getopt(null, array(
+        "defaultValue:",
+      ));
+      foreach ($options as $key => $value) {
+         $$key = $value;
+      }
+      if($defaultValue == "true"){
+        $arrayDefaultValue = $arrayStrukturTableFix->default_value;
+        for ($iDefaultValue=0; $iDefaultValue < sizeof($arrayDefaultValue) ; $iDefaultValue++) {
+          $this->sqlQueryCheckDB($arrayDefaultValue[$iDefaultValue]);
+        }
+      }
       $namaTable .= $arrayTable[$i]->table_name." =>  ".$arrayTable[$i]->json_file." $listCheckColomn $listCheckIndex
        \n";
 
