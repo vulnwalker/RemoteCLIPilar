@@ -355,6 +355,7 @@ class Config{
 	}
 
 	function listTable(){
+		$this->setConfig();
 		$getTableName = $this->sqlQuery("show tables");
 		while ($dataTable = $this->sqlArray($getTableName)) {
 			$arrayTable[] = $dataTable["Tables_in_".$this->databaseName];
@@ -362,6 +363,7 @@ class Config{
 		return implode(",",$arrayTable);
 	}
 	function listView(){
+		$this->setConfig();
 		$getTableName = $this->sqlQuery("SHOW FULL TABLES IN $this->databaseName WHERE TABLE_TYPE LIKE 'VIEW'");
 		while ($dataTable = $this->sqlArray($getTableName)) {
 			$arrayTable[] = $dataTable["Tables_in_".$this->databaseName];
@@ -369,6 +371,7 @@ class Config{
 		return implode(",",$arrayTable);
 	}
 	function listTrigger() {
+		$this->setConfig();
 		$getDataTrigger = $this->sqlQuery("select TRIGGER_NAME  from information_schema.TRIGGERS where TRIGGER_SCHEMA= '$this->databaseName' ");
 		while ($dataTrigger = $this->sqlArray($getDataTrigger)) {
 			$arrayTrigger[] = $dataTrigger['TRIGGER_NAME'];
@@ -376,6 +379,7 @@ class Config{
 		return implode(",",$arrayTrigger);
   }
 	function listRoutine() {
+		$this->setConfig();
 		$getDataRoutine = $this->sqlQuery("select ROUTINE_NAME from information_schema.ROUTINES where ROUTINE_SCHEMA = '$this->databaseName' ");
 		while ($dataRoutine = $this->sqlArray($getDataRoutine)) {
 			$arrayRoutine[] = $dataRoutine['ROUTINE_NAME'];
