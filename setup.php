@@ -265,7 +265,8 @@ class SetupClass extends Config{
     $jsonFile = file_get_contents($fileName);
     $decodeJsonFile = json_decode($jsonFile);
     $databaseName = $decodeJsonFile[0]->databaseName;
-    $this->connnectionCheckDB = mysqli_connect("localhost",$this->userMysql, $this->passwordMysql, $databaseName);
+    $configDatabase = $this->setConfig();
+    $this->connnectionCheckDB = mysqli_connect("localhost",$configDatabase["USER"], $configDatabase["PASSWORD"], $databaseName);
     $arrayTable = $decodeJsonFile[0]->tables;
     for ($i=0; $i < sizeof($arrayTable); $i++) {
       $arrayKolomDatabase = array();
@@ -354,7 +355,8 @@ class SetupClass extends Config{
     $jsonFile = file_get_contents($fileName);
     $decodeJsonFile = json_decode($jsonFile);
     $databaseName = $decodeJsonFile[0]->databaseName;
-    $this->connnectionCheckDB = mysqli_connect("localhost",$this->userMysql, $this->passwordMysql, $databaseName);
+    $configDatabase = $this->setConfig();
+    $this->connnectionCheckDB = mysqli_connect("localhost",$configDatabase["USER"], $configDatabase["PASSWORD"], $databaseName);
     $arrayTrigger = $decodeJsonFile[0]->triggers;
     for ($i=0; $i < sizeof($arrayTrigger); $i++) {
       $arrayError = array();
@@ -398,7 +400,8 @@ class SetupClass extends Config{
     $jsonFile = file_get_contents($fileName);
     $decodeJsonFile = json_decode($jsonFile);
     $databaseName = $decodeJsonFile[0]->databaseName;
-    $this->connnectionCheckDB = mysqli_connect("localhost",$this->userMysql, $this->passwordMysql, $databaseName);
+    $configDatabase = $this->setConfig();
+    $this->connnectionCheckDB = mysqli_connect("localhost",$configDatabase["USER"], $configDatabase["PASSWORD"], $databaseName);
     $arrayView = $decodeJsonFile[0]->views;
     for ($i=0; $i < sizeof($arrayView); $i++) {
       $arrayError = array();
@@ -415,7 +418,7 @@ class SetupClass extends Config{
         $viewCharsetSource = $arrayViewSource['CHARSET'];
         $viewCollationSource = $arrayViewSource['COLLATION'];
         if($viewLogicFix != $viewLogicSource){
-          $arrayError[] = "Source VIEW DIFFERENT ";
+          $arrayError[] = "Source VIEW DIFFERENT  ";
         }
         if(sizeof($arrayError) !=0){
           $err .= $arrayViewFix->VIEW_NAME." => ".implode(", ",$arrayError)." \n";
@@ -432,7 +435,8 @@ class SetupClass extends Config{
     $jsonFile = file_get_contents($fileName);
     $decodeJsonFile = json_decode($jsonFile);
     $databaseName = $decodeJsonFile[0]->databaseName;
-    $this->connnectionCheckDB = mysqli_connect("localhost",$this->userMysql, $this->passwordMysql, $databaseName);
+    $configDatabase = $this->setConfig();
+    $this->connnectionCheckDB = mysqli_connect("localhost",$configDatabase["USER"], $configDatabase["PASSWORD"], $databaseName);
     $arrayView = $decodeJsonFile[0]->views;
     for ($i=0; $i < sizeof($arrayView); $i++) {
       $arrayError = array();
@@ -478,7 +482,8 @@ class SetupClass extends Config{
     $jsonFile = file_get_contents($fileName);
     $decodeJsonFile = json_decode($jsonFile);
     $databaseName = $decodeJsonFile[0]->databaseName;
-    $this->connnectionCheckDB = mysqli_connect("localhost",$this->userMysql, $this->passwordMysql, $databaseName);
+    $configDatabase = $this->setConfig();
+    $this->connnectionCheckDB = mysqli_connect("localhost",$configDatabase["USER"], $configDatabase["PASSWORD"], $databaseName);
     $arrayRoutine = $decodeJsonFile[0]->routines;
     for ($i=0; $i < sizeof($arrayRoutine); $i++) {
       $arrayError = array();
@@ -541,7 +546,8 @@ class SetupClass extends Config{
     $jsonFile = file_get_contents($fileName);
     $decodeJsonFile = json_decode($jsonFile);
     $databaseName = $decodeJsonFile[0]->databaseName;
-    $this->connnectionCheckDB = mysqli_connect("localhost",$this->userMysql, $this->passwordMysql, $databaseName);
+    $configDatabase = $this->setConfig();
+    $this->connnectionCheckDB = mysqli_connect("localhost",$configDatabase["USER"], $configDatabase["PASSWORD"], $databaseName);
     $arrayRoutine = $decodeJsonFile[0]->routines;
     for ($i=0; $i < sizeof($arrayRoutine); $i++) {
       $errorStatus = 0;
@@ -650,7 +656,8 @@ class SetupClass extends Config{
     $jsonFile = file_get_contents($fileName);
     $decodeJsonFile = json_decode($jsonFile);
     $databaseName = $decodeJsonFile[0]->databaseName;
-    $this->connnectionCheckDB = mysqli_connect("localhost",$this->userMysql, $this->passwordMysql, $databaseName);
+    $configDatabase = $this->setConfig();
+    $this->connnectionCheckDB = mysqli_connect("localhost",$configDatabase["USER"], $configDatabase["PASSWORD"], $databaseName);
     $arrayTrigger = $decodeJsonFile[0]->triggers;
     for ($i=0; $i < sizeof($arrayTrigger); $i++) {
       $arrayError = array();
@@ -709,7 +716,8 @@ class SetupClass extends Config{
     $jsonFile = file_get_contents($fileName);
     $decodeJsonFile = json_decode($jsonFile);
     $databaseName = $decodeJsonFile[0]->databaseName;
-    $this->connnectionCheckDB = mysqli_connect("localhost",$this->userMysql, $this->passwordMysql, $databaseName);
+    $configDatabase = $this->setConfig();
+    $this->connnectionCheckDB = mysqli_connect("localhost",$configDatabase["USER"], $configDatabase["PASSWORD"], $databaseName);
     $arrayTable = $decodeJsonFile[0]->tables;
     for ($i=0; $i < sizeof($arrayTable); $i++) {
       $arrayKolomDatabase = array();
@@ -939,8 +947,8 @@ class SetupClass extends Config{
     return $arrayTrigger;
   }
   function getView($databaseName,$viewName){
-    $getDataView = $this->sqlArray($this->sqlQuery("SHOW CREATE VIEW $databaseName.$viewName"));
-    $arrayView[] = array(
+    $getDataView = $this->sqlArray($this->sqlQueryCheckDB("SHOW CREATE VIEW $databaseName.$viewName"));
+    $arrayView = array(
       "VIEW_NAME" => $getDataView['View'],
       "VIEW_SOURCE" => $getDataView['Create View'],
       "CHARSET" => $getDataView['character_set_client'],
