@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.7.22, for Linux (x86_64)
+-- MySQL dump 10.13  Distrib 5.5.44, for debian-linux-gnu (x86_64)
 --
--- Host: localhost    Database: db_atisisbada_2017
+-- Host: localhost    Database: db_atsb_demo_v3
 -- ------------------------------------------------------
--- Server version	5.7.22-0ubuntu0.16.04.1
+-- Server version	5.5.44-0+deb7u1
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -23,9 +23,11 @@
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `tabel_dpa` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
+  `id_tahap` int(11) NOT NULL,
   `jenis_dpa` text COLLATE latin1_general_ci NOT NULL,
   `jenis_rekening` int(11) NOT NULL,
   `tahun_anggaran` text COLLATE latin1_general_ci NOT NULL,
+  `tahun` text COLLATE latin1_general_ci NOT NULL,
   `jenis_anggaran` text COLLATE latin1_general_ci NOT NULL,
   `c1` char(1) COLLATE latin1_general_ci NOT NULL,
   `c` char(2) COLLATE latin1_general_ci NOT NULL,
@@ -66,9 +68,22 @@ CREATE TABLE `tabel_dpa` (
   `rincian` text COLLATE latin1_general_ci NOT NULL,
   `harga_satuan` decimal(18,2) NOT NULL,
   `total_harga` decimal(18,2) NOT NULL,
+  `jenis_rka` text COLLATE latin1_general_ci NOT NULL,
+  `jumlah` text COLLATE latin1_general_ci NOT NULL,
+  `volume_rek` text COLLATE latin1_general_ci NOT NULL,
+  `jumlah_harga` text COLLATE latin1_general_ci NOT NULL,
+  `nama_modul` text COLLATE latin1_general_ci NOT NULL,
+  `satuan_total` text COLLATE latin1_general_ci NOT NULL,
+  `id_jenis_pemeliharaan` text COLLATE latin1_general_ci NOT NULL,
+  `uraian_pemeliharaan` text COLLATE latin1_general_ci NOT NULL,
+  `realisasi` text COLLATE latin1_general_ci NOT NULL,
+  `catatan` text COLLATE latin1_general_ci NOT NULL,
+  `satuan_barang` text COLLATE latin1_general_ci NOT NULL,
+  `satuan_rek` text COLLATE latin1_general_ci NOT NULL,
   `sumber_dana` text COLLATE latin1_general_ci NOT NULL,
+  `jenis_transaksi` text COLLATE latin1_general_ci NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -80,4 +95,4 @@ CREATE TABLE `tabel_dpa` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-08-15 11:52:03
+-- Dump completed on 2018-08-15 14:42:23

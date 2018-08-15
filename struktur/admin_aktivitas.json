@@ -1,0 +1,47 @@
+{
+    "tableName": "admin_aktivitas",
+    "dumpFile": "dump\/admin_aktivitas.sql",
+    "index": [
+        {
+            "column_name": "uid",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        }
+    ],
+    "colums": [
+        {
+            "COLUMN_NAME": "id",
+            "COLUMN_TYPE": "bigint(20)",
+            "CHARACTER_SET_NAME": null,
+            "COLLATION_NAME": null,
+            "IS_NULLABLE": "NO"
+        },
+        {
+            "COLUMN_NAME": "uid",
+            "COLUMN_TYPE": "varchar(20)",
+            "CHARACTER_SET_NAME": "latin1",
+            "COLLATION_NAME": "latin1_general_ci",
+            "IS_NULLABLE": "NO"
+        },
+        {
+            "COLUMN_NAME": "login",
+            "COLUMN_TYPE": "datetime",
+            "CHARACTER_SET_NAME": null,
+            "COLLATION_NAME": null,
+            "IS_NULLABLE": "YES"
+        },
+        {
+            "COLUMN_NAME": "lastaktif",
+            "COLUMN_TYPE": "datetime",
+            "CHARACTER_SET_NAME": null,
+            "COLLATION_NAME": null,
+            "IS_NULLABLE": "YES"
+        }
+    ],
+    "default_value": null
+}

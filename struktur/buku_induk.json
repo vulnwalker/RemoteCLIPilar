@@ -13,7 +13,92 @@
             "non_uniqe": "0"
         },
         {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
             "column_name": "Id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "Id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "Id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "uid",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "Id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "c",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "d",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "e",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "e1",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "f",
             "key_name": "PRIMARY",
             "non_uniqe": "0"
         },
@@ -68,6 +153,41 @@
             "non_uniqe": "1"
         },
         {
+            "column_name": "tgl_buku",
+            "key_name": "tgl_buku",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "id_lama",
+            "key_name": "id_lama",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "staset",
+            "key_name": "staset",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "kondisi",
+            "key_name": "kondisi",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "tahun",
+            "key_name": "tahun",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "thn_perolehan",
+            "key_name": "thn_perolehan",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "c1",
+            "key_name": "c",
+            "non_uniqe": "1"
+        },
+        {
             "column_name": "c",
             "key_name": "c",
             "non_uniqe": "1"
@@ -85,6 +205,16 @@
         {
             "column_name": "e1",
             "key_name": "c",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "f1",
+            "key_name": "f",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "f2",
+            "key_name": "f",
             "non_uniqe": "1"
         },
         {
@@ -113,23 +243,13 @@
             "non_uniqe": "1"
         },
         {
-            "column_name": "tgl_buku",
-            "key_name": "tgl_buku",
+            "column_name": "refid_terima",
+            "key_name": "refid_terima",
             "non_uniqe": "1"
         },
         {
-            "column_name": "id_lama",
-            "key_name": "id_lama",
-            "non_uniqe": "1"
-        },
-        {
-            "column_name": "staset",
-            "key_name": "staset",
-            "non_uniqe": "1"
-        },
-        {
-            "column_name": "kondisi",
-            "key_name": "kondisi",
+            "column_name": "refid_terima_det",
+            "key_name": "refid_terima",
             "non_uniqe": "1"
         },
         {
@@ -196,11 +316,6 @@
             "column_name": "thn_perolehan",
             "key_name": "secondary",
             "non_uniqe": "1"
-        },
-        {
-            "column_name": "noreg",
-            "key_name": "secondary",
-            "non_uniqe": "1"
         }
     ],
     "colums": [
@@ -241,9 +356,9 @@
         },
         {
             "COLUMN_NAME": "c1",
-            "COLUMN_TYPE": "char(1)",
-            "CHARACTER_SET_NAME": "latin1",
-            "COLLATION_NAME": "latin1_general_ci",
+            "COLUMN_TYPE": "smallint(3)",
+            "CHARACTER_SET_NAME": null,
+            "COLLATION_NAME": null,
             "IS_NULLABLE": "NO"
         },
         {
@@ -520,6 +635,13 @@
             "IS_NULLABLE": "YES"
         },
         {
+            "COLUMN_NAME": "ref_idpemegang2",
+            "COLUMN_TYPE": "varchar(30)",
+            "CHARACTER_SET_NAME": "latin1",
+            "COLLATION_NAME": "latin1_general_ci",
+            "IS_NULLABLE": "YES"
+        },
+        {
             "COLUMN_NAME": "ref_idruang",
             "COLUMN_TYPE": "bigint(22) unsigned",
             "CHARACTER_SET_NAME": null,
@@ -529,13 +651,6 @@
         {
             "COLUMN_NAME": "tahun_sensus",
             "COLUMN_TYPE": "varchar(4)",
-            "CHARACTER_SET_NAME": "latin1",
-            "COLLATION_NAME": "latin1_general_ci",
-            "IS_NULLABLE": "YES"
-        },
-        {
-            "COLUMN_NAME": "ref_idpemegang2",
-            "COLUMN_TYPE": "varchar(30)",
             "CHARACTER_SET_NAME": "latin1",
             "COLLATION_NAME": "latin1_general_ci",
             "IS_NULLABLE": "YES"
@@ -924,6 +1039,14 @@
             "CHARACTER_SET_NAME": null,
             "COLLATION_NAME": null,
             "IS_NULLABLE": "YES"
+        },
+        {
+            "COLUMN_NAME": "microtime",
+            "COLUMN_TYPE": "text",
+            "CHARACTER_SET_NAME": "latin1",
+            "COLLATION_NAME": "latin1_general_ci",
+            "IS_NULLABLE": "YES"
         }
-    ]
+    ],
+    "default_value": null
 }

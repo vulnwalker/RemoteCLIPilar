@@ -171,6 +171,83 @@
             "IS_NULLABLE": "YES"
         },
         {
+            "COLUMN_NAME": "modul19",
+            "COLUMN_TYPE": "char(1)",
+            "CHARACTER_SET_NAME": "latin1",
+            "COLLATION_NAME": "latin1_general_ci",
+            "IS_NULLABLE": "YES"
+        },
+        {
+            "COLUMN_NAME": "modul20",
+            "COLUMN_TYPE": "char(1)",
+            "CHARACTER_SET_NAME": "latin1",
+            "COLLATION_NAME": "latin1_general_ci",
+            "IS_NULLABLE": "YES"
+        },
+        {
+            "COLUMN_NAME": "modul21",
+            "COLUMN_TYPE": "char(1)",
+            "CHARACTER_SET_NAME": "latin1",
+            "COLLATION_NAME": "latin1_general_ci",
+            "IS_NULLABLE": "YES"
+        },
+        {
+            "COLUMN_NAME": "modul22",
+            "COLUMN_TYPE": "char(1)",
+            "CHARACTER_SET_NAME": "latin1",
+            "COLLATION_NAME": "latin1_general_ci",
+            "IS_NULLABLE": "YES"
+        },
+        {
+            "COLUMN_NAME": "modul23",
+            "COLUMN_TYPE": "char(1)",
+            "CHARACTER_SET_NAME": "latin1",
+            "COLLATION_NAME": "latin1_general_ci",
+            "IS_NULLABLE": "YES"
+        },
+        {
+            "COLUMN_NAME": "modul24",
+            "COLUMN_TYPE": "char(1)",
+            "CHARACTER_SET_NAME": "latin1",
+            "COLLATION_NAME": "latin1_general_ci",
+            "IS_NULLABLE": "YES"
+        },
+        {
+            "COLUMN_NAME": "modul25",
+            "COLUMN_TYPE": "char(1)",
+            "CHARACTER_SET_NAME": "latin1",
+            "COLLATION_NAME": "latin1_general_ci",
+            "IS_NULLABLE": "YES"
+        },
+        {
+            "COLUMN_NAME": "modul26",
+            "COLUMN_TYPE": "char(1)",
+            "CHARACTER_SET_NAME": "latin1",
+            "COLLATION_NAME": "latin1_general_ci",
+            "IS_NULLABLE": "YES"
+        },
+        {
+            "COLUMN_NAME": "modul27",
+            "COLUMN_TYPE": "char(1)",
+            "CHARACTER_SET_NAME": "latin1",
+            "COLLATION_NAME": "latin1_general_ci",
+            "IS_NULLABLE": "YES"
+        },
+        {
+            "COLUMN_NAME": "modulref_siap",
+            "COLUMN_TYPE": "char(1)",
+            "CHARACTER_SET_NAME": "latin1",
+            "COLLATION_NAME": "latin1_general_ci",
+            "IS_NULLABLE": "YES"
+        },
+        {
+            "COLUMN_NAME": "moduladm_siap",
+            "COLUMN_TYPE": "char(1)",
+            "CHARACTER_SET_NAME": "latin1",
+            "COLLATION_NAME": "latin1_general_ci",
+            "IS_NULLABLE": "YES"
+        },
+        {
             "COLUMN_NAME": "status",
             "COLUMN_TYPE": "char(1)",
             "CHARACTER_SET_NAME": "latin1",
@@ -210,6 +287,20 @@
             "COLUMN_TYPE": "int(11)",
             "CHARACTER_SET_NAME": null,
             "COLLATION_NAME": null,
+            "IS_NULLABLE": "YES"
+        },
+        {
+            "COLUMN_NAME": "status_spj",
+            "COLUMN_TYPE": "tinyint(1) unsigned",
+            "CHARACTER_SET_NAME": null,
+            "COLLATION_NAME": null,
+            "IS_NULLABLE": "NO"
+        },
+        {
+            "COLUMN_NAME": "group_keuangan",
+            "COLUMN_TYPE": "varchar(21)",
+            "CHARACTER_SET_NAME": "latin1",
+            "COLLATION_NAME": "latin1_general_ci",
             "IS_NULLABLE": "YES"
         }
     ],

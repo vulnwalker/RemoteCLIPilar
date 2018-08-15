@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.7.22, for Linux (x86_64)
+-- MySQL dump 10.13  Distrib 5.5.44, for debian-linux-gnu (x86_64)
 --
--- Host: localhost    Database: db_atisisbada_2017
+-- Host: localhost    Database: db_atsb_demo_v3
 -- ------------------------------------------------------
--- Server version	5.7.22-0ubuntu0.16.04.1
+-- Server version	5.5.44-0+deb7u1
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -27,7 +27,7 @@ CREATE TABLE `buku_induk` (
   `a1` char(2) COLLATE latin1_general_ci NOT NULL DEFAULT '' COMMENT 'kepemilikan',
   `a` char(2) COLLATE latin1_general_ci NOT NULL DEFAULT '' COMMENT 'Propinsi',
   `b` char(2) COLLATE latin1_general_ci NOT NULL DEFAULT '' COMMENT 'Wilayah/kota',
-  `c1` char(1) COLLATE latin1_general_ci NOT NULL DEFAULT '0' COMMENT 'urusan',
+  `c1` smallint(3) NOT NULL DEFAULT '0' COMMENT 'urusan',
   `c` char(2) COLLATE latin1_general_ci NOT NULL DEFAULT '' COMMENT 'skpd/bidang',
   `d` char(2) COLLATE latin1_general_ci NOT NULL DEFAULT '' COMMENT 'unit/opd',
   `e` char(2) COLLATE latin1_general_ci NOT NULL DEFAULT '' COMMENT 'subunit/unit',
@@ -45,9 +45,9 @@ CREATE TABLE `buku_induk` (
   `satuan` varchar(15) COLLATE latin1_general_ci DEFAULT NULL,
   `harga` decimal(18,2) DEFAULT NULL,
   `jml_harga` decimal(18,2) DEFAULT NULL,
-  `asal_usul` char(1) COLLATE latin1_general_ci DEFAULT NULL COMMENT '1=pembelian, 2=hibah, 3=lainnya, 4=mutasi, 5=reklas, 6=kapitalisasi, 7=mutasi balai',
+  `asal_usul` char(1) COLLATE latin1_general_ci DEFAULT NULL COMMENT '1=pembelian, 2=hibah, 3=lainnya, 4=mutasi, 5=reklas, 6=kapitalisasi, 7=mutasi balai, 8=mutasi sebagian',
   `kondisi` char(1) COLLATE latin1_general_ci DEFAULT NULL COMMENT '1.baik, 2.kurang baik, 3.rusak berat',
-  `status_barang` char(1) COLLATE latin1_general_ci DEFAULT NULL COMMENT '1=inventaris, 2=pemanfaatan, 3=penghapusan, 4=pemindahtanganan, 5=tuntutan ganti rugi',
+  `status_barang` char(1) COLLATE latin1_general_ci DEFAULT NULL COMMENT '1=inventaris, 2=pemanfaatan, 3=penghapusan, 4=pemindahtanganan, 5=tuntutan ganti rugi, 6=pemusnahan',
   `staset` tinyint(3) DEFAULT NULL,
   `tgl_buku` date DEFAULT NULL,
   `id_lama` int(11) DEFAULT NULL COMMENT '= id BI sebelum mutasi',
@@ -65,11 +65,11 @@ CREATE TABLE `buku_induk` (
   `jml_barang_tmp` int(11) DEFAULT NULL COMMENT 'smpan info jml barang yg di entry user pertama kali',
   `jml_gambar` int(11) DEFAULT NULL,
   `idall2` varchar(50) COLLATE latin1_general_ci DEFAULT NULL COMMENT 'utk barcode , di generate di trigger bef insert , bef update',
-  `ref_idpemegang` varchar(30) COLLATE latin1_general_ci DEFAULT NULL,
-  `ref_idpenanggung` varchar(30) COLLATE latin1_general_ci DEFAULT NULL,
+  `ref_idpemegang` varchar(30) COLLATE latin1_general_ci DEFAULT NULL COMMENT 'pengurus/pembantu',
+  `ref_idpenanggung` varchar(30) COLLATE latin1_general_ci DEFAULT NULL COMMENT 'pengguna/kuasa pengguna',
+  `ref_idpemegang2` varchar(30) COLLATE latin1_general_ci DEFAULT NULL COMMENT 'penanggung jawab',
   `ref_idruang` bigint(22) unsigned DEFAULT NULL,
   `tahun_sensus` varchar(4) COLLATE latin1_general_ci DEFAULT NULL COMMENT 'tahun sensus terakhir',
-  `ref_idpemegang2` varchar(30) COLLATE latin1_general_ci DEFAULT NULL COMMENT 'pemegang',
   `status_penguasaan` tinyint(3) DEFAULT NULL,
   `verifikasi` tinyint(3) DEFAULT NULL,
   `harga_beli` decimal(18,2) DEFAULT NULL COMMENT 'belanja modal',
@@ -125,20 +125,24 @@ CREATE TABLE `buku_induk` (
   `noreg_baru` int(11) DEFAULT NULL,
   `thn_inventaris` int(11) DEFAULT NULL COMMENT 'tahun inventarisasi terakhir',
   `tgl_inventaris` date DEFAULT NULL COMMENT 'tgl inventarisasi terakhir',
+  `microtime` text COLLATE latin1_general_ci,
   PRIMARY KEY (`id`),
   KEY `idall` (`idall`),
   KEY `idawal` (`idawal`),
   KEY `idall2` (`idall2`),
   KEY `bk` (`bk_p`,`ck_p`,`dk_p`,`p`,`q`),
   KEY `status_barang` (`status_barang`),
-  KEY `c` (`c`,`d`,`e`,`e1`),
-  KEY `f` (`f`,`g`,`h`,`i`,`j`),
   KEY `tgl_buku` (`tgl_buku`),
   KEY `id_lama` (`id_lama`),
   KEY `staset` (`staset`),
   KEY `kondisi` (`kondisi`),
-  KEY `secondary` (`c1`,`c`,`d`,`e`,`e1`,`f1`,`f2`,`f`,`g`,`h`,`i`,`j`,`thn_perolehan`,`noreg`)
-) ENGINE=InnoDB AUTO_INCREMENT=6953946 DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci ROW_FORMAT=COMPRESSED COMMENT='20170724 : idall2';
+  KEY `tahun` (`tahun`),
+  KEY `thn_perolehan` (`thn_perolehan`),
+  KEY `c` (`c1`,`c`,`d`,`e`,`e1`),
+  KEY `f` (`f1`,`f2`,`f`,`g`,`h`,`i`,`j`),
+  KEY `refid_terima` (`refid_terima`,`refid_terima_det`),
+  KEY `secondary` (`c1`,`c`,`d`,`e`,`e1`,`f1`,`f2`,`f`,`g`,`h`,`i`,`j`,`thn_perolehan`)
+) ENGINE=InnoDB AUTO_INCREMENT=3225366 DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci ROW_FORMAT=COMPRESSED COMMENT='20170724 : idall2';
 /*!40101 SET character_set_client = @saved_cs_client */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -150,4 +154,4 @@ CREATE TABLE `buku_induk` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-08-14 16:26:14
+-- Dump completed on 2018-08-15 14:42:15

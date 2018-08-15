@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.7.22, for Linux (x86_64)
+-- MySQL dump 10.13  Distrib 5.5.44, for debian-linux-gnu (x86_64)
 --
--- Host: localhost    Database: db_atisisbada_2017
+-- Host: localhost    Database: db_atsb_demo_v3
 -- ------------------------------------------------------
--- Server version	5.7.22-0ubuntu0.16.04.1
+-- Server version	5.5.44-0+deb7u1
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -45,12 +45,25 @@ CREATE TABLE `admin` (
   `modul16` char(1) COLLATE latin1_general_ci DEFAULT '0' COMMENT 'modul inventaris dan sensus',
   `modulref` char(1) COLLATE latin1_general_ci DEFAULT '0',
   `moduladm` char(1) COLLATE latin1_general_ci DEFAULT '0' COMMENT 'hak akses',
+  `modul19` char(1) COLLATE latin1_general_ci DEFAULT NULL COMMENT 'saldo awal_SIAP',
+  `modul20` char(1) COLLATE latin1_general_ci DEFAULT NULL COMMENT 'perencanaan_SIAP',
+  `modul21` char(1) COLLATE latin1_general_ci DEFAULT NULL COMMENT 'penerimaan_SIAP',
+  `modul22` char(1) COLLATE latin1_general_ci DEFAULT NULL COMMENT 'pengeluaran_SIAP',
+  `modul23` char(1) COLLATE latin1_general_ci DEFAULT NULL COMMENT 'distribusi_SIAP',
+  `modul24` char(1) COLLATE latin1_general_ci DEFAULT NULL COMMENT 'cek fisik_SIAP',
+  `modul25` char(1) COLLATE latin1_general_ci DEFAULT NULL COMMENT 'pemusnahan_SIAP',
+  `modul26` char(1) COLLATE latin1_general_ci DEFAULT NULL COMMENT 'persediaan_SIAP',
+  `modul27` char(1) COLLATE latin1_general_ci DEFAULT NULL COMMENT 'pelaporan_SIAP',
+  `modulref_siap` char(1) COLLATE latin1_general_ci DEFAULT NULL,
+  `moduladm_siap` char(1) COLLATE latin1_general_ci DEFAULT NULL,
   `status` char(1) COLLATE latin1_general_ci DEFAULT '0',
   `online` char(1) COLLATE latin1_general_ci DEFAULT '0',
   `lastaktif` datetime DEFAULT NULL,
   `photo` text COLLATE latin1_general_ci,
   `ipaddr` varchar(50) COLLATE latin1_general_ci DEFAULT NULL,
   `sesino` int(11) DEFAULT NULL,
+  `status_spj` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `group_keuangan` varchar(21) COLLATE latin1_general_ci DEFAULT NULL,
   PRIMARY KEY (`uid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci ROW_FORMAT=COMPACT;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -64,4 +77,4 @@ CREATE TABLE `admin` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-08-15 13:35:42
+-- Dump completed on 2018-08-15 14:42:15

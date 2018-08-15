@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.7.22, for Linux (x86_64)
+-- MySQL dump 10.13  Distrib 5.5.44, for debian-linux-gnu (x86_64)
 --
--- Host: localhost    Database: db_atisisbada_2017
+-- Host: localhost    Database: db_atsb_demo_v3
 -- ------------------------------------------------------
--- Server version	5.7.22-0ubuntu0.16.04.1
+-- Server version	5.5.44-0+deb7u1
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -38,6 +38,8 @@ CREATE TABLE `anggaran_kas` (
   `m` text COLLATE latin1_general_ci NOT NULL,
   `n` text COLLATE latin1_general_ci NOT NULL,
   `o` text COLLATE latin1_general_ci NOT NULL,
+  `id_rincian_belanja` int(11) NOT NULL,
+  `id_dpa` int(11) NOT NULL,
   `alokasi_jan` text COLLATE latin1_general_ci NOT NULL,
   `alokasi_feb` text COLLATE latin1_general_ci NOT NULL,
   `alokasi_mar` text COLLATE latin1_general_ci NOT NULL,
@@ -54,7 +56,7 @@ CREATE TABLE `anggaran_kas` (
   `jenis_alokasi_kas` text COLLATE latin1_general_ci NOT NULL,
   `jenis_dpa` text COLLATE latin1_general_ci NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=37 DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -66,4 +68,4 @@ CREATE TABLE `anggaran_kas` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-08-14 16:26:14
+-- Dump completed on 2018-08-15 14:42:15
