@@ -361,6 +361,13 @@ class Config{
 		}
 		return implode(",",$arrayTable);
 	}
+	function listView(){
+		$getTableName = $this->sqlQuery("SHOW FULL TABLES IN $this->databaseName WHERE TABLE_TYPE LIKE 'VIEW'");
+		while ($dataTable = $this->sqlArray($getTableName)) {
+			$arrayTable[] = $dataTable["Tables_in_".$this->databaseName];
+		}
+		return implode(",",$arrayTable);
+	}
 	function listTrigger() {
 		$getDataTrigger = $this->sqlQuery("select TRIGGER_NAME  from information_schema.TRIGGERS where TRIGGER_SCHEMA= '$this->databaseName' ");
 		while ($dataTrigger = $this->sqlArray($getDataTrigger)) {
@@ -371,7 +378,7 @@ class Config{
 	function listRoutine() {
 		$getDataRoutine = $this->sqlQuery("select ROUTINE_NAME from information_schema.ROUTINES where ROUTINE_SCHEMA = '$this->databaseName' ");
 		while ($dataRoutine = $this->sqlArray($getDataRoutine)) {
-			$arrayRoutine[] = $dataRoutine['TRIGGER_NAME'];
+			$arrayRoutine[] = $dataRoutine['ROUTINE_NAME'];
 		}
 		return implode(",",$arrayRoutine);
   }

@@ -167,7 +167,7 @@ class SetupClass extends Config{
   function showTrigger($triggerName,$dirName){
     $arrayTableStruktur = array();
     if($triggerName == "*"){
-      $triggerName = $this->listTriger();
+      $triggerName = $this->listTrigger();
     }
     $explodeTriggerName = explode(",",$triggerName);
     for ($i=0; $i < sizeof($explodeTriggerName); $i++) {
