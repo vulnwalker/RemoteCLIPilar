@@ -4,9 +4,9 @@ error_reporting(0);
 set_time_limit( 0 );
 ini_set('max_execution_time',0);
 class Config{
-	// var $databaseName = "";
-	// var $userMysql = "";
-	// var $passwordMysql = "";
+	var $databaseName = "db_atisisbada_2017";
+	var $userMysql = "root";
+	var $passwordMysql = "rf09thebye";
 	function setConfig(){
 		$file = "DATABASE.config";
 		$f = fopen($file, "r");
@@ -35,8 +35,9 @@ class Config{
 			return mysqli_fetch_assoc($sqlQuery);
 	}
 	function connection(){
-		$configDatabase = $this->setConfig();
-		return mysqli_connect("localhost", $configDatabase['USER'],$configDatabase['PASSWORD'], $configDatabase['DATABASENAME']);
+		// $configDatabase = $this->setConfig();
+		// return mysqli_connect("localhost", $configDatabase['USER'],$configDatabase['PASSWORD'], $configDatabase['DATABASENAME']);
+		return mysqli_connect("localhost", $this->userMysql,$this->passwordMysql,$this->databaseName);
 	}
   function sqlQuery($script){
     return mysqli_query($this->connection(), $script);

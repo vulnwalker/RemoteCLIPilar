@@ -25,6 +25,7 @@ class SetupClass extends Config{
       "date:",
       "action:",
       "tableName:",
+      "viewName:",
       "defaultValue:",
       "triggerName:",
       "routineName:",
@@ -40,6 +41,9 @@ class SetupClass extends Config{
       case 'showStruktur':
         echo  $this->showStruktur($tableName,$dirName);
         break;
+      case 'showView':
+        echo  $this->showView($viewName,$dirName);
+        break;
       case 'showTrigger':
         echo  $this->showTrigger($triggerName,$dirName);
         break;
@@ -49,6 +53,9 @@ class SetupClass extends Config{
       case 'checkStruktur':
         echo  $this->checkStruktur($fileName,$checkResult);
         break;
+      case 'checkView':
+        echo  $this->checkView($fileName,$checkResult);
+        break;
       case 'checkTrigger':
         echo  $this->checkTrigger($fileName,$checkResult);
         break;
@@ -57,6 +64,9 @@ class SetupClass extends Config{
         break;
       case 'fixStruktur':
         echo  $this->fixStruktur($fileName,$checkResult);
+        break;
+      case 'fixView':
+        echo  $this->fixView($fileName,$checkResult);
         break;
       case 'fixTrigger':
         echo  $this->fixTrigger($fileName,$checkResult);
@@ -90,7 +100,7 @@ class SetupClass extends Config{
     }
     $explodeTableName = explode(",",$tableName);
     for ($i=0; $i < sizeof($explodeTableName); $i++) {
-      if($this->filterExtension($explodeTableName[$i]) == 0){
+      if($this->filterExtension($explodeTableName[$i]) == 0 && $this->sqlRowCount($this->sqlQuery("SHOW CREATE VIEW ".$explodeTableName[$i])) == 0){
         $arrayStuktur = array();
         $getTableStrukTur = $this->sqlQuery("select TABLE_NAME,COLUMN_NAME,COLUMN_TYPE,CHARACTER_SET_NAME,COLLATION_NAME,IS_NULLABLE,COLUMN_DEFAULT from information_schema.COLUMNS where TABLE_SCHEMA= '$this->databaseName' and TABLE_NAME = '".$explodeTableName[$i]."'");
          while ($dataTableStruktur = $this->sqlArray($getTableStrukTur)) {
@@ -221,6 +231,34 @@ class SetupClass extends Config{
     }
 
     return json_encode($arrayRoutine,JSON_PRETTY_PRINT);
+  }
+  function showView($viewName,$dirName){
+    $arrayTableStruktur = array();
+    if($viewName == "*"){
+      $viewName = $this->listView();
+    }
+    $explodeViewName = explode(",",$viewName);
+    for ($i=0; $i < sizeof($explodeViewName); $i++) {
+      if($this->filterExtension($explodeViewName[$i]) == 0){
+        $arrayParameter = array();
+        $getDataView = $this->sqlArray($this->sqlQuery("SHOW CREATE VIEW ".$explodeViewName[$i]." "));
+        $arrayView[] = array(
+          "VIEW_NAME" => $getDataView['View'],
+          "VIEW_SOURCE" => $getDataView['Create View'],
+          "CHARSET" => $getDataView['character_set_client'],
+          "COLLATION" => $getDataView['collation_connection'],
+        );
+
+         file_put_contents($dirName."/".$explodeViewName[$i].".json",json_encode(array(
+           "VIEW_NAME" => $getDataView['View'],
+           "VIEW_SOURCE" => $getDataView['Create View'],
+           "CHARSET" => $getDataView['character_set_client'],
+           "COLLATION" => $getDataView['collation_connection'],
+         ),JSON_PRETTY_PRINT));
+      }
+    }
+
+    return json_encode($arrayView,JSON_PRETTY_PRINT);
   }
 
   function checkStruktur($fileName,$checkResult){
@@ -355,6 +393,86 @@ class SetupClass extends Config{
       }
     }
     return $err;
+  }
+  function checkView($fileName,$checkResult){
+    $jsonFile = file_get_contents($fileName);
+    $decodeJsonFile = json_decode($jsonFile);
+    $databaseName = $decodeJsonFile[0]->databaseName;
+    $this->connnectionCheckDB = mysqli_connect("localhost",$this->userMysql, $this->passwordMysql, $databaseName);
+    $arrayView = $decodeJsonFile[0]->views;
+    for ($i=0; $i < sizeof($arrayView); $i++) {
+      $arrayError = array();
+      $arrayViewFix = json_decode(file_get_contents($arrayView[$i]->json_file));
+      $arrayViewSource = $this->getView($databaseName,$arrayViewFix->VIEW_NAME);
+      if($this->sqlRowCount($this->sqlQueryCheckDB("SHOW CREATE VIEW ".$arrayViewFix->VIEW_NAME." ")) != 0){
+        $viewNameFix = $arrayViewFix->VIEW_NAME;
+        $viewLogicFix = $arrayViewFix->VIEW_SOURCE;
+        $viewCharsetFix = $arrayViewFix->CHARSET;
+        $viewCollationFix = $arrayViewFix->COLLATION;
+
+        $viewNameSource = $arrayViewSource['VIEW_NAME'];
+        $viewLogicSource = $arrayViewSource['VIEW_SOURCE'];
+        $viewCharsetSource = $arrayViewSource['CHARSET'];
+        $viewCollationSource = $arrayViewSource['COLLATION'];
+        if($viewLogicFix != $viewLogicSource){
+          $arrayError[] = "Source VIEW DIFFERENT ";
+        }
+        if(sizeof($arrayError) !=0){
+          $err .= $arrayViewFix->VIEW_NAME." => ".implode(", ",$arrayError)." \n";
+        }else{
+          $err .= $arrayViewFix->VIEW_NAME." => "."OK \n";
+        }
+      }else{
+        $err .= $arrayViewFix->VIEW_NAME." => VIEW NOT EXITS \n";
+      }
+    }
+    return $err;
+  }
+  function fixView($fileName,$checkResult){
+    $jsonFile = file_get_contents($fileName);
+    $decodeJsonFile = json_decode($jsonFile);
+    $databaseName = $decodeJsonFile[0]->databaseName;
+    $this->connnectionCheckDB = mysqli_connect("localhost",$this->userMysql, $this->passwordMysql, $databaseName);
+    $arrayView = $decodeJsonFile[0]->views;
+    for ($i=0; $i < sizeof($arrayView); $i++) {
+      $arrayError = array();
+      $arrayViewFix = json_decode(file_get_contents($arrayView[$i]->json_file));
+      $arrayViewSource = $this->getView($databaseName,$arrayViewFix->VIEW_NAME);
+      if($this->sqlRowCount($this->sqlQueryCheckDB("SHOW CREATE VIEW ".$arrayViewFix->VIEW_NAME." ")) != 0){
+        $viewNameFix = $arrayViewFix->VIEW_NAME;
+        $viewLogicFix = $arrayViewFix->VIEW_SOURCE;
+        $viewCharsetFix = $arrayViewFix->CHARSET;
+        $viewCollationFix = $arrayViewFix->COLLATION;
+
+        $viewNameSource = $arrayViewSource['VIEW_NAME'];
+        $viewLogicSource = $arrayViewSource['VIEW_SOURCE'];
+        $viewCharsetSource = $arrayViewSource['CHARSET'];
+        $viewCollationSource = $arrayViewSource['COLLATION'];
+        if($viewLogicFix != $viewLogicSource){
+          $arrayError[] = "Source VIEW DIFFERENT ";
+        }
+        if(sizeof($arrayError) !=0){
+          $err .= $arrayViewFix->VIEW_NAME." => FIXED \n";
+          $this->createView($databaseName,$arrayViewFix);
+        }else{
+          $err .= $arrayViewFix->VIEW_NAME." => "."OK \n";
+        }
+      }else{
+        $this->createView($databaseName,$arrayViewFix);
+        $err .= $arrayViewFix->VIEW_NAME." => FIXED \n";
+      }
+    }
+    return $err;
+  }
+  function createView($databaseName,$arrayViewFix){
+    $viewNameFix = $arrayViewFix->VIEW_NAME;
+    $viewLogicFix = $arrayViewFix->VIEW_SOURCE;
+    $viewCharsetFix = $arrayViewFix->CHARSET;
+    $viewCollationFix = $arrayViewFix->COLLATION;
+    $this->sqlQueryCheckDB("DROP VIEW $databaseName.$viewNameFix");
+    $command = $viewLogicFix;
+    $this->sqlQueryCheckDB($command);
+    return $command;
   }
   function checkRoutine($fileName,$checkResult){
     $jsonFile = file_get_contents($fileName);
@@ -819,6 +937,16 @@ class SetupClass extends Config{
       "EVENT_OBJECT_TABLE" => $getDataTrigger['EVENT_OBJECT_TABLE'],
     );
     return $arrayTrigger;
+  }
+  function getView($databaseName,$viewName){
+    $getDataView = $this->sqlArray($this->sqlQuery("SHOW CREATE VIEW $databaseName.$viewName"));
+    $arrayView[] = array(
+      "VIEW_NAME" => $getDataView['View'],
+      "VIEW_SOURCE" => $getDataView['Create View'],
+      "CHARSET" => $getDataView['character_set_client'],
+      "COLLATION" => $getDataView['collation_connection'],
+    );
+    return $arrayView;
   }
   function getRoutine($databaseName,$routineName){
     $getDataRoutine = $this->sqlArray($this->sqlQuery("select ROUTINE_NAME,HEX(ROUTINE_DEFINITION),ROUTINE_TYPE  from information_schema.ROUTINES where ROUTINE_SCHEMA= '$databaseName' and ROUTINE_NAME = '".$routineName."'"));

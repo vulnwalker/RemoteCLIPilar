@@ -18,6 +18,12 @@
           "json_file": "struktur/anggaran_kas.json"
         }
     ],
+    "views": [
+        {
+          "table_name": "view_anggaran_kas_221",
+          "json_file": "view/view_anggaran_kas_221.json"
+        }
+    ],
     "triggers": [
         {
           "trigger_name": "anggaran_kas_bef_ins",

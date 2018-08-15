@@ -212,5 +212,6 @@
             "COLLATION_NAME": null,
             "IS_NULLABLE": "YES"
         }
-    ]
+    ],
+    "default_value": null
 }
