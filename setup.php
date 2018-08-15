@@ -68,7 +68,7 @@ class SetupClass extends Config{
         echo $this->dumpTable($tableName);
         break;
       default:
-        echo "ATIS INSTALLER";
+        echo "ATIS INSTALLER ";
         break;
     }
 
@@ -851,9 +851,6 @@ class SetupClass extends Config{
      }
      return $arrayTableIndex;
   }
-
-
-
 
 
 }

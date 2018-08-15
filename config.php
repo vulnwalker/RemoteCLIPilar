@@ -4,9 +4,30 @@ error_reporting(0);
 set_time_limit( 0 );
 ini_set('max_execution_time',0);
 class Config{
-	var $databaseName = "db_atisisbada_2017";
-	var $userMysql = "root";
-	var $passwordMysql = "rf09thebye";
+	// var $databaseName = "";
+	// var $userMysql = "";
+	// var $passwordMysql = "";
+	function setConfig(){
+		$file = "DATABASE.config";
+		$f = fopen($file, "r");
+		$start = false;
+		while ($line = fgets($f, 1000)) {
+		  $arrayLine = explode('=', $line);
+		  $lineParams = $arrayLine[0];
+		  $lineValue = str_replace("\n","",$arrayLine[1]);
+		  $lineValue = str_replace("\r","",$lineValue);
+		  if($lineParams == "HOST")$this->hostName = $lineValue;
+		  if($lineParams == "USER")$this->userMysql = $lineValue;
+		  if($lineParams == "PASSWORD")$this->passwordMysql = $lineValue;
+		  if($lineParams == "DATABASENAME")$this->databaseName = $lineValue;
+		}
+		return array(
+			"HOST" => $this->hostName,
+			"USER" => $this->userMysql,
+			"PASSWORD" => $this->passwordMysql,
+			"DATABASENAME" => $this->databaseName,
+		);
+	}
 	function sqlQueryCheckDB($script){
 		return mysqli_query($this->connnectionCheckDB, $script);
 	}
@@ -14,7 +35,8 @@ class Config{
 			return mysqli_fetch_assoc($sqlQuery);
 	}
 	function connection(){
-		return mysqli_connect("localhost", $this->userMysql, $this->passwordMysql, $this->databaseName);
+		$configDatabase = $this->setConfig();
+		return mysqli_connect("localhost", $configDatabase['USER'],$configDatabase['PASSWORD'], $configDatabase['DATABASENAME']);
 	}
   function sqlQuery($script){
     return mysqli_query($this->connection(), $script);
