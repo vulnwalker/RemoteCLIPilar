@@ -32,6 +32,7 @@ class SetupClass extends Config{
       "dirName:",
       "fileName:",
       "checkResult:",
+      "dumpDir:",
 
     ));
     foreach ($options as $key => $value) {
@@ -160,9 +161,16 @@ class SetupClass extends Config{
     return json_encode($arrayTableStruktur,JSON_PRETTY_PRINT);
   }
   function dumpTable($tableName) {
+    $options = getopt(null, array(
+      "dumpDir:",
+    ));
+    foreach ($options as $key => $value) {
+       $$key = $value;
+    }
+    if(empty($dumpDir))$dumpDir = "dump";
     $dumpString = shell_exec("mysqldump -u".$this->userMysql." -p".$this->passwordMysql." --no-data --skip-events --skip-routines --skip-triggers --skip-add-drop-table $this->databaseName $tableName");
-    file_put_contents("dump/$tableName".".sql",$dumpString);
-    return "dump/$tableName".".sql";
+    file_put_contents("$dumpDir/$tableName".".sql",$dumpString);
+    return "$dumpDir/$tableName".".sql";
   }
   function showTrigger($triggerName,$dirName){
     $arrayTableStruktur = array();

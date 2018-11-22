@@ -1,0 +1,166 @@
+{
+    "tableName": "ref_template",
+    "dumpFile": "dump\/ref_template.sql",
+    "index": [
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "Id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "jenis",
+            "key_name": "jenis",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "Id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "c1",
+            "key_name": "c1",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "c",
+            "key_name": "c1",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "d",
+            "key_name": "c1",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "e",
+            "key_name": "c1",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "e1",
+            "key_name": "c1",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "c1",
+            "key_name": "c1",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "c",
+            "key_name": "c1",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "d",
+            "key_name": "c1",
+            "non_uniqe": "1"
+        }
+    ],
+    "colums": [
+        {
+            "COLUMN_NAME": "id",
+            "COLUMN_TYPE": "int(11)",
+            "CHARACTER_SET_NAME": null,
+            "COLLATION_NAME": null,
+            "IS_NULLABLE": "NO"
+        },
+        {
+            "COLUMN_NAME": "nama",
+            "COLUMN_TYPE": "varchar(150)",
+            "CHARACTER_SET_NAME": "latin1",
+            "COLLATION_NAME": "latin1_general_ci",
+            "IS_NULLABLE": "NO"
+        },
+        {
+            "COLUMN_NAME": "tgl",
+            "COLUMN_TYPE": "date",
+            "CHARACTER_SET_NAME": null,
+            "COLLATION_NAME": null,
+            "IS_NULLABLE": "NO"
+        },
+        {
+            "COLUMN_NAME": "nomor",
+            "COLUMN_TYPE": "varchar(150)",
+            "CHARACTER_SET_NAME": "latin1",
+            "COLLATION_NAME": "latin1_general_ci",
+            "IS_NULLABLE": "NO"
+        },
+        {
+            "COLUMN_NAME": "c1",
+            "COLUMN_TYPE": "smallint(3) unsigned",
+            "CHARACTER_SET_NAME": null,
+            "COLLATION_NAME": null,
+            "IS_NULLABLE": "NO"
+        },
+        {
+            "COLUMN_NAME": "c",
+            "COLUMN_TYPE": "char(2)",
+            "CHARACTER_SET_NAME": "latin1",
+            "COLLATION_NAME": "latin1_general_ci",
+            "IS_NULLABLE": "NO"
+        },
+        {
+            "COLUMN_NAME": "d",
+            "COLUMN_TYPE": "char(2)",
+            "CHARACTER_SET_NAME": "latin1",
+            "COLLATION_NAME": "latin1_general_ci",
+            "IS_NULLABLE": "NO"
+        },
+        {
+            "COLUMN_NAME": "jumlah",
+            "COLUMN_TYPE": "int(11) unsigned",
+            "CHARACTER_SET_NAME": null,
+            "COLLATION_NAME": null,
+            "IS_NULLABLE": "NO"
+        },
+        {
+            "COLUMN_NAME": "sttemp",
+            "COLUMN_TYPE": "char(1)",
+            "CHARACTER_SET_NAME": "latin1",
+            "COLLATION_NAME": "latin1_general_ci",
+            "IS_NULLABLE": "YES"
+        },
+        {
+            "COLUMN_NAME": "uid",
+            "COLUMN_TYPE": "varchar(25)",
+            "CHARACTER_SET_NAME": "latin1",
+            "COLLATION_NAME": "latin1_general_ci",
+            "IS_NULLABLE": "YES"
+        },
+        {
+            "COLUMN_NAME": "tgl_create",
+            "COLUMN_TYPE": "datetime",
+            "CHARACTER_SET_NAME": null,
+            "COLLATION_NAME": null,
+            "IS_NULLABLE": "YES"
+        }
+    ],
+    "default_value": [
+        "INSERT INTO ref_template (`id`,`nama`,`tgl`,`nomor`,`c1`,`c`,`d`,`jumlah`,`sttemp`,`uid`,`tgl_create`) values ('2','asdf','2018-04-23','','1','01','01','80','0','ynr','2018-04-23 09:53:47') ",
+        "INSERT INTO ref_template (`id`,`nama`,`tgl`,`nomor`,`c1`,`c`,`d`,`jumlah`,`sttemp`,`uid`,`tgl_create`) values ('3','www','2018-04-23','','1','02','01','5','0','SA','2018-04-23 11:02:03') ",
+        "INSERT INTO ref_template (`id`,`nama`,`tgl`,`nomor`,`c1`,`c`,`d`,`jumlah`,`sttemp`,`uid`,`tgl_create`) values ('9','sedan','2018-04-24','','1','01','01','21','0','julius','2018-04-24 11:19:15') ",
+        "INSERT INTO ref_template (`id`,`nama`,`tgl`,`nomor`,`c1`,`c`,`d`,`jumlah`,`sttemp`,`uid`,`tgl_create`) values ('11','Template 16-08-2018 16:32:40','2018-08-16','','10','01','01','2500','0','syfa','2018-08-16 16:32:40') "
+    ]
+}

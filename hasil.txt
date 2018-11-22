@@ -1,0 +1,3875 @@
+{
+    "databaseName": "atisisbada_2018",
+    "tables": [
+        {
+            "table_name": "SettingApp",
+            "json_file": "07September/SettingApp"
+        },
+        {
+            "table_name": "admin",
+            "json_file": "07September/admin"
+        },
+        {
+            "table_name": "admin_aktivitas",
+            "json_file": "07September/admin_aktivitas"
+        },
+        {
+            "table_name": "anggaran_kas",
+            "json_file": "07September/anggaran_kas"
+        },
+        {
+            "table_name": "api_akses",
+            "json_file": "07September/api_akses"
+        },
+        {
+            "table_name": "barang_tidak_tercatat",
+            "json_file": "07September/barang_tidak_tercatat"
+        },
+        {
+            "table_name": "barcode_data_print",
+            "json_file": "07September/barcode_data_print"
+        },
+        {
+            "table_name": "barcode_status_print",
+            "json_file": "07September/barcode_status_print"
+        },
+        {
+            "table_name": "bast_mutasi",
+            "json_file": "07September/bast_mutasi"
+        },
+        {
+            "table_name": "bi_kib_a_tmp",
+            "json_file": "07September/bi_kib_a_tmp"
+        },
+        {
+            "table_name": "bi_kib_b_tmp",
+            "json_file": "07September/bi_kib_b_tmp"
+        },
+        {
+            "table_name": "bi_kib_c_tmp",
+            "json_file": "07September/bi_kib_c_tmp"
+        },
+        {
+            "table_name": "bi_kib_d_tmp",
+            "json_file": "07September/bi_kib_d_tmp"
+        },
+        {
+            "table_name": "bi_kib_e_tmp",
+            "json_file": "07September/bi_kib_e_tmp"
+        },
+        {
+            "table_name": "bi_kib_f_tmp",
+            "json_file": "07September/bi_kib_f_tmp"
+        },
+        {
+            "table_name": "bi_kib_g_tmp",
+            "json_file": "07September/bi_kib_g_tmp"
+        },
+        {
+            "table_name": "bi_susut_tmp",
+            "json_file": "07September/bi_susut_tmp"
+        },
+        {
+            "table_name": "bpk",
+            "json_file": "07September/bpk"
+        },
+        {
+            "table_name": "buku_induk",
+            "json_file": "07September/buku_induk"
+        },
+        {
+            "table_name": "buku_induk_del",
+            "json_file": "07September/buku_induk_del"
+        },
+        {
+            "table_name": "buku_induk_thn",
+            "json_file": "07September/buku_induk_thn"
+        },
+        {
+            "table_name": "cancel_distribusi_posting",
+            "json_file": "07September/cancel_distribusi_posting"
+        },
+        {
+            "table_name": "cek_fisik",
+            "json_file": "07September/cek_fisik"
+        },
+        {
+            "table_name": "chatx",
+            "json_file": "07September/chatx"
+        },
+        {
+            "table_name": "check_barang_persediaan",
+            "json_file": "07September/check_barang_persediaan"
+        },
+        {
+            "table_name": "closing_persediaan",
+            "json_file": "07September/closing_persediaan"
+        },
+        {
+            "table_name": "common",
+            "json_file": "07September/common"
+        },
+        {
+            "table_name": "current_filter",
+            "json_file": "07September/current_filter"
+        },
+        {
+            "table_name": "default_tahap",
+            "json_file": "07September/default_tahap"
+        },
+        {
+            "table_name": "delete_temp_detail_rincian_distribusi",
+            "json_file": "07September/delete_temp_detail_rincian_distribusi"
+        },
+        {
+            "table_name": "delete_temp_pengeluaran",
+            "json_file": "07September/delete_temp_pengeluaran"
+        },
+        {
+            "table_name": "delete_temp_rincian_distribusi",
+            "json_file": "07September/delete_temp_rincian_distribusi"
+        },
+        {
+            "table_name": "detail_pengeluaran",
+            "json_file": "07September/detail_pengeluaran"
+        },
+        {
+            "table_name": "detail_renja",
+            "json_file": "07September/detail_renja"
+        },
+        {
+            "table_name": "detail_renja_v2",
+            "json_file": "07September/detail_renja_v2"
+        },
+        {
+            "table_name": "detail_renja_v3",
+            "json_file": "07September/detail_renja_v3"
+        },
+        {
+            "table_name": "detail_rincian_distribusi",
+            "json_file": "07September/detail_rincian_distribusi"
+        },
+        {
+            "table_name": "distribusi",
+            "json_file": "07September/distribusi"
+        },
+        {
+            "table_name": "dkb",
+            "json_file": "07September/dkb"
+        },
+        {
+            "table_name": "dkbp_persediaan",
+            "json_file": "07September/dkbp_persediaan"
+        },
+        {
+            "table_name": "dkpb",
+            "json_file": "07September/dkpb"
+        },
+        {
+            "table_name": "dokum",
+            "json_file": "07September/dokum"
+        },
+        {
+            "table_name": "floodprotection",
+            "json_file": "07September/floodprotection"
+        },
+        {
+            "table_name": "footer",
+            "json_file": "07September/footer"
+        },
+        {
+            "table_name": "galery",
+            "json_file": "07September/galery"
+        },
+        {
+            "table_name": "gambar",
+            "json_file": "07September/gambar"
+        },
+        {
+            "table_name": "gambarBanner",
+            "json_file": "07September/gambarBanner"
+        },
+        {
+            "table_name": "gambar_hist",
+            "json_file": "07September/gambar_hist"
+        },
+        {
+            "table_name": "gambar_upload",
+            "json_file": "07September/gambar_upload"
+        },
+        {
+            "table_name": "gantirugi",
+            "json_file": "07September/gantirugi"
+        },
+        {
+            "table_name": "gantirugi_bayar",
+            "json_file": "07September/gantirugi_bayar"
+        },
+        {
+            "table_name": "general_setting",
+            "json_file": "07September/general_setting"
+        },
+        {
+            "table_name": "grup",
+            "json_file": "07September/grup"
+        },
+        {
+            "table_name": "history_barang",
+            "json_file": "07September/history_barang"
+        },
+        {
+            "table_name": "id_tmp",
+            "json_file": "07September/id_tmp"
+        },
+        {
+            "table_name": "idbi_tmp",
+            "json_file": "07September/idbi_tmp"
+        },
+        {
+            "table_name": "images",
+            "json_file": "07September/images"
+        },
+        {
+            "table_name": "imagesData",
+            "json_file": "07September/imagesData"
+        },
+        {
+            "table_name": "images_kategori",
+            "json_file": "07September/images_kategori"
+        },
+        {
+            "table_name": "instansi",
+            "json_file": "07September/instansi"
+        },
+        {
+            "table_name": "inventaris",
+            "json_file": "07September/inventaris"
+        },
+        {
+            "table_name": "jurnal_aset",
+            "json_file": "07September/jurnal_aset"
+        },
+        {
+            "table_name": "kdpiutang",
+            "json_file": "07September/kdpiutang"
+        },
+        {
+            "table_name": "ketetapanpajak",
+            "json_file": "07September/ketetapanpajak"
+        },
+        {
+            "table_name": "kib_a",
+            "json_file": "07September/kib_a"
+        },
+        {
+            "table_name": "kib_b",
+            "json_file": "07September/kib_b"
+        },
+        {
+            "table_name": "kib_c",
+            "json_file": "07September/kib_c"
+        },
+        {
+            "table_name": "kib_d",
+            "json_file": "07September/kib_d"
+        },
+        {
+            "table_name": "kib_e",
+            "json_file": "07September/kib_e"
+        },
+        {
+            "table_name": "kib_f",
+            "json_file": "07September/kib_f"
+        },
+        {
+            "table_name": "kib_g",
+            "json_file": "07September/kib_g"
+        },
+        {
+            "table_name": "kir",
+            "json_file": "07September/kir"
+        },
+        {
+            "table_name": "link",
+            "json_file": "07September/link"
+        },
+        {
+            "table_name": "listtable",
+            "json_file": "07September/listtable"
+        },
+        {
+            "table_name": "lock_barang_kurang",
+            "json_file": "07September/lock_barang_kurang"
+        },
+        {
+            "table_name": "lock_barang_tambah",
+            "json_file": "07September/lock_barang_tambah"
+        },
+        {
+            "table_name": "log_no_reg",
+            "json_file": "07September/log_no_reg"
+        },
+        {
+            "table_name": "managemen_pengguna",
+            "json_file": "07September/managemen_pengguna"
+        },
+        {
+            "table_name": "menu",
+            "json_file": "07September/menu"
+        },
+        {
+            "table_name": "menu_bar",
+            "json_file": "07September/menu_bar"
+        },
+        {
+            "table_name": "mutasi_sebagian",
+            "json_file": "07September/mutasi_sebagian"
+        },
+        {
+            "table_name": "nomor_spd",
+            "json_file": "07September/nomor_spd"
+        },
+        {
+            "table_name": "panitia_pemeriksa",
+            "json_file": "07September/panitia_pemeriksa"
+        },
+        {
+            "table_name": "pegawai",
+            "json_file": "07September/pegawai"
+        },
+        {
+            "table_name": "pemanfaatan",
+            "json_file": "07September/pemanfaatan"
+        },
+        {
+            "table_name": "pembiayaan",
+            "json_file": "07September/pembiayaan"
+        },
+        {
+            "table_name": "pemeliharaan",
+            "json_file": "07September/pemeliharaan"
+        },
+        {
+            "table_name": "pemindahtanganan",
+            "json_file": "07September/pemindahtanganan"
+        },
+        {
+            "table_name": "pemusnahan",
+            "json_file": "07September/pemusnahan"
+        },
+        {
+            "table_name": "pemusnahan_det",
+            "json_file": "07September/pemusnahan_det"
+        },
+        {
+            "table_name": "pemusnahan_panitia",
+            "json_file": "07September/pemusnahan_panitia"
+        },
+        {
+            "table_name": "pemusnahan_persediaan",
+            "json_file": "07September/pemusnahan_persediaan"
+        },
+        {
+            "table_name": "pendaftaran_objek_pajak",
+            "json_file": "07September/pendaftaran_objek_pajak"
+        },
+        {
+            "table_name": "pendaftaran_wajib_pajak",
+            "json_file": "07September/pendaftaran_wajib_pajak"
+        },
+        {
+            "table_name": "penerimaan",
+            "json_file": "07September/penerimaan"
+        },
+        {
+            "table_name": "penerimaan_persediaan",
+            "json_file": "07September/penerimaan_persediaan"
+        },
+        {
+            "table_name": "penetapan",
+            "json_file": "07September/penetapan"
+        },
+        {
+            "table_name": "penetapan_objek_pajak",
+            "json_file": "07September/penetapan_objek_pajak"
+        },
+        {
+            "table_name": "penetapan_rkbmd",
+            "json_file": "07September/penetapan_rkbmd"
+        },
+        {
+            "table_name": "penetapan_wajib_pajak",
+            "json_file": "07September/penetapan_wajib_pajak"
+        },
+        {
+            "table_name": "pengadaan",
+            "json_file": "07September/pengadaan"
+        },
+        {
+            "table_name": "pengadaan_pemeliharaan",
+            "json_file": "07September/pengadaan_pemeliharaan"
+        },
+        {
+            "table_name": "pengadaan_persediaan",
+            "json_file": "07September/pengadaan_persediaan"
+        },
+        {
+            "table_name": "pengadaan_sk",
+            "json_file": "07September/pengadaan_sk"
+        },
+        {
+            "table_name": "pengamanan",
+            "json_file": "07September/pengamanan"
+        },
+        {
+            "table_name": "pengaturan_persediaan",
+            "json_file": "07September/pengaturan_persediaan"
+        },
+        {
+            "table_name": "pengeluaran",
+            "json_file": "07September/pengeluaran"
+        },
+        {
+            "table_name": "pengeluaran_persediaan",
+            "json_file": "07September/pengeluaran_persediaan"
+        },
+        {
+            "table_name": "pengeluaran_vlama",
+            "json_file": "07September/pengeluaran_vlama"
+        },
+        {
+            "table_name": "penggunaan",
+            "json_file": "07September/penggunaan"
+        },
+        {
+            "table_name": "penggunaan_det",
+            "json_file": "07September/penggunaan_det"
+        },
+        {
+            "table_name": "penggunaan_ketetapan",
+            "json_file": "07September/penggunaan_ketetapan"
+        },
+        {
+            "table_name": "penghapusan",
+            "json_file": "07September/penghapusan"
+        },
+        {
+            "table_name": "penghapusan_sebagian",
+            "json_file": "07September/penghapusan_sebagian"
+        },
+        {
+            "table_name": "penghapusan_usul",
+            "json_file": "07September/penghapusan_usul"
+        },
+        {
+            "table_name": "penghapusan_usul_det",
+            "json_file": "07September/penghapusan_usul_det"
+        },
+        {
+            "table_name": "penghapusan_usulsk",
+            "json_file": "07September/penghapusan_usulsk"
+        },
+        {
+            "table_name": "penghapusan_usulsk_det",
+            "json_file": "07September/penghapusan_usulsk_det"
+        },
+        {
+            "table_name": "penilaian",
+            "json_file": "07September/penilaian"
+        },
+        {
+            "table_name": "penilaian_manfaat",
+            "json_file": "07September/penilaian_manfaat"
+        },
+        {
+            "table_name": "penilaian_pindahtangan",
+            "json_file": "07September/penilaian_pindahtangan"
+        },
+        {
+            "table_name": "penyusutan",
+            "json_file": "07September/penyusutan"
+        },
+        {
+            "table_name": "penyusutan_koreksi",
+            "json_file": "07September/penyusutan_koreksi"
+        },
+        {
+            "table_name": "penyusutan_log",
+            "json_file": "07September/penyusutan_log"
+        },
+        {
+            "table_name": "penyusutan_sesi",
+            "json_file": "07September/penyusutan_sesi"
+        },
+        {
+            "table_name": "perencanaan_persediaan",
+            "json_file": "07September/perencanaan_persediaan"
+        },
+        {
+            "table_name": "pindah_renja_v3",
+            "json_file": "07September/pindah_renja_v3"
+        },
+        {
+            "table_name": "pindah_rkbmd_v3",
+            "json_file": "07September/pindah_rkbmd_v3"
+        },
+        {
+            "table_name": "ref_bank",
+            "json_file": "07September/ref_bank"
+        },
+        {
+            "table_name": "ref_barang",
+            "json_file": "07September/ref_barang"
+        },
+        {
+            "table_name": "ref_barang_hist",
+            "json_file": "07September/ref_barang_hist"
+        },
+        {
+            "table_name": "ref_barang_jabarlv6",
+            "json_file": "07September/ref_barang_jabarlv6"
+        },
+        {
+            "table_name": "ref_barang_p108",
+            "json_file": "07September/ref_barang_p108"
+        },
+        {
+            "table_name": "ref_barang_persediaan",
+            "json_file": "07September/ref_barang_persediaan"
+        },
+        {
+            "table_name": "ref_barang_v2",
+            "json_file": "07September/ref_barang_v2"
+        },
+        {
+            "table_name": "ref_bast",
+            "json_file": "07September/ref_bast"
+        },
+        {
+            "table_name": "ref_cara_pemenuhan",
+            "json_file": "07September/ref_cara_pemenuhan"
+        },
+        {
+            "table_name": "ref_data_penetapan",
+            "json_file": "07September/ref_data_penetapan"
+        },
+        {
+            "table_name": "ref_default_tmp",
+            "json_file": "07September/ref_default_tmp"
+        },
+        {
+            "table_name": "ref_dokumensumber",
+            "json_file": "07September/ref_dokumensumber"
+        },
+        {
+            "table_name": "ref_gudang",
+            "json_file": "07September/ref_gudang"
+        },
+        {
+            "table_name": "ref_gudang_persediaan",
+            "json_file": "07September/ref_gudang_persediaan"
+        },
+        {
+            "table_name": "ref_hargabarang_persediaan",
+            "json_file": "07September/ref_hargabarang_persediaan"
+        },
+        {
+            "table_name": "ref_jabatan",
+            "json_file": "07September/ref_jabatan"
+        },
+        {
+            "table_name": "ref_jenis_pemeliharaan",
+            "json_file": "07September/ref_jenis_pemeliharaan"
+        },
+        {
+            "table_name": "ref_jenis_tagihan",
+            "json_file": "07September/ref_jenis_tagihan"
+        },
+        {
+            "table_name": "ref_jns_jurnal",
+            "json_file": "07September/ref_jns_jurnal"
+        },
+        {
+            "table_name": "ref_jurnal",
+            "json_file": "07September/ref_jurnal"
+        },
+        {
+            "table_name": "ref_kapitalisasi",
+            "json_file": "07September/ref_kapitalisasi"
+        },
+        {
+            "table_name": "ref_kategori_perda",
+            "json_file": "07September/ref_kategori_perda"
+        },
+        {
+            "table_name": "ref_kategori_tandatangan",
+            "json_file": "07September/ref_kategori_tandatangan"
+        },
+        {
+            "table_name": "ref_kelengkapan_dokumen",
+            "json_file": "07September/ref_kelengkapan_dokumen"
+        },
+        {
+            "table_name": "ref_kode_pajak",
+            "json_file": "07September/ref_kode_pajak"
+        },
+        {
+            "table_name": "ref_kode_pajak_while",
+            "json_file": "07September/ref_kode_pajak_while"
+        },
+        {
+            "table_name": "ref_kotakec",
+            "json_file": "07September/ref_kotakec"
+        },
+        {
+            "table_name": "ref_lra",
+            "json_file": "07September/ref_lra"
+        },
+        {
+            "table_name": "ref_menu",
+            "json_file": "07September/ref_menu"
+        },
+        {
+            "table_name": "ref_menu_copy",
+            "json_file": "07September/ref_menu_copy"
+        },
+        {
+            "table_name": "ref_merk_persediaan",
+            "json_file": "07September/ref_merk_persediaan"
+        },
+        {
+            "table_name": "ref_modul",
+            "json_file": "07September/ref_modul"
+        },
+        {
+            "table_name": "ref_nm_pejabat_sp",
+            "json_file": "07September/ref_nm_pejabat_sp"
+        },
+        {
+            "table_name": "ref_nomor_dokumen",
+            "json_file": "07September/ref_nomor_dokumen"
+        },
+        {
+            "table_name": "ref_norek_bendahara",
+            "json_file": "07September/ref_norek_bendahara"
+        },
+        {
+            "table_name": "ref_pangkat",
+            "json_file": "07September/ref_pangkat"
+        },
+        {
+            "table_name": "ref_pegawai",
+            "json_file": "07September/ref_pegawai"
+        },
+        {
+            "table_name": "ref_pejabat",
+            "json_file": "07September/ref_pejabat"
+        },
+        {
+            "table_name": "ref_pekerjaan",
+            "json_file": "07September/ref_pekerjaan"
+        },
+        {
+            "table_name": "ref_pemda",
+            "json_file": "07September/ref_pemda"
+        },
+        {
+            "table_name": "ref_pemilik",
+            "json_file": "07September/ref_pemilik"
+        },
+        {
+            "table_name": "ref_penerima_pengeluaran",
+            "json_file": "07September/ref_penerima_pengeluaran"
+        },
+        {
+            "table_name": "ref_penerimaan_tandatangan",
+            "json_file": "07September/ref_penerimaan_tandatangan"
+        },
+        {
+            "table_name": "ref_penerimabarang",
+            "json_file": "07September/ref_penerimabarang"
+        },
+        {
+            "table_name": "ref_penyedia",
+            "json_file": "07September/ref_penyedia"
+        },
+        {
+            "table_name": "ref_penyerah_pengeluaran",
+            "json_file": "07September/ref_penyerah_pengeluaran"
+        },
+        {
+            "table_name": "ref_penyusutan",
+            "json_file": "07September/ref_penyusutan"
+        },
+        {
+            "table_name": "ref_perda",
+            "json_file": "07September/ref_perda"
+        },
+        {
+            "table_name": "ref_potongan",
+            "json_file": "07September/ref_potongan"
+        },
+        {
+            "table_name": "ref_potongan_spm",
+            "json_file": "07September/ref_potongan_spm"
+        },
+        {
+            "table_name": "ref_program",
+            "json_file": "07September/ref_program"
+        },
+        {
+            "table_name": "ref_provkotakecdes",
+            "json_file": "07September/ref_provkotakecdes"
+        },
+        {
+            "table_name": "ref_rekening",
+            "json_file": "07September/ref_rekening"
+        },
+        {
+            "table_name": "ref_rekening_daerah",
+            "json_file": "07September/ref_rekening_daerah"
+        },
+        {
+            "table_name": "ref_rincian_template",
+            "json_file": "07September/ref_rincian_template"
+        },
+        {
+            "table_name": "ref_ruang",
+            "json_file": "07September/ref_ruang"
+        },
+        {
+            "table_name": "ref_ruang_awal",
+            "json_file": "07September/ref_ruang_awal"
+        },
+        {
+            "table_name": "ref_ruas_jalan",
+            "json_file": "07September/ref_ruas_jalan"
+        },
+        {
+            "table_name": "ref_satuan_persediaan",
+            "json_file": "07September/ref_satuan_persediaan"
+        },
+        {
+            "table_name": "ref_satuan_rekening",
+            "json_file": "07September/ref_satuan_rekening"
+        },
+        {
+            "table_name": "ref_skpd",
+            "json_file": "07September/ref_skpd"
+        },
+        {
+            "table_name": "ref_skpd_",
+            "json_file": "07September/ref_skpd_"
+        },
+        {
+            "table_name": "ref_skpd_bdg",
+            "json_file": "07September/ref_skpd_bdg"
+        },
+        {
+            "table_name": "ref_skpd_urusan",
+            "json_file": "07September/ref_skpd_urusan"
+        },
+        {
+            "table_name": "ref_sp_potongan",
+            "json_file": "07September/ref_sp_potongan"
+        },
+        {
+            "table_name": "ref_spec_persediaan",
+            "json_file": "07September/ref_spec_persediaan"
+        },
+        {
+            "table_name": "ref_standar_satuan_harga",
+            "json_file": "07September/ref_standar_satuan_harga"
+        },
+        {
+            "table_name": "ref_statusbarang2",
+            "json_file": "07September/ref_statusbarang2"
+        },
+        {
+            "table_name": "ref_std_harga",
+            "json_file": "07September/ref_std_harga"
+        },
+        {
+            "table_name": "ref_std_kebutuhan",
+            "json_file": "07September/ref_std_kebutuhan"
+        },
+        {
+            "table_name": "ref_sumber_dana",
+            "json_file": "07September/ref_sumber_dana"
+        },
+        {
+            "table_name": "ref_tagihan",
+            "json_file": "07September/ref_tagihan"
+        },
+        {
+            "table_name": "ref_tahap_anggaran",
+            "json_file": "07September/ref_tahap_anggaran"
+        },
+        {
+            "table_name": "ref_tahap_anggaran_v3",
+            "json_file": "07September/ref_tahap_anggaran_v3"
+        },
+        {
+            "table_name": "ref_tambah_manfaat",
+            "json_file": "07September/ref_tambah_manfaat"
+        },
+        {
+            "table_name": "ref_tambah_manfaat_hist",
+            "json_file": "07September/ref_tambah_manfaat_hist"
+        },
+        {
+            "table_name": "ref_tandatangan",
+            "json_file": "07September/ref_tandatangan"
+        },
+        {
+            "table_name": "ref_template",
+            "json_file": "07September/ref_template"
+        },
+        {
+            "table_name": "ref_templatebarang",
+            "json_file": "07September/ref_templatebarang"
+        },
+        {
+            "table_name": "ref_templatebarang_det",
+            "json_file": "07September/ref_templatebarang_det"
+        },
+        {
+            "table_name": "ref_tim_anggaran",
+            "json_file": "07September/ref_tim_anggaran"
+        },
+        {
+            "table_name": "ref_type_persediaan",
+            "json_file": "07September/ref_type_persediaan"
+        },
+        {
+            "table_name": "ref_urusan",
+            "json_file": "07September/ref_urusan"
+        },
+        {
+            "table_name": "ref_wilayah",
+            "json_file": "07September/ref_wilayah"
+        },
+        {
+            "table_name": "ref_wilayah1",
+            "json_file": "07September/ref_wilayah1"
+        },
+        {
+            "table_name": "refskpd_urusan",
+            "json_file": "07September/refskpd_urusan"
+        },
+        {
+            "table_name": "report",
+            "json_file": "07September/report"
+        },
+        {
+            "table_name": "rincian_belanja",
+            "json_file": "07September/rincian_belanja"
+        },
+        {
+            "table_name": "rincian_distribusi",
+            "json_file": "07September/rincian_distribusi"
+        },
+        {
+            "table_name": "rincian_lock_barang",
+            "json_file": "07September/rincian_lock_barang"
+        },
+        {
+            "table_name": "rka",
+            "json_file": "07September/rka"
+        },
+        {
+            "table_name": "rkb",
+            "json_file": "07September/rkb"
+        },
+        {
+            "table_name": "rkb_standar",
+            "json_file": "07September/rkb_standar"
+        },
+        {
+            "table_name": "rkbmd_pemeliharaan",
+            "json_file": "07September/rkbmd_pemeliharaan"
+        },
+        {
+            "table_name": "rkbmd_pemeliharaan_v3",
+            "json_file": "07September/rkbmd_pemeliharaan_v3"
+        },
+        {
+            "table_name": "rkpb",
+            "json_file": "07September/rkpb"
+        },
+        {
+            "table_name": "saldo_awal",
+            "json_file": "07September/saldo_awal"
+        },
+        {
+            "table_name": "sensus",
+            "json_file": "07September/sensus"
+        },
+        {
+            "table_name": "sensus_scan",
+            "json_file": "07September/sensus_scan"
+        },
+        {
+            "table_name": "service_no_reg",
+            "json_file": "07September/service_no_reg"
+        },
+        {
+            "table_name": "setting",
+            "json_file": "07September/setting"
+        },
+        {
+            "table_name": "settingDb",
+            "json_file": "07September/settingDb"
+        },
+        {
+            "table_name": "settingKetetapan",
+            "json_file": "07September/settingKetetapan"
+        },
+        {
+            "table_name": "setting_inventaris",
+            "json_file": "07September/setting_inventaris"
+        },
+        {
+            "table_name": "setting_inventaris_history",
+            "json_file": "07September/setting_inventaris_history"
+        },
+        {
+            "table_name": "setting_kolom",
+            "json_file": "07September/setting_kolom"
+        },
+        {
+            "table_name": "setting_penyusutan",
+            "json_file": "07September/setting_penyusutan"
+        },
+        {
+            "table_name": "setting_saldo_awal_keu",
+            "json_file": "07September/setting_saldo_awal_keu"
+        },
+        {
+            "table_name": "setting_tanda_tangan",
+            "json_file": "07September/setting_tanda_tangan"
+        },
+        {
+            "table_name": "setting_tim_anggaran",
+            "json_file": "07September/setting_tim_anggaran"
+        },
+        {
+            "table_name": "settingperencanaan",
+            "json_file": "07September/settingperencanaan"
+        },
+        {
+            "table_name": "settingperencanaan_v3",
+            "json_file": "07September/settingperencanaan_v3"
+        },
+        {
+            "table_name": "shortcut",
+            "json_file": "07September/shortcut"
+        },
+        {
+            "table_name": "skpd_renja_v3",
+            "json_file": "07September/skpd_renja_v3"
+        },
+        {
+            "table_name": "skpd_report_dpa",
+            "json_file": "07September/skpd_report_dpa"
+        },
+        {
+            "table_name": "skpd_report_dpa_1",
+            "json_file": "07September/skpd_report_dpa_1"
+        },
+        {
+            "table_name": "skpd_report_dpa_2_1",
+            "json_file": "07September/skpd_report_dpa_2_1"
+        },
+        {
+            "table_name": "skpd_report_dpa_2_2",
+            "json_file": "07September/skpd_report_dpa_2_2"
+        },
+        {
+            "table_name": "skpd_report_dpa_2_2_1",
+            "json_file": "07September/skpd_report_dpa_2_2_1"
+        },
+        {
+            "table_name": "skpd_report_plafon",
+            "json_file": "07September/skpd_report_plafon"
+        },
+        {
+            "table_name": "skpd_report_renja",
+            "json_file": "07September/skpd_report_renja"
+        },
+        {
+            "table_name": "skpd_report_rka",
+            "json_file": "07September/skpd_report_rka"
+        },
+        {
+            "table_name": "skpd_report_rka_1",
+            "json_file": "07September/skpd_report_rka_1"
+        },
+        {
+            "table_name": "skpd_report_rka_21",
+            "json_file": "07September/skpd_report_rka_21"
+        },
+        {
+            "table_name": "skpd_report_rka_22",
+            "json_file": "07September/skpd_report_rka_22"
+        },
+        {
+            "table_name": "skpd_report_rka_221",
+            "json_file": "07September/skpd_report_rka_221"
+        },
+        {
+            "table_name": "skpd_report_rkbmd",
+            "json_file": "07September/skpd_report_rkbmd"
+        },
+        {
+            "table_name": "struktur_menu",
+            "json_file": "07September/struktur_menu"
+        },
+        {
+            "table_name": "sync_renja",
+            "json_file": "07September/sync_renja"
+        },
+        {
+            "table_name": "sync_rka",
+            "json_file": "07September/sync_rka"
+        },
+        {
+            "table_name": "system",
+            "json_file": "07September/system"
+        },
+        {
+            "table_name": "system_menu",
+            "json_file": "07September/system_menu"
+        },
+        {
+            "table_name": "system_modul",
+            "json_file": "07September/system_modul"
+        },
+        {
+            "table_name": "system_shortcut",
+            "json_file": "07September/system_shortcut"
+        },
+        {
+            "table_name": "system_shortcut2",
+            "json_file": "07September/system_shortcut2"
+        },
+        {
+            "table_name": "t_asetlainlain",
+            "json_file": "07September/t_asetlainlain"
+        },
+        {
+            "table_name": "t_atribusi",
+            "json_file": "07September/t_atribusi"
+        },
+        {
+            "table_name": "t_atribusi_dokumen",
+            "json_file": "07September/t_atribusi_dokumen"
+        },
+        {
+            "table_name": "t_atribusi_rincian",
+            "json_file": "07September/t_atribusi_rincian"
+        },
+        {
+            "table_name": "t_atribusi_rincian_hist",
+            "json_file": "07September/t_atribusi_rincian_hist"
+        },
+        {
+            "table_name": "t_backup",
+            "json_file": "07September/t_backup"
+        },
+        {
+            "table_name": "t_birm",
+            "json_file": "07September/t_birm"
+        },
+        {
+            "table_name": "t_birm_Bck",
+            "json_file": "07September/t_birm_Bck"
+        },
+        {
+            "table_name": "t_birm_double",
+            "json_file": "07September/t_birm_double"
+        },
+        {
+            "table_name": "t_birm_error",
+            "json_file": "07September/t_birm_error"
+        },
+        {
+            "table_name": "t_birm_pekerjaan",
+            "json_file": "07September/t_birm_pekerjaan"
+        },
+        {
+            "table_name": "t_birm_pekerjaan_double",
+            "json_file": "07September/t_birm_pekerjaan_double"
+        },
+        {
+            "table_name": "t_birm_rekening",
+            "json_file": "07September/t_birm_rekening"
+        },
+        {
+            "table_name": "t_birm_rekening_double",
+            "json_file": "07September/t_birm_rekening_double"
+        },
+        {
+            "table_name": "t_bku",
+            "json_file": "07September/t_bku"
+        },
+        {
+            "table_name": "t_cek_bi",
+            "json_file": "07September/t_cek_bi"
+        },
+        {
+            "table_name": "t_cek_bi_tmp",
+            "json_file": "07September/t_cek_bi_tmp"
+        },
+        {
+            "table_name": "t_closing",
+            "json_file": "07September/t_closing"
+        },
+        {
+            "table_name": "t_closing_hist",
+            "json_file": "07September/t_closing_hist"
+        },
+        {
+            "table_name": "t_distribusi",
+            "json_file": "07September/t_distribusi"
+        },
+        {
+            "table_name": "t_history",
+            "json_file": "07September/t_history"
+        },
+        {
+            "table_name": "t_history_aset",
+            "json_file": "07September/t_history_aset"
+        },
+        {
+            "table_name": "t_jurnal_aset",
+            "json_file": "07September/t_jurnal_aset"
+        },
+        {
+            "table_name": "t_jurnal_aset_ekstra",
+            "json_file": "07September/t_jurnal_aset_ekstra"
+        },
+        {
+            "table_name": "t_jurnal_aset_lainnya",
+            "json_file": "07September/t_jurnal_aset_lainnya"
+        },
+        {
+            "table_name": "t_jurnal_aset_rekap",
+            "json_file": "07September/t_jurnal_aset_rekap"
+        },
+        {
+            "table_name": "t_jurnal_aset_tetap",
+            "json_file": "07September/t_jurnal_aset_tetap"
+        },
+        {
+            "table_name": "t_jurnal_aset_thn",
+            "json_file": "07September/t_jurnal_aset_thn"
+        },
+        {
+            "table_name": "t_jurnal_keuangan",
+            "json_file": "07September/t_jurnal_keuangan"
+        },
+        {
+            "table_name": "t_jurnal_keuangan_det",
+            "json_file": "07September/t_jurnal_keuangan_det"
+        },
+        {
+            "table_name": "t_jurnal_penyusutan",
+            "json_file": "07September/t_jurnal_penyusutan"
+        },
+        {
+            "table_name": "t_jurnal_penyusutan_koreksi",
+            "json_file": "07September/t_jurnal_penyusutan_koreksi"
+        },
+        {
+            "table_name": "t_kapitalisasi",
+            "json_file": "07September/t_kapitalisasi"
+        },
+        {
+            "table_name": "t_kartu_persediaan",
+            "json_file": "07September/t_kartu_persediaan"
+        },
+        {
+            "table_name": "t_kondisi",
+            "json_file": "07September/t_kondisi"
+        },
+        {
+            "table_name": "t_koreksi",
+            "json_file": "07September/t_koreksi"
+        },
+        {
+            "table_name": "t_koreksi_penyusutan",
+            "json_file": "07September/t_koreksi_penyusutan"
+        },
+        {
+            "table_name": "t_log",
+            "json_file": "07September/t_log"
+        },
+        {
+            "table_name": "t_nomor_spd",
+            "json_file": "07September/t_nomor_spd"
+        },
+        {
+            "table_name": "t_nomor_spd_det",
+            "json_file": "07September/t_nomor_spd_det"
+        },
+        {
+            "table_name": "t_penerimaan_barang",
+            "json_file": "07September/t_penerimaan_barang"
+        },
+        {
+            "table_name": "t_penerimaan_barang_det",
+            "json_file": "07September/t_penerimaan_barang_det"
+        },
+        {
+            "table_name": "t_penerimaan_postbi_idbi",
+            "json_file": "07September/t_penerimaan_postbi_idbi"
+        },
+        {
+            "table_name": "t_penerimaan_postbi_temp",
+            "json_file": "07September/t_penerimaan_postbi_temp"
+        },
+        {
+            "table_name": "t_penerimaan_rek_biaya",
+            "json_file": "07September/t_penerimaan_rek_biaya"
+        },
+        {
+            "table_name": "t_penerimaan_rekening",
+            "json_file": "07September/t_penerimaan_rekening"
+        },
+        {
+            "table_name": "t_penerimaan_rekening_det",
+            "json_file": "07September/t_penerimaan_rekening_det"
+        },
+        {
+            "table_name": "t_penerimaan_retensi",
+            "json_file": "07September/t_penerimaan_retensi"
+        },
+        {
+            "table_name": "t_penerimaan_retensi_det",
+            "json_file": "07September/t_penerimaan_retensi_det"
+        },
+        {
+            "table_name": "t_penerimaan_retensi_rekening",
+            "json_file": "07September/t_penerimaan_retensi_rekening"
+        },
+        {
+            "table_name": "t_pengaturan",
+            "json_file": "07September/t_pengaturan"
+        },
+        {
+            "table_name": "t_pengeluaran_kas",
+            "json_file": "07September/t_pengeluaran_kas"
+        },
+        {
+            "table_name": "t_pengeluaran_kas_pot",
+            "json_file": "07September/t_pengeluaran_kas_pot"
+        },
+        {
+            "table_name": "t_pengeluaran_kas_rek",
+            "json_file": "07September/t_pengeluaran_kas_rek"
+        },
+        {
+            "table_name": "t_persediaan_lock_barang",
+            "json_file": "07September/t_persediaan_lock_barang"
+        },
+        {
+            "table_name": "t_rencana_pemanfaatan",
+            "json_file": "07September/t_rencana_pemanfaatan"
+        },
+        {
+            "table_name": "t_rencana_pemindahtanganan",
+            "json_file": "07September/t_rencana_pemindahtanganan"
+        },
+        {
+            "table_name": "t_rencana_penghapusan",
+            "json_file": "07September/t_rencana_penghapusan"
+        },
+        {
+            "table_name": "t_saldo_keu",
+            "json_file": "07September/t_saldo_keu"
+        },
+        {
+            "table_name": "t_saldo_keu_det",
+            "json_file": "07September/t_saldo_keu_det"
+        },
+        {
+            "table_name": "t_spp",
+            "json_file": "07September/t_spp"
+        },
+        {
+            "table_name": "t_spp_kelengkapan_dok",
+            "json_file": "07September/t_spp_kelengkapan_dok"
+        },
+        {
+            "table_name": "t_spp_potongan",
+            "json_file": "07September/t_spp_potongan"
+        },
+        {
+            "table_name": "t_spp_rekening",
+            "json_file": "07September/t_spp_rekening"
+        },
+        {
+            "table_name": "t_transaksi",
+            "json_file": "07September/t_transaksi"
+        },
+        {
+            "table_name": "t_tree",
+            "json_file": "07September/t_tree"
+        },
+        {
+            "table_name": "tabel_anggaran",
+            "json_file": "07September/tabel_anggaran"
+        },
+        {
+            "table_name": "tabel_anggaran_v3",
+            "json_file": "07September/tabel_anggaran_v3"
+        },
+        {
+            "table_name": "tabel_dpa",
+            "json_file": "07September/tabel_dpa"
+        },
+        {
+            "table_name": "tabel_spd",
+            "json_file": "07September/tabel_spd"
+        },
+        {
+            "table_name": "tahap_rka",
+            "json_file": "07September/tahap_rka"
+        },
+        {
+            "table_name": "tandatangankuasapenggunabarang_v3",
+            "json_file": "07September/tandatangankuasapenggunabarang_v3"
+        },
+        {
+            "table_name": "tandatanganpengelolabarang_v3",
+            "json_file": "07September/tandatanganpengelolabarang_v3"
+        },
+        {
+            "table_name": "tandatanganpenggunabarang_v3",
+            "json_file": "07September/tandatanganpenggunabarang_v3"
+        },
+        {
+            "table_name": "temp_alokasi_rka",
+            "json_file": "07September/temp_alokasi_rka"
+        },
+        {
+            "table_name": "temp_data",
+            "json_file": "07September/temp_data"
+        },
+        {
+            "table_name": "temp_data_det",
+            "json_file": "07September/temp_data_det"
+        },
+        {
+            "table_name": "temp_detail_rincian_distribusi",
+            "json_file": "07September/temp_detail_rincian_distribusi"
+        },
+        {
+            "table_name": "temp_detail_template",
+            "json_file": "07September/temp_detail_template"
+        },
+        {
+            "table_name": "temp_detail_volume_rka_2_2_1",
+            "json_file": "07September/temp_detail_volume_rka_2_2_1"
+        },
+        {
+            "table_name": "temp_jabatan",
+            "json_file": "07September/temp_jabatan"
+        },
+        {
+            "table_name": "temp_list_select_rkbmd_pemeliharaan",
+            "json_file": "07September/temp_list_select_rkbmd_pemeliharaan"
+        },
+        {
+            "table_name": "temp_lock",
+            "json_file": "07September/temp_lock"
+        },
+        {
+            "table_name": "temp_lock_kurang",
+            "json_file": "07September/temp_lock_kurang"
+        },
+        {
+            "table_name": "temp_lock_tambah",
+            "json_file": "07September/temp_lock_tambah"
+        },
+        {
+            "table_name": "temp_pengeluaran",
+            "json_file": "07September/temp_pengeluaran"
+        },
+        {
+            "table_name": "temp_rekening_rka_belanja_langsung",
+            "json_file": "07September/temp_rekening_rka_belanja_langsung"
+        },
+        {
+            "table_name": "temp_rekening_rka_belanja_tidak_langsung",
+            "json_file": "07September/temp_rekening_rka_belanja_tidak_langsung"
+        },
+        {
+            "table_name": "temp_rekening_rka_belanja_tidak_langsung_ppkd",
+            "json_file": "07September/temp_rekening_rka_belanja_tidak_langsung_ppkd"
+        },
+        {
+            "table_name": "temp_rekening_rka_pembiayaan_penerimaan",
+            "json_file": "07September/temp_rekening_rka_pembiayaan_penerimaan"
+        },
+        {
+            "table_name": "temp_rekening_rka_pembiayaan_penerimaan_ppkd",
+            "json_file": "07September/temp_rekening_rka_pembiayaan_penerimaan_ppkd"
+        },
+        {
+            "table_name": "temp_rekening_rka_pembiayaan_pengeluaran",
+            "json_file": "07September/temp_rekening_rka_pembiayaan_pengeluaran"
+        },
+        {
+            "table_name": "temp_rekening_rka_pembiayaan_pengeluaran_ppkd",
+            "json_file": "07September/temp_rekening_rka_pembiayaan_pengeluaran_ppkd"
+        },
+        {
+            "table_name": "temp_rekening_rka_pendapatan_dp",
+            "json_file": "07September/temp_rekening_rka_pendapatan_dp"
+        },
+        {
+            "table_name": "temp_rekening_rka_pendapatan_dp_ppkd",
+            "json_file": "07September/temp_rekening_rka_pendapatan_dp_ppkd"
+        },
+        {
+            "table_name": "temp_rekening_rka_pendapatan_lp",
+            "json_file": "07September/temp_rekening_rka_pendapatan_lp"
+        },
+        {
+            "table_name": "temp_rekening_rka_pendapatan_lp_ppkd",
+            "json_file": "07September/temp_rekening_rka_pendapatan_lp_ppkd"
+        },
+        {
+            "table_name": "temp_rekening_rka_pendapatan_pad",
+            "json_file": "07September/temp_rekening_rka_pendapatan_pad"
+        },
+        {
+            "table_name": "temp_rekening_rka_pendapatan_pad_ppkd",
+            "json_file": "07September/temp_rekening_rka_pendapatan_pad_ppkd"
+        },
+        {
+            "table_name": "temp_remove_rka_1_dp",
+            "json_file": "07September/temp_remove_rka_1_dp"
+        },
+        {
+            "table_name": "temp_remove_rka_1_dp_ppkd",
+            "json_file": "07September/temp_remove_rka_1_dp_ppkd"
+        },
+        {
+            "table_name": "temp_remove_rka_1_lp",
+            "json_file": "07September/temp_remove_rka_1_lp"
+        },
+        {
+            "table_name": "temp_remove_rka_1_lp_ppkd",
+            "json_file": "07September/temp_remove_rka_1_lp_ppkd"
+        },
+        {
+            "table_name": "temp_remove_rka_1_pad",
+            "json_file": "07September/temp_remove_rka_1_pad"
+        },
+        {
+            "table_name": "temp_remove_rka_1_pad_ppkd",
+            "json_file": "07September/temp_remove_rka_1_pad_ppkd"
+        },
+        {
+            "table_name": "temp_remove_rka_21",
+            "json_file": "07September/temp_remove_rka_21"
+        },
+        {
+            "table_name": "temp_remove_rka_21_ppkd",
+            "json_file": "07September/temp_remove_rka_21_ppkd"
+        },
+        {
+            "table_name": "temp_remove_rka_221",
+            "json_file": "07September/temp_remove_rka_221"
+        },
+        {
+            "table_name": "temp_remove_rka_31",
+            "json_file": "07September/temp_remove_rka_31"
+        },
+        {
+            "table_name": "temp_remove_rka_31_ppkd",
+            "json_file": "07September/temp_remove_rka_31_ppkd"
+        },
+        {
+            "table_name": "temp_remove_rka_32",
+            "json_file": "07September/temp_remove_rka_32"
+        },
+        {
+            "table_name": "temp_remove_rka_32_ppkd",
+            "json_file": "07September/temp_remove_rka_32_ppkd"
+        },
+        {
+            "table_name": "temp_rincian_belanja_barang_jasa",
+            "json_file": "07September/temp_rincian_belanja_barang_jasa"
+        },
+        {
+            "table_name": "temp_rincian_belanja_langsung",
+            "json_file": "07September/temp_rincian_belanja_langsung"
+        },
+        {
+            "table_name": "temp_rincian_belanja_modal",
+            "json_file": "07September/temp_rincian_belanja_modal"
+        },
+        {
+            "table_name": "temp_rincian_belanja_tidak_langsung",
+            "json_file": "07September/temp_rincian_belanja_tidak_langsung"
+        },
+        {
+            "table_name": "temp_rincian_belanja_tidak_langsung_ppkd",
+            "json_file": "07September/temp_rincian_belanja_tidak_langsung_ppkd"
+        },
+        {
+            "table_name": "temp_rincian_distribusi",
+            "json_file": "07September/temp_rincian_distribusi"
+        },
+        {
+            "table_name": "temp_rincian_pembiayaan_penerimaan",
+            "json_file": "07September/temp_rincian_pembiayaan_penerimaan"
+        },
+        {
+            "table_name": "temp_rincian_pembiayaan_penerimaan_ppkd",
+            "json_file": "07September/temp_rincian_pembiayaan_penerimaan_ppkd"
+        },
+        {
+            "table_name": "temp_rincian_pembiayaan_pengeluaran",
+            "json_file": "07September/temp_rincian_pembiayaan_pengeluaran"
+        },
+        {
+            "table_name": "temp_rincian_pembiayaan_pengeluaran_ppkd",
+            "json_file": "07September/temp_rincian_pembiayaan_pengeluaran_ppkd"
+        },
+        {
+            "table_name": "temp_rincian_pendapatan_dp",
+            "json_file": "07September/temp_rincian_pendapatan_dp"
+        },
+        {
+            "table_name": "temp_rincian_pendapatan_dp_ppkd",
+            "json_file": "07September/temp_rincian_pendapatan_dp_ppkd"
+        },
+        {
+            "table_name": "temp_rincian_pendapatan_lp",
+            "json_file": "07September/temp_rincian_pendapatan_lp"
+        },
+        {
+            "table_name": "temp_rincian_pendapatan_lp_ppkd",
+            "json_file": "07September/temp_rincian_pendapatan_lp_ppkd"
+        },
+        {
+            "table_name": "temp_rincian_pendapatan_pad",
+            "json_file": "07September/temp_rincian_pendapatan_pad"
+        },
+        {
+            "table_name": "temp_rincian_pendapatan_pad_ppkd",
+            "json_file": "07September/temp_rincian_pendapatan_pad_ppkd"
+        },
+        {
+            "table_name": "temp_rka_1",
+            "json_file": "07September/temp_rka_1"
+        },
+        {
+            "table_name": "temp_rka_21",
+            "json_file": "07September/temp_rka_21"
+        },
+        {
+            "table_name": "temp_rka_221",
+            "json_file": "07September/temp_rka_221"
+        },
+        {
+            "table_name": "temp_rka_ppkd_1",
+            "json_file": "07September/temp_rka_ppkd_1"
+        },
+        {
+            "table_name": "temp_rka_ppkd_21",
+            "json_file": "07September/temp_rka_ppkd_21"
+        },
+        {
+            "table_name": "temp_rka_ppkd_31",
+            "json_file": "07September/temp_rka_ppkd_31"
+        },
+        {
+            "table_name": "temp_rka_ppkd_32",
+            "json_file": "07September/temp_rka_ppkd_32"
+        },
+        {
+            "table_name": "temp_rkbmd_pemeliharaan",
+            "json_file": "07September/temp_rkbmd_pemeliharaan"
+        },
+        {
+            "table_name": "temp_rkbmd_pemeliharaan_v3",
+            "json_file": "07September/temp_rkbmd_pemeliharaan_v3"
+        },
+        {
+            "table_name": "temp_rkbmd_pengadaan",
+            "json_file": "07September/temp_rkbmd_pengadaan"
+        },
+        {
+            "table_name": "temp_rkbmd_pengadaan_v3",
+            "json_file": "07September/temp_rkbmd_pengadaan_v3"
+        },
+        {
+            "table_name": "temp_rkbmd_persediaan",
+            "json_file": "07September/temp_rkbmd_persediaan"
+        },
+        {
+            "table_name": "temp_spd",
+            "json_file": "07September/temp_spd"
+        },
+        {
+            "table_name": "temp_standar_kebutuhan",
+            "json_file": "07September/temp_standar_kebutuhan"
+        },
+        {
+            "table_name": "temp_sub_rincian_belanja_langsung",
+            "json_file": "07September/temp_sub_rincian_belanja_langsung"
+        },
+        {
+            "table_name": "temp_sub_rincian_belanja_tidak_langsung",
+            "json_file": "07September/temp_sub_rincian_belanja_tidak_langsung"
+        },
+        {
+            "table_name": "temp_sub_rincian_belanja_tidak_langsung_ppkd",
+            "json_file": "07September/temp_sub_rincian_belanja_tidak_langsung_ppkd"
+        },
+        {
+            "table_name": "temp_sub_rincian_pembiayaan_penerimaan",
+            "json_file": "07September/temp_sub_rincian_pembiayaan_penerimaan"
+        },
+        {
+            "table_name": "temp_sub_rincian_pembiayaan_penerimaan_ppkd",
+            "json_file": "07September/temp_sub_rincian_pembiayaan_penerimaan_ppkd"
+        },
+        {
+            "table_name": "temp_sub_rincian_pembiayaan_pengeluaran",
+            "json_file": "07September/temp_sub_rincian_pembiayaan_pengeluaran"
+        },
+        {
+            "table_name": "temp_sub_rincian_pembiayaan_pengeluaran_ppkd",
+            "json_file": "07September/temp_sub_rincian_pembiayaan_pengeluaran_ppkd"
+        },
+        {
+            "table_name": "temp_sub_rincian_pendapatan_dp",
+            "json_file": "07September/temp_sub_rincian_pendapatan_dp"
+        },
+        {
+            "table_name": "temp_sub_rincian_pendapatan_dp_ppkd",
+            "json_file": "07September/temp_sub_rincian_pendapatan_dp_ppkd"
+        },
+        {
+            "table_name": "temp_sub_rincian_pendapatan_lp",
+            "json_file": "07September/temp_sub_rincian_pendapatan_lp"
+        },
+        {
+            "table_name": "temp_sub_rincian_pendapatan_lp_ppkd",
+            "json_file": "07September/temp_sub_rincian_pendapatan_lp_ppkd"
+        },
+        {
+            "table_name": "temp_sub_rincian_pendapatan_pad",
+            "json_file": "07September/temp_sub_rincian_pendapatan_pad"
+        },
+        {
+            "table_name": "temp_sub_rincian_pendapatan_pad_ppkd",
+            "json_file": "07September/temp_sub_rincian_pendapatan_pad_ppkd"
+        },
+        {
+            "table_name": "temp_template",
+            "json_file": "07September/temp_template"
+        },
+        {
+            "table_name": "temp_urutan",
+            "json_file": "07September/temp_urutan"
+        },
+        {
+            "table_name": "tempusr",
+            "json_file": "07September/tempusr"
+        },
+        {
+            "table_name": "tmp_belumpost_jurnalrekap",
+            "json_file": "07September/tmp_belumpost_jurnalrekap"
+        },
+        {
+            "table_name": "tmp_saldoawal",
+            "json_file": "07September/tmp_saldoawal"
+        },
+        {
+            "table_name": "user",
+            "json_file": "07September/user"
+        }
+    ],
+    "views": [
+        {
+            "view_name": "v1_admin_aktivitas",
+            "json_file": "07September/v1_admin_aktivitas"
+        },
+        {
+            "view_name": "v1_asetlainlain",
+            "json_file": "07September/v1_asetlainlain"
+        },
+        {
+            "view_name": "v1_atribusi_dokumen",
+            "json_file": "07September/v1_atribusi_dokumen"
+        },
+        {
+            "view_name": "v1_atribusi_rincian",
+            "json_file": "07September/v1_atribusi_rincian"
+        },
+        {
+            "view_name": "v1_bast",
+            "json_file": "07September/v1_bast"
+        },
+        {
+            "view_name": "v1_bi_barang",
+            "json_file": "07September/v1_bi_barang"
+        },
+        {
+            "view_name": "v1_bi_skpd",
+            "json_file": "07September/v1_bi_skpd"
+        },
+        {
+            "view_name": "v1_birms",
+            "json_file": "07September/v1_birms"
+        },
+        {
+            "view_name": "v1_cek_spp_kelengkapan_dokumen",
+            "json_file": "07September/v1_cek_spp_kelengkapan_dokumen"
+        },
+        {
+            "view_name": "v1_dkb",
+            "json_file": "07September/v1_dkb"
+        },
+        {
+            "view_name": "v1_dkbp_persediaan",
+            "json_file": "07September/v1_dkbp_persediaan"
+        },
+        {
+            "view_name": "v1_dkpb",
+            "json_file": "07September/v1_dkpb"
+        },
+        {
+            "view_name": "v1_gantirugi",
+            "json_file": "07September/v1_gantirugi"
+        },
+        {
+            "view_name": "v1_jurnal_keuangan",
+            "json_file": "07September/v1_jurnal_keuangan"
+        },
+        {
+            "view_name": "v1_kapitalisasi",
+            "json_file": "07September/v1_kapitalisasi"
+        },
+        {
+            "view_name": "v1_koreksi",
+            "json_file": "07September/v1_koreksi"
+        },
+        {
+            "view_name": "v1_masterbarang_persediaan",
+            "json_file": "07September/v1_masterbarang_persediaan"
+        },
+        {
+            "view_name": "v1_masterbarangpengadaan_persediaan",
+            "json_file": "07September/v1_masterbarangpengadaan_persediaan"
+        },
+        {
+            "view_name": "v1_nomor_spd_det",
+            "json_file": "07September/v1_nomor_spd_det"
+        },
+        {
+            "view_name": "v1_pemanfaatan_bi",
+            "json_file": "07September/v1_pemanfaatan_bi"
+        },
+        {
+            "view_name": "v1_penerimaan",
+            "json_file": "07September/v1_penerimaan"
+        },
+        {
+            "view_name": "v1_penerimaan_atribusi",
+            "json_file": "07September/v1_penerimaan_atribusi"
+        },
+        {
+            "view_name": "v1_penerimaan_barang",
+            "json_file": "07September/v1_penerimaan_barang"
+        },
+        {
+            "view_name": "v1_penerimaan_barang_cari",
+            "json_file": "07September/v1_penerimaan_barang_cari"
+        },
+        {
+            "view_name": "v1_penerimaan_barang_det",
+            "json_file": "07September/v1_penerimaan_barang_det"
+        },
+        {
+            "view_name": "v1_penerimaan_barang_rekening",
+            "json_file": "07September/v1_penerimaan_barang_rekening"
+        },
+        {
+            "view_name": "v1_penerimaan_lra",
+            "json_file": "07September/v1_penerimaan_lra"
+        },
+        {
+            "view_name": "v1_penerimaan_lsd",
+            "json_file": "07September/v1_penerimaan_lsd"
+        },
+        {
+            "view_name": "v1_penerimaan_persediaan",
+            "json_file": "07September/v1_penerimaan_persediaan"
+        },
+        {
+            "view_name": "v1_penerimaan_rek_biaya",
+            "json_file": "07September/v1_penerimaan_rek_biaya"
+        },
+        {
+            "view_name": "v1_penerimaan_rekdet_barang",
+            "json_file": "07September/v1_penerimaan_rekdet_barang"
+        },
+        {
+            "view_name": "v1_penerimaan_retensi_rekening",
+            "json_file": "07September/v1_penerimaan_retensi_rekening"
+        },
+        {
+            "view_name": "v1_pengadaan",
+            "json_file": "07September/v1_pengadaan"
+        },
+        {
+            "view_name": "v1_pengadaan_pemeliharaan",
+            "json_file": "07September/v1_pengadaan_pemeliharaan"
+        },
+        {
+            "view_name": "v1_pengadaan_persediaan",
+            "json_file": "07September/v1_pengadaan_persediaan"
+        },
+        {
+            "view_name": "v1_pengeluaran",
+            "json_file": "07September/v1_pengeluaran"
+        },
+        {
+            "view_name": "v1_pengeluaran_kas_pot",
+            "json_file": "07September/v1_pengeluaran_kas_pot"
+        },
+        {
+            "view_name": "v1_pengeluaran_kas_rek",
+            "json_file": "07September/v1_pengeluaran_kas_rek"
+        },
+        {
+            "view_name": "v1_pengeluaran_kas_total_pot",
+            "json_file": "07September/v1_pengeluaran_kas_total_pot"
+        },
+        {
+            "view_name": "v1_pengeluaran_kas_total_rek",
+            "json_file": "07September/v1_pengeluaran_kas_total_rek"
+        },
+        {
+            "view_name": "v1_pengeluaran_kas_total_semua",
+            "json_file": "07September/v1_pengeluaran_kas_total_semua"
+        },
+        {
+            "view_name": "v1_pengeluaran_persediaan",
+            "json_file": "07September/v1_pengeluaran_persediaan"
+        },
+        {
+            "view_name": "v1_penggunaan",
+            "json_file": "07September/v1_penggunaan"
+        },
+        {
+            "view_name": "v1_penghapusan_usul_det_bi",
+            "json_file": "07September/v1_penghapusan_usul_det_bi"
+        },
+        {
+            "view_name": "v1_penghapusan_usulsk_det",
+            "json_file": "07September/v1_penghapusan_usulsk_det"
+        },
+        {
+            "view_name": "v1_perencanaan_persediaan",
+            "json_file": "07September/v1_perencanaan_persediaan"
+        },
+        {
+            "view_name": "v1_pindahtangan",
+            "json_file": "07September/v1_pindahtangan"
+        },
+        {
+            "view_name": "v1_ref_potongan_spm",
+            "json_file": "07September/v1_ref_potongan_spm"
+        },
+        {
+            "view_name": "v1_ref_potongan_spm_rek",
+            "json_file": "07September/v1_ref_potongan_spm_rek"
+        },
+        {
+            "view_name": "v1_ref_tambah_manfaat",
+            "json_file": "07September/v1_ref_tambah_manfaat"
+        },
+        {
+            "view_name": "v1_ref_templatebarang_det",
+            "json_file": "07September/v1_ref_templatebarang_det"
+        },
+        {
+            "view_name": "v1_refskpd_urusan",
+            "json_file": "07September/v1_refskpd_urusan"
+        },
+        {
+            "view_name": "v1_rkb",
+            "json_file": "07September/v1_rkb"
+        },
+        {
+            "view_name": "v1_rkpb",
+            "json_file": "07September/v1_rkpb"
+        },
+        {
+            "view_name": "v1_saldo_awal_keu",
+            "json_file": "07September/v1_saldo_awal_keu"
+        },
+        {
+            "view_name": "v1_sensus",
+            "json_file": "07September/v1_sensus"
+        },
+        {
+            "view_name": "v1_spp",
+            "json_file": "07September/v1_spp"
+        },
+        {
+            "view_name": "v1_spp_dokumen",
+            "json_file": "07September/v1_spp_dokumen"
+        },
+        {
+            "view_name": "v1_spp_penerimaan_barang",
+            "json_file": "07September/v1_spp_penerimaan_barang"
+        },
+        {
+            "view_name": "v1_spp_potongan",
+            "json_file": "07September/v1_spp_potongan"
+        },
+        {
+            "view_name": "v1_spp_rek",
+            "json_file": "07September/v1_spp_rek"
+        },
+        {
+            "view_name": "v1_spp_rek2",
+            "json_file": "07September/v1_spp_rek2"
+        },
+        {
+            "view_name": "v1_spp_rekening",
+            "json_file": "07September/v1_spp_rekening"
+        },
+        {
+            "view_name": "v1_spp_total_potongan",
+            "json_file": "07September/v1_spp_total_potongan"
+        },
+        {
+            "view_name": "v1_spp_total_rekening",
+            "json_file": "07September/v1_spp_total_rekening"
+        },
+        {
+            "view_name": "v1_spp_total_semua",
+            "json_file": "07September/v1_spp_total_semua"
+        },
+        {
+            "view_name": "v1_total_atribusi_rincian",
+            "json_file": "07September/v1_total_atribusi_rincian"
+        },
+        {
+            "view_name": "v1_total_penerimaan_barang_det",
+            "json_file": "07September/v1_total_penerimaan_barang_det"
+        },
+        {
+            "view_name": "v1_total_penerimaan_rek",
+            "json_file": "07September/v1_total_penerimaan_rek"
+        },
+        {
+            "view_name": "v1_total_penerimaan_semua",
+            "json_file": "07September/v1_total_penerimaan_semua"
+        },
+        {
+            "view_name": "v1_total_penerimaanbarang",
+            "json_file": "07September/v1_total_penerimaanbarang"
+        },
+        {
+            "view_name": "v1_total_penerimaanbarang2",
+            "json_file": "07September/v1_total_penerimaanbarang2"
+        },
+        {
+            "view_name": "v1_total_penerimaanbarang3",
+            "json_file": "07September/v1_total_penerimaanbarang3"
+        },
+        {
+            "view_name": "v2_gantirugi_hapussebagian",
+            "json_file": "07September/v2_gantirugi_hapussebagian"
+        },
+        {
+            "view_name": "v2_gantirugi_pelihara",
+            "json_file": "07September/v2_gantirugi_pelihara"
+        },
+        {
+            "view_name": "v2_gantirugi_pengaman",
+            "json_file": "07September/v2_gantirugi_pengaman"
+        },
+        {
+            "view_name": "v2_mutasi_hapussebagian",
+            "json_file": "07September/v2_mutasi_hapussebagian"
+        },
+        {
+            "view_name": "v2_mutasi_pelihara",
+            "json_file": "07September/v2_mutasi_pelihara"
+        },
+        {
+            "view_name": "v2_mutasi_pengaman",
+            "json_file": "07September/v2_mutasi_pengaman"
+        },
+        {
+            "view_name": "v2_penghapusan_hapussebagian",
+            "json_file": "07September/v2_penghapusan_hapussebagian"
+        },
+        {
+            "view_name": "v2_penghapusan_pelihara",
+            "json_file": "07September/v2_penghapusan_pelihara"
+        },
+        {
+            "view_name": "v2_penghapusan_pengaman",
+            "json_file": "07September/v2_penghapusan_pengaman"
+        },
+        {
+            "view_name": "v2_penghapusan_usul",
+            "json_file": "07September/v2_penghapusan_usul"
+        },
+        {
+            "view_name": "v2_pindahtangan_hapussebagian",
+            "json_file": "07September/v2_pindahtangan_hapussebagian"
+        },
+        {
+            "view_name": "v2_pindahtangan_pelihara",
+            "json_file": "07September/v2_pindahtangan_pelihara"
+        },
+        {
+            "view_name": "v2_pindahtangan_pengaman",
+            "json_file": "07September/v2_pindahtangan_pengaman"
+        },
+        {
+            "view_name": "v3_pindah_gantirugi_pelihara",
+            "json_file": "07September/v3_pindah_gantirugi_pelihara"
+        },
+        {
+            "view_name": "v_barangx",
+            "json_file": "07September/v_barangx"
+        },
+        {
+            "view_name": "v_bi_entry_darimutasi",
+            "json_file": "07September/v_bi_entry_darimutasi"
+        },
+        {
+            "view_name": "v_bi_jmlgbrx",
+            "json_file": "07September/v_bi_jmlgbrx"
+        },
+        {
+            "view_name": "v_bi_kib_a_tmp",
+            "json_file": "07September/v_bi_kib_a_tmp"
+        },
+        {
+            "view_name": "v_bi_kib_b_tmp",
+            "json_file": "07September/v_bi_kib_b_tmp"
+        },
+        {
+            "view_name": "v_bi_kib_c_tmp",
+            "json_file": "07September/v_bi_kib_c_tmp"
+        },
+        {
+            "view_name": "v_bi_kib_d_tmp",
+            "json_file": "07September/v_bi_kib_d_tmp"
+        },
+        {
+            "view_name": "v_bi_kib_e_tmp",
+            "json_file": "07September/v_bi_kib_e_tmp"
+        },
+        {
+            "view_name": "v_bi_kib_f_tmp",
+            "json_file": "07September/v_bi_kib_f_tmp"
+        },
+        {
+            "view_name": "v_bi_kib_g_tmp",
+            "json_file": "07September/v_bi_kib_g_tmp"
+        },
+        {
+            "view_name": "v_bidang",
+            "json_file": "07September/v_bidang"
+        },
+        {
+            "view_name": "v_cek_bicnt",
+            "json_file": "07September/v_cek_bicnt"
+        },
+        {
+            "view_name": "v_cek_double",
+            "json_file": "07September/v_cek_double"
+        },
+        {
+            "view_name": "v_cek_idlama",
+            "json_file": "07September/v_cek_idlama"
+        },
+        {
+            "view_name": "v_cek_idlamabukanmutasi",
+            "json_file": "07September/v_cek_idlamabukanmutasi"
+        },
+        {
+            "view_name": "v_cek_noreg",
+            "json_file": "07September/v_cek_noreg"
+        },
+        {
+            "view_name": "v_cek_penghapusan_cnt",
+            "json_file": "07September/v_cek_penghapusan_cnt"
+        },
+        {
+            "view_name": "v_double",
+            "json_file": "07September/v_double"
+        },
+        {
+            "view_name": "v_double2",
+            "json_file": "07September/v_double2"
+        },
+        {
+            "view_name": "v_gantirugi",
+            "json_file": "07September/v_gantirugi"
+        },
+        {
+            "view_name": "v_gantirugi_bayar",
+            "json_file": "07September/v_gantirugi_bayar"
+        },
+        {
+            "view_name": "v_gantirugi_bi",
+            "json_file": "07September/v_gantirugi_bi"
+        },
+        {
+            "view_name": "v_hapus_bi",
+            "json_file": "07September/v_hapus_bi"
+        },
+        {
+            "view_name": "v_hapus_kiba",
+            "json_file": "07September/v_hapus_kiba"
+        },
+        {
+            "view_name": "v_hapus_kibc",
+            "json_file": "07September/v_hapus_kibc"
+        },
+        {
+            "view_name": "v_hapus_kibd",
+            "json_file": "07September/v_hapus_kibd"
+        },
+        {
+            "view_name": "v_hapus_kibf",
+            "json_file": "07September/v_hapus_kibf"
+        },
+        {
+            "view_name": "v_hapus_sebagian",
+            "json_file": "07September/v_hapus_sebagian"
+        },
+        {
+            "view_name": "v_hapussebagian_tot",
+            "json_file": "07September/v_hapussebagian_tot"
+        },
+        {
+            "view_name": "v_jmlbrgharga_f",
+            "json_file": "07September/v_jmlbrgharga_f"
+        },
+        {
+            "view_name": "v_jmlbrgharga_fg",
+            "json_file": "07September/v_jmlbrgharga_fg"
+        },
+        {
+            "view_name": "v_jmlgambar_bybi",
+            "json_file": "07September/v_jmlgambar_bybi"
+        },
+        {
+            "view_name": "v_jmlgbr_grpbybix",
+            "json_file": "07September/v_jmlgbr_grpbybix"
+        },
+        {
+            "view_name": "v_jurnal",
+            "json_file": "07September/v_jurnal"
+        },
+        {
+            "view_name": "v_jurnal_aset_ekstra",
+            "json_file": "07September/v_jurnal_aset_ekstra"
+        },
+        {
+            "view_name": "v_jurnal_aset_ekstra_v2",
+            "json_file": "07September/v_jurnal_aset_ekstra_v2"
+        },
+        {
+            "view_name": "v_jurnal_aset_lainnya",
+            "json_file": "07September/v_jurnal_aset_lainnya"
+        },
+        {
+            "view_name": "v_jurnal_aset_lainnya_v2",
+            "json_file": "07September/v_jurnal_aset_lainnya_v2"
+        },
+        {
+            "view_name": "v_jurnal_aset_tetap",
+            "json_file": "07September/v_jurnal_aset_tetap"
+        },
+        {
+            "view_name": "v_jurnal_aset_tetap_v2",
+            "json_file": "07September/v_jurnal_aset_tetap_v2"
+        },
+        {
+            "view_name": "v_jurnal_bi_aset_lainlain",
+            "json_file": "07September/v_jurnal_bi_aset_lainlain"
+        },
+        {
+            "view_name": "v_jurnal_penyusutan",
+            "json_file": "07September/v_jurnal_penyusutan"
+        },
+        {
+            "view_name": "v_kiba_jmlgbr",
+            "json_file": "07September/v_kiba_jmlgbr"
+        },
+        {
+            "view_name": "v_kiba_koord",
+            "json_file": "07September/v_kiba_koord"
+        },
+        {
+            "view_name": "v_kiba_st1111",
+            "json_file": "07September/v_kiba_st1111"
+        },
+        {
+            "view_name": "v_kiba_st1111_rekap",
+            "json_file": "07September/v_kiba_st1111_rekap"
+        },
+        {
+            "view_name": "v_kiba_status",
+            "json_file": "07September/v_kiba_status"
+        },
+        {
+            "view_name": "v_kibc_jmlgbr",
+            "json_file": "07September/v_kibc_jmlgbr"
+        },
+        {
+            "view_name": "v_kibc_koord",
+            "json_file": "07September/v_kibc_koord"
+        },
+        {
+            "view_name": "v_kibc_st1111",
+            "json_file": "07September/v_kibc_st1111"
+        },
+        {
+            "view_name": "v_kibc_st1111_rekap",
+            "json_file": "07September/v_kibc_st1111_rekap"
+        },
+        {
+            "view_name": "v_kibc_status",
+            "json_file": "07September/v_kibc_status"
+        },
+        {
+            "view_name": "v_mutasi_sebagian",
+            "json_file": "07September/v_mutasi_sebagian"
+        },
+        {
+            "view_name": "v_opd",
+            "json_file": "07September/v_opd"
+        },
+        {
+            "view_name": "v_pemanfaat",
+            "json_file": "07September/v_pemanfaat"
+        },
+        {
+            "view_name": "v_pemelihara",
+            "json_file": "07September/v_pemelihara"
+        },
+        {
+            "view_name": "v_pemelihara_tot",
+            "json_file": "07September/v_pemelihara_tot"
+        },
+        {
+            "view_name": "v_pemelihara_tot_",
+            "json_file": "07September/v_pemelihara_tot_"
+        },
+        {
+            "view_name": "v_pemusnahan",
+            "json_file": "07September/v_pemusnahan"
+        },
+        {
+            "view_name": "v_pemusnahanba",
+            "json_file": "07September/v_pemusnahanba"
+        },
+        {
+            "view_name": "v_penerimaan_barang_det",
+            "json_file": "07September/v_penerimaan_barang_det"
+        },
+        {
+            "view_name": "v_pengadaan",
+            "json_file": "07September/v_pengadaan"
+        },
+        {
+            "view_name": "v_pengaman",
+            "json_file": "07September/v_pengaman"
+        },
+        {
+            "view_name": "v_pengaman_tot",
+            "json_file": "07September/v_pengaman_tot"
+        },
+        {
+            "view_name": "v_pengaman_tot_",
+            "json_file": "07September/v_pengaman_tot_"
+        },
+        {
+            "view_name": "v_penghapusan_bi",
+            "json_file": "07September/v_penghapusan_bi"
+        },
+        {
+            "view_name": "v_pindahgantirugi_bi",
+            "json_file": "07September/v_pindahgantirugi_bi"
+        },
+        {
+            "view_name": "v_pindahtangan_bi",
+            "json_file": "07September/v_pindahtangan_bi"
+        },
+        {
+            "view_name": "v_ref_barang_rekap_keu",
+            "json_file": "07September/v_ref_barang_rekap_keu"
+        },
+        {
+            "view_name": "v_ref_kapitalisasi",
+            "json_file": "07September/v_ref_kapitalisasi"
+        },
+        {
+            "view_name": "v_ref_kib_keu",
+            "json_file": "07September/v_ref_kib_keu"
+        },
+        {
+            "view_name": "v_ref_kib_keu_h",
+            "json_file": "07September/v_ref_kib_keu_h"
+        },
+        {
+            "view_name": "v_ref_kib_keu_h1",
+            "json_file": "07September/v_ref_kib_keu_h1"
+        },
+        {
+            "view_name": "v_ref_kib_keu_h_lv3",
+            "json_file": "07September/v_ref_kib_keu_h_lv3"
+        },
+        {
+            "view_name": "v_ref_kib_keu_penyusutan",
+            "json_file": "07September/v_ref_kib_keu_penyusutan"
+        },
+        {
+            "view_name": "v_ref_penyusutan",
+            "json_file": "07September/v_ref_penyusutan"
+        },
+        {
+            "view_name": "v_ref_rekapbi",
+            "json_file": "07September/v_ref_rekapbi"
+        },
+        {
+            "view_name": "v_ref_skpd_kib",
+            "json_file": "07September/v_ref_skpd_kib"
+        },
+        {
+            "view_name": "v_ref_skpd_kib_keu",
+            "json_file": "07September/v_ref_skpd_kib_keu"
+        },
+        {
+            "view_name": "v_ref_tandatangan",
+            "json_file": "07September/v_ref_tandatangan"
+        },
+        {
+            "view_name": "v_ref_transaksi",
+            "json_file": "07September/v_ref_transaksi"
+        },
+        {
+            "view_name": "v_rekap_all",
+            "json_file": "07September/v_rekap_all"
+        },
+        {
+            "view_name": "v_rekap_all2",
+            "json_file": "07September/v_rekap_all2"
+        },
+        {
+            "view_name": "v_rekap_bi",
+            "json_file": "07September/v_rekap_bi"
+        },
+        {
+            "view_name": "v_rekap_bi2",
+            "json_file": "07September/v_rekap_bi2"
+        },
+        {
+            "view_name": "v_rekap_kiba",
+            "json_file": "07September/v_rekap_kiba"
+        },
+        {
+            "view_name": "v_rekap_kiba2",
+            "json_file": "07September/v_rekap_kiba2"
+        },
+        {
+            "view_name": "v_rekap_kibb",
+            "json_file": "07September/v_rekap_kibb"
+        },
+        {
+            "view_name": "v_rekap_kibb2",
+            "json_file": "07September/v_rekap_kibb2"
+        },
+        {
+            "view_name": "v_rekap_kibc",
+            "json_file": "07September/v_rekap_kibc"
+        },
+        {
+            "view_name": "v_rekap_kibc2",
+            "json_file": "07September/v_rekap_kibc2"
+        },
+        {
+            "view_name": "v_rekap_kibd",
+            "json_file": "07September/v_rekap_kibd"
+        },
+        {
+            "view_name": "v_rekap_kibd2",
+            "json_file": "07September/v_rekap_kibd2"
+        },
+        {
+            "view_name": "v_rekap_kibe",
+            "json_file": "07September/v_rekap_kibe"
+        },
+        {
+            "view_name": "v_rekap_kibe2",
+            "json_file": "07September/v_rekap_kibe2"
+        },
+        {
+            "view_name": "v_rekap_kibf",
+            "json_file": "07September/v_rekap_kibf"
+        },
+        {
+            "view_name": "v_rekap_kibf2",
+            "json_file": "07September/v_rekap_kibf2"
+        },
+        {
+            "view_name": "v_skpd_kib",
+            "json_file": "07September/v_skpd_kib"
+        },
+        {
+            "view_name": "v_t_kondisi",
+            "json_file": "07September/v_t_kondisi"
+        },
+        {
+            "view_name": "v_test",
+            "json_file": "07September/v_test"
+        },
+        {
+            "view_name": "v_test2",
+            "json_file": "07September/v_test2"
+        },
+        {
+            "view_name": "v_trans_bi",
+            "json_file": "07September/v_trans_bi"
+        },
+        {
+            "view_name": "v_unit",
+            "json_file": "07September/v_unit"
+        },
+        {
+            "view_name": "view2_sensus",
+            "json_file": "07September/view2_sensus"
+        },
+        {
+            "view_name": "view2_sensus_tot",
+            "json_file": "07September/view2_sensus_tot"
+        },
+        {
+            "view_name": "view_barang_rkbmd_pemeliharaan",
+            "json_file": "07September/view_barang_rkbmd_pemeliharaan"
+        },
+        {
+            "view_name": "view_barang_rkbmd_pemeliharaan_v3",
+            "json_file": "07September/view_barang_rkbmd_pemeliharaan_v3"
+        },
+        {
+            "view_name": "view_bi_pemeliharaan",
+            "json_file": "07September/view_bi_pemeliharaan"
+        },
+        {
+            "view_name": "view_bi_spesifikasi",
+            "json_file": "07September/view_bi_spesifikasi"
+        },
+        {
+            "view_name": "view_buku_induk",
+            "json_file": "07September/view_buku_induk"
+        },
+        {
+            "view_name": "view_buku_induk2",
+            "json_file": "07September/view_buku_induk2"
+        },
+        {
+            "view_name": "view_buku_induk2_total",
+            "json_file": "07September/view_buku_induk2_total"
+        },
+        {
+            "view_name": "view_buku_induk2_total2",
+            "json_file": "07September/view_buku_induk2_total2"
+        },
+        {
+            "view_name": "view_daftar_persediaan",
+            "json_file": "07September/view_daftar_persediaan"
+        },
+        {
+            "view_name": "view_daftar_persediaan_rekap",
+            "json_file": "07September/view_daftar_persediaan_rekap"
+        },
+        {
+            "view_name": "view_daftar_persediaan_rekap_semester_2",
+            "json_file": "07September/view_daftar_persediaan_rekap_semester_2"
+        },
+        {
+            "view_name": "view_daftar_persediaan_semester_2",
+            "json_file": "07September/view_daftar_persediaan_semester_2"
+        },
+        {
+            "view_name": "view_data_dpa",
+            "json_file": "07September/view_data_dpa"
+        },
+        {
+            "view_name": "view_data_dpa_barang",
+            "json_file": "07September/view_data_dpa_barang"
+        },
+        {
+            "view_name": "view_dkb",
+            "json_file": "07September/view_dkb"
+        },
+        {
+            "view_name": "view_dpa_1",
+            "json_file": "07September/view_dpa_1"
+        },
+        {
+            "view_name": "view_dpa_2_1",
+            "json_file": "07September/view_dpa_2_1"
+        },
+        {
+            "view_name": "view_dpa_2_2_1",
+            "json_file": "07September/view_dpa_2_2_1"
+        },
+        {
+            "view_name": "view_dpa_3_1",
+            "json_file": "07September/view_dpa_3_1"
+        },
+        {
+            "view_name": "view_dpa_3_2",
+            "json_file": "07September/view_dpa_3_2"
+        },
+        {
+            "view_name": "view_dpa_ppkd_1",
+            "json_file": "07September/view_dpa_ppkd_1"
+        },
+        {
+            "view_name": "view_dpa_ppkd_2_1",
+            "json_file": "07September/view_dpa_ppkd_2_1"
+        },
+        {
+            "view_name": "view_dpa_ppkd_3_1",
+            "json_file": "07September/view_dpa_ppkd_3_1"
+        },
+        {
+            "view_name": "view_dpa_ppkd_3_2",
+            "json_file": "07September/view_dpa_ppkd_3_2"
+        },
+        {
+            "view_name": "view_kib_a",
+            "json_file": "07September/view_kib_a"
+        },
+        {
+            "view_name": "view_kib_a2",
+            "json_file": "07September/view_kib_a2"
+        },
+        {
+            "view_name": "view_kib_a2_total",
+            "json_file": "07September/view_kib_a2_total"
+        },
+        {
+            "view_name": "view_kib_a2_total2",
+            "json_file": "07September/view_kib_a2_total2"
+        },
+        {
+            "view_name": "view_kib_b",
+            "json_file": "07September/view_kib_b"
+        },
+        {
+            "view_name": "view_kib_b2",
+            "json_file": "07September/view_kib_b2"
+        },
+        {
+            "view_name": "view_kib_b2_total",
+            "json_file": "07September/view_kib_b2_total"
+        },
+        {
+            "view_name": "view_kib_b2_total2",
+            "json_file": "07September/view_kib_b2_total2"
+        },
+        {
+            "view_name": "view_kib_c",
+            "json_file": "07September/view_kib_c"
+        },
+        {
+            "view_name": "view_kib_c2",
+            "json_file": "07September/view_kib_c2"
+        },
+        {
+            "view_name": "view_kib_c2_total",
+            "json_file": "07September/view_kib_c2_total"
+        },
+        {
+            "view_name": "view_kib_c2_total2",
+            "json_file": "07September/view_kib_c2_total2"
+        },
+        {
+            "view_name": "view_kib_d",
+            "json_file": "07September/view_kib_d"
+        },
+        {
+            "view_name": "view_kib_d2",
+            "json_file": "07September/view_kib_d2"
+        },
+        {
+            "view_name": "view_kib_d2_total",
+            "json_file": "07September/view_kib_d2_total"
+        },
+        {
+            "view_name": "view_kib_d2_total2",
+            "json_file": "07September/view_kib_d2_total2"
+        },
+        {
+            "view_name": "view_kib_e",
+            "json_file": "07September/view_kib_e"
+        },
+        {
+            "view_name": "view_kib_e2",
+            "json_file": "07September/view_kib_e2"
+        },
+        {
+            "view_name": "view_kib_e2_total",
+            "json_file": "07September/view_kib_e2_total"
+        },
+        {
+            "view_name": "view_kib_e2_total2",
+            "json_file": "07September/view_kib_e2_total2"
+        },
+        {
+            "view_name": "view_kib_f",
+            "json_file": "07September/view_kib_f"
+        },
+        {
+            "view_name": "view_kib_f2",
+            "json_file": "07September/view_kib_f2"
+        },
+        {
+            "view_name": "view_kib_f2_total",
+            "json_file": "07September/view_kib_f2_total"
+        },
+        {
+            "view_name": "view_kib_f2_total2",
+            "json_file": "07September/view_kib_f2_total2"
+        },
+        {
+            "view_name": "view_kib_g",
+            "json_file": "07September/view_kib_g"
+        },
+        {
+            "view_name": "view_kib_g_total",
+            "json_file": "07September/view_kib_g_total"
+        },
+        {
+            "view_name": "view_penerimaan_distribusi",
+            "json_file": "07September/view_penerimaan_distribusi"
+        },
+        {
+            "view_name": "view_plafon",
+            "json_file": "07September/view_plafon"
+        },
+        {
+            "view_name": "view_renja",
+            "json_file": "07September/view_renja"
+        },
+        {
+            "view_name": "view_renja_v3",
+            "json_file": "07September/view_renja_v3"
+        },
+        {
+            "view_name": "view_rka_1",
+            "json_file": "07September/view_rka_1"
+        },
+        {
+            "view_name": "view_rka_2_1",
+            "json_file": "07September/view_rka_2_1"
+        },
+        {
+            "view_name": "view_rka_2_2",
+            "json_file": "07September/view_rka_2_2"
+        },
+        {
+            "view_name": "view_rka_2_2_1",
+            "json_file": "07September/view_rka_2_2_1"
+        },
+        {
+            "view_name": "view_rka_3_1",
+            "json_file": "07September/view_rka_3_1"
+        },
+        {
+            "view_name": "view_rka_3_2",
+            "json_file": "07September/view_rka_3_2"
+        },
+        {
+            "view_name": "view_rka_ppkd",
+            "json_file": "07September/view_rka_ppkd"
+        },
+        {
+            "view_name": "view_rka_ppkd_1",
+            "json_file": "07September/view_rka_ppkd_1"
+        },
+        {
+            "view_name": "view_rka_ppkd_2_1",
+            "json_file": "07September/view_rka_ppkd_2_1"
+        },
+        {
+            "view_name": "view_rka_ppkd_3_1",
+            "json_file": "07September/view_rka_ppkd_3_1"
+        },
+        {
+            "view_name": "view_rka_ppkd_3_2",
+            "json_file": "07September/view_rka_ppkd_3_2"
+        },
+        {
+            "view_name": "view_rkb",
+            "json_file": "07September/view_rkb"
+        },
+        {
+            "view_name": "view_rkbmd",
+            "json_file": "07September/view_rkbmd"
+        },
+        {
+            "view_name": "view_rkbmd_v3",
+            "json_file": "07September/view_rkbmd_v3"
+        },
+        {
+            "view_name": "view_sub_unit",
+            "json_file": "07September/view_sub_unit"
+        }
+    ],
+    "triggers": [
+        {
+            "trigger_name": "bi_bef_ins",
+            "json_file": "07September/bi_bef_ins"
+        },
+        {
+            "trigger_name": "bi_aft_ins",
+            "json_file": "07September/bi_aft_ins"
+        },
+        {
+            "trigger_name": "bi_bef_upd",
+            "json_file": "07September/bi_bef_upd"
+        },
+        {
+            "trigger_name": "bi_aft_upd",
+            "json_file": "07September/bi_aft_upd"
+        },
+        {
+            "trigger_name": "bi_bef_del",
+            "json_file": "07September/bi_bef_del"
+        },
+        {
+            "trigger_name": "bi_aft_del",
+            "json_file": "07September/bi_aft_del"
+        },
+        {
+            "trigger_name": "dkb_aft_del",
+            "json_file": "07September/dkb_aft_del"
+        },
+        {
+            "trigger_name": "dkpb_aft_del",
+            "json_file": "07September/dkpb_aft_del"
+        },
+        {
+            "trigger_name": "gambar_bef_ins",
+            "json_file": "07September/gambar_bef_ins"
+        },
+        {
+            "trigger_name": "gambar_aft_ins",
+            "json_file": "07September/gambar_aft_ins"
+        },
+        {
+            "trigger_name": "gambar_aft_del",
+            "json_file": "07September/gambar_aft_del"
+        },
+        {
+            "trigger_name": "gantirugi_bef_ins",
+            "json_file": "07September/gantirugi_bef_ins"
+        },
+        {
+            "trigger_name": "gantirugi_aft_ins",
+            "json_file": "07September/gantirugi_aft_ins"
+        },
+        {
+            "trigger_name": "gantirugi_aft_upd",
+            "json_file": "07September/gantirugi_aft_upd"
+        },
+        {
+            "trigger_name": "gantirugi_aft_del",
+            "json_file": "07September/gantirugi_aft_del"
+        },
+        {
+            "trigger_name": "gantirugi_bayar_bef_ins",
+            "json_file": "07September/gantirugi_bayar_bef_ins"
+        },
+        {
+            "trigger_name": "gantirugi_bayar_aft_ins",
+            "json_file": "07September/gantirugi_bayar_aft_ins"
+        },
+        {
+            "trigger_name": "gantirugi_bayar_aft_upd",
+            "json_file": "07September/gantirugi_bayar_aft_upd"
+        },
+        {
+            "trigger_name": "gantirugi_bayar_aft_del",
+            "json_file": "07September/gantirugi_bayar_aft_del"
+        },
+        {
+            "trigger_name": "kiba_aft_ins",
+            "json_file": "07September/kiba_aft_ins"
+        },
+        {
+            "trigger_name": "kiba_aft_upd",
+            "json_file": "07September/kiba_aft_upd"
+        },
+        {
+            "trigger_name": "kiba_aft_del",
+            "json_file": "07September/kiba_aft_del"
+        },
+        {
+            "trigger_name": "kibb_aft_ins",
+            "json_file": "07September/kibb_aft_ins"
+        },
+        {
+            "trigger_name": "kibb_aft_upd",
+            "json_file": "07September/kibb_aft_upd"
+        },
+        {
+            "trigger_name": "kibb_aft_del",
+            "json_file": "07September/kibb_aft_del"
+        },
+        {
+            "trigger_name": "kibc_aft_ins",
+            "json_file": "07September/kibc_aft_ins"
+        },
+        {
+            "trigger_name": "kibc_aft_upd",
+            "json_file": "07September/kibc_aft_upd"
+        },
+        {
+            "trigger_name": "kibc_aft_del",
+            "json_file": "07September/kibc_aft_del"
+        },
+        {
+            "trigger_name": "kibd_aft_ins",
+            "json_file": "07September/kibd_aft_ins"
+        },
+        {
+            "trigger_name": "kibd_aft_upd",
+            "json_file": "07September/kibd_aft_upd"
+        },
+        {
+            "trigger_name": "kibd_aft_del",
+            "json_file": "07September/kibd_aft_del"
+        },
+        {
+            "trigger_name": "kibe_aft_ins",
+            "json_file": "07September/kibe_aft_ins"
+        },
+        {
+            "trigger_name": "kibe_aft_upd",
+            "json_file": "07September/kibe_aft_upd"
+        },
+        {
+            "trigger_name": "kibe_aft_del",
+            "json_file": "07September/kibe_aft_del"
+        },
+        {
+            "trigger_name": "kibf_aft_ins",
+            "json_file": "07September/kibf_aft_ins"
+        },
+        {
+            "trigger_name": "kibf_aft_upd",
+            "json_file": "07September/kibf_aft_upd"
+        },
+        {
+            "trigger_name": "kibf_aft_del",
+            "json_file": "07September/kibf_aft_del"
+        },
+        {
+            "trigger_name": "pemanfaatan_bef_ins",
+            "json_file": "07September/pemanfaatan_bef_ins"
+        },
+        {
+            "trigger_name": "pemanfaatan_aft_ins",
+            "json_file": "07September/pemanfaatan_aft_ins"
+        },
+        {
+            "trigger_name": "pemanfaatan_aft_upd",
+            "json_file": "07September/pemanfaatan_aft_upd"
+        },
+        {
+            "trigger_name": "pemanfaatan_aft_del",
+            "json_file": "07September/pemanfaatan_aft_del"
+        },
+        {
+            "trigger_name": "pemeliharaan_bef_ins",
+            "json_file": "07September/pemeliharaan_bef_ins"
+        },
+        {
+            "trigger_name": "pemeliharaan_aft_ins",
+            "json_file": "07September/pemeliharaan_aft_ins"
+        },
+        {
+            "trigger_name": "pemeliharaan_bef_upd",
+            "json_file": "07September/pemeliharaan_bef_upd"
+        },
+        {
+            "trigger_name": "pemeliharaan_aft_upd",
+            "json_file": "07September/pemeliharaan_aft_upd"
+        },
+        {
+            "trigger_name": "pemeliharaan_bef_del",
+            "json_file": "07September/pemeliharaan_bef_del"
+        },
+        {
+            "trigger_name": "pemeliharaan_aft_del",
+            "json_file": "07September/pemeliharaan_aft_del"
+        },
+        {
+            "trigger_name": "pemindahtanganan_bef_ins",
+            "json_file": "07September/pemindahtanganan_bef_ins"
+        },
+        {
+            "trigger_name": "pemindahtanganan_aft_ins",
+            "json_file": "07September/pemindahtanganan_aft_ins"
+        },
+        {
+            "trigger_name": "pemindahtanganan_aft_upd",
+            "json_file": "07September/pemindahtanganan_aft_upd"
+        },
+        {
+            "trigger_name": "pemindahtanganan_aft_del",
+            "json_file": "07September/pemindahtanganan_aft_del"
+        },
+        {
+            "trigger_name": "pemusnahan_aft_upd",
+            "json_file": "07September/pemusnahan_aft_upd"
+        },
+        {
+            "trigger_name": "pemusnahan_aft_del",
+            "json_file": "07September/pemusnahan_aft_del"
+        },
+        {
+            "trigger_name": "pemusnahan_det_aft_ins",
+            "json_file": "07September/pemusnahan_det_aft_ins"
+        },
+        {
+            "trigger_name": "pemusnahan_det_aft_del",
+            "json_file": "07September/pemusnahan_det_aft_del"
+        },
+        {
+            "trigger_name": "pengamanan_bef_ins",
+            "json_file": "07September/pengamanan_bef_ins"
+        },
+        {
+            "trigger_name": "pengamanan_aft_ins",
+            "json_file": "07September/pengamanan_aft_ins"
+        },
+        {
+            "trigger_name": "pengamanan_aft_upd",
+            "json_file": "07September/pengamanan_aft_upd"
+        },
+        {
+            "trigger_name": "pengamanan_aft_del",
+            "json_file": "07September/pengamanan_aft_del"
+        },
+        {
+            "trigger_name": "penghapusan_bef_ins",
+            "json_file": "07September/penghapusan_bef_ins"
+        },
+        {
+            "trigger_name": "hapus_aft_ins",
+            "json_file": "07September/hapus_aft_ins"
+        },
+        {
+            "trigger_name": "hapus_aft_upd",
+            "json_file": "07September/hapus_aft_upd"
+        },
+        {
+            "trigger_name": "hapus_aft_del",
+            "json_file": "07September/hapus_aft_del"
+        },
+        {
+            "trigger_name": "penghapusan_sebagian_bef_ins",
+            "json_file": "07September/penghapusan_sebagian_bef_ins"
+        },
+        {
+            "trigger_name": "penghapusan_sebagian_aft_ins",
+            "json_file": "07September/penghapusan_sebagian_aft_ins"
+        },
+        {
+            "trigger_name": "penghapusan_sebagian_aft_upd",
+            "json_file": "07September/penghapusan_sebagian_aft_upd"
+        },
+        {
+            "trigger_name": "penghapusan_sebagian_aft_del",
+            "json_file": "07September/penghapusan_sebagian_aft_del"
+        },
+        {
+            "trigger_name": "penilaian_bef_ins",
+            "json_file": "07September/penilaian_bef_ins"
+        },
+        {
+            "trigger_name": "penilaian_aft_ins",
+            "json_file": "07September/penilaian_aft_ins"
+        },
+        {
+            "trigger_name": "penilaian_aft_upd",
+            "json_file": "07September/penilaian_aft_upd"
+        },
+        {
+            "trigger_name": "penilaian_aft_del",
+            "json_file": "07September/penilaian_aft_del"
+        },
+        {
+            "trigger_name": "penyusutan_bef_ins",
+            "json_file": "07September/penyusutan_bef_ins"
+        },
+        {
+            "trigger_name": "penyusutan_aft_ins",
+            "json_file": "07September/penyusutan_aft_ins"
+        },
+        {
+            "trigger_name": "penyusutan_aft_del",
+            "json_file": "07September/penyusutan_aft_del"
+        },
+        {
+            "trigger_name": "ref_barang_aft_ins",
+            "json_file": "07September/ref_barang_aft_ins"
+        },
+        {
+            "trigger_name": "ref_barang_aft_upd",
+            "json_file": "07September/ref_barang_aft_upd"
+        },
+        {
+            "trigger_name": "ref_barang_aft_del",
+            "json_file": "07September/ref_barang_aft_del"
+        },
+        {
+            "trigger_name": "ref_rincian_template_bef_ins",
+            "json_file": "07September/ref_rincian_template_bef_ins"
+        },
+        {
+            "trigger_name": "ref_rincian_template_bef_upd",
+            "json_file": "07September/ref_rincian_template_bef_upd"
+        },
+        {
+            "trigger_name": "ref_ruang_bef_ins",
+            "json_file": "07September/ref_ruang_bef_ins"
+        },
+        {
+            "trigger_name": "ref_ruang_bef_updt",
+            "json_file": "07September/ref_ruang_bef_updt"
+        },
+        {
+            "trigger_name": "ref_ruas_jalan_bef_ins",
+            "json_file": "07September/ref_ruas_jalan_bef_ins"
+        },
+        {
+            "trigger_name": "ref_ruas_jalan_bef_upd",
+            "json_file": "07September/ref_ruas_jalan_bef_upd"
+        },
+        {
+            "trigger_name": "ref_tambah_manfaat_bef_ins",
+            "json_file": "07September/ref_tambah_manfaat_bef_ins"
+        },
+        {
+            "trigger_name": "ref_tambah_manfaat_bef_upd",
+            "json_file": "07September/ref_tambah_manfaat_bef_upd"
+        },
+        {
+            "trigger_name": "ref_tambah_manfaat_bef_del",
+            "json_file": "07September/ref_tambah_manfaat_bef_del"
+        },
+        {
+            "trigger_name": "ref_template_bef_ins",
+            "json_file": "07September/ref_template_bef_ins"
+        },
+        {
+            "trigger_name": "ref_template_bef_del",
+            "json_file": "07September/ref_template_bef_del"
+        },
+        {
+            "trigger_name": "ref_templatebarang_bef_ins",
+            "json_file": "07September/ref_templatebarang_bef_ins"
+        },
+        {
+            "trigger_name": "ref_templatebarang_bef_upd",
+            "json_file": "07September/ref_templatebarang_bef_upd"
+        },
+        {
+            "trigger_name": "ref_templatebarang_bef_del",
+            "json_file": "07September/ref_templatebarang_bef_del"
+        },
+        {
+            "trigger_name": "ref_templatebarang_det_bef_ins",
+            "json_file": "07September/ref_templatebarang_det_bef_ins"
+        },
+        {
+            "trigger_name": "ref_template_barang_det_bef_upd",
+            "json_file": "07September/ref_template_barang_det_bef_upd"
+        },
+        {
+            "trigger_name": "ref_urusan_aft_ins",
+            "json_file": "07September/ref_urusan_aft_ins"
+        },
+        {
+            "trigger_name": "ref_urusan_aft_del",
+            "json_file": "07September/ref_urusan_aft_del"
+        },
+        {
+            "trigger_name": "sensus_bef_ins",
+            "json_file": "07September/sensus_bef_ins"
+        },
+        {
+            "trigger_name": "sensus_bef_del",
+            "json_file": "07September/sensus_bef_del"
+        },
+        {
+            "trigger_name": "t_asetlainlain_bef_ins",
+            "json_file": "07September/t_asetlainlain_bef_ins"
+        },
+        {
+            "trigger_name": "t_atribusi_bef_ins",
+            "json_file": "07September/t_atribusi_bef_ins"
+        },
+        {
+            "trigger_name": "t_atribusi_bef_upd",
+            "json_file": "07September/t_atribusi_bef_upd"
+        },
+        {
+            "trigger_name": "t_atribusi_bef_del",
+            "json_file": "07September/t_atribusi_bef_del"
+        },
+        {
+            "trigger_name": "t_atribusi_dokumen_bef_ins",
+            "json_file": "07September/t_atribusi_dokumen_bef_ins"
+        },
+        {
+            "trigger_name": "t_atribusi_dokumen_bef_upd",
+            "json_file": "07September/t_atribusi_dokumen_bef_upd"
+        },
+        {
+            "trigger_name": "t_atribusi_rincian_bef_ins",
+            "json_file": "07September/t_atribusi_rincian_bef_ins"
+        },
+        {
+            "trigger_name": "t_atribusi_rincian_bef_upd",
+            "json_file": "07September/t_atribusi_rincian_bef_upd"
+        },
+        {
+            "trigger_name": "t_atribusi_rincian_bef_del",
+            "json_file": "07September/t_atribusi_rincian_bef_del"
+        },
+        {
+            "trigger_name": "t_birm_aft_insert",
+            "json_file": "07September/t_birm_aft_insert"
+        },
+        {
+            "trigger_name": "t_bku_bef_ins",
+            "json_file": "07September/t_bku_bef_ins"
+        },
+        {
+            "trigger_name": "t_bku_bef_upd",
+            "json_file": "07September/t_bku_bef_upd"
+        },
+        {
+            "trigger_name": "t_closing_aft_ins",
+            "json_file": "07September/t_closing_aft_ins"
+        },
+        {
+            "trigger_name": "t_closing_aft_upd",
+            "json_file": "07September/t_closing_aft_upd"
+        },
+        {
+            "trigger_name": "t_closing_aft_del",
+            "json_file": "07September/t_closing_aft_del"
+        },
+        {
+            "trigger_name": "t_distribusi_bef_ins",
+            "json_file": "07September/t_distribusi_bef_ins"
+        },
+        {
+            "trigger_name": "t_distribusi_bef_upd",
+            "json_file": "07September/t_distribusi_bef_upd"
+        },
+        {
+            "trigger_name": "t_history_aset_bef_ins",
+            "json_file": "07September/t_history_aset_bef_ins"
+        },
+        {
+            "trigger_name": "t_history_aset_aft_ins",
+            "json_file": "07September/t_history_aset_aft_ins"
+        },
+        {
+            "trigger_name": "t_history_aset_aft_upd",
+            "json_file": "07September/t_history_aset_aft_upd"
+        },
+        {
+            "trigger_name": "t_history_aset_aft_del",
+            "json_file": "07September/t_history_aset_aft_del"
+        },
+        {
+            "trigger_name": "t_jurnal_aset_aft_ins",
+            "json_file": "07September/t_jurnal_aset_aft_ins"
+        },
+        {
+            "trigger_name": "t_jurnal_aset_bef_upd",
+            "json_file": "07September/t_jurnal_aset_bef_upd"
+        },
+        {
+            "trigger_name": "t_jurnal_aset_aft_upd",
+            "json_file": "07September/t_jurnal_aset_aft_upd"
+        },
+        {
+            "trigger_name": "t_jurnal_aset_aft_del",
+            "json_file": "07September/t_jurnal_aset_aft_del"
+        },
+        {
+            "trigger_name": "t_jurnal_aset_rekap_bef_ins",
+            "json_file": "07September/t_jurnal_aset_rekap_bef_ins"
+        },
+        {
+            "trigger_name": "t_jurnal_aset_rekap_bef_upd",
+            "json_file": "07September/t_jurnal_aset_rekap_bef_upd"
+        },
+        {
+            "trigger_name": "t_kapitalisasi_bef_ins",
+            "json_file": "07September/t_kapitalisasi_bef_ins"
+        },
+        {
+            "trigger_name": "t_kondisi_bef_ins",
+            "json_file": "07September/t_kondisi_bef_ins"
+        },
+        {
+            "trigger_name": "t_kondisi_aft_ins",
+            "json_file": "07September/t_kondisi_aft_ins"
+        },
+        {
+            "trigger_name": "t_kondisi_aft_upd",
+            "json_file": "07September/t_kondisi_aft_upd"
+        },
+        {
+            "trigger_name": "t_kondisi_aft_del",
+            "json_file": "07September/t_kondisi_aft_del"
+        },
+        {
+            "trigger_name": "t_koreksi_bef_ins",
+            "json_file": "07September/t_koreksi_bef_ins"
+        },
+        {
+            "trigger_name": "t_koreksi_aft_ins",
+            "json_file": "07September/t_koreksi_aft_ins"
+        },
+        {
+            "trigger_name": "t_koreksi_aft_upd",
+            "json_file": "07September/t_koreksi_aft_upd"
+        },
+        {
+            "trigger_name": "t_koreksi_aft_del",
+            "json_file": "07September/t_koreksi_aft_del"
+        },
+        {
+            "trigger_name": "t_koreksi_penyusutan_aft_del",
+            "json_file": "07September/t_koreksi_penyusutan_aft_del"
+        },
+        {
+            "trigger_name": "t_nomor_spd_bef_ins",
+            "json_file": "07September/t_nomor_spd_bef_ins"
+        },
+        {
+            "trigger_name": "t_nomor_spd_bef_upd",
+            "json_file": "07September/t_nomor_spd_bef_upd"
+        },
+        {
+            "trigger_name": "t_nomor_spd_bef_del",
+            "json_file": "07September/t_nomor_spd_bef_del"
+        },
+        {
+            "trigger_name": "t_nomor_spd_det_bef_ins",
+            "json_file": "07September/t_nomor_spd_det_bef_ins"
+        },
+        {
+            "trigger_name": "t_nomor_spd_det_bef_upd",
+            "json_file": "07September/t_nomor_spd_det_bef_upd"
+        },
+        {
+            "trigger_name": "t_penerimaan_barang_bef_ins",
+            "json_file": "07September/t_penerimaan_barang_bef_ins"
+        },
+        {
+            "trigger_name": "t_penerimaan_barang_bef_upd",
+            "json_file": "07September/t_penerimaan_barang_bef_upd"
+        },
+        {
+            "trigger_name": "t_penerimaan_barang_aft_upd",
+            "json_file": "07September/t_penerimaan_barang_aft_upd"
+        },
+        {
+            "trigger_name": "t_penerimaan_barang_bef_del",
+            "json_file": "07September/t_penerimaan_barang_bef_del"
+        },
+        {
+            "trigger_name": "t_penerimaan_barang_det_bef_ins",
+            "json_file": "07September/t_penerimaan_barang_det_bef_ins"
+        },
+        {
+            "trigger_name": "t_penerimaan_barang_det_aft_ins",
+            "json_file": "07September/t_penerimaan_barang_det_aft_ins"
+        },
+        {
+            "trigger_name": "t_penerimaan_barang_det_bef_upd",
+            "json_file": "07September/t_penerimaan_barang_det_bef_upd"
+        },
+        {
+            "trigger_name": "t_penerimaan_barang_det_bef_del",
+            "json_file": "07September/t_penerimaan_barang_det_bef_del"
+        },
+        {
+            "trigger_name": "t_penerimaan_postbi_idbi_bef_ins",
+            "json_file": "07September/t_penerimaan_postbi_idbi_bef_ins"
+        },
+        {
+            "trigger_name": "t_penerimaan_postbi_idbi_bef_del",
+            "json_file": "07September/t_penerimaan_postbi_idbi_bef_del"
+        },
+        {
+            "trigger_name": "t_penerimaan_postbi_temp_bef_ins",
+            "json_file": "07September/t_penerimaan_postbi_temp_bef_ins"
+        },
+        {
+            "trigger_name": "t_penerimaan_rek_biaya_bef_ins",
+            "json_file": "07September/t_penerimaan_rek_biaya_bef_ins"
+        },
+        {
+            "trigger_name": "t_penerimaan_rek_biaya_bef_upd",
+            "json_file": "07September/t_penerimaan_rek_biaya_bef_upd"
+        },
+        {
+            "trigger_name": "t_penerimaan_rekening_bef_ins",
+            "json_file": "07September/t_penerimaan_rekening_bef_ins"
+        },
+        {
+            "trigger_name": "t_penerimaan_rekening_aft_ins",
+            "json_file": "07September/t_penerimaan_rekening_aft_ins"
+        },
+        {
+            "trigger_name": "t_penerimaan_rekening_bef_upd",
+            "json_file": "07September/t_penerimaan_rekening_bef_upd"
+        },
+        {
+            "trigger_name": "t_penerimaan_rekening_bef_del",
+            "json_file": "07September/t_penerimaan_rekening_bef_del"
+        },
+        {
+            "trigger_name": "t_penerimaan_rekening_det_bef_ins",
+            "json_file": "07September/t_penerimaan_rekening_det_bef_ins"
+        },
+        {
+            "trigger_name": "t_penerimaan_rekening_det_bef_upd",
+            "json_file": "07September/t_penerimaan_rekening_det_bef_upd"
+        },
+        {
+            "trigger_name": "t_penerimaan_retensi_bef_ins",
+            "json_file": "07September/t_penerimaan_retensi_bef_ins"
+        },
+        {
+            "trigger_name": "t_penerimaan_retensi_bef_upd",
+            "json_file": "07September/t_penerimaan_retensi_bef_upd"
+        },
+        {
+            "trigger_name": "t_penerimaan_retensi_bef_del",
+            "json_file": "07September/t_penerimaan_retensi_bef_del"
+        },
+        {
+            "trigger_name": "t_penerimaan_retensi_det_bef_ins",
+            "json_file": "07September/t_penerimaan_retensi_det_bef_ins"
+        },
+        {
+            "trigger_name": "t_penerimaan_retensi_det_bef_upd",
+            "json_file": "07September/t_penerimaan_retensi_det_bef_upd"
+        },
+        {
+            "trigger_name": "t_penerimaan_retensi_rekening_bef_ins",
+            "json_file": "07September/t_penerimaan_retensi_rekening_bef_ins"
+        },
+        {
+            "trigger_name": "t_penerimaan_retensi_rekening_bef_upd",
+            "json_file": "07September/t_penerimaan_retensi_rekening_bef_upd"
+        },
+        {
+            "trigger_name": "t_penerimaan_retensi_rekening_bef_del",
+            "json_file": "07September/t_penerimaan_retensi_rekening_bef_del"
+        },
+        {
+            "trigger_name": "t_pengeluaran_kas_bef_ins",
+            "json_file": "07September/t_pengeluaran_kas_bef_ins"
+        },
+        {
+            "trigger_name": "t_pengeluaran_kas_bef_upd",
+            "json_file": "07September/t_pengeluaran_kas_bef_upd"
+        },
+        {
+            "trigger_name": "t_pengeluaran_kas_aft_upd",
+            "json_file": "07September/t_pengeluaran_kas_aft_upd"
+        },
+        {
+            "trigger_name": "t_pengeluaran_kas_bef_del",
+            "json_file": "07September/t_pengeluaran_kas_bef_del"
+        },
+        {
+            "trigger_name": "t_pengeluaran_kas_pot_bef_ins",
+            "json_file": "07September/t_pengeluaran_kas_pot_bef_ins"
+        },
+        {
+            "trigger_name": "t_pengeluaran_kas_pot_bef_upd",
+            "json_file": "07September/t_pengeluaran_kas_pot_bef_upd"
+        },
+        {
+            "trigger_name": "t_pengeluaran_kas_pot_bef_del",
+            "json_file": "07September/t_pengeluaran_kas_pot_bef_del"
+        },
+        {
+            "trigger_name": "t_pengeluaran_kas_rek_bef_ins",
+            "json_file": "07September/t_pengeluaran_kas_rek_bef_ins"
+        },
+        {
+            "trigger_name": "t_pengeluaran_kas_rek_bef_upd",
+            "json_file": "07September/t_pengeluaran_kas_rek_bef_upd"
+        },
+        {
+            "trigger_name": "t_pengeluaran_kas_rek_bef_del",
+            "json_file": "07September/t_pengeluaran_kas_rek_bef_del"
+        },
+        {
+            "trigger_name": "t_spp_potongan_bef_ins",
+            "json_file": "07September/t_spp_potongan_bef_ins"
+        },
+        {
+            "trigger_name": "t_spp_potongan_bef_upd",
+            "json_file": "07September/t_spp_potongan_bef_upd"
+        },
+        {
+            "trigger_name": "t_spp_rekening_bef_ins",
+            "json_file": "07September/t_spp_rekening_bef_ins"
+        },
+        {
+            "trigger_name": "t_spp_rekening_bef_upd",
+            "json_file": "07September/t_spp_rekening_bef_upd"
+        },
+        {
+            "trigger_name": "t_transaksi_bef_ins",
+            "json_file": "07September/t_transaksi_bef_ins"
+        },
+        {
+            "trigger_name": "t_transaksi_aft_del",
+            "json_file": "07September/t_transaksi_aft_del"
+        },
+        {
+            "trigger_name": "t_tree_bef_ins",
+            "json_file": "07September/t_tree_bef_ins"
+        },
+        {
+            "trigger_name": "t_tree_aft_ins",
+            "json_file": "07September/t_tree_aft_ins"
+        },
+        {
+            "trigger_name": "temp_data_bef_ins",
+            "json_file": "07September/temp_data_bef_ins"
+        },
+        {
+            "trigger_name": "temp_data_bef_del",
+            "json_file": "07September/temp_data_bef_del"
+        },
+        {
+            "trigger_name": "temp_data_det_bef_ins",
+            "json_file": "07September/temp_data_det_bef_ins"
+        },
+        {
+            "trigger_name": "tempusr_aft_ins",
+            "json_file": "07September/tempusr_aft_ins"
+        }
+    ],
+    "routines": [
+        {
+            "routine_name": "get_bi_rincian",
+            "json_file": "07September/get_bi_rincian"
+        },
+        {
+            "routine_name": "get_nilai_buku",
+            "json_file": "07September/get_nilai_buku"
+        },
+        {
+            "routine_name": "get_nilai_perolehan",
+            "json_file": "07September/get_nilai_perolehan"
+        },
+        {
+            "routine_name": "get_nilai_rehab",
+            "json_file": "07September/get_nilai_rehab"
+        },
+        {
+            "routine_name": "get_staset",
+            "json_file": "07September/get_staset"
+        },
+        {
+            "routine_name": "sf_cek_idbi",
+            "json_file": "07September/sf_cek_idbi"
+        },
+        {
+            "routine_name": "sf_cek_idbi2",
+            "json_file": "07September/sf_cek_idbi2"
+        },
+        {
+            "routine_name": "sf_getAkumSusut",
+            "json_file": "07September/sf_getAkumSusut"
+        },
+        {
+            "routine_name": "sf_getnomor_bku",
+            "json_file": "07September/sf_getnomor_bku"
+        },
+        {
+            "routine_name": "sf_get_bi_noreg",
+            "json_file": "07September/sf_get_bi_noreg"
+        },
+        {
+            "routine_name": "sf_get_susut",
+            "json_file": "07September/sf_get_susut"
+        },
+        {
+            "routine_name": "sf_get_tambah_manfaat",
+            "json_file": "07September/sf_get_tambah_manfaat"
+        },
+        {
+            "routine_name": "sf_insert_log",
+            "json_file": "07September/sf_insert_log"
+        },
+        {
+            "routine_name": "sf_isi_bi_thn",
+            "json_file": "07September/sf_isi_bi_thn"
+        },
+        {
+            "routine_name": "sf_isi_bi_thn_baru",
+            "json_file": "07September/sf_isi_bi_thn_baru"
+        },
+        {
+            "routine_name": "sf_isi_bi_thn_harga",
+            "json_file": "07September/sf_isi_bi_thn_harga"
+        },
+        {
+            "routine_name": "sf_isi_bi_thn_kondisi",
+            "json_file": "07September/sf_isi_bi_thn_kondisi"
+        },
+        {
+            "routine_name": "sf_isi_bi_thn_staset",
+            "json_file": "07September/sf_isi_bi_thn_staset"
+        },
+        {
+            "routine_name": "sf_jurnal_bi",
+            "json_file": "07September/sf_jurnal_bi"
+        },
+        {
+            "routine_name": "sf_jurnal_mutasi",
+            "json_file": "07September/sf_jurnal_mutasi"
+        },
+        {
+            "routine_name": "sf_jurnal_rekap",
+            "json_file": "07September/sf_jurnal_rekap"
+        },
+        {
+            "routine_name": "sf_jurnal_rekap_v2",
+            "json_file": "07September/sf_jurnal_rekap_v2"
+        },
+        {
+            "routine_name": "sf_jurnal_set_stpost",
+            "json_file": "07September/sf_jurnal_set_stpost"
+        },
+        {
+            "routine_name": "sf_jurnal_susut",
+            "json_file": "07September/sf_jurnal_susut"
+        },
+        {
+            "routine_name": "sf_jurnal_susut2",
+            "json_file": "07September/sf_jurnal_susut2"
+        },
+        {
+            "routine_name": "sf_jurnal_susut_gantirugi",
+            "json_file": "07September/sf_jurnal_susut_gantirugi"
+        },
+        {
+            "routine_name": "sf_jurnal_susut_mutasi",
+            "json_file": "07September/sf_jurnal_susut_mutasi"
+        },
+        {
+            "routine_name": "sf_jurnal_susut_pemanfaatan",
+            "json_file": "07September/sf_jurnal_susut_pemanfaatan"
+        },
+        {
+            "routine_name": "sf_jurnal_susut_penghapusan",
+            "json_file": "07September/sf_jurnal_susut_penghapusan"
+        },
+        {
+            "routine_name": "sf_jurnal_susut_pindahtangan",
+            "json_file": "07September/sf_jurnal_susut_pindahtangan"
+        },
+        {
+            "routine_name": "sf_jurnal_susut_reklas",
+            "json_file": "07September/sf_jurnal_susut_reklas"
+        },
+        {
+            "routine_name": "sf_jurnal_susut_reklas_tes",
+            "json_file": "07September/sf_jurnal_susut_reklas_tes"
+        },
+        {
+            "routine_name": "sf_jurnal_susut_staset",
+            "json_file": "07September/sf_jurnal_susut_staset"
+        },
+        {
+            "routine_name": "sf_penerimaan_posting",
+            "json_file": "07September/sf_penerimaan_posting"
+        },
+        {
+            "routine_name": "sf_penerimaan_posting_distribusi",
+            "json_file": "07September/sf_penerimaan_posting_distribusi"
+        },
+        {
+            "routine_name": "sf_penerimaan_posting_distribusi_v3",
+            "json_file": "07September/sf_penerimaan_posting_distribusi_v3"
+        },
+        {
+            "routine_name": "sf_penerimaan_posting_noreg",
+            "json_file": "07September/sf_penerimaan_posting_noreg"
+        },
+        {
+            "routine_name": "sf_penerimaan_posting_pemeliharaan",
+            "json_file": "07September/sf_penerimaan_posting_pemeliharaan"
+        },
+        {
+            "routine_name": "sf_penerimaan_posting_v2",
+            "json_file": "07September/sf_penerimaan_posting_v2"
+        },
+        {
+            "routine_name": "sf_penerimaan_posting_v3",
+            "json_file": "07September/sf_penerimaan_posting_v3"
+        },
+        {
+            "routine_name": "sf_susut",
+            "json_file": "07September/sf_susut"
+        },
+        {
+            "routine_name": "sf_susut_get_periode_ak",
+            "json_file": "07September/sf_susut_get_periode_ak"
+        },
+        {
+            "routine_name": "sf_susut_mode10",
+            "json_file": "07September/sf_susut_mode10"
+        },
+        {
+            "routine_name": "sf_susut_mode11",
+            "json_file": "07September/sf_susut_mode11"
+        },
+        {
+            "routine_name": "sf_susut_mode12",
+            "json_file": "07September/sf_susut_mode12"
+        },
+        {
+            "routine_name": "sf_susut_mode13",
+            "json_file": "07September/sf_susut_mode13"
+        },
+        {
+            "routine_name": "sf_susut_mode2",
+            "json_file": "07September/sf_susut_mode2"
+        },
+        {
+            "routine_name": "sf_susut_mode3_bln",
+            "json_file": "07September/sf_susut_mode3_bln"
+        },
+        {
+            "routine_name": "sf_susut_mode3_bln_next",
+            "json_file": "07September/sf_susut_mode3_bln_next"
+        },
+        {
+            "routine_name": "sf_susut_mode3_thn",
+            "json_file": "07September/sf_susut_mode3_thn"
+        },
+        {
+            "routine_name": "sf_susut_mode3_thn_next",
+            "json_file": "07September/sf_susut_mode3_thn_next"
+        },
+        {
+            "routine_name": "sf_susut_mode4",
+            "json_file": "07September/sf_susut_mode4"
+        },
+        {
+            "routine_name": "sf_susut_mode5",
+            "json_file": "07September/sf_susut_mode5"
+        },
+        {
+            "routine_name": "sf_susut_mode5b",
+            "json_file": "07September/sf_susut_mode5b"
+        },
+        {
+            "routine_name": "sf_susut_mode5_1",
+            "json_file": "07September/sf_susut_mode5_1"
+        },
+        {
+            "routine_name": "sf_susut_mode5_2",
+            "json_file": "07September/sf_susut_mode5_2"
+        },
+        {
+            "routine_name": "sf_susut_mode5_3",
+            "json_file": "07September/sf_susut_mode5_3"
+        },
+        {
+            "routine_name": "sf_susut_mode6",
+            "json_file": "07September/sf_susut_mode6"
+        },
+        {
+            "routine_name": "sf_susut_mode7",
+            "json_file": "07September/sf_susut_mode7"
+        },
+        {
+            "routine_name": "sf_susut_mode8",
+            "json_file": "07September/sf_susut_mode8"
+        },
+        {
+            "routine_name": "sf_susut_mode9",
+            "json_file": "07September/sf_susut_mode9"
+        },
+        {
+            "routine_name": "sf_susut_mode9_bln",
+            "json_file": "07September/sf_susut_mode9_bln"
+        },
+        {
+            "routine_name": "sf_susut_mode_thn",
+            "json_file": "07September/sf_susut_mode_thn"
+        },
+        {
+            "routine_name": "sp_cek_kib",
+            "json_file": "07September/sp_cek_kib"
+        },
+        {
+            "routine_name": "sp_insert_log",
+            "json_file": "07September/sp_insert_log"
+        },
+        {
+            "routine_name": "sp_jurnal_bi",
+            "json_file": "07September/sp_jurnal_bi"
+        },
+        {
+            "routine_name": "sp_jurnal_bi_baru",
+            "json_file": "07September/sp_jurnal_bi_baru"
+        },
+        {
+            "routine_name": "sp_jurnal_bi_tes",
+            "json_file": "07September/sp_jurnal_bi_tes"
+        },
+        {
+            "routine_name": "sp_jurnal_gantirugi",
+            "json_file": "07September/sp_jurnal_gantirugi"
+        },
+        {
+            "routine_name": "sp_jurnal_gantirugi_bayar",
+            "json_file": "07September/sp_jurnal_gantirugi_bayar"
+        },
+        {
+            "routine_name": "sp_jurnal_gantirugi_tes",
+            "json_file": "07September/sp_jurnal_gantirugi_tes"
+        },
+        {
+            "routine_name": "sp_jurnal_hapussebagian",
+            "json_file": "07September/sp_jurnal_hapussebagian"
+        },
+        {
+            "routine_name": "sp_jurnal_kondisi",
+            "json_file": "07September/sp_jurnal_kondisi"
+        },
+        {
+            "routine_name": "sp_jurnal_koreksi",
+            "json_file": "07September/sp_jurnal_koreksi"
+        },
+        {
+            "routine_name": "sp_jurnal_mutasi",
+            "json_file": "07September/sp_jurnal_mutasi"
+        },
+        {
+            "routine_name": "sp_jurnal_mutasi_sotk",
+            "json_file": "07September/sp_jurnal_mutasi_sotk"
+        },
+        {
+            "routine_name": "sp_jurnal_pemanfaatan",
+            "json_file": "07September/sp_jurnal_pemanfaatan"
+        },
+        {
+            "routine_name": "sp_jurnal_pemanfaatan_berakhir",
+            "json_file": "07September/sp_jurnal_pemanfaatan_berakhir"
+        },
+        {
+            "routine_name": "sp_jurnal_pemanfaatan_berakhir_tes",
+            "json_file": "07September/sp_jurnal_pemanfaatan_berakhir_tes"
+        },
+        {
+            "routine_name": "sp_jurnal_pemeliharaan",
+            "json_file": "07September/sp_jurnal_pemeliharaan"
+        },
+        {
+            "routine_name": "sp_jurnal_pemindahtangan",
+            "json_file": "07September/sp_jurnal_pemindahtangan"
+        },
+        {
+            "routine_name": "sp_jurnal_pemusnahan",
+            "json_file": "07September/sp_jurnal_pemusnahan"
+        },
+        {
+            "routine_name": "sp_jurnal_pengaman",
+            "json_file": "07September/sp_jurnal_pengaman"
+        },
+        {
+            "routine_name": "sp_jurnal_penghapusan",
+            "json_file": "07September/sp_jurnal_penghapusan"
+        },
+        {
+            "routine_name": "sp_jurnal_penilaian",
+            "json_file": "07September/sp_jurnal_penilaian"
+        },
+        {
+            "routine_name": "sp_jurnal_reklass",
+            "json_file": "07September/sp_jurnal_reklass"
+        },
+        {
+            "routine_name": "sp_jurnal_staset",
+            "json_file": "07September/sp_jurnal_staset"
+        },
+        {
+            "routine_name": "sp_jurnal_susut",
+            "json_file": "07September/sp_jurnal_susut"
+        },
+        {
+            "routine_name": "sp_jurnal_susut_koreksi",
+            "json_file": "07September/sp_jurnal_susut_koreksi"
+        },
+        {
+            "routine_name": "sp_jurnal_susut_koreksi_tes",
+            "json_file": "07September/sp_jurnal_susut_koreksi_tes"
+        },
+        {
+            "routine_name": "sp_rekap2",
+            "json_file": "07September/sp_rekap2"
+        },
+        {
+            "routine_name": "sp_sensus_scan",
+            "json_file": "07September/sp_sensus_scan"
+        },
+        {
+            "routine_name": "sp_sensus_upd_bi",
+            "json_file": "07September/sp_sensus_upd_bi"
+        }
+    ]
+}

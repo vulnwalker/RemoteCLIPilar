@@ -1,0 +1,4269 @@
+[
+    {
+        "databaseName": null,
+        "tables": [
+            {
+                "table_name": "SettingApp",
+                "json_file": "RELEASE-2018-11-22-DATABASE/SettingApp.json"
+            },
+            {
+                "table_name": "admin",
+                "json_file": "RELEASE-2018-11-22-DATABASE/admin.json"
+            },
+            {
+                "table_name": "admin_aktivitas",
+                "json_file": "RELEASE-2018-11-22-DATABASE/admin_aktivitas.json"
+            },
+            {
+                "table_name": "anggaran_kas",
+                "json_file": "RELEASE-2018-11-22-DATABASE/anggaran_kas.json"
+            },
+            {
+                "table_name": "api_akses",
+                "json_file": "RELEASE-2018-11-22-DATABASE/api_akses.json"
+            },
+            {
+                "table_name": "barang_tidak_tercatat",
+                "json_file": "RELEASE-2018-11-22-DATABASE/barang_tidak_tercatat.json"
+            },
+            {
+                "table_name": "barcode_data_print",
+                "json_file": "RELEASE-2018-11-22-DATABASE/barcode_data_print.json"
+            },
+            {
+                "table_name": "barcode_status_print",
+                "json_file": "RELEASE-2018-11-22-DATABASE/barcode_status_print.json"
+            },
+            {
+                "table_name": "bast_mutasi",
+                "json_file": "RELEASE-2018-11-22-DATABASE/bast_mutasi.json"
+            },
+            {
+                "table_name": "bi_kib_a_tmp",
+                "json_file": "RELEASE-2018-11-22-DATABASE/bi_kib_a_tmp.json"
+            },
+            {
+                "table_name": "bi_kib_b_tmp",
+                "json_file": "RELEASE-2018-11-22-DATABASE/bi_kib_b_tmp.json"
+            },
+            {
+                "table_name": "bi_kib_c_tmp",
+                "json_file": "RELEASE-2018-11-22-DATABASE/bi_kib_c_tmp.json"
+            },
+            {
+                "table_name": "bi_kib_d_tmp",
+                "json_file": "RELEASE-2018-11-22-DATABASE/bi_kib_d_tmp.json"
+            },
+            {
+                "table_name": "bi_kib_e_tmp",
+                "json_file": "RELEASE-2018-11-22-DATABASE/bi_kib_e_tmp.json"
+            },
+            {
+                "table_name": "bi_kib_f_tmp",
+                "json_file": "RELEASE-2018-11-22-DATABASE/bi_kib_f_tmp.json"
+            },
+            {
+                "table_name": "bi_kib_g_tmp",
+                "json_file": "RELEASE-2018-11-22-DATABASE/bi_kib_g_tmp.json"
+            },
+            {
+                "table_name": "bi_susut_tmp",
+                "json_file": "RELEASE-2018-11-22-DATABASE/bi_susut_tmp.json"
+            },
+            {
+                "table_name": "bpk",
+                "json_file": "RELEASE-2018-11-22-DATABASE/bpk.json"
+            },
+            {
+                "table_name": "buku_induk",
+                "json_file": "RELEASE-2018-11-22-DATABASE/buku_induk.json"
+            },
+            {
+                "table_name": "buku_induk_del",
+                "json_file": "RELEASE-2018-11-22-DATABASE/buku_induk_del.json"
+            },
+            {
+                "table_name": "buku_induk_tes",
+                "json_file": "RELEASE-2018-11-22-DATABASE/buku_induk_tes.json"
+            },
+            {
+                "table_name": "buku_induk_thn",
+                "json_file": "RELEASE-2018-11-22-DATABASE/buku_induk_thn.json"
+            },
+            {
+                "table_name": "cancel_distribusi_posting",
+                "json_file": "RELEASE-2018-11-22-DATABASE/cancel_distribusi_posting.json"
+            },
+            {
+                "table_name": "casir_login",
+                "json_file": "RELEASE-2018-11-22-DATABASE/casir_login.json"
+            },
+            {
+                "table_name": "cek_fisik",
+                "json_file": "RELEASE-2018-11-22-DATABASE/cek_fisik.json"
+            },
+            {
+                "table_name": "cek_skpd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/cek_skpd.json"
+            },
+            {
+                "table_name": "chatx",
+                "json_file": "RELEASE-2018-11-22-DATABASE/chatx.json"
+            },
+            {
+                "table_name": "check_barang_persediaan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/check_barang_persediaan.json"
+            },
+            {
+                "table_name": "closing_persediaan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/closing_persediaan.json"
+            },
+            {
+                "table_name": "common",
+                "json_file": "RELEASE-2018-11-22-DATABASE/common.json"
+            },
+            {
+                "table_name": "count_distribusi_persediaan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/count_distribusi_persediaan.json"
+            },
+            {
+                "table_name": "current_filter",
+                "json_file": "RELEASE-2018-11-22-DATABASE/current_filter.json"
+            },
+            {
+                "table_name": "default_tahap",
+                "json_file": "RELEASE-2018-11-22-DATABASE/default_tahap.json"
+            },
+            {
+                "table_name": "delete_temp_detail_rincian_distribusi",
+                "json_file": "RELEASE-2018-11-22-DATABASE/delete_temp_detail_rincian_distribusi.json"
+            },
+            {
+                "table_name": "delete_temp_pengeluaran",
+                "json_file": "RELEASE-2018-11-22-DATABASE/delete_temp_pengeluaran.json"
+            },
+            {
+                "table_name": "delete_temp_rincian_distribusi",
+                "json_file": "RELEASE-2018-11-22-DATABASE/delete_temp_rincian_distribusi.json"
+            },
+            {
+                "table_name": "denda_ketetapan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/denda_ketetapan.json"
+            },
+            {
+                "table_name": "detail_pajak",
+                "json_file": "RELEASE-2018-11-22-DATABASE/detail_pajak.json"
+            },
+            {
+                "table_name": "detail_pemasukan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/detail_pemasukan.json"
+            },
+            {
+                "table_name": "detail_pembayaran",
+                "json_file": "RELEASE-2018-11-22-DATABASE/detail_pembayaran.json"
+            },
+            {
+                "table_name": "detail_pengeluaran",
+                "json_file": "RELEASE-2018-11-22-DATABASE/detail_pengeluaran.json"
+            },
+            {
+                "table_name": "detail_renja",
+                "json_file": "RELEASE-2018-11-22-DATABASE/detail_renja.json"
+            },
+            {
+                "table_name": "detail_renja_v2",
+                "json_file": "RELEASE-2018-11-22-DATABASE/detail_renja_v2.json"
+            },
+            {
+                "table_name": "detail_renja_v3",
+                "json_file": "RELEASE-2018-11-22-DATABASE/detail_renja_v3.json"
+            },
+            {
+                "table_name": "detail_rincian_distribusi",
+                "json_file": "RELEASE-2018-11-22-DATABASE/detail_rincian_distribusi.json"
+            },
+            {
+                "table_name": "distribusi",
+                "json_file": "RELEASE-2018-11-22-DATABASE/distribusi.json"
+            },
+            {
+                "table_name": "dkb",
+                "json_file": "RELEASE-2018-11-22-DATABASE/dkb.json"
+            },
+            {
+                "table_name": "dkbp_persediaan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/dkbp_persediaan.json"
+            },
+            {
+                "table_name": "dkpb",
+                "json_file": "RELEASE-2018-11-22-DATABASE/dkpb.json"
+            },
+            {
+                "table_name": "dokum",
+                "json_file": "RELEASE-2018-11-22-DATABASE/dokum.json"
+            },
+            {
+                "table_name": "floodprotection",
+                "json_file": "RELEASE-2018-11-22-DATABASE/floodprotection.json"
+            },
+            {
+                "table_name": "footer",
+                "json_file": "RELEASE-2018-11-22-DATABASE/footer.json"
+            },
+            {
+                "table_name": "galery",
+                "json_file": "RELEASE-2018-11-22-DATABASE/galery.json"
+            },
+            {
+                "table_name": "gambar",
+                "json_file": "RELEASE-2018-11-22-DATABASE/gambar.json"
+            },
+            {
+                "table_name": "gambarBanner",
+                "json_file": "RELEASE-2018-11-22-DATABASE/gambarBanner.json"
+            },
+            {
+                "table_name": "gambar_hist",
+                "json_file": "RELEASE-2018-11-22-DATABASE/gambar_hist.json"
+            },
+            {
+                "table_name": "gambar_upload",
+                "json_file": "RELEASE-2018-11-22-DATABASE/gambar_upload.json"
+            },
+            {
+                "table_name": "gantirugi",
+                "json_file": "RELEASE-2018-11-22-DATABASE/gantirugi.json"
+            },
+            {
+                "table_name": "gantirugi_bayar",
+                "json_file": "RELEASE-2018-11-22-DATABASE/gantirugi_bayar.json"
+            },
+            {
+                "table_name": "general_setting",
+                "json_file": "RELEASE-2018-11-22-DATABASE/general_setting.json"
+            },
+            {
+                "table_name": "grup",
+                "json_file": "RELEASE-2018-11-22-DATABASE/grup.json"
+            },
+            {
+                "table_name": "history_barang",
+                "json_file": "RELEASE-2018-11-22-DATABASE/history_barang.json"
+            },
+            {
+                "table_name": "id_tmp",
+                "json_file": "RELEASE-2018-11-22-DATABASE/id_tmp.json"
+            },
+            {
+                "table_name": "idbi_tmp",
+                "json_file": "RELEASE-2018-11-22-DATABASE/idbi_tmp.json"
+            },
+            {
+                "table_name": "images",
+                "json_file": "RELEASE-2018-11-22-DATABASE/images.json"
+            },
+            {
+                "table_name": "imagesData",
+                "json_file": "RELEASE-2018-11-22-DATABASE/imagesData.json"
+            },
+            {
+                "table_name": "images_kategori",
+                "json_file": "RELEASE-2018-11-22-DATABASE/images_kategori.json"
+            },
+            {
+                "table_name": "instansi",
+                "json_file": "RELEASE-2018-11-22-DATABASE/instansi.json"
+            },
+            {
+                "table_name": "integrasi_rkbmd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/integrasi_rkbmd.json"
+            },
+            {
+                "table_name": "inventaris",
+                "json_file": "RELEASE-2018-11-22-DATABASE/inventaris.json"
+            },
+            {
+                "table_name": "jurnal_aset",
+                "json_file": "RELEASE-2018-11-22-DATABASE/jurnal_aset.json"
+            },
+            {
+                "table_name": "kdpiutang",
+                "json_file": "RELEASE-2018-11-22-DATABASE/kdpiutang.json"
+            },
+            {
+                "table_name": "ketetapanpajak",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ketetapanpajak.json"
+            },
+            {
+                "table_name": "kib_a",
+                "json_file": "RELEASE-2018-11-22-DATABASE/kib_a.json"
+            },
+            {
+                "table_name": "kib_b",
+                "json_file": "RELEASE-2018-11-22-DATABASE/kib_b.json"
+            },
+            {
+                "table_name": "kib_c",
+                "json_file": "RELEASE-2018-11-22-DATABASE/kib_c.json"
+            },
+            {
+                "table_name": "kib_d",
+                "json_file": "RELEASE-2018-11-22-DATABASE/kib_d.json"
+            },
+            {
+                "table_name": "kib_e",
+                "json_file": "RELEASE-2018-11-22-DATABASE/kib_e.json"
+            },
+            {
+                "table_name": "kib_f",
+                "json_file": "RELEASE-2018-11-22-DATABASE/kib_f.json"
+            },
+            {
+                "table_name": "kib_g",
+                "json_file": "RELEASE-2018-11-22-DATABASE/kib_g.json"
+            },
+            {
+                "table_name": "kir",
+                "json_file": "RELEASE-2018-11-22-DATABASE/kir.json"
+            },
+            {
+                "table_name": "link",
+                "json_file": "RELEASE-2018-11-22-DATABASE/link.json"
+            },
+            {
+                "table_name": "list_casir",
+                "json_file": "RELEASE-2018-11-22-DATABASE/list_casir.json"
+            },
+            {
+                "table_name": "list_images",
+                "json_file": "RELEASE-2018-11-22-DATABASE/list_images.json"
+            },
+            {
+                "table_name": "listtable",
+                "json_file": "RELEASE-2018-11-22-DATABASE/listtable.json"
+            },
+            {
+                "table_name": "lock_barang_kurang",
+                "json_file": "RELEASE-2018-11-22-DATABASE/lock_barang_kurang.json"
+            },
+            {
+                "table_name": "lock_barang_tambah",
+                "json_file": "RELEASE-2018-11-22-DATABASE/lock_barang_tambah.json"
+            },
+            {
+                "table_name": "log_no_reg",
+                "json_file": "RELEASE-2018-11-22-DATABASE/log_no_reg.json"
+            },
+            {
+                "table_name": "managemen_pengguna",
+                "json_file": "RELEASE-2018-11-22-DATABASE/managemen_pengguna.json"
+            },
+            {
+                "table_name": "menu",
+                "json_file": "RELEASE-2018-11-22-DATABASE/menu.json"
+            },
+            {
+                "table_name": "menu_bar",
+                "json_file": "RELEASE-2018-11-22-DATABASE/menu_bar.json"
+            },
+            {
+                "table_name": "migrasi",
+                "json_file": "RELEASE-2018-11-22-DATABASE/migrasi.json"
+            },
+            {
+                "table_name": "mutasi_sebagian",
+                "json_file": "RELEASE-2018-11-22-DATABASE/mutasi_sebagian.json"
+            },
+            {
+                "table_name": "panitia_pemeriksa",
+                "json_file": "RELEASE-2018-11-22-DATABASE/panitia_pemeriksa.json"
+            },
+            {
+                "table_name": "pegawai",
+                "json_file": "RELEASE-2018-11-22-DATABASE/pegawai.json"
+            },
+            {
+                "table_name": "pemanfaatan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/pemanfaatan.json"
+            },
+            {
+                "table_name": "pemasukan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/pemasukan.json"
+            },
+            {
+                "table_name": "pembayaran_pajak",
+                "json_file": "RELEASE-2018-11-22-DATABASE/pembayaran_pajak.json"
+            },
+            {
+                "table_name": "pembiayaan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/pembiayaan.json"
+            },
+            {
+                "table_name": "pemeliharaan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/pemeliharaan.json"
+            },
+            {
+                "table_name": "pemindahtanganan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/pemindahtanganan.json"
+            },
+            {
+                "table_name": "pemusnahan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/pemusnahan.json"
+            },
+            {
+                "table_name": "pemusnahan_det",
+                "json_file": "RELEASE-2018-11-22-DATABASE/pemusnahan_det.json"
+            },
+            {
+                "table_name": "pemusnahan_panitia",
+                "json_file": "RELEASE-2018-11-22-DATABASE/pemusnahan_panitia.json"
+            },
+            {
+                "table_name": "pemusnahan_persediaan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/pemusnahan_persediaan.json"
+            },
+            {
+                "table_name": "pendaftaran_objek_pajak",
+                "json_file": "RELEASE-2018-11-22-DATABASE/pendaftaran_objek_pajak.json"
+            },
+            {
+                "table_name": "pendaftaran_wajib_pajak",
+                "json_file": "RELEASE-2018-11-22-DATABASE/pendaftaran_wajib_pajak.json"
+            },
+            {
+                "table_name": "penerimaan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/penerimaan.json"
+            },
+            {
+                "table_name": "penerimaan_persediaan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/penerimaan_persediaan.json"
+            },
+            {
+                "table_name": "penetapan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/penetapan.json"
+            },
+            {
+                "table_name": "penetapan_objek_pajak",
+                "json_file": "RELEASE-2018-11-22-DATABASE/penetapan_objek_pajak.json"
+            },
+            {
+                "table_name": "penetapan_rkbmd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/penetapan_rkbmd.json"
+            },
+            {
+                "table_name": "penetapan_wajib_pajak",
+                "json_file": "RELEASE-2018-11-22-DATABASE/penetapan_wajib_pajak.json"
+            },
+            {
+                "table_name": "pengadaan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/pengadaan.json"
+            },
+            {
+                "table_name": "pengadaan_pemeliharaan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/pengadaan_pemeliharaan.json"
+            },
+            {
+                "table_name": "pengadaan_persediaan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/pengadaan_persediaan.json"
+            },
+            {
+                "table_name": "pengadaan_sk",
+                "json_file": "RELEASE-2018-11-22-DATABASE/pengadaan_sk.json"
+            },
+            {
+                "table_name": "pengamanan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/pengamanan.json"
+            },
+            {
+                "table_name": "pengaturan_persediaan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/pengaturan_persediaan.json"
+            },
+            {
+                "table_name": "pengeluaran",
+                "json_file": "RELEASE-2018-11-22-DATABASE/pengeluaran.json"
+            },
+            {
+                "table_name": "pengeluaran_persediaan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/pengeluaran_persediaan.json"
+            },
+            {
+                "table_name": "pengeluaran_vlama",
+                "json_file": "RELEASE-2018-11-22-DATABASE/pengeluaran_vlama.json"
+            },
+            {
+                "table_name": "penggunaan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/penggunaan.json"
+            },
+            {
+                "table_name": "penggunaan_det",
+                "json_file": "RELEASE-2018-11-22-DATABASE/penggunaan_det.json"
+            },
+            {
+                "table_name": "penggunaan_ketetapan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/penggunaan_ketetapan.json"
+            },
+            {
+                "table_name": "penghapusan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/penghapusan.json"
+            },
+            {
+                "table_name": "penghapusan_sebagian",
+                "json_file": "RELEASE-2018-11-22-DATABASE/penghapusan_sebagian.json"
+            },
+            {
+                "table_name": "penghapusan_usul",
+                "json_file": "RELEASE-2018-11-22-DATABASE/penghapusan_usul.json"
+            },
+            {
+                "table_name": "penghapusan_usul_det",
+                "json_file": "RELEASE-2018-11-22-DATABASE/penghapusan_usul_det.json"
+            },
+            {
+                "table_name": "penghapusan_usulsk",
+                "json_file": "RELEASE-2018-11-22-DATABASE/penghapusan_usulsk.json"
+            },
+            {
+                "table_name": "penghapusan_usulsk_det",
+                "json_file": "RELEASE-2018-11-22-DATABASE/penghapusan_usulsk_det.json"
+            },
+            {
+                "table_name": "penilaian",
+                "json_file": "RELEASE-2018-11-22-DATABASE/penilaian.json"
+            },
+            {
+                "table_name": "penilaian_manfaat",
+                "json_file": "RELEASE-2018-11-22-DATABASE/penilaian_manfaat.json"
+            },
+            {
+                "table_name": "penilaian_pindahtangan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/penilaian_pindahtangan.json"
+            },
+            {
+                "table_name": "penyusutan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/penyusutan.json"
+            },
+            {
+                "table_name": "penyusutan_koreksi",
+                "json_file": "RELEASE-2018-11-22-DATABASE/penyusutan_koreksi.json"
+            },
+            {
+                "table_name": "penyusutan_log",
+                "json_file": "RELEASE-2018-11-22-DATABASE/penyusutan_log.json"
+            },
+            {
+                "table_name": "penyusutan_sesi",
+                "json_file": "RELEASE-2018-11-22-DATABASE/penyusutan_sesi.json"
+            },
+            {
+                "table_name": "perencanaan_persediaan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/perencanaan_persediaan.json"
+            },
+            {
+                "table_name": "pindah_renja_v3",
+                "json_file": "RELEASE-2018-11-22-DATABASE/pindah_renja_v3.json"
+            },
+            {
+                "table_name": "pindah_rkbmd_v3",
+                "json_file": "RELEASE-2018-11-22-DATABASE/pindah_rkbmd_v3.json"
+            },
+            {
+                "table_name": "plafon_anggaran",
+                "json_file": "RELEASE-2018-11-22-DATABASE/plafon_anggaran.json"
+            },
+            {
+                "table_name": "ref_bank",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_bank.json"
+            },
+            {
+                "table_name": "ref_barang",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_barang.json"
+            },
+            {
+                "table_name": "ref_barang_hist",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_barang_hist.json"
+            },
+            {
+                "table_name": "ref_barang_jabarlv6",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_barang_jabarlv6.json"
+            },
+            {
+                "table_name": "ref_barang_p108",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_barang_p108.json"
+            },
+            {
+                "table_name": "ref_barang_persediaan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_barang_persediaan.json"
+            },
+            {
+                "table_name": "ref_barang_v2",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_barang_v2.json"
+            },
+            {
+                "table_name": "ref_bast",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_bast.json"
+            },
+            {
+                "table_name": "ref_cara_pemenuhan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_cara_pemenuhan.json"
+            },
+            {
+                "table_name": "ref_data_penetapan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_data_penetapan.json"
+            },
+            {
+                "table_name": "ref_default_tmp",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_default_tmp.json"
+            },
+            {
+                "table_name": "ref_dokumensumber",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_dokumensumber.json"
+            },
+            {
+                "table_name": "ref_gudang",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_gudang.json"
+            },
+            {
+                "table_name": "ref_gudang_persediaan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_gudang_persediaan.json"
+            },
+            {
+                "table_name": "ref_hargabarang_persediaan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_hargabarang_persediaan.json"
+            },
+            {
+                "table_name": "ref_jabatan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_jabatan.json"
+            },
+            {
+                "table_name": "ref_jenis_pemeliharaan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_jenis_pemeliharaan.json"
+            },
+            {
+                "table_name": "ref_jenis_tagihan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_jenis_tagihan.json"
+            },
+            {
+                "table_name": "ref_jns_jurnal",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_jns_jurnal.json"
+            },
+            {
+                "table_name": "ref_jurnal",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_jurnal.json"
+            },
+            {
+                "table_name": "ref_kapitalisasi",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_kapitalisasi.json"
+            },
+            {
+                "table_name": "ref_kas_bendahara",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_kas_bendahara.json"
+            },
+            {
+                "table_name": "ref_kategori_perda",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_kategori_perda.json"
+            },
+            {
+                "table_name": "ref_kategori_tandatangan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_kategori_tandatangan.json"
+            },
+            {
+                "table_name": "ref_kelengkapan_dokumen",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_kelengkapan_dokumen.json"
+            },
+            {
+                "table_name": "ref_kode_pajak",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_kode_pajak.json"
+            },
+            {
+                "table_name": "ref_kode_pajak_while",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_kode_pajak_while.json"
+            },
+            {
+                "table_name": "ref_kotakec",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_kotakec.json"
+            },
+            {
+                "table_name": "ref_lra",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_lra.json"
+            },
+            {
+                "table_name": "ref_menu",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_menu.json"
+            },
+            {
+                "table_name": "ref_menu_copy",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_menu_copy.json"
+            },
+            {
+                "table_name": "ref_merk_persediaan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_merk_persediaan.json"
+            },
+            {
+                "table_name": "ref_modul",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_modul.json"
+            },
+            {
+                "table_name": "ref_nm_pejabat_sp",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_nm_pejabat_sp.json"
+            },
+            {
+                "table_name": "ref_nomor_dokumen",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_nomor_dokumen.json"
+            },
+            {
+                "table_name": "ref_norek_bendahara",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_norek_bendahara.json"
+            },
+            {
+                "table_name": "ref_pangkat",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_pangkat.json"
+            },
+            {
+                "table_name": "ref_pegawai",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_pegawai.json"
+            },
+            {
+                "table_name": "ref_pejabat",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_pejabat.json"
+            },
+            {
+                "table_name": "ref_pekerjaan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_pekerjaan.json"
+            },
+            {
+                "table_name": "ref_pemda",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_pemda.json"
+            },
+            {
+                "table_name": "ref_pemilik",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_pemilik.json"
+            },
+            {
+                "table_name": "ref_penerima_pengeluaran",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_penerima_pengeluaran.json"
+            },
+            {
+                "table_name": "ref_penerimaan_barang_info",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_penerimaan_barang_info.json"
+            },
+            {
+                "table_name": "ref_penerimaan_tandatangan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_penerimaan_tandatangan.json"
+            },
+            {
+                "table_name": "ref_penerimabarang",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_penerimabarang.json"
+            },
+            {
+                "table_name": "ref_penyedia",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_penyedia.json"
+            },
+            {
+                "table_name": "ref_penyerah_pengeluaran",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_penyerah_pengeluaran.json"
+            },
+            {
+                "table_name": "ref_penyusutan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_penyusutan.json"
+            },
+            {
+                "table_name": "ref_perda",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_perda.json"
+            },
+            {
+                "table_name": "ref_potongan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_potongan.json"
+            },
+            {
+                "table_name": "ref_potongan_spm",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_potongan_spm.json"
+            },
+            {
+                "table_name": "ref_program",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_program.json"
+            },
+            {
+                "table_name": "ref_program_sipkd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_program_sipkd.json"
+            },
+            {
+                "table_name": "ref_provkotakecdes",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_provkotakecdes.json"
+            },
+            {
+                "table_name": "ref_rekening",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_rekening.json"
+            },
+            {
+                "table_name": "ref_rekening_2",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_rekening_2.json"
+            },
+            {
+                "table_name": "ref_rekening_3",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_rekening_3.json"
+            },
+            {
+                "table_name": "ref_rekening_daerah",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_rekening_daerah.json"
+            },
+            {
+                "table_name": "ref_rekening_hist",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_rekening_hist.json"
+            },
+            {
+                "table_name": "ref_rincian_template",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_rincian_template.json"
+            },
+            {
+                "table_name": "ref_ruang",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_ruang.json"
+            },
+            {
+                "table_name": "ref_ruang_awal",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_ruang_awal.json"
+            },
+            {
+                "table_name": "ref_ruas_jalan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_ruas_jalan.json"
+            },
+            {
+                "table_name": "ref_satuan_persediaan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_satuan_persediaan.json"
+            },
+            {
+                "table_name": "ref_satuan_rekening",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_satuan_rekening.json"
+            },
+            {
+                "table_name": "ref_satuan_rka",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_satuan_rka.json"
+            },
+            {
+                "table_name": "ref_sipkd_dpa_rek",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_sipkd_dpa_rek.json"
+            },
+            {
+                "table_name": "ref_sipkd_dpa_rek_hist",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_sipkd_dpa_rek_hist.json"
+            },
+            {
+                "table_name": "ref_sipkd_dpa_rek_log",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_sipkd_dpa_rek_log.json"
+            },
+            {
+                "table_name": "ref_sipkd_rek",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_sipkd_rek.json"
+            },
+            {
+                "table_name": "ref_sipkd_rek_hist",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_sipkd_rek_hist.json"
+            },
+            {
+                "table_name": "ref_sipkd_skpd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_sipkd_skpd.json"
+            },
+            {
+                "table_name": "ref_sipkd_skpd_hist",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_sipkd_skpd_hist.json"
+            },
+            {
+                "table_name": "ref_skpd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_skpd.json"
+            },
+            {
+                "table_name": "ref_skpd_",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_skpd_.json"
+            },
+            {
+                "table_name": "ref_skpd_bagian",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_skpd_bagian.json"
+            },
+            {
+                "table_name": "ref_skpd_bdg",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_skpd_bdg.json"
+            },
+            {
+                "table_name": "ref_skpd_hist",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_skpd_hist.json"
+            },
+            {
+                "table_name": "ref_skpd_urusan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_skpd_urusan.json"
+            },
+            {
+                "table_name": "ref_sp_potongan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_sp_potongan.json"
+            },
+            {
+                "table_name": "ref_spec_persediaan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_spec_persediaan.json"
+            },
+            {
+                "table_name": "ref_standar_satuan_harga",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_standar_satuan_harga.json"
+            },
+            {
+                "table_name": "ref_statusbarang2",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_statusbarang2.json"
+            },
+            {
+                "table_name": "ref_std_harga",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_std_harga.json"
+            },
+            {
+                "table_name": "ref_std_kebutuhan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_std_kebutuhan.json"
+            },
+            {
+                "table_name": "ref_sumber_dana",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_sumber_dana.json"
+            },
+            {
+                "table_name": "ref_tagihan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_tagihan.json"
+            },
+            {
+                "table_name": "ref_tahap_anggaran",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_tahap_anggaran.json"
+            },
+            {
+                "table_name": "ref_tahap_anggaran_v3",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_tahap_anggaran_v3.json"
+            },
+            {
+                "table_name": "ref_tambah_manfaat",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_tambah_manfaat.json"
+            },
+            {
+                "table_name": "ref_tambah_manfaat_hist",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_tambah_manfaat_hist.json"
+            },
+            {
+                "table_name": "ref_tandatangan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_tandatangan.json"
+            },
+            {
+                "table_name": "ref_template",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_template.json"
+            },
+            {
+                "table_name": "ref_templatebarang",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_templatebarang.json"
+            },
+            {
+                "table_name": "ref_templatebarang_det",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_templatebarang_det.json"
+            },
+            {
+                "table_name": "ref_tim_anggaran",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_tim_anggaran.json"
+            },
+            {
+                "table_name": "ref_type_persediaan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_type_persediaan.json"
+            },
+            {
+                "table_name": "ref_urusan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_urusan.json"
+            },
+            {
+                "table_name": "ref_urusan_hist",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_urusan_hist.json"
+            },
+            {
+                "table_name": "ref_wilayah",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_wilayah.json"
+            },
+            {
+                "table_name": "ref_wilayah1",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_wilayah1.json"
+            },
+            {
+                "table_name": "refskpd_urusan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/refskpd_urusan.json"
+            },
+            {
+                "table_name": "report",
+                "json_file": "RELEASE-2018-11-22-DATABASE/report.json"
+            },
+            {
+                "table_name": "rincian_belanja",
+                "json_file": "RELEASE-2018-11-22-DATABASE/rincian_belanja.json"
+            },
+            {
+                "table_name": "rincian_distribusi",
+                "json_file": "RELEASE-2018-11-22-DATABASE/rincian_distribusi.json"
+            },
+            {
+                "table_name": "rincian_lock_barang",
+                "json_file": "RELEASE-2018-11-22-DATABASE/rincian_lock_barang.json"
+            },
+            {
+                "table_name": "rincian_saldo_awal_persediaan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/rincian_saldo_awal_persediaan.json"
+            },
+            {
+                "table_name": "rka",
+                "json_file": "RELEASE-2018-11-22-DATABASE/rka.json"
+            },
+            {
+                "table_name": "rkb",
+                "json_file": "RELEASE-2018-11-22-DATABASE/rkb.json"
+            },
+            {
+                "table_name": "rkb_standar",
+                "json_file": "RELEASE-2018-11-22-DATABASE/rkb_standar.json"
+            },
+            {
+                "table_name": "rkbmd_pemeliharaan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/rkbmd_pemeliharaan.json"
+            },
+            {
+                "table_name": "rkbmd_pemeliharaan_v3",
+                "json_file": "RELEASE-2018-11-22-DATABASE/rkbmd_pemeliharaan_v3.json"
+            },
+            {
+                "table_name": "rkpb",
+                "json_file": "RELEASE-2018-11-22-DATABASE/rkpb.json"
+            },
+            {
+                "table_name": "saldo_awal",
+                "json_file": "RELEASE-2018-11-22-DATABASE/saldo_awal.json"
+            },
+            {
+                "table_name": "sensus",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sensus.json"
+            },
+            {
+                "table_name": "sensus_scan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sensus_scan.json"
+            },
+            {
+                "table_name": "service_no_reg",
+                "json_file": "RELEASE-2018-11-22-DATABASE/service_no_reg.json"
+            },
+            {
+                "table_name": "setting",
+                "json_file": "RELEASE-2018-11-22-DATABASE/setting.json"
+            },
+            {
+                "table_name": "settingDb",
+                "json_file": "RELEASE-2018-11-22-DATABASE/settingDb.json"
+            },
+            {
+                "table_name": "settingKetetapan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/settingKetetapan.json"
+            },
+            {
+                "table_name": "setting_inventaris",
+                "json_file": "RELEASE-2018-11-22-DATABASE/setting_inventaris.json"
+            },
+            {
+                "table_name": "setting_inventaris_history",
+                "json_file": "RELEASE-2018-11-22-DATABASE/setting_inventaris_history.json"
+            },
+            {
+                "table_name": "setting_kolom",
+                "json_file": "RELEASE-2018-11-22-DATABASE/setting_kolom.json"
+            },
+            {
+                "table_name": "setting_penyusutan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/setting_penyusutan.json"
+            },
+            {
+                "table_name": "setting_saldo_awal_keu",
+                "json_file": "RELEASE-2018-11-22-DATABASE/setting_saldo_awal_keu.json"
+            },
+            {
+                "table_name": "setting_tanda_tangan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/setting_tanda_tangan.json"
+            },
+            {
+                "table_name": "setting_tim_anggaran",
+                "json_file": "RELEASE-2018-11-22-DATABASE/setting_tim_anggaran.json"
+            },
+            {
+                "table_name": "settingperencanaan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/settingperencanaan.json"
+            },
+            {
+                "table_name": "settingperencanaan_v3",
+                "json_file": "RELEASE-2018-11-22-DATABASE/settingperencanaan_v3.json"
+            },
+            {
+                "table_name": "shortcut",
+                "json_file": "RELEASE-2018-11-22-DATABASE/shortcut.json"
+            },
+            {
+                "table_name": "skpd_renja_v3",
+                "json_file": "RELEASE-2018-11-22-DATABASE/skpd_renja_v3.json"
+            },
+            {
+                "table_name": "skpd_report_dpa",
+                "json_file": "RELEASE-2018-11-22-DATABASE/skpd_report_dpa.json"
+            },
+            {
+                "table_name": "skpd_report_dpa_1",
+                "json_file": "RELEASE-2018-11-22-DATABASE/skpd_report_dpa_1.json"
+            },
+            {
+                "table_name": "skpd_report_dpa_2_1",
+                "json_file": "RELEASE-2018-11-22-DATABASE/skpd_report_dpa_2_1.json"
+            },
+            {
+                "table_name": "skpd_report_dpa_2_2",
+                "json_file": "RELEASE-2018-11-22-DATABASE/skpd_report_dpa_2_2.json"
+            },
+            {
+                "table_name": "skpd_report_dpa_2_2_1",
+                "json_file": "RELEASE-2018-11-22-DATABASE/skpd_report_dpa_2_2_1.json"
+            },
+            {
+                "table_name": "skpd_report_plafon",
+                "json_file": "RELEASE-2018-11-22-DATABASE/skpd_report_plafon.json"
+            },
+            {
+                "table_name": "skpd_report_renja",
+                "json_file": "RELEASE-2018-11-22-DATABASE/skpd_report_renja.json"
+            },
+            {
+                "table_name": "skpd_report_rka",
+                "json_file": "RELEASE-2018-11-22-DATABASE/skpd_report_rka.json"
+            },
+            {
+                "table_name": "skpd_report_rka_1",
+                "json_file": "RELEASE-2018-11-22-DATABASE/skpd_report_rka_1.json"
+            },
+            {
+                "table_name": "skpd_report_rka_21",
+                "json_file": "RELEASE-2018-11-22-DATABASE/skpd_report_rka_21.json"
+            },
+            {
+                "table_name": "skpd_report_rka_22",
+                "json_file": "RELEASE-2018-11-22-DATABASE/skpd_report_rka_22.json"
+            },
+            {
+                "table_name": "skpd_report_rka_221",
+                "json_file": "RELEASE-2018-11-22-DATABASE/skpd_report_rka_221.json"
+            },
+            {
+                "table_name": "skpd_report_rkbmd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/skpd_report_rkbmd.json"
+            },
+            {
+                "table_name": "struktur_menu",
+                "json_file": "RELEASE-2018-11-22-DATABASE/struktur_menu.json"
+            },
+            {
+                "table_name": "sync_dpa",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sync_dpa.json"
+            },
+            {
+                "table_name": "sync_renja",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sync_renja.json"
+            },
+            {
+                "table_name": "sync_rka",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sync_rka.json"
+            },
+            {
+                "table_name": "system",
+                "json_file": "RELEASE-2018-11-22-DATABASE/system.json"
+            },
+            {
+                "table_name": "system_menu",
+                "json_file": "RELEASE-2018-11-22-DATABASE/system_menu.json"
+            },
+            {
+                "table_name": "system_modul",
+                "json_file": "RELEASE-2018-11-22-DATABASE/system_modul.json"
+            },
+            {
+                "table_name": "system_shortcut",
+                "json_file": "RELEASE-2018-11-22-DATABASE/system_shortcut.json"
+            },
+            {
+                "table_name": "system_shortcut2",
+                "json_file": "RELEASE-2018-11-22-DATABASE/system_shortcut2.json"
+            },
+            {
+                "table_name": "t_asetlainlain",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_asetlainlain.json"
+            },
+            {
+                "table_name": "t_atribusi",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_atribusi.json"
+            },
+            {
+                "table_name": "t_atribusi_dokumen",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_atribusi_dokumen.json"
+            },
+            {
+                "table_name": "t_atribusi_rincian",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_atribusi_rincian.json"
+            },
+            {
+                "table_name": "t_atribusi_rincian_hist",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_atribusi_rincian_hist.json"
+            },
+            {
+                "table_name": "t_backup",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_backup.json"
+            },
+            {
+                "table_name": "t_birm",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_birm.json"
+            },
+            {
+                "table_name": "t_birm_Bck",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_birm_Bck.json"
+            },
+            {
+                "table_name": "t_birm_double",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_birm_double.json"
+            },
+            {
+                "table_name": "t_birm_error",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_birm_error.json"
+            },
+            {
+                "table_name": "t_birm_pekerjaan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_birm_pekerjaan.json"
+            },
+            {
+                "table_name": "t_birm_pekerjaan_double",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_birm_pekerjaan_double.json"
+            },
+            {
+                "table_name": "t_birm_rekening",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_birm_rekening.json"
+            },
+            {
+                "table_name": "t_birm_rekening_double",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_birm_rekening_double.json"
+            },
+            {
+                "table_name": "t_bku",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_bku.json"
+            },
+            {
+                "table_name": "t_cek_bi",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_cek_bi.json"
+            },
+            {
+                "table_name": "t_cek_bi_tmp",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_cek_bi_tmp.json"
+            },
+            {
+                "table_name": "t_closing",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_closing.json"
+            },
+            {
+                "table_name": "t_closing_hist",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_closing_hist.json"
+            },
+            {
+                "table_name": "t_distribusi",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_distribusi.json"
+            },
+            {
+                "table_name": "t_history",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_history.json"
+            },
+            {
+                "table_name": "t_history_aset",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_history_aset.json"
+            },
+            {
+                "table_name": "t_jurnal_aset",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_jurnal_aset.json"
+            },
+            {
+                "table_name": "t_jurnal_aset_ekstra",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_jurnal_aset_ekstra.json"
+            },
+            {
+                "table_name": "t_jurnal_aset_lainnya",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_jurnal_aset_lainnya.json"
+            },
+            {
+                "table_name": "t_jurnal_aset_rekap",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_jurnal_aset_rekap.json"
+            },
+            {
+                "table_name": "t_jurnal_aset_tetap",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_jurnal_aset_tetap.json"
+            },
+            {
+                "table_name": "t_jurnal_aset_thn",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_jurnal_aset_thn.json"
+            },
+            {
+                "table_name": "t_jurnal_keuangan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_jurnal_keuangan.json"
+            },
+            {
+                "table_name": "t_jurnal_keuangan_det",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_jurnal_keuangan_det.json"
+            },
+            {
+                "table_name": "t_jurnal_penyusutan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_jurnal_penyusutan.json"
+            },
+            {
+                "table_name": "t_jurnal_penyusutan_koreksi",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_jurnal_penyusutan_koreksi.json"
+            },
+            {
+                "table_name": "t_kapitalisasi",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_kapitalisasi.json"
+            },
+            {
+                "table_name": "t_kartu_persediaan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_kartu_persediaan.json"
+            },
+            {
+                "table_name": "t_kas_bendahara_kartu",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_kas_bendahara_kartu.json"
+            },
+            {
+                "table_name": "t_kas_bendahara_mutasi",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_kas_bendahara_mutasi.json"
+            },
+            {
+                "table_name": "t_kas_bendahara_penerimaan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_kas_bendahara_penerimaan.json"
+            },
+            {
+                "table_name": "t_kondisi",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_kondisi.json"
+            },
+            {
+                "table_name": "t_koreksi",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_koreksi.json"
+            },
+            {
+                "table_name": "t_koreksi_penyusutan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_koreksi_penyusutan.json"
+            },
+            {
+                "table_name": "t_log",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_log.json"
+            },
+            {
+                "table_name": "t_nomor_spd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_nomor_spd.json"
+            },
+            {
+                "table_name": "t_nomor_spd_det",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_nomor_spd_det.json"
+            },
+            {
+                "table_name": "t_penerimaan_barang",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_penerimaan_barang.json"
+            },
+            {
+                "table_name": "t_penerimaan_barang_det",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_penerimaan_barang_det.json"
+            },
+            {
+                "table_name": "t_penerimaan_barang_file",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_penerimaan_barang_file.json"
+            },
+            {
+                "table_name": "t_penerimaan_postbi_idbi",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_penerimaan_postbi_idbi.json"
+            },
+            {
+                "table_name": "t_penerimaan_postbi_temp",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_penerimaan_postbi_temp.json"
+            },
+            {
+                "table_name": "t_penerimaan_rek_biaya",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_penerimaan_rek_biaya.json"
+            },
+            {
+                "table_name": "t_penerimaan_rekening",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_penerimaan_rekening.json"
+            },
+            {
+                "table_name": "t_penerimaan_rekening_det",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_penerimaan_rekening_det.json"
+            },
+            {
+                "table_name": "t_penerimaan_retensi",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_penerimaan_retensi.json"
+            },
+            {
+                "table_name": "t_penerimaan_retensi_det",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_penerimaan_retensi_det.json"
+            },
+            {
+                "table_name": "t_penerimaan_retensi_rekening",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_penerimaan_retensi_rekening.json"
+            },
+            {
+                "table_name": "t_pengaturan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_pengaturan.json"
+            },
+            {
+                "table_name": "t_pengeluaran_kas",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_pengeluaran_kas.json"
+            },
+            {
+                "table_name": "t_pengeluaran_kas_pot",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_pengeluaran_kas_pot.json"
+            },
+            {
+                "table_name": "t_pengeluaran_kas_rek",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_pengeluaran_kas_rek.json"
+            },
+            {
+                "table_name": "t_persediaan_lock_barang",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_persediaan_lock_barang.json"
+            },
+            {
+                "table_name": "t_rencana_pemanfaatan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_rencana_pemanfaatan.json"
+            },
+            {
+                "table_name": "t_rencana_pemindahtanganan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_rencana_pemindahtanganan.json"
+            },
+            {
+                "table_name": "t_rencana_penghapusan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_rencana_penghapusan.json"
+            },
+            {
+                "table_name": "t_saldo_keu",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_saldo_keu.json"
+            },
+            {
+                "table_name": "t_saldo_keu_det",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_saldo_keu_det.json"
+            },
+            {
+                "table_name": "t_spj",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_spj.json"
+            },
+            {
+                "table_name": "t_spj_det",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_spj_det.json"
+            },
+            {
+                "table_name": "t_spp",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_spp.json"
+            },
+            {
+                "table_name": "t_spp_kelengkapan_dok",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_spp_kelengkapan_dok.json"
+            },
+            {
+                "table_name": "t_spp_potongan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_spp_potongan.json"
+            },
+            {
+                "table_name": "t_spp_rekening",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_spp_rekening.json"
+            },
+            {
+                "table_name": "t_transaksi",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_transaksi.json"
+            },
+            {
+                "table_name": "t_tree",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_tree.json"
+            },
+            {
+                "table_name": "tabel_anggaran",
+                "json_file": "RELEASE-2018-11-22-DATABASE/tabel_anggaran.json"
+            },
+            {
+                "table_name": "tabel_anggaran_v3",
+                "json_file": "RELEASE-2018-11-22-DATABASE/tabel_anggaran_v3.json"
+            },
+            {
+                "table_name": "tabel_dpa",
+                "json_file": "RELEASE-2018-11-22-DATABASE/tabel_dpa.json"
+            },
+            {
+                "table_name": "tabel_rka",
+                "json_file": "RELEASE-2018-11-22-DATABASE/tabel_rka.json"
+            },
+            {
+                "table_name": "tagihan_pajak",
+                "json_file": "RELEASE-2018-11-22-DATABASE/tagihan_pajak.json"
+            },
+            {
+                "table_name": "tahap_rka",
+                "json_file": "RELEASE-2018-11-22-DATABASE/tahap_rka.json"
+            },
+            {
+                "table_name": "tandatangankuasapenggunabarang_v3",
+                "json_file": "RELEASE-2018-11-22-DATABASE/tandatangankuasapenggunabarang_v3.json"
+            },
+            {
+                "table_name": "tandatanganpengelolabarang_v3",
+                "json_file": "RELEASE-2018-11-22-DATABASE/tandatanganpengelolabarang_v3.json"
+            },
+            {
+                "table_name": "tandatanganpenggunabarang_v3",
+                "json_file": "RELEASE-2018-11-22-DATABASE/tandatanganpenggunabarang_v3.json"
+            },
+            {
+                "table_name": "teguran_pajak",
+                "json_file": "RELEASE-2018-11-22-DATABASE/teguran_pajak.json"
+            },
+            {
+                "table_name": "temp_alokasi_rka",
+                "json_file": "RELEASE-2018-11-22-DATABASE/temp_alokasi_rka.json"
+            },
+            {
+                "table_name": "temp_check_barang_kurang",
+                "json_file": "RELEASE-2018-11-22-DATABASE/temp_check_barang_kurang.json"
+            },
+            {
+                "table_name": "temp_check_barang_tambah",
+                "json_file": "RELEASE-2018-11-22-DATABASE/temp_check_barang_tambah.json"
+            },
+            {
+                "table_name": "temp_data",
+                "json_file": "RELEASE-2018-11-22-DATABASE/temp_data.json"
+            },
+            {
+                "table_name": "temp_data_det",
+                "json_file": "RELEASE-2018-11-22-DATABASE/temp_data_det.json"
+            },
+            {
+                "table_name": "temp_detail_rincian_distribusi",
+                "json_file": "RELEASE-2018-11-22-DATABASE/temp_detail_rincian_distribusi.json"
+            },
+            {
+                "table_name": "temp_detail_template",
+                "json_file": "RELEASE-2018-11-22-DATABASE/temp_detail_template.json"
+            },
+            {
+                "table_name": "temp_detail_volume_rka_2_2_1",
+                "json_file": "RELEASE-2018-11-22-DATABASE/temp_detail_volume_rka_2_2_1.json"
+            },
+            {
+                "table_name": "temp_jabatan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/temp_jabatan.json"
+            },
+            {
+                "table_name": "temp_list_select_rkbmd_pemeliharaan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/temp_list_select_rkbmd_pemeliharaan.json"
+            },
+            {
+                "table_name": "temp_lock",
+                "json_file": "RELEASE-2018-11-22-DATABASE/temp_lock.json"
+            },
+            {
+                "table_name": "temp_lock_kurang",
+                "json_file": "RELEASE-2018-11-22-DATABASE/temp_lock_kurang.json"
+            },
+            {
+                "table_name": "temp_lock_tambah",
+                "json_file": "RELEASE-2018-11-22-DATABASE/temp_lock_tambah.json"
+            },
+            {
+                "table_name": "temp_pengeluaran",
+                "json_file": "RELEASE-2018-11-22-DATABASE/temp_pengeluaran.json"
+            },
+            {
+                "table_name": "temp_rekening_rka_belanja_langsung",
+                "json_file": "RELEASE-2018-11-22-DATABASE/temp_rekening_rka_belanja_langsung.json"
+            },
+            {
+                "table_name": "temp_rekening_rka_belanja_tidak_langsung",
+                "json_file": "RELEASE-2018-11-22-DATABASE/temp_rekening_rka_belanja_tidak_langsung.json"
+            },
+            {
+                "table_name": "temp_rekening_rka_belanja_tidak_langsung_ppkd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/temp_rekening_rka_belanja_tidak_langsung_ppkd.json"
+            },
+            {
+                "table_name": "temp_rekening_rka_pembiayaan_penerimaan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/temp_rekening_rka_pembiayaan_penerimaan.json"
+            },
+            {
+                "table_name": "temp_rekening_rka_pembiayaan_penerimaan_ppkd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/temp_rekening_rka_pembiayaan_penerimaan_ppkd.json"
+            },
+            {
+                "table_name": "temp_rekening_rka_pembiayaan_pengeluaran",
+                "json_file": "RELEASE-2018-11-22-DATABASE/temp_rekening_rka_pembiayaan_pengeluaran.json"
+            },
+            {
+                "table_name": "temp_rekening_rka_pembiayaan_pengeluaran_ppkd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/temp_rekening_rka_pembiayaan_pengeluaran_ppkd.json"
+            },
+            {
+                "table_name": "temp_rekening_rka_pendapatan_dp",
+                "json_file": "RELEASE-2018-11-22-DATABASE/temp_rekening_rka_pendapatan_dp.json"
+            },
+            {
+                "table_name": "temp_rekening_rka_pendapatan_dp_ppkd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/temp_rekening_rka_pendapatan_dp_ppkd.json"
+            },
+            {
+                "table_name": "temp_rekening_rka_pendapatan_lp",
+                "json_file": "RELEASE-2018-11-22-DATABASE/temp_rekening_rka_pendapatan_lp.json"
+            },
+            {
+                "table_name": "temp_rekening_rka_pendapatan_lp_ppkd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/temp_rekening_rka_pendapatan_lp_ppkd.json"
+            },
+            {
+                "table_name": "temp_rekening_rka_pendapatan_pad",
+                "json_file": "RELEASE-2018-11-22-DATABASE/temp_rekening_rka_pendapatan_pad.json"
+            },
+            {
+                "table_name": "temp_rekening_rka_pendapatan_pad_ppkd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/temp_rekening_rka_pendapatan_pad_ppkd.json"
+            },
+            {
+                "table_name": "temp_remove_rka_1_dp",
+                "json_file": "RELEASE-2018-11-22-DATABASE/temp_remove_rka_1_dp.json"
+            },
+            {
+                "table_name": "temp_remove_rka_1_dp_ppkd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/temp_remove_rka_1_dp_ppkd.json"
+            },
+            {
+                "table_name": "temp_remove_rka_1_lp",
+                "json_file": "RELEASE-2018-11-22-DATABASE/temp_remove_rka_1_lp.json"
+            },
+            {
+                "table_name": "temp_remove_rka_1_lp_ppkd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/temp_remove_rka_1_lp_ppkd.json"
+            },
+            {
+                "table_name": "temp_remove_rka_1_pad",
+                "json_file": "RELEASE-2018-11-22-DATABASE/temp_remove_rka_1_pad.json"
+            },
+            {
+                "table_name": "temp_remove_rka_1_pad_ppkd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/temp_remove_rka_1_pad_ppkd.json"
+            },
+            {
+                "table_name": "temp_remove_rka_21",
+                "json_file": "RELEASE-2018-11-22-DATABASE/temp_remove_rka_21.json"
+            },
+            {
+                "table_name": "temp_remove_rka_21_ppkd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/temp_remove_rka_21_ppkd.json"
+            },
+            {
+                "table_name": "temp_remove_rka_221",
+                "json_file": "RELEASE-2018-11-22-DATABASE/temp_remove_rka_221.json"
+            },
+            {
+                "table_name": "temp_remove_rka_31",
+                "json_file": "RELEASE-2018-11-22-DATABASE/temp_remove_rka_31.json"
+            },
+            {
+                "table_name": "temp_remove_rka_31_ppkd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/temp_remove_rka_31_ppkd.json"
+            },
+            {
+                "table_name": "temp_remove_rka_32",
+                "json_file": "RELEASE-2018-11-22-DATABASE/temp_remove_rka_32.json"
+            },
+            {
+                "table_name": "temp_remove_rka_32_ppkd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/temp_remove_rka_32_ppkd.json"
+            },
+            {
+                "table_name": "temp_remove_spd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/temp_remove_spd.json"
+            },
+            {
+                "table_name": "temp_rincian_belanja_barang_jasa",
+                "json_file": "RELEASE-2018-11-22-DATABASE/temp_rincian_belanja_barang_jasa.json"
+            },
+            {
+                "table_name": "temp_rincian_belanja_langsung",
+                "json_file": "RELEASE-2018-11-22-DATABASE/temp_rincian_belanja_langsung.json"
+            },
+            {
+                "table_name": "temp_rincian_belanja_modal",
+                "json_file": "RELEASE-2018-11-22-DATABASE/temp_rincian_belanja_modal.json"
+            },
+            {
+                "table_name": "temp_rincian_belanja_tidak_langsung",
+                "json_file": "RELEASE-2018-11-22-DATABASE/temp_rincian_belanja_tidak_langsung.json"
+            },
+            {
+                "table_name": "temp_rincian_belanja_tidak_langsung_ppkd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/temp_rincian_belanja_tidak_langsung_ppkd.json"
+            },
+            {
+                "table_name": "temp_rincian_distribusi",
+                "json_file": "RELEASE-2018-11-22-DATABASE/temp_rincian_distribusi.json"
+            },
+            {
+                "table_name": "temp_rincian_pembiayaan_penerimaan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/temp_rincian_pembiayaan_penerimaan.json"
+            },
+            {
+                "table_name": "temp_rincian_pembiayaan_penerimaan_ppkd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/temp_rincian_pembiayaan_penerimaan_ppkd.json"
+            },
+            {
+                "table_name": "temp_rincian_pembiayaan_pengeluaran",
+                "json_file": "RELEASE-2018-11-22-DATABASE/temp_rincian_pembiayaan_pengeluaran.json"
+            },
+            {
+                "table_name": "temp_rincian_pembiayaan_pengeluaran_ppkd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/temp_rincian_pembiayaan_pengeluaran_ppkd.json"
+            },
+            {
+                "table_name": "temp_rincian_pendapatan_dp",
+                "json_file": "RELEASE-2018-11-22-DATABASE/temp_rincian_pendapatan_dp.json"
+            },
+            {
+                "table_name": "temp_rincian_pendapatan_dp_ppkd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/temp_rincian_pendapatan_dp_ppkd.json"
+            },
+            {
+                "table_name": "temp_rincian_pendapatan_lp",
+                "json_file": "RELEASE-2018-11-22-DATABASE/temp_rincian_pendapatan_lp.json"
+            },
+            {
+                "table_name": "temp_rincian_pendapatan_lp_ppkd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/temp_rincian_pendapatan_lp_ppkd.json"
+            },
+            {
+                "table_name": "temp_rincian_pendapatan_pad",
+                "json_file": "RELEASE-2018-11-22-DATABASE/temp_rincian_pendapatan_pad.json"
+            },
+            {
+                "table_name": "temp_rincian_pendapatan_pad_ppkd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/temp_rincian_pendapatan_pad_ppkd.json"
+            },
+            {
+                "table_name": "temp_rincian_saldo_awal_persediaan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/temp_rincian_saldo_awal_persediaan.json"
+            },
+            {
+                "table_name": "temp_rka_1",
+                "json_file": "RELEASE-2018-11-22-DATABASE/temp_rka_1.json"
+            },
+            {
+                "table_name": "temp_rka_21",
+                "json_file": "RELEASE-2018-11-22-DATABASE/temp_rka_21.json"
+            },
+            {
+                "table_name": "temp_rka_221",
+                "json_file": "RELEASE-2018-11-22-DATABASE/temp_rka_221.json"
+            },
+            {
+                "table_name": "temp_rka_ppkd_1",
+                "json_file": "RELEASE-2018-11-22-DATABASE/temp_rka_ppkd_1.json"
+            },
+            {
+                "table_name": "temp_rka_ppkd_21",
+                "json_file": "RELEASE-2018-11-22-DATABASE/temp_rka_ppkd_21.json"
+            },
+            {
+                "table_name": "temp_rka_ppkd_31",
+                "json_file": "RELEASE-2018-11-22-DATABASE/temp_rka_ppkd_31.json"
+            },
+            {
+                "table_name": "temp_rka_ppkd_32",
+                "json_file": "RELEASE-2018-11-22-DATABASE/temp_rka_ppkd_32.json"
+            },
+            {
+                "table_name": "temp_rkbmd_pemeliharaan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/temp_rkbmd_pemeliharaan.json"
+            },
+            {
+                "table_name": "temp_rkbmd_pemeliharaan_v3",
+                "json_file": "RELEASE-2018-11-22-DATABASE/temp_rkbmd_pemeliharaan_v3.json"
+            },
+            {
+                "table_name": "temp_rkbmd_pengadaan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/temp_rkbmd_pengadaan.json"
+            },
+            {
+                "table_name": "temp_rkbmd_pengadaan_v3",
+                "json_file": "RELEASE-2018-11-22-DATABASE/temp_rkbmd_pengadaan_v3.json"
+            },
+            {
+                "table_name": "temp_rkbmd_persediaan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/temp_rkbmd_persediaan.json"
+            },
+            {
+                "table_name": "temp_spd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/temp_spd.json"
+            },
+            {
+                "table_name": "temp_standar_kebutuhan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/temp_standar_kebutuhan.json"
+            },
+            {
+                "table_name": "temp_sub_rincian_belanja_langsung",
+                "json_file": "RELEASE-2018-11-22-DATABASE/temp_sub_rincian_belanja_langsung.json"
+            },
+            {
+                "table_name": "temp_sub_rincian_belanja_tidak_langsung",
+                "json_file": "RELEASE-2018-11-22-DATABASE/temp_sub_rincian_belanja_tidak_langsung.json"
+            },
+            {
+                "table_name": "temp_sub_rincian_belanja_tidak_langsung_ppkd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/temp_sub_rincian_belanja_tidak_langsung_ppkd.json"
+            },
+            {
+                "table_name": "temp_sub_rincian_pembiayaan_penerimaan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/temp_sub_rincian_pembiayaan_penerimaan.json"
+            },
+            {
+                "table_name": "temp_sub_rincian_pembiayaan_penerimaan_ppkd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/temp_sub_rincian_pembiayaan_penerimaan_ppkd.json"
+            },
+            {
+                "table_name": "temp_sub_rincian_pembiayaan_pengeluaran",
+                "json_file": "RELEASE-2018-11-22-DATABASE/temp_sub_rincian_pembiayaan_pengeluaran.json"
+            },
+            {
+                "table_name": "temp_sub_rincian_pembiayaan_pengeluaran_ppkd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/temp_sub_rincian_pembiayaan_pengeluaran_ppkd.json"
+            },
+            {
+                "table_name": "temp_sub_rincian_pendapatan_dp",
+                "json_file": "RELEASE-2018-11-22-DATABASE/temp_sub_rincian_pendapatan_dp.json"
+            },
+            {
+                "table_name": "temp_sub_rincian_pendapatan_dp_ppkd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/temp_sub_rincian_pendapatan_dp_ppkd.json"
+            },
+            {
+                "table_name": "temp_sub_rincian_pendapatan_lp",
+                "json_file": "RELEASE-2018-11-22-DATABASE/temp_sub_rincian_pendapatan_lp.json"
+            },
+            {
+                "table_name": "temp_sub_rincian_pendapatan_lp_ppkd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/temp_sub_rincian_pendapatan_lp_ppkd.json"
+            },
+            {
+                "table_name": "temp_sub_rincian_pendapatan_pad",
+                "json_file": "RELEASE-2018-11-22-DATABASE/temp_sub_rincian_pendapatan_pad.json"
+            },
+            {
+                "table_name": "temp_sub_rincian_pendapatan_pad_ppkd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/temp_sub_rincian_pendapatan_pad_ppkd.json"
+            },
+            {
+                "table_name": "temp_template",
+                "json_file": "RELEASE-2018-11-22-DATABASE/temp_template.json"
+            },
+            {
+                "table_name": "temp_urutan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/temp_urutan.json"
+            },
+            {
+                "table_name": "tempusr",
+                "json_file": "RELEASE-2018-11-22-DATABASE/tempusr.json"
+            },
+            {
+                "table_name": "tmp_belumpost_jurnalrekap",
+                "json_file": "RELEASE-2018-11-22-DATABASE/tmp_belumpost_jurnalrekap.json"
+            },
+            {
+                "table_name": "tmp_saldoawal",
+                "json_file": "RELEASE-2018-11-22-DATABASE/tmp_saldoawal.json"
+            },
+            {
+                "table_name": "tutup_buku_persediaan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/tutup_buku_persediaan.json"
+            },
+            {
+                "table_name": "user",
+                "json_file": "RELEASE-2018-11-22-DATABASE/user.json"
+            }
+        ],
+        "views": [
+            {
+                "view_name": "v1_admin_aktivitas",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v1_admin_aktivitas.json"
+            },
+            {
+                "view_name": "v1_asetlainlain",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v1_asetlainlain.json"
+            },
+            {
+                "view_name": "v1_atribusi_dokumen",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v1_atribusi_dokumen.json"
+            },
+            {
+                "view_name": "v1_atribusi_rincian",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v1_atribusi_rincian.json"
+            },
+            {
+                "view_name": "v1_bast",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v1_bast.json"
+            },
+            {
+                "view_name": "v1_bi_barang",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v1_bi_barang.json"
+            },
+            {
+                "view_name": "v1_bi_skpd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v1_bi_skpd.json"
+            },
+            {
+                "view_name": "v1_birms",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v1_birms.json"
+            },
+            {
+                "view_name": "v1_cek_spp_kelengkapan_dokumen",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v1_cek_spp_kelengkapan_dokumen.json"
+            },
+            {
+                "view_name": "v1_dkb",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v1_dkb.json"
+            },
+            {
+                "view_name": "v1_dkbp_persediaan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v1_dkbp_persediaan.json"
+            },
+            {
+                "view_name": "v1_dkpb",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v1_dkpb.json"
+            },
+            {
+                "view_name": "v1_gantirugi",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v1_gantirugi.json"
+            },
+            {
+                "view_name": "v1_jurnal_keuangan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v1_jurnal_keuangan.json"
+            },
+            {
+                "view_name": "v1_kapitalisasi",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v1_kapitalisasi.json"
+            },
+            {
+                "view_name": "v1_kas_bendahara_penerimaan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v1_kas_bendahara_penerimaan.json"
+            },
+            {
+                "view_name": "v1_koreksi",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v1_koreksi.json"
+            },
+            {
+                "view_name": "v1_koreksi_penyusutan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v1_koreksi_penyusutan.json"
+            },
+            {
+                "view_name": "v1_masterbarang_persediaan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v1_masterbarang_persediaan.json"
+            },
+            {
+                "view_name": "v1_masterbarangpengadaan_persediaan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v1_masterbarangpengadaan_persediaan.json"
+            },
+            {
+                "view_name": "v1_nomor_spd_det",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v1_nomor_spd_det.json"
+            },
+            {
+                "view_name": "v1_pemanfaatan_bi",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v1_pemanfaatan_bi.json"
+            },
+            {
+                "view_name": "v1_penerimaan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v1_penerimaan.json"
+            },
+            {
+                "view_name": "v1_penerimaan_atribusi",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v1_penerimaan_atribusi.json"
+            },
+            {
+                "view_name": "v1_penerimaan_barang",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v1_penerimaan_barang.json"
+            },
+            {
+                "view_name": "v1_penerimaan_barang_cari",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v1_penerimaan_barang_cari.json"
+            },
+            {
+                "view_name": "v1_penerimaan_barang_det",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v1_penerimaan_barang_det.json"
+            },
+            {
+                "view_name": "v1_penerimaan_barang_rekening",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v1_penerimaan_barang_rekening.json"
+            },
+            {
+                "view_name": "v1_penerimaan_det_belanja",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v1_penerimaan_det_belanja.json"
+            },
+            {
+                "view_name": "v1_penerimaan_lra",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v1_penerimaan_lra.json"
+            },
+            {
+                "view_name": "v1_penerimaan_lsd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v1_penerimaan_lsd.json"
+            },
+            {
+                "view_name": "v1_penerimaan_persediaan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v1_penerimaan_persediaan.json"
+            },
+            {
+                "view_name": "v1_penerimaan_rek_biaya",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v1_penerimaan_rek_biaya.json"
+            },
+            {
+                "view_name": "v1_penerimaan_rekdet_barang",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v1_penerimaan_rekdet_barang.json"
+            },
+            {
+                "view_name": "v1_penerimaan_retensi_rekening",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v1_penerimaan_retensi_rekening.json"
+            },
+            {
+                "view_name": "v1_pengadaan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v1_pengadaan.json"
+            },
+            {
+                "view_name": "v1_pengadaan_pemeliharaan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v1_pengadaan_pemeliharaan.json"
+            },
+            {
+                "view_name": "v1_pengadaan_persediaan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v1_pengadaan_persediaan.json"
+            },
+            {
+                "view_name": "v1_pengeluaran",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v1_pengeluaran.json"
+            },
+            {
+                "view_name": "v1_pengeluaran_kas_pot",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v1_pengeluaran_kas_pot.json"
+            },
+            {
+                "view_name": "v1_pengeluaran_kas_rek",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v1_pengeluaran_kas_rek.json"
+            },
+            {
+                "view_name": "v1_pengeluaran_kas_total_pot",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v1_pengeluaran_kas_total_pot.json"
+            },
+            {
+                "view_name": "v1_pengeluaran_kas_total_rek",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v1_pengeluaran_kas_total_rek.json"
+            },
+            {
+                "view_name": "v1_pengeluaran_kas_total_semua",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v1_pengeluaran_kas_total_semua.json"
+            },
+            {
+                "view_name": "v1_pengeluaran_persediaan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v1_pengeluaran_persediaan.json"
+            },
+            {
+                "view_name": "v1_penggunaan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v1_penggunaan.json"
+            },
+            {
+                "view_name": "v1_penghapusan_usul_det_bi",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v1_penghapusan_usul_det_bi.json"
+            },
+            {
+                "view_name": "v1_penghapusan_usulsk_det",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v1_penghapusan_usulsk_det.json"
+            },
+            {
+                "view_name": "v1_perencanaan_persediaan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v1_perencanaan_persediaan.json"
+            },
+            {
+                "view_name": "v1_pindahtangan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v1_pindahtangan.json"
+            },
+            {
+                "view_name": "v1_ref_potongan_spm",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v1_ref_potongan_spm.json"
+            },
+            {
+                "view_name": "v1_ref_potongan_spm_rek",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v1_ref_potongan_spm_rek.json"
+            },
+            {
+                "view_name": "v1_ref_tambah_manfaat",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v1_ref_tambah_manfaat.json"
+            },
+            {
+                "view_name": "v1_ref_templatebarang_det",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v1_ref_templatebarang_det.json"
+            },
+            {
+                "view_name": "v1_refskpd_urusan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v1_refskpd_urusan.json"
+            },
+            {
+                "view_name": "v1_rkb",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v1_rkb.json"
+            },
+            {
+                "view_name": "v1_rkpb",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v1_rkpb.json"
+            },
+            {
+                "view_name": "v1_saldo_awal_keu",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v1_saldo_awal_keu.json"
+            },
+            {
+                "view_name": "v1_sensus",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v1_sensus.json"
+            },
+            {
+                "view_name": "v1_spp",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v1_spp.json"
+            },
+            {
+                "view_name": "v1_spp_dokumen",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v1_spp_dokumen.json"
+            },
+            {
+                "view_name": "v1_spp_penerimaan_barang",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v1_spp_penerimaan_barang.json"
+            },
+            {
+                "view_name": "v1_spp_potongan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v1_spp_potongan.json"
+            },
+            {
+                "view_name": "v1_spp_rek",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v1_spp_rek.json"
+            },
+            {
+                "view_name": "v1_spp_rek1",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v1_spp_rek1.json"
+            },
+            {
+                "view_name": "v1_spp_rek2",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v1_spp_rek2.json"
+            },
+            {
+                "view_name": "v1_spp_rekening",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v1_spp_rekening.json"
+            },
+            {
+                "view_name": "v1_spp_total_potongan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v1_spp_total_potongan.json"
+            },
+            {
+                "view_name": "v1_spp_total_rekening",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v1_spp_total_rekening.json"
+            },
+            {
+                "view_name": "v1_spp_total_semua",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v1_spp_total_semua.json"
+            },
+            {
+                "view_name": "v1_tagihan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v1_tagihan.json"
+            },
+            {
+                "view_name": "v1_total_atribusi_rincian",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v1_total_atribusi_rincian.json"
+            },
+            {
+                "view_name": "v1_total_penerimaan_barang_det",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v1_total_penerimaan_barang_det.json"
+            },
+            {
+                "view_name": "v1_total_penerimaan_rek",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v1_total_penerimaan_rek.json"
+            },
+            {
+                "view_name": "v1_total_penerimaan_semua",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v1_total_penerimaan_semua.json"
+            },
+            {
+                "view_name": "v1_total_penerimaanbarang",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v1_total_penerimaanbarang.json"
+            },
+            {
+                "view_name": "v1_total_penerimaanbarang2",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v1_total_penerimaanbarang2.json"
+            },
+            {
+                "view_name": "v1_total_penerimaanbarang3",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v1_total_penerimaanbarang3.json"
+            },
+            {
+                "view_name": "v2_gantirugi_hapussebagian",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v2_gantirugi_hapussebagian.json"
+            },
+            {
+                "view_name": "v2_gantirugi_pelihara",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v2_gantirugi_pelihara.json"
+            },
+            {
+                "view_name": "v2_gantirugi_pengaman",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v2_gantirugi_pengaman.json"
+            },
+            {
+                "view_name": "v2_mutasi_hapussebagian",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v2_mutasi_hapussebagian.json"
+            },
+            {
+                "view_name": "v2_mutasi_pelihara",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v2_mutasi_pelihara.json"
+            },
+            {
+                "view_name": "v2_mutasi_pengaman",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v2_mutasi_pengaman.json"
+            },
+            {
+                "view_name": "v2_penghapusan_hapussebagian",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v2_penghapusan_hapussebagian.json"
+            },
+            {
+                "view_name": "v2_penghapusan_pelihara",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v2_penghapusan_pelihara.json"
+            },
+            {
+                "view_name": "v2_penghapusan_pengaman",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v2_penghapusan_pengaman.json"
+            },
+            {
+                "view_name": "v2_penghapusan_usul",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v2_penghapusan_usul.json"
+            },
+            {
+                "view_name": "v2_pindahtangan_hapussebagian",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v2_pindahtangan_hapussebagian.json"
+            },
+            {
+                "view_name": "v2_pindahtangan_pelihara",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v2_pindahtangan_pelihara.json"
+            },
+            {
+                "view_name": "v2_pindahtangan_pengaman",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v2_pindahtangan_pengaman.json"
+            },
+            {
+                "view_name": "v3_pindah_gantirugi_pelihara",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v3_pindah_gantirugi_pelihara.json"
+            },
+            {
+                "view_name": "v_barangx",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_barangx.json"
+            },
+            {
+                "view_name": "v_bi_entry_darimutasi",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_bi_entry_darimutasi.json"
+            },
+            {
+                "view_name": "v_bi_jmlgbrx",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_bi_jmlgbrx.json"
+            },
+            {
+                "view_name": "v_bi_kib_a_tmp",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_bi_kib_a_tmp.json"
+            },
+            {
+                "view_name": "v_bi_kib_b_tmp",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_bi_kib_b_tmp.json"
+            },
+            {
+                "view_name": "v_bi_kib_c_tmp",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_bi_kib_c_tmp.json"
+            },
+            {
+                "view_name": "v_bi_kib_d_tmp",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_bi_kib_d_tmp.json"
+            },
+            {
+                "view_name": "v_bi_kib_e_tmp",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_bi_kib_e_tmp.json"
+            },
+            {
+                "view_name": "v_bi_kib_f_tmp",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_bi_kib_f_tmp.json"
+            },
+            {
+                "view_name": "v_bi_kib_g_tmp",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_bi_kib_g_tmp.json"
+            },
+            {
+                "view_name": "v_bidang",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_bidang.json"
+            },
+            {
+                "view_name": "v_cek_bicnt",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_cek_bicnt.json"
+            },
+            {
+                "view_name": "v_cek_double",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_cek_double.json"
+            },
+            {
+                "view_name": "v_cek_idlama",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_cek_idlama.json"
+            },
+            {
+                "view_name": "v_cek_idlamabukanmutasi",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_cek_idlamabukanmutasi.json"
+            },
+            {
+                "view_name": "v_cek_noreg",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_cek_noreg.json"
+            },
+            {
+                "view_name": "v_cek_penghapusan_cnt",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_cek_penghapusan_cnt.json"
+            },
+            {
+                "view_name": "v_double",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_double.json"
+            },
+            {
+                "view_name": "v_double2",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_double2.json"
+            },
+            {
+                "view_name": "v_gantirugi",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_gantirugi.json"
+            },
+            {
+                "view_name": "v_gantirugi_bayar",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_gantirugi_bayar.json"
+            },
+            {
+                "view_name": "v_gantirugi_bi",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_gantirugi_bi.json"
+            },
+            {
+                "view_name": "v_hapus_bi",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_hapus_bi.json"
+            },
+            {
+                "view_name": "v_hapus_kiba",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_hapus_kiba.json"
+            },
+            {
+                "view_name": "v_hapus_kibc",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_hapus_kibc.json"
+            },
+            {
+                "view_name": "v_hapus_kibd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_hapus_kibd.json"
+            },
+            {
+                "view_name": "v_hapus_kibf",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_hapus_kibf.json"
+            },
+            {
+                "view_name": "v_hapus_sebagian",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_hapus_sebagian.json"
+            },
+            {
+                "view_name": "v_hapussebagian_tot",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_hapussebagian_tot.json"
+            },
+            {
+                "view_name": "v_jmlbrgharga_f",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_jmlbrgharga_f.json"
+            },
+            {
+                "view_name": "v_jmlbrgharga_fg",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_jmlbrgharga_fg.json"
+            },
+            {
+                "view_name": "v_jmlgambar_bybi",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_jmlgambar_bybi.json"
+            },
+            {
+                "view_name": "v_jmlgbr_grpbybix",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_jmlgbr_grpbybix.json"
+            },
+            {
+                "view_name": "v_jurnal",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_jurnal.json"
+            },
+            {
+                "view_name": "v_jurnal_aset_ekstra",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_jurnal_aset_ekstra.json"
+            },
+            {
+                "view_name": "v_jurnal_aset_ekstra_v2",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_jurnal_aset_ekstra_v2.json"
+            },
+            {
+                "view_name": "v_jurnal_aset_lainnya",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_jurnal_aset_lainnya.json"
+            },
+            {
+                "view_name": "v_jurnal_aset_lainnya_v2",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_jurnal_aset_lainnya_v2.json"
+            },
+            {
+                "view_name": "v_jurnal_aset_tetap",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_jurnal_aset_tetap.json"
+            },
+            {
+                "view_name": "v_jurnal_aset_tetap_v2",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_jurnal_aset_tetap_v2.json"
+            },
+            {
+                "view_name": "v_jurnal_bi_aset_lainlain",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_jurnal_bi_aset_lainlain.json"
+            },
+            {
+                "view_name": "v_jurnal_penyusutan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_jurnal_penyusutan.json"
+            },
+            {
+                "view_name": "v_kiba_jmlgbr",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_kiba_jmlgbr.json"
+            },
+            {
+                "view_name": "v_kiba_koord",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_kiba_koord.json"
+            },
+            {
+                "view_name": "v_kiba_st1111",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_kiba_st1111.json"
+            },
+            {
+                "view_name": "v_kiba_st1111_rekap",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_kiba_st1111_rekap.json"
+            },
+            {
+                "view_name": "v_kiba_status",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_kiba_status.json"
+            },
+            {
+                "view_name": "v_kibc_jmlgbr",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_kibc_jmlgbr.json"
+            },
+            {
+                "view_name": "v_kibc_koord",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_kibc_koord.json"
+            },
+            {
+                "view_name": "v_kibc_st1111",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_kibc_st1111.json"
+            },
+            {
+                "view_name": "v_kibc_st1111_rekap",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_kibc_st1111_rekap.json"
+            },
+            {
+                "view_name": "v_kibc_status",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_kibc_status.json"
+            },
+            {
+                "view_name": "v_mutasi_sebagian",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_mutasi_sebagian.json"
+            },
+            {
+                "view_name": "v_opd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_opd.json"
+            },
+            {
+                "view_name": "v_pemanfaat",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_pemanfaat.json"
+            },
+            {
+                "view_name": "v_pemelihara",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_pemelihara.json"
+            },
+            {
+                "view_name": "v_pemelihara_tot",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_pemelihara_tot.json"
+            },
+            {
+                "view_name": "v_pemelihara_tot_",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_pemelihara_tot_.json"
+            },
+            {
+                "view_name": "v_pemusnahan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_pemusnahan.json"
+            },
+            {
+                "view_name": "v_pemusnahanba",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_pemusnahanba.json"
+            },
+            {
+                "view_name": "v_penerimaan_barang_det",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_penerimaan_barang_det.json"
+            },
+            {
+                "view_name": "v_pengadaan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_pengadaan.json"
+            },
+            {
+                "view_name": "v_pengaman",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_pengaman.json"
+            },
+            {
+                "view_name": "v_pengaman_tot",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_pengaman_tot.json"
+            },
+            {
+                "view_name": "v_pengaman_tot_",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_pengaman_tot_.json"
+            },
+            {
+                "view_name": "v_penghapusan_bi",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_penghapusan_bi.json"
+            },
+            {
+                "view_name": "v_pindahgantirugi_bi",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_pindahgantirugi_bi.json"
+            },
+            {
+                "view_name": "v_pindahtangan_bi",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_pindahtangan_bi.json"
+            },
+            {
+                "view_name": "v_ref_barang_rekap_keu",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_ref_barang_rekap_keu.json"
+            },
+            {
+                "view_name": "v_ref_kapitalisasi",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_ref_kapitalisasi.json"
+            },
+            {
+                "view_name": "v_ref_kib_keu",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_ref_kib_keu.json"
+            },
+            {
+                "view_name": "v_ref_kib_keu_h",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_ref_kib_keu_h.json"
+            },
+            {
+                "view_name": "v_ref_kib_keu_h1",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_ref_kib_keu_h1.json"
+            },
+            {
+                "view_name": "v_ref_kib_keu_h_lv3",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_ref_kib_keu_h_lv3.json"
+            },
+            {
+                "view_name": "v_ref_kib_keu_penyusutan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_ref_kib_keu_penyusutan.json"
+            },
+            {
+                "view_name": "v_ref_penyusutan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_ref_penyusutan.json"
+            },
+            {
+                "view_name": "v_ref_rekapbi",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_ref_rekapbi.json"
+            },
+            {
+                "view_name": "v_ref_skpd_kib",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_ref_skpd_kib.json"
+            },
+            {
+                "view_name": "v_ref_skpd_kib_keu",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_ref_skpd_kib_keu.json"
+            },
+            {
+                "view_name": "v_ref_tandatangan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_ref_tandatangan.json"
+            },
+            {
+                "view_name": "v_ref_transaksi",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_ref_transaksi.json"
+            },
+            {
+                "view_name": "v_rekap_all",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_rekap_all.json"
+            },
+            {
+                "view_name": "v_rekap_all2",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_rekap_all2.json"
+            },
+            {
+                "view_name": "v_rekap_bi",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_rekap_bi.json"
+            },
+            {
+                "view_name": "v_rekap_bi2",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_rekap_bi2.json"
+            },
+            {
+                "view_name": "v_rekap_kiba",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_rekap_kiba.json"
+            },
+            {
+                "view_name": "v_rekap_kiba2",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_rekap_kiba2.json"
+            },
+            {
+                "view_name": "v_rekap_kibb",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_rekap_kibb.json"
+            },
+            {
+                "view_name": "v_rekap_kibb2",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_rekap_kibb2.json"
+            },
+            {
+                "view_name": "v_rekap_kibc",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_rekap_kibc.json"
+            },
+            {
+                "view_name": "v_rekap_kibc2",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_rekap_kibc2.json"
+            },
+            {
+                "view_name": "v_rekap_kibd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_rekap_kibd.json"
+            },
+            {
+                "view_name": "v_rekap_kibd2",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_rekap_kibd2.json"
+            },
+            {
+                "view_name": "v_rekap_kibe",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_rekap_kibe.json"
+            },
+            {
+                "view_name": "v_rekap_kibe2",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_rekap_kibe2.json"
+            },
+            {
+                "view_name": "v_rekap_kibf",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_rekap_kibf.json"
+            },
+            {
+                "view_name": "v_rekap_kibf2",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_rekap_kibf2.json"
+            },
+            {
+                "view_name": "v_skpd_kib",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_skpd_kib.json"
+            },
+            {
+                "view_name": "v_t_kondisi",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_t_kondisi.json"
+            },
+            {
+                "view_name": "v_test",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_test.json"
+            },
+            {
+                "view_name": "v_test2",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_test2.json"
+            },
+            {
+                "view_name": "v_trans_bi",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_trans_bi.json"
+            },
+            {
+                "view_name": "v_unit",
+                "json_file": "RELEASE-2018-11-22-DATABASE/v_unit.json"
+            },
+            {
+                "view_name": "view2_sensus",
+                "json_file": "RELEASE-2018-11-22-DATABASE/view2_sensus.json"
+            },
+            {
+                "view_name": "view2_sensus_tot",
+                "json_file": "RELEASE-2018-11-22-DATABASE/view2_sensus_tot.json"
+            },
+            {
+                "view_name": "view_anggaran_kas_221",
+                "json_file": "RELEASE-2018-11-22-DATABASE/view_anggaran_kas_221.json"
+            },
+            {
+                "view_name": "view_apbd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/view_apbd.json"
+            },
+            {
+                "view_name": "view_barang_rkbmd_pemeliharaan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/view_barang_rkbmd_pemeliharaan.json"
+            },
+            {
+                "view_name": "view_barang_rkbmd_pemeliharaan_v3",
+                "json_file": "RELEASE-2018-11-22-DATABASE/view_barang_rkbmd_pemeliharaan_v3.json"
+            },
+            {
+                "view_name": "view_bi_pemeliharaan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/view_bi_pemeliharaan.json"
+            },
+            {
+                "view_name": "view_bi_spesifikasi",
+                "json_file": "RELEASE-2018-11-22-DATABASE/view_bi_spesifikasi.json"
+            },
+            {
+                "view_name": "view_buku_induk",
+                "json_file": "RELEASE-2018-11-22-DATABASE/view_buku_induk.json"
+            },
+            {
+                "view_name": "view_buku_induk2",
+                "json_file": "RELEASE-2018-11-22-DATABASE/view_buku_induk2.json"
+            },
+            {
+                "view_name": "view_buku_induk2_total",
+                "json_file": "RELEASE-2018-11-22-DATABASE/view_buku_induk2_total.json"
+            },
+            {
+                "view_name": "view_buku_induk2_total2",
+                "json_file": "RELEASE-2018-11-22-DATABASE/view_buku_induk2_total2.json"
+            },
+            {
+                "view_name": "view_daftar_persediaan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/view_daftar_persediaan.json"
+            },
+            {
+                "view_name": "view_daftar_persediaan_rekap",
+                "json_file": "RELEASE-2018-11-22-DATABASE/view_daftar_persediaan_rekap.json"
+            },
+            {
+                "view_name": "view_daftar_persediaan_rekap_semester_2",
+                "json_file": "RELEASE-2018-11-22-DATABASE/view_daftar_persediaan_rekap_semester_2.json"
+            },
+            {
+                "view_name": "view_daftar_persediaan_semester_2",
+                "json_file": "RELEASE-2018-11-22-DATABASE/view_daftar_persediaan_semester_2.json"
+            },
+            {
+                "view_name": "view_data_dpa",
+                "json_file": "RELEASE-2018-11-22-DATABASE/view_data_dpa.json"
+            },
+            {
+                "view_name": "view_data_dpa_barang",
+                "json_file": "RELEASE-2018-11-22-DATABASE/view_data_dpa_barang.json"
+            },
+            {
+                "view_name": "view_dkb",
+                "json_file": "RELEASE-2018-11-22-DATABASE/view_dkb.json"
+            },
+            {
+                "view_name": "view_dpa_1",
+                "json_file": "RELEASE-2018-11-22-DATABASE/view_dpa_1.json"
+            },
+            {
+                "view_name": "view_dpa_2_1",
+                "json_file": "RELEASE-2018-11-22-DATABASE/view_dpa_2_1.json"
+            },
+            {
+                "view_name": "view_dpa_2_2_1",
+                "json_file": "RELEASE-2018-11-22-DATABASE/view_dpa_2_2_1.json"
+            },
+            {
+                "view_name": "view_dpa_3_1",
+                "json_file": "RELEASE-2018-11-22-DATABASE/view_dpa_3_1.json"
+            },
+            {
+                "view_name": "view_dpa_3_2",
+                "json_file": "RELEASE-2018-11-22-DATABASE/view_dpa_3_2.json"
+            },
+            {
+                "view_name": "view_dpa_ppkd_1",
+                "json_file": "RELEASE-2018-11-22-DATABASE/view_dpa_ppkd_1.json"
+            },
+            {
+                "view_name": "view_dpa_ppkd_2_1",
+                "json_file": "RELEASE-2018-11-22-DATABASE/view_dpa_ppkd_2_1.json"
+            },
+            {
+                "view_name": "view_dpa_ppkd_3_1",
+                "json_file": "RELEASE-2018-11-22-DATABASE/view_dpa_ppkd_3_1.json"
+            },
+            {
+                "view_name": "view_dpa_ppkd_3_2",
+                "json_file": "RELEASE-2018-11-22-DATABASE/view_dpa_ppkd_3_2.json"
+            },
+            {
+                "view_name": "view_kib_a",
+                "json_file": "RELEASE-2018-11-22-DATABASE/view_kib_a.json"
+            },
+            {
+                "view_name": "view_kib_a2",
+                "json_file": "RELEASE-2018-11-22-DATABASE/view_kib_a2.json"
+            },
+            {
+                "view_name": "view_kib_a2_total",
+                "json_file": "RELEASE-2018-11-22-DATABASE/view_kib_a2_total.json"
+            },
+            {
+                "view_name": "view_kib_a2_total2",
+                "json_file": "RELEASE-2018-11-22-DATABASE/view_kib_a2_total2.json"
+            },
+            {
+                "view_name": "view_kib_b",
+                "json_file": "RELEASE-2018-11-22-DATABASE/view_kib_b.json"
+            },
+            {
+                "view_name": "view_kib_b2",
+                "json_file": "RELEASE-2018-11-22-DATABASE/view_kib_b2.json"
+            },
+            {
+                "view_name": "view_kib_b2_total",
+                "json_file": "RELEASE-2018-11-22-DATABASE/view_kib_b2_total.json"
+            },
+            {
+                "view_name": "view_kib_b2_total2",
+                "json_file": "RELEASE-2018-11-22-DATABASE/view_kib_b2_total2.json"
+            },
+            {
+                "view_name": "view_kib_c",
+                "json_file": "RELEASE-2018-11-22-DATABASE/view_kib_c.json"
+            },
+            {
+                "view_name": "view_kib_c2",
+                "json_file": "RELEASE-2018-11-22-DATABASE/view_kib_c2.json"
+            },
+            {
+                "view_name": "view_kib_c2_total",
+                "json_file": "RELEASE-2018-11-22-DATABASE/view_kib_c2_total.json"
+            },
+            {
+                "view_name": "view_kib_c2_total2",
+                "json_file": "RELEASE-2018-11-22-DATABASE/view_kib_c2_total2.json"
+            },
+            {
+                "view_name": "view_kib_d",
+                "json_file": "RELEASE-2018-11-22-DATABASE/view_kib_d.json"
+            },
+            {
+                "view_name": "view_kib_d2",
+                "json_file": "RELEASE-2018-11-22-DATABASE/view_kib_d2.json"
+            },
+            {
+                "view_name": "view_kib_d2_total",
+                "json_file": "RELEASE-2018-11-22-DATABASE/view_kib_d2_total.json"
+            },
+            {
+                "view_name": "view_kib_d2_total2",
+                "json_file": "RELEASE-2018-11-22-DATABASE/view_kib_d2_total2.json"
+            },
+            {
+                "view_name": "view_kib_e",
+                "json_file": "RELEASE-2018-11-22-DATABASE/view_kib_e.json"
+            },
+            {
+                "view_name": "view_kib_e2",
+                "json_file": "RELEASE-2018-11-22-DATABASE/view_kib_e2.json"
+            },
+            {
+                "view_name": "view_kib_e2_total",
+                "json_file": "RELEASE-2018-11-22-DATABASE/view_kib_e2_total.json"
+            },
+            {
+                "view_name": "view_kib_e2_total2",
+                "json_file": "RELEASE-2018-11-22-DATABASE/view_kib_e2_total2.json"
+            },
+            {
+                "view_name": "view_kib_f",
+                "json_file": "RELEASE-2018-11-22-DATABASE/view_kib_f.json"
+            },
+            {
+                "view_name": "view_kib_f2",
+                "json_file": "RELEASE-2018-11-22-DATABASE/view_kib_f2.json"
+            },
+            {
+                "view_name": "view_kib_f2_total",
+                "json_file": "RELEASE-2018-11-22-DATABASE/view_kib_f2_total.json"
+            },
+            {
+                "view_name": "view_kib_f2_total2",
+                "json_file": "RELEASE-2018-11-22-DATABASE/view_kib_f2_total2.json"
+            },
+            {
+                "view_name": "view_kib_g",
+                "json_file": "RELEASE-2018-11-22-DATABASE/view_kib_g.json"
+            },
+            {
+                "view_name": "view_kib_g_total",
+                "json_file": "RELEASE-2018-11-22-DATABASE/view_kib_g_total.json"
+            },
+            {
+                "view_name": "view_penerimaan_distribusi",
+                "json_file": "RELEASE-2018-11-22-DATABASE/view_penerimaan_distribusi.json"
+            },
+            {
+                "view_name": "view_plafon",
+                "json_file": "RELEASE-2018-11-22-DATABASE/view_plafon.json"
+            },
+            {
+                "view_name": "view_r_apbd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/view_r_apbd.json"
+            },
+            {
+                "view_name": "view_rekap_dpa",
+                "json_file": "RELEASE-2018-11-22-DATABASE/view_rekap_dpa.json"
+            },
+            {
+                "view_name": "view_rekap_program_kegiatan_dpa",
+                "json_file": "RELEASE-2018-11-22-DATABASE/view_rekap_program_kegiatan_dpa.json"
+            },
+            {
+                "view_name": "view_rekap_program_kegiatan_rka",
+                "json_file": "RELEASE-2018-11-22-DATABASE/view_rekap_program_kegiatan_rka.json"
+            },
+            {
+                "view_name": "view_rekap_rka",
+                "json_file": "RELEASE-2018-11-22-DATABASE/view_rekap_rka.json"
+            },
+            {
+                "view_name": "view_renja",
+                "json_file": "RELEASE-2018-11-22-DATABASE/view_renja.json"
+            },
+            {
+                "view_name": "view_renja_v3",
+                "json_file": "RELEASE-2018-11-22-DATABASE/view_renja_v3.json"
+            },
+            {
+                "view_name": "view_rka_1",
+                "json_file": "RELEASE-2018-11-22-DATABASE/view_rka_1.json"
+            },
+            {
+                "view_name": "view_rka_2_1",
+                "json_file": "RELEASE-2018-11-22-DATABASE/view_rka_2_1.json"
+            },
+            {
+                "view_name": "view_rka_2_2",
+                "json_file": "RELEASE-2018-11-22-DATABASE/view_rka_2_2.json"
+            },
+            {
+                "view_name": "view_rka_2_2_1",
+                "json_file": "RELEASE-2018-11-22-DATABASE/view_rka_2_2_1.json"
+            },
+            {
+                "view_name": "view_rka_3_1",
+                "json_file": "RELEASE-2018-11-22-DATABASE/view_rka_3_1.json"
+            },
+            {
+                "view_name": "view_rka_3_2",
+                "json_file": "RELEASE-2018-11-22-DATABASE/view_rka_3_2.json"
+            },
+            {
+                "view_name": "view_rka_ppkd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/view_rka_ppkd.json"
+            },
+            {
+                "view_name": "view_rka_ppkd_1",
+                "json_file": "RELEASE-2018-11-22-DATABASE/view_rka_ppkd_1.json"
+            },
+            {
+                "view_name": "view_rka_ppkd_2_1",
+                "json_file": "RELEASE-2018-11-22-DATABASE/view_rka_ppkd_2_1.json"
+            },
+            {
+                "view_name": "view_rka_ppkd_3_1",
+                "json_file": "RELEASE-2018-11-22-DATABASE/view_rka_ppkd_3_1.json"
+            },
+            {
+                "view_name": "view_rka_ppkd_3_2",
+                "json_file": "RELEASE-2018-11-22-DATABASE/view_rka_ppkd_3_2.json"
+            },
+            {
+                "view_name": "view_rkb",
+                "json_file": "RELEASE-2018-11-22-DATABASE/view_rkb.json"
+            },
+            {
+                "view_name": "view_rkbmd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/view_rkbmd.json"
+            },
+            {
+                "view_name": "view_rkbmd_v3",
+                "json_file": "RELEASE-2018-11-22-DATABASE/view_rkbmd_v3.json"
+            },
+            {
+                "view_name": "view_sub_unit",
+                "json_file": "RELEASE-2018-11-22-DATABASE/view_sub_unit.json"
+            }
+        ],
+        "triggers": [
+            {
+                "trigger_name": "anggaran_kas_bef_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/anggaran_kas_bef_ins.json"
+            },
+            {
+                "trigger_name": "anggaran_kas_bef_upd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/anggaran_kas_bef_upd.json"
+            },
+            {
+                "trigger_name": "bi_bef_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/bi_bef_ins.json"
+            },
+            {
+                "trigger_name": "bi_aft_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/bi_aft_ins.json"
+            },
+            {
+                "trigger_name": "bi_bef_upd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/bi_bef_upd.json"
+            },
+            {
+                "trigger_name": "bi_aft_upd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/bi_aft_upd.json"
+            },
+            {
+                "trigger_name": "bi_bef_del",
+                "json_file": "RELEASE-2018-11-22-DATABASE/bi_bef_del.json"
+            },
+            {
+                "trigger_name": "bi_aft_del",
+                "json_file": "RELEASE-2018-11-22-DATABASE/bi_aft_del.json"
+            },
+            {
+                "trigger_name": "dkb_aft_del",
+                "json_file": "RELEASE-2018-11-22-DATABASE/dkb_aft_del.json"
+            },
+            {
+                "trigger_name": "dkpb_aft_del",
+                "json_file": "RELEASE-2018-11-22-DATABASE/dkpb_aft_del.json"
+            },
+            {
+                "trigger_name": "gambar_bef_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/gambar_bef_ins.json"
+            },
+            {
+                "trigger_name": "gambar_aft_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/gambar_aft_ins.json"
+            },
+            {
+                "trigger_name": "gambar_aft_del",
+                "json_file": "RELEASE-2018-11-22-DATABASE/gambar_aft_del.json"
+            },
+            {
+                "trigger_name": "gantirugi_bef_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/gantirugi_bef_ins.json"
+            },
+            {
+                "trigger_name": "gantirugi_aft_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/gantirugi_aft_ins.json"
+            },
+            {
+                "trigger_name": "gantirugi_aft_upd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/gantirugi_aft_upd.json"
+            },
+            {
+                "trigger_name": "gantirugi_aft_del",
+                "json_file": "RELEASE-2018-11-22-DATABASE/gantirugi_aft_del.json"
+            },
+            {
+                "trigger_name": "gantirugi_bayar_bef_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/gantirugi_bayar_bef_ins.json"
+            },
+            {
+                "trigger_name": "gantirugi_bayar_aft_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/gantirugi_bayar_aft_ins.json"
+            },
+            {
+                "trigger_name": "gantirugi_bayar_aft_upd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/gantirugi_bayar_aft_upd.json"
+            },
+            {
+                "trigger_name": "gantirugi_bayar_aft_del",
+                "json_file": "RELEASE-2018-11-22-DATABASE/gantirugi_bayar_aft_del.json"
+            },
+            {
+                "trigger_name": "kiba_aft_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/kiba_aft_ins.json"
+            },
+            {
+                "trigger_name": "kiba_aft_upd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/kiba_aft_upd.json"
+            },
+            {
+                "trigger_name": "kiba_aft_del",
+                "json_file": "RELEASE-2018-11-22-DATABASE/kiba_aft_del.json"
+            },
+            {
+                "trigger_name": "kibb_aft_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/kibb_aft_ins.json"
+            },
+            {
+                "trigger_name": "kibb_aft_upd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/kibb_aft_upd.json"
+            },
+            {
+                "trigger_name": "kibb_aft_del",
+                "json_file": "RELEASE-2018-11-22-DATABASE/kibb_aft_del.json"
+            },
+            {
+                "trigger_name": "kibc_aft_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/kibc_aft_ins.json"
+            },
+            {
+                "trigger_name": "kibc_aft_upd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/kibc_aft_upd.json"
+            },
+            {
+                "trigger_name": "kibc_aft_del",
+                "json_file": "RELEASE-2018-11-22-DATABASE/kibc_aft_del.json"
+            },
+            {
+                "trigger_name": "kibd_aft_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/kibd_aft_ins.json"
+            },
+            {
+                "trigger_name": "kibd_aft_upd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/kibd_aft_upd.json"
+            },
+            {
+                "trigger_name": "kibd_aft_del",
+                "json_file": "RELEASE-2018-11-22-DATABASE/kibd_aft_del.json"
+            },
+            {
+                "trigger_name": "kibe_aft_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/kibe_aft_ins.json"
+            },
+            {
+                "trigger_name": "kibe_aft_upd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/kibe_aft_upd.json"
+            },
+            {
+                "trigger_name": "kibe_aft_del",
+                "json_file": "RELEASE-2018-11-22-DATABASE/kibe_aft_del.json"
+            },
+            {
+                "trigger_name": "kibf_aft_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/kibf_aft_ins.json"
+            },
+            {
+                "trigger_name": "kibf_aft_upd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/kibf_aft_upd.json"
+            },
+            {
+                "trigger_name": "kibf_aft_del",
+                "json_file": "RELEASE-2018-11-22-DATABASE/kibf_aft_del.json"
+            },
+            {
+                "trigger_name": "mutasi_sebagian_bef_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/mutasi_sebagian_bef_ins.json"
+            },
+            {
+                "trigger_name": "mutasi_sebagian_aft_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/mutasi_sebagian_aft_ins.json"
+            },
+            {
+                "trigger_name": "pemanfaatan_bef_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/pemanfaatan_bef_ins.json"
+            },
+            {
+                "trigger_name": "pemanfaatan_aft_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/pemanfaatan_aft_ins.json"
+            },
+            {
+                "trigger_name": "pemanfaatan_aft_upd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/pemanfaatan_aft_upd.json"
+            },
+            {
+                "trigger_name": "pemanfaatan_aft_del",
+                "json_file": "RELEASE-2018-11-22-DATABASE/pemanfaatan_aft_del.json"
+            },
+            {
+                "trigger_name": "pemeliharaan_bef_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/pemeliharaan_bef_ins.json"
+            },
+            {
+                "trigger_name": "pemeliharaan_aft_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/pemeliharaan_aft_ins.json"
+            },
+            {
+                "trigger_name": "pemeliharaan_bef_upd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/pemeliharaan_bef_upd.json"
+            },
+            {
+                "trigger_name": "pemeliharaan_aft_upd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/pemeliharaan_aft_upd.json"
+            },
+            {
+                "trigger_name": "pemeliharaan_bef_del",
+                "json_file": "RELEASE-2018-11-22-DATABASE/pemeliharaan_bef_del.json"
+            },
+            {
+                "trigger_name": "pemeliharaan_aft_del",
+                "json_file": "RELEASE-2018-11-22-DATABASE/pemeliharaan_aft_del.json"
+            },
+            {
+                "trigger_name": "pemindahtanganan_bef_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/pemindahtanganan_bef_ins.json"
+            },
+            {
+                "trigger_name": "pemindahtanganan_aft_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/pemindahtanganan_aft_ins.json"
+            },
+            {
+                "trigger_name": "pemindahtanganan_aft_upd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/pemindahtanganan_aft_upd.json"
+            },
+            {
+                "trigger_name": "pemindahtanganan_aft_del",
+                "json_file": "RELEASE-2018-11-22-DATABASE/pemindahtanganan_aft_del.json"
+            },
+            {
+                "trigger_name": "pemusnahan_aft_upd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/pemusnahan_aft_upd.json"
+            },
+            {
+                "trigger_name": "pemusnahan_aft_del",
+                "json_file": "RELEASE-2018-11-22-DATABASE/pemusnahan_aft_del.json"
+            },
+            {
+                "trigger_name": "pemusnahan_det_aft_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/pemusnahan_det_aft_ins.json"
+            },
+            {
+                "trigger_name": "pemusnahan_det_aft_del",
+                "json_file": "RELEASE-2018-11-22-DATABASE/pemusnahan_det_aft_del.json"
+            },
+            {
+                "trigger_name": "pengamanan_bef_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/pengamanan_bef_ins.json"
+            },
+            {
+                "trigger_name": "pengamanan_aft_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/pengamanan_aft_ins.json"
+            },
+            {
+                "trigger_name": "pengamanan_aft_upd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/pengamanan_aft_upd.json"
+            },
+            {
+                "trigger_name": "pengamanan_aft_del",
+                "json_file": "RELEASE-2018-11-22-DATABASE/pengamanan_aft_del.json"
+            },
+            {
+                "trigger_name": "penghapusan_bef_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/penghapusan_bef_ins.json"
+            },
+            {
+                "trigger_name": "hapus_aft_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/hapus_aft_ins.json"
+            },
+            {
+                "trigger_name": "hapus_aft_upd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/hapus_aft_upd.json"
+            },
+            {
+                "trigger_name": "hapus_aft_del",
+                "json_file": "RELEASE-2018-11-22-DATABASE/hapus_aft_del.json"
+            },
+            {
+                "trigger_name": "penghapusan_sebagian_bef_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/penghapusan_sebagian_bef_ins.json"
+            },
+            {
+                "trigger_name": "penghapusan_sebagian_aft_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/penghapusan_sebagian_aft_ins.json"
+            },
+            {
+                "trigger_name": "penghapusan_sebagian_aft_upd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/penghapusan_sebagian_aft_upd.json"
+            },
+            {
+                "trigger_name": "penghapusan_sebagian_aft_del",
+                "json_file": "RELEASE-2018-11-22-DATABASE/penghapusan_sebagian_aft_del.json"
+            },
+            {
+                "trigger_name": "penilaian_bef_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/penilaian_bef_ins.json"
+            },
+            {
+                "trigger_name": "penilaian_aft_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/penilaian_aft_ins.json"
+            },
+            {
+                "trigger_name": "penilaian_aft_upd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/penilaian_aft_upd.json"
+            },
+            {
+                "trigger_name": "penilaian_aft_del",
+                "json_file": "RELEASE-2018-11-22-DATABASE/penilaian_aft_del.json"
+            },
+            {
+                "trigger_name": "penyusutan_bef_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/penyusutan_bef_ins.json"
+            },
+            {
+                "trigger_name": "penyusutan_aft_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/penyusutan_aft_ins.json"
+            },
+            {
+                "trigger_name": "penyusutan_aft_del",
+                "json_file": "RELEASE-2018-11-22-DATABASE/penyusutan_aft_del.json"
+            },
+            {
+                "trigger_name": "ref_barang_aft_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_barang_aft_ins.json"
+            },
+            {
+                "trigger_name": "ref_barang_aft_upd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_barang_aft_upd.json"
+            },
+            {
+                "trigger_name": "ref_barang_aft_del",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_barang_aft_del.json"
+            },
+            {
+                "trigger_name": "ref_penerimaan_barang_info_bef_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_penerimaan_barang_info_bef_ins.json"
+            },
+            {
+                "trigger_name": "ref_penerimaan_barang_info_bef_upd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_penerimaan_barang_info_bef_upd.json"
+            },
+            {
+                "trigger_name": "ref_rincian_template_bef_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_rincian_template_bef_ins.json"
+            },
+            {
+                "trigger_name": "ref_rincian_template_bef_upd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_rincian_template_bef_upd.json"
+            },
+            {
+                "trigger_name": "ref_ruang_bef_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_ruang_bef_ins.json"
+            },
+            {
+                "trigger_name": "ref_ruang_bef_updt",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_ruang_bef_updt.json"
+            },
+            {
+                "trigger_name": "ref_ruas_jalan_bef_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_ruas_jalan_bef_ins.json"
+            },
+            {
+                "trigger_name": "ref_ruas_jalan_bef_upd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_ruas_jalan_bef_upd.json"
+            },
+            {
+                "trigger_name": "ref_tambah_manfaat_bef_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_tambah_manfaat_bef_ins.json"
+            },
+            {
+                "trigger_name": "ref_tambah_manfaat_bef_upd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_tambah_manfaat_bef_upd.json"
+            },
+            {
+                "trigger_name": "ref_tambah_manfaat_bef_del",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_tambah_manfaat_bef_del.json"
+            },
+            {
+                "trigger_name": "ref_template_bef_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_template_bef_ins.json"
+            },
+            {
+                "trigger_name": "ref_template_bef_del",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_template_bef_del.json"
+            },
+            {
+                "trigger_name": "ref_templatebarang_bef_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_templatebarang_bef_ins.json"
+            },
+            {
+                "trigger_name": "ref_templatebarang_bef_upd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_templatebarang_bef_upd.json"
+            },
+            {
+                "trigger_name": "ref_templatebarang_bef_del",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_templatebarang_bef_del.json"
+            },
+            {
+                "trigger_name": "ref_templatebarang_det_bef_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_templatebarang_det_bef_ins.json"
+            },
+            {
+                "trigger_name": "ref_template_barang_det_bef_upd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_template_barang_det_bef_upd.json"
+            },
+            {
+                "trigger_name": "ref_urusan_aft_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_urusan_aft_ins.json"
+            },
+            {
+                "trigger_name": "ref_urusan_aft_del",
+                "json_file": "RELEASE-2018-11-22-DATABASE/ref_urusan_aft_del.json"
+            },
+            {
+                "trigger_name": "sensus_bef_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sensus_bef_ins.json"
+            },
+            {
+                "trigger_name": "sensus_bef_del",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sensus_bef_del.json"
+            },
+            {
+                "trigger_name": "setting_inventaris_history",
+                "json_file": "RELEASE-2018-11-22-DATABASE/setting_inventaris_history.json"
+            },
+            {
+                "trigger_name": "t_asetlainlain_bef_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_asetlainlain_bef_ins.json"
+            },
+            {
+                "trigger_name": "t_atribusi_bef_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_atribusi_bef_ins.json"
+            },
+            {
+                "trigger_name": "t_atribusi_bef_upd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_atribusi_bef_upd.json"
+            },
+            {
+                "trigger_name": "t_atribusi_bef_del",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_atribusi_bef_del.json"
+            },
+            {
+                "trigger_name": "t_atribusi_dokumen_bef_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_atribusi_dokumen_bef_ins.json"
+            },
+            {
+                "trigger_name": "t_atribusi_dokumen_bef_upd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_atribusi_dokumen_bef_upd.json"
+            },
+            {
+                "trigger_name": "t_atribusi_rincian_bef_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_atribusi_rincian_bef_ins.json"
+            },
+            {
+                "trigger_name": "t_atribusi_rincian_bef_upd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_atribusi_rincian_bef_upd.json"
+            },
+            {
+                "trigger_name": "t_atribusi_rincian_bef_del",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_atribusi_rincian_bef_del.json"
+            },
+            {
+                "trigger_name": "t_birm_aft_insert",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_birm_aft_insert.json"
+            },
+            {
+                "trigger_name": "t_bku_bef_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_bku_bef_ins.json"
+            },
+            {
+                "trigger_name": "t_bku_bef_upd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_bku_bef_upd.json"
+            },
+            {
+                "trigger_name": "t_closing_aft_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_closing_aft_ins.json"
+            },
+            {
+                "trigger_name": "t_closing_aft_upd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_closing_aft_upd.json"
+            },
+            {
+                "trigger_name": "t_closing_aft_del",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_closing_aft_del.json"
+            },
+            {
+                "trigger_name": "t_distribusi_bef_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_distribusi_bef_ins.json"
+            },
+            {
+                "trigger_name": "t_distribusi_bef_upd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_distribusi_bef_upd.json"
+            },
+            {
+                "trigger_name": "t_history_aset_bef_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_history_aset_bef_ins.json"
+            },
+            {
+                "trigger_name": "t_history_aset_aft_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_history_aset_aft_ins.json"
+            },
+            {
+                "trigger_name": "t_history_aset_aft_upd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_history_aset_aft_upd.json"
+            },
+            {
+                "trigger_name": "t_history_aset_aft_del",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_history_aset_aft_del.json"
+            },
+            {
+                "trigger_name": "t_jurnal_aset _bef_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_jurnal_aset _bef_ins.json"
+            },
+            {
+                "trigger_name": "t_jurnal_aset_aft_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_jurnal_aset_aft_ins.json"
+            },
+            {
+                "trigger_name": "t_jurnal_aset_bef_upd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_jurnal_aset_bef_upd.json"
+            },
+            {
+                "trigger_name": "t_jurnal_aset_aft_upd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_jurnal_aset_aft_upd.json"
+            },
+            {
+                "trigger_name": "t_jurnal_aset_aft_del",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_jurnal_aset_aft_del.json"
+            },
+            {
+                "trigger_name": "t_jurnal_aset_rekap_bef_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_jurnal_aset_rekap_bef_ins.json"
+            },
+            {
+                "trigger_name": "t_jurnal_aset_rekap_bef_upd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_jurnal_aset_rekap_bef_upd.json"
+            },
+            {
+                "trigger_name": "t_kapitalisasi_bef_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_kapitalisasi_bef_ins.json"
+            },
+            {
+                "trigger_name": "t_kas_bendahara_kartu_bef_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_kas_bendahara_kartu_bef_ins.json"
+            },
+            {
+                "trigger_name": "t_kas_bendahara_kartu_bef_upd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_kas_bendahara_kartu_bef_upd.json"
+            },
+            {
+                "trigger_name": "t_kas_bendaharan_mutasi_bef_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_kas_bendaharan_mutasi_bef_ins.json"
+            },
+            {
+                "trigger_name": "t_kas_bendahara_mutasi_aft_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_kas_bendahara_mutasi_aft_ins.json"
+            },
+            {
+                "trigger_name": "t_kas_bendaharan_mutasi_bef_upd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_kas_bendaharan_mutasi_bef_upd.json"
+            },
+            {
+                "trigger_name": "t_kas_bendahara_mutasi_aft_upd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_kas_bendahara_mutasi_aft_upd.json"
+            },
+            {
+                "trigger_name": "t_kas_bendahara_mutasi_bef_del",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_kas_bendahara_mutasi_bef_del.json"
+            },
+            {
+                "trigger_name": "t_kas_bendaharan_penerimaan_bef_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_kas_bendaharan_penerimaan_bef_ins.json"
+            },
+            {
+                "trigger_name": "t_kas_bendahara_penerimaan_aft_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_kas_bendahara_penerimaan_aft_ins.json"
+            },
+            {
+                "trigger_name": "t_kas_bendaharan_penerimaan_bef_upd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_kas_bendaharan_penerimaan_bef_upd.json"
+            },
+            {
+                "trigger_name": "t_kas_bendahara_penerimaan_aft_upd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_kas_bendahara_penerimaan_aft_upd.json"
+            },
+            {
+                "trigger_name": "t_kas_bendahara_penerimaan_bef_del",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_kas_bendahara_penerimaan_bef_del.json"
+            },
+            {
+                "trigger_name": "t_kondisi_bef_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_kondisi_bef_ins.json"
+            },
+            {
+                "trigger_name": "t_kondisi_aft_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_kondisi_aft_ins.json"
+            },
+            {
+                "trigger_name": "t_kondisi_aft_upd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_kondisi_aft_upd.json"
+            },
+            {
+                "trigger_name": "t_kondisi_aft_del",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_kondisi_aft_del.json"
+            },
+            {
+                "trigger_name": "t_koreksi_bef_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_koreksi_bef_ins.json"
+            },
+            {
+                "trigger_name": "t_koreksi_aft_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_koreksi_aft_ins.json"
+            },
+            {
+                "trigger_name": "t_koreksi_aft_upd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_koreksi_aft_upd.json"
+            },
+            {
+                "trigger_name": "t_koreksi_aft_del",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_koreksi_aft_del.json"
+            },
+            {
+                "trigger_name": "t_koreksi_penyusutan_aft_del",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_koreksi_penyusutan_aft_del.json"
+            },
+            {
+                "trigger_name": "t_nomor_spd_bef_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_nomor_spd_bef_ins.json"
+            },
+            {
+                "trigger_name": "t_nomor_spd_bef_upd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_nomor_spd_bef_upd.json"
+            },
+            {
+                "trigger_name": "t_nomor_spd_bef_del",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_nomor_spd_bef_del.json"
+            },
+            {
+                "trigger_name": "t_nomor_spd_det_bef_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_nomor_spd_det_bef_ins.json"
+            },
+            {
+                "trigger_name": "t_nomor_spd_det_bef_upd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_nomor_spd_det_bef_upd.json"
+            },
+            {
+                "trigger_name": "t_penerimaan_barang_bef_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_penerimaan_barang_bef_ins.json"
+            },
+            {
+                "trigger_name": "t_penerimaan_barang_bef_upd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_penerimaan_barang_bef_upd.json"
+            },
+            {
+                "trigger_name": "t_penerimaan_barang_aft_upd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_penerimaan_barang_aft_upd.json"
+            },
+            {
+                "trigger_name": "t_penerimaan_barang_bef_del",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_penerimaan_barang_bef_del.json"
+            },
+            {
+                "trigger_name": "t_penerimaan_barang_det_bef_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_penerimaan_barang_det_bef_ins.json"
+            },
+            {
+                "trigger_name": "t_penerimaan_barang_det_aft_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_penerimaan_barang_det_aft_ins.json"
+            },
+            {
+                "trigger_name": "t_penerimaan_barang_det_bef_upd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_penerimaan_barang_det_bef_upd.json"
+            },
+            {
+                "trigger_name": "t_penerimaan_barang_det_bef_del",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_penerimaan_barang_det_bef_del.json"
+            },
+            {
+                "trigger_name": "t_penerimaan_barang_file_bef_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_penerimaan_barang_file_bef_ins.json"
+            },
+            {
+                "trigger_name": "t_penerimaan_postbi_idbi_bef_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_penerimaan_postbi_idbi_bef_ins.json"
+            },
+            {
+                "trigger_name": "t_penerimaan_postbi_idbi_bef_del",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_penerimaan_postbi_idbi_bef_del.json"
+            },
+            {
+                "trigger_name": "t_penerimaan_postbi_temp_bef_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_penerimaan_postbi_temp_bef_ins.json"
+            },
+            {
+                "trigger_name": "t_penerimaan_rek_biaya_bef_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_penerimaan_rek_biaya_bef_ins.json"
+            },
+            {
+                "trigger_name": "t_penerimaan_rek_biaya_bef_upd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_penerimaan_rek_biaya_bef_upd.json"
+            },
+            {
+                "trigger_name": "t_penerimaan_rekening_bef_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_penerimaan_rekening_bef_ins.json"
+            },
+            {
+                "trigger_name": "t_penerimaan_rekening_aft_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_penerimaan_rekening_aft_ins.json"
+            },
+            {
+                "trigger_name": "t_penerimaan_rekening_bef_upd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_penerimaan_rekening_bef_upd.json"
+            },
+            {
+                "trigger_name": "t_penerimaan_rekening_bef_del",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_penerimaan_rekening_bef_del.json"
+            },
+            {
+                "trigger_name": "t_penerimaan_rekening_det_bef_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_penerimaan_rekening_det_bef_ins.json"
+            },
+            {
+                "trigger_name": "t_penerimaan_rekening_det_bef_upd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_penerimaan_rekening_det_bef_upd.json"
+            },
+            {
+                "trigger_name": "t_penerimaan_retensi_bef_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_penerimaan_retensi_bef_ins.json"
+            },
+            {
+                "trigger_name": "t_penerimaan_retensi_bef_upd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_penerimaan_retensi_bef_upd.json"
+            },
+            {
+                "trigger_name": "t_penerimaan_retensi_bef_del",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_penerimaan_retensi_bef_del.json"
+            },
+            {
+                "trigger_name": "t_penerimaan_retensi_det_bef_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_penerimaan_retensi_det_bef_ins.json"
+            },
+            {
+                "trigger_name": "t_penerimaan_retensi_det_bef_upd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_penerimaan_retensi_det_bef_upd.json"
+            },
+            {
+                "trigger_name": "t_penerimaan_retensi_rekening_bef_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_penerimaan_retensi_rekening_bef_ins.json"
+            },
+            {
+                "trigger_name": "t_penerimaan_retensi_rekening_bef_upd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_penerimaan_retensi_rekening_bef_upd.json"
+            },
+            {
+                "trigger_name": "t_penerimaan_retensi_rekening_bef_del",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_penerimaan_retensi_rekening_bef_del.json"
+            },
+            {
+                "trigger_name": "t_pengeluaran_kas_bef_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_pengeluaran_kas_bef_ins.json"
+            },
+            {
+                "trigger_name": "t_pengeluaran_kas_bef_upd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_pengeluaran_kas_bef_upd.json"
+            },
+            {
+                "trigger_name": "t_pengeluaran_kas_aft_upd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_pengeluaran_kas_aft_upd.json"
+            },
+            {
+                "trigger_name": "t_pengeluaran_kas_bef_del",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_pengeluaran_kas_bef_del.json"
+            },
+            {
+                "trigger_name": "t_pengeluaran_kas_pot_bef_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_pengeluaran_kas_pot_bef_ins.json"
+            },
+            {
+                "trigger_name": "t_pengeluaran_kas_pot_bef_upd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_pengeluaran_kas_pot_bef_upd.json"
+            },
+            {
+                "trigger_name": "t_pengeluaran_kas_pot_aft_upd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_pengeluaran_kas_pot_aft_upd.json"
+            },
+            {
+                "trigger_name": "t_pengeluaran_kas_pot_bef_del",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_pengeluaran_kas_pot_bef_del.json"
+            },
+            {
+                "trigger_name": "t_pengeluaran_kas_rek_bef_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_pengeluaran_kas_rek_bef_ins.json"
+            },
+            {
+                "trigger_name": "t_pengeluaran_kas_rek_bef_upd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_pengeluaran_kas_rek_bef_upd.json"
+            },
+            {
+                "trigger_name": "t_pengeluaran_kas_rek_aft_upd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_pengeluaran_kas_rek_aft_upd.json"
+            },
+            {
+                "trigger_name": "t_pengeluaran_kas_rek_bef_del",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_pengeluaran_kas_rek_bef_del.json"
+            },
+            {
+                "trigger_name": "t_spj_bef_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_spj_bef_ins.json"
+            },
+            {
+                "trigger_name": "t_spj_bef_upd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_spj_bef_upd.json"
+            },
+            {
+                "trigger_name": "t_spj_det_bef_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_spj_det_bef_ins.json"
+            },
+            {
+                "trigger_name": "t_spj_det_bef_upd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_spj_det_bef_upd.json"
+            },
+            {
+                "trigger_name": "t_spp_bef_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_spp_bef_ins.json"
+            },
+            {
+                "trigger_name": "t_spp_bef_upd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_spp_bef_upd.json"
+            },
+            {
+                "trigger_name": "t_spp_aft_upd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_spp_aft_upd.json"
+            },
+            {
+                "trigger_name": "t_spp_bef_del",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_spp_bef_del.json"
+            },
+            {
+                "trigger_name": "t_spp_kelengkapan_dok_bef_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_spp_kelengkapan_dok_bef_ins.json"
+            },
+            {
+                "trigger_name": "t_spp_kelengkapan_dok_bef_upd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_spp_kelengkapan_dok_bef_upd.json"
+            },
+            {
+                "trigger_name": "t_spp_potongan_bef_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_spp_potongan_bef_ins.json"
+            },
+            {
+                "trigger_name": "t_spp_potongan_bef_upd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_spp_potongan_bef_upd.json"
+            },
+            {
+                "trigger_name": "t_spp_rekening_bef_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_spp_rekening_bef_ins.json"
+            },
+            {
+                "trigger_name": "t_spp_rekening_bef_upd",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_spp_rekening_bef_upd.json"
+            },
+            {
+                "trigger_name": "t_transaksi_bef_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_transaksi_bef_ins.json"
+            },
+            {
+                "trigger_name": "t_transaksi_aft_del",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_transaksi_aft_del.json"
+            },
+            {
+                "trigger_name": "t_tree_bef_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_tree_bef_ins.json"
+            },
+            {
+                "trigger_name": "t_tree_aft_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/t_tree_aft_ins.json"
+            },
+            {
+                "trigger_name": "temp_data_bef_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/temp_data_bef_ins.json"
+            },
+            {
+                "trigger_name": "temp_data_bef_del",
+                "json_file": "RELEASE-2018-11-22-DATABASE/temp_data_bef_del.json"
+            },
+            {
+                "trigger_name": "temp_data_det_bef_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/temp_data_det_bef_ins.json"
+            },
+            {
+                "trigger_name": "tempusr_aft_ins",
+                "json_file": "RELEASE-2018-11-22-DATABASE/tempusr_aft_ins.json"
+            }
+        ],
+        "routines": [
+            {
+                "routine_name": "get_bi_rincian",
+                "json_file": "RELEASE-2018-11-22-DATABASE/get_bi_rincian.json"
+            },
+            {
+                "routine_name": "get_nilai_buku",
+                "json_file": "RELEASE-2018-11-22-DATABASE/get_nilai_buku.json"
+            },
+            {
+                "routine_name": "get_nilai_perolehan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/get_nilai_perolehan.json"
+            },
+            {
+                "routine_name": "get_nilai_rehab",
+                "json_file": "RELEASE-2018-11-22-DATABASE/get_nilai_rehab.json"
+            },
+            {
+                "routine_name": "get_staset",
+                "json_file": "RELEASE-2018-11-22-DATABASE/get_staset.json"
+            },
+            {
+                "routine_name": "sf_cek_idbi",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sf_cek_idbi.json"
+            },
+            {
+                "routine_name": "sf_cek_idbi2",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sf_cek_idbi2.json"
+            },
+            {
+                "routine_name": "sf_getAkumSusut",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sf_getAkumSusut.json"
+            },
+            {
+                "routine_name": "sf_getnomor_bku",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sf_getnomor_bku.json"
+            },
+            {
+                "routine_name": "sf_get_bi_noreg",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sf_get_bi_noreg.json"
+            },
+            {
+                "routine_name": "sf_get_susut",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sf_get_susut.json"
+            },
+            {
+                "routine_name": "sf_get_tambah_manfaat",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sf_get_tambah_manfaat.json"
+            },
+            {
+                "routine_name": "sf_insert_log",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sf_insert_log.json"
+            },
+            {
+                "routine_name": "sf_isi_bi_thn",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sf_isi_bi_thn.json"
+            },
+            {
+                "routine_name": "sf_isi_bi_thn_baru",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sf_isi_bi_thn_baru.json"
+            },
+            {
+                "routine_name": "sf_isi_bi_thn_harga",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sf_isi_bi_thn_harga.json"
+            },
+            {
+                "routine_name": "sf_isi_bi_thn_kondisi",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sf_isi_bi_thn_kondisi.json"
+            },
+            {
+                "routine_name": "sf_isi_bi_thn_staset",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sf_isi_bi_thn_staset.json"
+            },
+            {
+                "routine_name": "sf_jurnal_bi",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sf_jurnal_bi.json"
+            },
+            {
+                "routine_name": "sf_jurnal_mutasi",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sf_jurnal_mutasi.json"
+            },
+            {
+                "routine_name": "sf_jurnal_rekap",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sf_jurnal_rekap.json"
+            },
+            {
+                "routine_name": "sf_jurnal_rekap_v2",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sf_jurnal_rekap_v2.json"
+            },
+            {
+                "routine_name": "sf_jurnal_saldoaw",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sf_jurnal_saldoaw.json"
+            },
+            {
+                "routine_name": "sf_jurnal_set_stpost",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sf_jurnal_set_stpost.json"
+            },
+            {
+                "routine_name": "sf_jurnal_susut",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sf_jurnal_susut.json"
+            },
+            {
+                "routine_name": "sf_jurnal_susut2",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sf_jurnal_susut2.json"
+            },
+            {
+                "routine_name": "sf_jurnal_susut_gantirugi",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sf_jurnal_susut_gantirugi.json"
+            },
+            {
+                "routine_name": "sf_jurnal_susut_mutasi",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sf_jurnal_susut_mutasi.json"
+            },
+            {
+                "routine_name": "sf_jurnal_susut_pemanfaatan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sf_jurnal_susut_pemanfaatan.json"
+            },
+            {
+                "routine_name": "sf_jurnal_susut_penghapusan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sf_jurnal_susut_penghapusan.json"
+            },
+            {
+                "routine_name": "sf_jurnal_susut_pindahtangan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sf_jurnal_susut_pindahtangan.json"
+            },
+            {
+                "routine_name": "sf_jurnal_susut_reklas",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sf_jurnal_susut_reklas.json"
+            },
+            {
+                "routine_name": "sf_jurnal_susut_reklas_tes",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sf_jurnal_susut_reklas_tes.json"
+            },
+            {
+                "routine_name": "sf_jurnal_susut_staset",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sf_jurnal_susut_staset.json"
+            },
+            {
+                "routine_name": "sf_penerimaan_posting",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sf_penerimaan_posting.json"
+            },
+            {
+                "routine_name": "sf_penerimaan_posting_distribusi",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sf_penerimaan_posting_distribusi.json"
+            },
+            {
+                "routine_name": "sf_penerimaan_posting_distribusi_v3",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sf_penerimaan_posting_distribusi_v3.json"
+            },
+            {
+                "routine_name": "sf_penerimaan_posting_noreg",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sf_penerimaan_posting_noreg.json"
+            },
+            {
+                "routine_name": "sf_penerimaan_posting_pemeliharaan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sf_penerimaan_posting_pemeliharaan.json"
+            },
+            {
+                "routine_name": "sf_penerimaan_posting_v2",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sf_penerimaan_posting_v2.json"
+            },
+            {
+                "routine_name": "sf_penerimaan_posting_v3",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sf_penerimaan_posting_v3.json"
+            },
+            {
+                "routine_name": "sf_susut",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sf_susut.json"
+            },
+            {
+                "routine_name": "sf_susut_get_periode_ak",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sf_susut_get_periode_ak.json"
+            },
+            {
+                "routine_name": "sf_susut_mode10",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sf_susut_mode10.json"
+            },
+            {
+                "routine_name": "sf_susut_mode11",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sf_susut_mode11.json"
+            },
+            {
+                "routine_name": "sf_susut_mode12",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sf_susut_mode12.json"
+            },
+            {
+                "routine_name": "sf_susut_mode13",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sf_susut_mode13.json"
+            },
+            {
+                "routine_name": "sf_susut_mode14",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sf_susut_mode14.json"
+            },
+            {
+                "routine_name": "sf_susut_mode15",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sf_susut_mode15.json"
+            },
+            {
+                "routine_name": "sf_susut_mode16",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sf_susut_mode16.json"
+            },
+            {
+                "routine_name": "sf_susut_mode17",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sf_susut_mode17.json"
+            },
+            {
+                "routine_name": "sf_susut_mode2",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sf_susut_mode2.json"
+            },
+            {
+                "routine_name": "sf_susut_mode3_bln",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sf_susut_mode3_bln.json"
+            },
+            {
+                "routine_name": "sf_susut_mode3_bln_next",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sf_susut_mode3_bln_next.json"
+            },
+            {
+                "routine_name": "sf_susut_mode3_thn",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sf_susut_mode3_thn.json"
+            },
+            {
+                "routine_name": "sf_susut_mode3_thn_next",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sf_susut_mode3_thn_next.json"
+            },
+            {
+                "routine_name": "sf_susut_mode4",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sf_susut_mode4.json"
+            },
+            {
+                "routine_name": "sf_susut_mode5",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sf_susut_mode5.json"
+            },
+            {
+                "routine_name": "sf_susut_mode5b",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sf_susut_mode5b.json"
+            },
+            {
+                "routine_name": "sf_susut_mode5_1",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sf_susut_mode5_1.json"
+            },
+            {
+                "routine_name": "sf_susut_mode5_2",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sf_susut_mode5_2.json"
+            },
+            {
+                "routine_name": "sf_susut_mode5_3",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sf_susut_mode5_3.json"
+            },
+            {
+                "routine_name": "sf_susut_mode6",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sf_susut_mode6.json"
+            },
+            {
+                "routine_name": "sf_susut_mode7",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sf_susut_mode7.json"
+            },
+            {
+                "routine_name": "sf_susut_mode8",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sf_susut_mode8.json"
+            },
+            {
+                "routine_name": "sf_susut_mode9",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sf_susut_mode9.json"
+            },
+            {
+                "routine_name": "sf_susut_mode9_bln",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sf_susut_mode9_bln.json"
+            },
+            {
+                "routine_name": "sf_susut_mode_thn",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sf_susut_mode_thn.json"
+            },
+            {
+                "routine_name": "sp_cek_kib",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sp_cek_kib.json"
+            },
+            {
+                "routine_name": "sp_insert_log",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sp_insert_log.json"
+            },
+            {
+                "routine_name": "sp_jurnal_bi",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sp_jurnal_bi.json"
+            },
+            {
+                "routine_name": "sp_jurnal_bi_baru",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sp_jurnal_bi_baru.json"
+            },
+            {
+                "routine_name": "sp_jurnal_bi_tes",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sp_jurnal_bi_tes.json"
+            },
+            {
+                "routine_name": "sp_jurnal_gantirugi",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sp_jurnal_gantirugi.json"
+            },
+            {
+                "routine_name": "sp_jurnal_gantirugi_bayar",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sp_jurnal_gantirugi_bayar.json"
+            },
+            {
+                "routine_name": "sp_jurnal_gantirugi_tes",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sp_jurnal_gantirugi_tes.json"
+            },
+            {
+                "routine_name": "sp_jurnal_hapussebagian",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sp_jurnal_hapussebagian.json"
+            },
+            {
+                "routine_name": "sp_jurnal_hapussebagian_tes",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sp_jurnal_hapussebagian_tes.json"
+            },
+            {
+                "routine_name": "sp_jurnal_kondisi",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sp_jurnal_kondisi.json"
+            },
+            {
+                "routine_name": "sp_jurnal_koreksi",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sp_jurnal_koreksi.json"
+            },
+            {
+                "routine_name": "sp_jurnal_mutasi",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sp_jurnal_mutasi.json"
+            },
+            {
+                "routine_name": "sp_jurnal_mutasi_sebagian",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sp_jurnal_mutasi_sebagian.json"
+            },
+            {
+                "routine_name": "sp_jurnal_mutasi_sotk",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sp_jurnal_mutasi_sotk.json"
+            },
+            {
+                "routine_name": "sp_jurnal_pemanfaatan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sp_jurnal_pemanfaatan.json"
+            },
+            {
+                "routine_name": "sp_jurnal_pemanfaatan_berakhir",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sp_jurnal_pemanfaatan_berakhir.json"
+            },
+            {
+                "routine_name": "sp_jurnal_pemanfaatan_berakhir_tes",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sp_jurnal_pemanfaatan_berakhir_tes.json"
+            },
+            {
+                "routine_name": "sp_jurnal_pemeliharaan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sp_jurnal_pemeliharaan.json"
+            },
+            {
+                "routine_name": "sp_jurnal_pemindahtangan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sp_jurnal_pemindahtangan.json"
+            },
+            {
+                "routine_name": "sp_jurnal_pemusnahan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sp_jurnal_pemusnahan.json"
+            },
+            {
+                "routine_name": "sp_jurnal_pengaman",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sp_jurnal_pengaman.json"
+            },
+            {
+                "routine_name": "sp_jurnal_penghapusan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sp_jurnal_penghapusan.json"
+            },
+            {
+                "routine_name": "sp_jurnal_penilaian",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sp_jurnal_penilaian.json"
+            },
+            {
+                "routine_name": "sp_jurnal_reklass",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sp_jurnal_reklass.json"
+            },
+            {
+                "routine_name": "sp_jurnal_staset",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sp_jurnal_staset.json"
+            },
+            {
+                "routine_name": "sp_jurnal_susut",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sp_jurnal_susut.json"
+            },
+            {
+                "routine_name": "sp_jurnal_susut_koreksi",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sp_jurnal_susut_koreksi.json"
+            },
+            {
+                "routine_name": "sp_jurnal_susut_koreksi_tes",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sp_jurnal_susut_koreksi_tes.json"
+            },
+            {
+                "routine_name": "sp_rekap2",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sp_rekap2.json"
+            },
+            {
+                "routine_name": "sp_sensus_scan",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sp_sensus_scan.json"
+            },
+            {
+                "routine_name": "sp_sensus_upd_bi",
+                "json_file": "RELEASE-2018-11-22-DATABASE/sp_sensus_upd_bi.json"
+            }
+        ]
+    }
+]

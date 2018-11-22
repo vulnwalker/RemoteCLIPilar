@@ -1,0 +1,34 @@
+{
+    "tableName": "ref_dokumensumber",
+    "dumpFile": "dump\/ref_dokumensumber.sql",
+    "index": [
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        }
+    ],
+    "colums": [
+        {
+            "COLUMN_NAME": "id",
+            "COLUMN_TYPE": "int(11)",
+            "CHARACTER_SET_NAME": null,
+            "COLLATION_NAME": null,
+            "IS_NULLABLE": "NO"
+        },
+        {
+            "COLUMN_NAME": "nama_dokumen",
+            "COLUMN_TYPE": "varchar(150)",
+            "CHARACTER_SET_NAME": "latin1",
+            "COLLATION_NAME": "latin1_general_ci",
+            "IS_NULLABLE": "YES"
+        }
+    ],
+    "default_value": [
+        "INSERT INTO ref_dokumensumber (`id`,`nama_dokumen`) values ('1','KONTRAK') ",
+        "INSERT INTO ref_dokumensumber (`id`,`nama_dokumen`) values ('2','KWITANSI') ",
+        "INSERT INTO ref_dokumensumber (`id`,`nama_dokumen`) values ('3','BAST') ",
+        "INSERT INTO ref_dokumensumber (`id`,`nama_dokumen`) values ('4','BAKF') ",
+        "INSERT INTO ref_dokumensumber (`id`,`nama_dokumen`) values ('5','SP2D') "
+    ]
+}

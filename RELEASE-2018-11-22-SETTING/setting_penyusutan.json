@@ -1,0 +1,418 @@
+{
+    "tableName": "setting_penyusutan",
+    "dumpFile": "dump\/setting_penyusutan.sql",
+    "index": [
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "Id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "jenis",
+            "key_name": "jenis",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "Id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "c1",
+            "key_name": "c1",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "c",
+            "key_name": "c1",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "d",
+            "key_name": "c1",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "e",
+            "key_name": "c1",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "e1",
+            "key_name": "c1",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "c1",
+            "key_name": "c1",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "c",
+            "key_name": "c1",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "d",
+            "key_name": "c1",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "nama",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "Id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "c1",
+            "key_name": "c1",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "c",
+            "key_name": "c1",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "d",
+            "key_name": "c1",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "e",
+            "key_name": "c1",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "e1",
+            "key_name": "c1",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "Id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "Id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "c1",
+            "key_name": "c1",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "c",
+            "key_name": "c1",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "d",
+            "key_name": "c1",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "e",
+            "key_name": "c1",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "e1",
+            "key_name": "c1",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "f1",
+            "key_name": "f1",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "f2",
+            "key_name": "f1",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "f",
+            "key_name": "f1",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "g",
+            "key_name": "f1",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "h",
+            "key_name": "f1",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "i",
+            "key_name": "f1",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "j",
+            "key_name": "f1",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "refid_templatebarang",
+            "key_name": "refid",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "Id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "Id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "kode",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id_modul",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id_tahap",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "cara_pemenuhan",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "Id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        }
+    ],
+    "colums": [
+        {
+            "COLUMN_NAME": "Id",
+            "COLUMN_TYPE": "int(11)",
+            "CHARACTER_SET_NAME": null,
+            "COLLATION_NAME": null,
+            "IS_NULLABLE": "NO"
+        },
+        {
+            "COLUMN_NAME": "versi_name",
+            "COLUMN_TYPE": "varchar(255)",
+            "CHARACTER_SET_NAME": "latin1",
+            "COLLATION_NAME": "latin1_general_ci",
+            "IS_NULLABLE": "YES"
+        },
+        {
+            "COLUMN_NAME": "nama_pemda",
+            "COLUMN_TYPE": "varchar(255)",
+            "CHARACTER_SET_NAME": "latin1",
+            "COLLATION_NAME": "latin1_general_ci",
+            "IS_NULLABLE": "YES"
+        },
+        {
+            "COLUMN_NAME": "susut_mode",
+            "COLUMN_TYPE": "int(11)",
+            "CHARACTER_SET_NAME": null,
+            "COLLATION_NAME": null,
+            "IS_NULLABLE": "YES"
+        },
+        {
+            "COLUMN_NAME": "thn_mulai_susut",
+            "COLUMN_TYPE": "int(11)",
+            "CHARACTER_SET_NAME": null,
+            "COLLATION_NAME": null,
+            "IS_NULLABLE": "YES"
+        },
+        {
+            "COLUMN_NAME": "periode_hitung",
+            "COLUMN_TYPE": "int(11)",
+            "CHARACTER_SET_NAME": null,
+            "COLLATION_NAME": null,
+            "IS_NULLABLE": "YES"
+        },
+        {
+            "COLUMN_NAME": "periode_transaksi",
+            "COLUMN_TYPE": "int(11)",
+            "CHARACTER_SET_NAME": null,
+            "COLLATION_NAME": null,
+            "IS_NULLABLE": "YES"
+        },
+        {
+            "COLUMN_NAME": "pelaporan",
+            "COLUMN_TYPE": "int(11)",
+            "CHARACTER_SET_NAME": null,
+            "COLLATION_NAME": null,
+            "IS_NULLABLE": "YES"
+        },
+        {
+            "COLUMN_NAME": "intra",
+            "COLUMN_TYPE": "int(11)",
+            "CHARACTER_SET_NAME": null,
+            "COLLATION_NAME": null,
+            "IS_NULLABLE": "YES"
+        },
+        {
+            "COLUMN_NAME": "ekstra",
+            "COLUMN_TYPE": "int(11)",
+            "CHARACTER_SET_NAME": null,
+            "COLLATION_NAME": null,
+            "IS_NULLABLE": "YES"
+        },
+        {
+            "COLUMN_NAME": "aset_lain-lain",
+            "COLUMN_TYPE": "int(11)",
+            "CHARACTER_SET_NAME": null,
+            "COLLATION_NAME": null,
+            "IS_NULLABLE": "YES"
+        },
+        {
+            "COLUMN_NAME": "rusak_berat",
+            "COLUMN_TYPE": "int(11)",
+            "CHARACTER_SET_NAME": null,
+            "COLLATION_NAME": null,
+            "IS_NULLABLE": "YES"
+        },
+        {
+            "COLUMN_NAME": "kib_e",
+            "COLUMN_TYPE": "int(11)",
+            "CHARACTER_SET_NAME": null,
+            "COLLATION_NAME": null,
+            "IS_NULLABLE": "YES"
+        },
+        {
+            "COLUMN_NAME": "atb",
+            "COLUMN_TYPE": "int(11)",
+            "CHARACTER_SET_NAME": null,
+            "COLLATION_NAME": null,
+            "IS_NULLABLE": "YES"
+        },
+        {
+            "COLUMN_NAME": "penambahan_masa_manfaat",
+            "COLUMN_TYPE": "int(11)",
+            "CHARACTER_SET_NAME": null,
+            "COLLATION_NAME": null,
+            "IS_NULLABLE": "YES"
+        },
+        {
+            "COLUMN_NAME": "tahun_berlaku",
+            "COLUMN_TYPE": "int(11)",
+            "CHARACTER_SET_NAME": null,
+            "COLLATION_NAME": null,
+            "IS_NULLABLE": "YES"
+        },
+        {
+            "COLUMN_NAME": "aturan_masa_manfaat1",
+            "COLUMN_TYPE": "varchar(25)",
+            "CHARACTER_SET_NAME": "latin1",
+            "COLLATION_NAME": "latin1_general_ci",
+            "IS_NULLABLE": "YES"
+        },
+        {
+            "COLUMN_NAME": "aturan_masa_manfaat2",
+            "COLUMN_TYPE": "varchar(25)",
+            "CHARACTER_SET_NAME": "latin1",
+            "COLLATION_NAME": "latin1_general_ci",
+            "IS_NULLABLE": "YES"
+        },
+        {
+            "COLUMN_NAME": "aturan_masa_manfaat3",
+            "COLUMN_TYPE": "varchar(25)",
+            "CHARACTER_SET_NAME": "latin1",
+            "COLLATION_NAME": "latin1_general_ci",
+            "IS_NULLABLE": "YES"
+        },
+        {
+            "COLUMN_NAME": "persentase",
+            "COLUMN_TYPE": "int(11)",
+            "CHARACTER_SET_NAME": null,
+            "COLLATION_NAME": null,
+            "IS_NULLABLE": "YES"
+        },
+        {
+            "COLUMN_NAME": "tabel_masa_manfaat",
+            "COLUMN_TYPE": "int(11)",
+            "CHARACTER_SET_NAME": null,
+            "COLLATION_NAME": null,
+            "IS_NULLABLE": "YES"
+        },
+        {
+            "COLUMN_NAME": "thn_berlaku",
+            "COLUMN_TYPE": "int(4)",
+            "CHARACTER_SET_NAME": null,
+            "COLLATION_NAME": null,
+            "IS_NULLABLE": "YES"
+        }
+    ],
+    "default_value": [
+        "INSERT INTO setting_penyusutan (`Id`,`versi_name`,`nama_pemda`,`susut_mode`,`thn_mulai_susut`,`periode_hitung`,`periode_transaksi`,`pelaporan`,`intra`,`ekstra`,`aset_lain-lain`,`rusak_berat`,`kib_e`,`atb`,`penambahan_masa_manfaat`,`tahun_berlaku`,`aturan_masa_manfaat1`,`aturan_masa_manfaat2`,`aturan_masa_manfaat3`,`persentase`,`tabel_masa_manfaat`,`thn_berlaku`) values ('1','TASIKMALAYA_KAB','KABUPATEN TASIKMALAYA','6','1','1','1','1','1','2','2','1','1','1','1','','','','','1','1','2016') ",
+        "INSERT INTO setting_penyusutan (`Id`,`versi_name`,`nama_pemda`,`susut_mode`,`thn_mulai_susut`,`periode_hitung`,`periode_transaksi`,`pelaporan`,`intra`,`ekstra`,`aset_lain-lain`,`rusak_berat`,`kib_e`,`atb`,`penambahan_masa_manfaat`,`tahun_berlaku`,`aturan_masa_manfaat1`,`aturan_masa_manfaat2`,`aturan_masa_manfaat3`,`persentase`,`tabel_masa_manfaat`,`thn_berlaku`) values ('2','JABAR','JAWA BARAT','3','4','5','2','2','1','2','2','1','1','1','1','','1','7','8','2','1','2016') ",
+        "INSERT INTO setting_penyusutan (`Id`,`versi_name`,`nama_pemda`,`susut_mode`,`thn_mulai_susut`,`periode_hitung`,`periode_transaksi`,`pelaporan`,`intra`,`ekstra`,`aset_lain-lain`,`rusak_berat`,`kib_e`,`atb`,`penambahan_masa_manfaat`,`tahun_berlaku`,`aturan_masa_manfaat1`,`aturan_masa_manfaat2`,`aturan_masa_manfaat3`,`persentase`,`tabel_masa_manfaat`,`thn_berlaku`) values ('3','SERANG','KABUPATEN SERANG','2','1','1','1','1','1','2','2','1','1','2','1','2016','1','3','','2','1','2016') ",
+        "INSERT INTO setting_penyusutan (`Id`,`versi_name`,`nama_pemda`,`susut_mode`,`thn_mulai_susut`,`periode_hitung`,`periode_transaksi`,`pelaporan`,`intra`,`ekstra`,`aset_lain-lain`,`rusak_berat`,`kib_e`,`atb`,`penambahan_masa_manfaat`,`tahun_berlaku`,`aturan_masa_manfaat1`,`aturan_masa_manfaat2`,`aturan_masa_manfaat3`,`persentase`,`tabel_masa_manfaat`,`thn_berlaku`) values ('4','CIREBON_KAB','KABUPATEN CIREBON','8','6','6','2','2','1','2','2','1','1','1','1','','1','2','','2','1','2016') ",
+        "INSERT INTO setting_penyusutan (`Id`,`versi_name`,`nama_pemda`,`susut_mode`,`thn_mulai_susut`,`periode_hitung`,`periode_transaksi`,`pelaporan`,`intra`,`ekstra`,`aset_lain-lain`,`rusak_berat`,`kib_e`,`atb`,`penambahan_masa_manfaat`,`tahun_berlaku`,`aturan_masa_manfaat1`,`aturan_masa_manfaat2`,`aturan_masa_manfaat3`,`persentase`,`tabel_masa_manfaat`,`thn_berlaku`) values ('5','BDG_BARAT','BANDUNG BARAT','9','1','4','1','1','1','2','2','1','1','1','1','','1','','','1','1','2016') ",
+        "INSERT INTO setting_penyusutan (`Id`,`versi_name`,`nama_pemda`,`susut_mode`,`thn_mulai_susut`,`periode_hitung`,`periode_transaksi`,`pelaporan`,`intra`,`ekstra`,`aset_lain-lain`,`rusak_berat`,`kib_e`,`atb`,`penambahan_masa_manfaat`,`tahun_berlaku`,`aturan_masa_manfaat1`,`aturan_masa_manfaat2`,`aturan_masa_manfaat3`,`persentase`,`tabel_masa_manfaat`,`thn_berlaku`) values ('6','GARUT','GARUT','4','5','2','2','2','1','2','2','2','2','1','1','2016','','','','1','1','2016') ",
+        "INSERT INTO setting_penyusutan (`Id`,`versi_name`,`nama_pemda`,`susut_mode`,`thn_mulai_susut`,`periode_hitung`,`periode_transaksi`,`pelaporan`,`intra`,`ekstra`,`aset_lain-lain`,`rusak_berat`,`kib_e`,`atb`,`penambahan_masa_manfaat`,`tahun_berlaku`,`aturan_masa_manfaat1`,`aturan_masa_manfaat2`,`aturan_masa_manfaat3`,`persentase`,`tabel_masa_manfaat`,`thn_berlaku`) values ('7','BOGOR','BOGOR','10','1','1','1','1','1','2','2','2','2','1','3','','1','2','6','2','2','2016') ",
+        "INSERT INTO setting_penyusutan (`Id`,`versi_name`,`nama_pemda`,`susut_mode`,`thn_mulai_susut`,`periode_hitung`,`periode_transaksi`,`pelaporan`,`intra`,`ekstra`,`aset_lain-lain`,`rusak_berat`,`kib_e`,`atb`,`penambahan_masa_manfaat`,`tahun_berlaku`,`aturan_masa_manfaat1`,`aturan_masa_manfaat2`,`aturan_masa_manfaat3`,`persentase`,`tabel_masa_manfaat`,`thn_berlaku`) values ('8','KARAWANG','KARAWANG','11','2','3','2','2','1','2','2','2','2','1','1','2016','1','2','5','1','1','2016') ",
+        "INSERT INTO setting_penyusutan (`Id`,`versi_name`,`nama_pemda`,`susut_mode`,`thn_mulai_susut`,`periode_hitung`,`periode_transaksi`,`pelaporan`,`intra`,`ekstra`,`aset_lain-lain`,`rusak_berat`,`kib_e`,`atb`,`penambahan_masa_manfaat`,`tahun_berlaku`,`aturan_masa_manfaat1`,`aturan_masa_manfaat2`,`aturan_masa_manfaat3`,`persentase`,`tabel_masa_manfaat`,`thn_berlaku`) values ('9','KOTA_BANDUNG','KOTA BANDUNG','12','1','1','1','1','1','2','2','2','2','2','1','','1','2','','1','1','2016') ",
+        "INSERT INTO setting_penyusutan (`Id`,`versi_name`,`nama_pemda`,`susut_mode`,`thn_mulai_susut`,`periode_hitung`,`periode_transaksi`,`pelaporan`,`intra`,`ekstra`,`aset_lain-lain`,`rusak_berat`,`kib_e`,`atb`,`penambahan_masa_manfaat`,`tahun_berlaku`,`aturan_masa_manfaat1`,`aturan_masa_manfaat2`,`aturan_masa_manfaat3`,`persentase`,`tabel_masa_manfaat`,`thn_berlaku`) values ('10','SERANG_KOTA','KOTA SERANG','5','2','3','2','2','1','2','2','2','2','1','1','','','','','2','1','2016') ",
+        "INSERT INTO setting_penyusutan (`Id`,`versi_name`,`nama_pemda`,`susut_mode`,`thn_mulai_susut`,`periode_hitung`,`periode_transaksi`,`pelaporan`,`intra`,`ekstra`,`aset_lain-lain`,`rusak_berat`,`kib_e`,`atb`,`penambahan_masa_manfaat`,`tahun_berlaku`,`aturan_masa_manfaat1`,`aturan_masa_manfaat2`,`aturan_masa_manfaat3`,`persentase`,`tabel_masa_manfaat`,`thn_berlaku`) values ('11','PANDEGLANG','PANDEGLANG','7','1','1','1','1','1','2','1','1','1','1','1','','1','5','','1','1','2016') ",
+        "INSERT INTO setting_penyusutan (`Id`,`versi_name`,`nama_pemda`,`susut_mode`,`thn_mulai_susut`,`periode_hitung`,`periode_transaksi`,`pelaporan`,`intra`,`ekstra`,`aset_lain-lain`,`rusak_berat`,`kib_e`,`atb`,`penambahan_masa_manfaat`,`tahun_berlaku`,`aturan_masa_manfaat1`,`aturan_masa_manfaat2`,`aturan_masa_manfaat3`,`persentase`,`tabel_masa_manfaat`,`thn_berlaku`) values ('12','SUKABUMI','SUKABUMI','13','1','1','1','1','1','2','2','2','2','1','1','','1','','','2','1','2016') ",
+        "INSERT INTO setting_penyusutan (`Id`,`versi_name`,`nama_pemda`,`susut_mode`,`thn_mulai_susut`,`periode_hitung`,`periode_transaksi`,`pelaporan`,`intra`,`ekstra`,`aset_lain-lain`,`rusak_berat`,`kib_e`,`atb`,`penambahan_masa_manfaat`,`tahun_berlaku`,`aturan_masa_manfaat1`,`aturan_masa_manfaat2`,`aturan_masa_manfaat3`,`persentase`,`tabel_masa_manfaat`,`thn_berlaku`) values ('14','SERANG_KOTA','KOTA SERANG','5','1','1','1','1','1','2','2','2','2','2','1','','','','','1','1','2017') ",
+        "INSERT INTO setting_penyusutan (`Id`,`versi_name`,`nama_pemda`,`susut_mode`,`thn_mulai_susut`,`periode_hitung`,`periode_transaksi`,`pelaporan`,`intra`,`ekstra`,`aset_lain-lain`,`rusak_berat`,`kib_e`,`atb`,`penambahan_masa_manfaat`,`tahun_berlaku`,`aturan_masa_manfaat1`,`aturan_masa_manfaat2`,`aturan_masa_manfaat3`,`persentase`,`tabel_masa_manfaat`,`thn_berlaku`) values ('15','BDG_BARAT','BANDUNG BARAT','9','1','1','1','1','1','2','2','2','1','1','1','','1','','','1','1','2017') ",
+        "INSERT INTO setting_penyusutan (`Id`,`versi_name`,`nama_pemda`,`susut_mode`,`thn_mulai_susut`,`periode_hitung`,`periode_transaksi`,`pelaporan`,`intra`,`ekstra`,`aset_lain-lain`,`rusak_berat`,`kib_e`,`atb`,`penambahan_masa_manfaat`,`tahun_berlaku`,`aturan_masa_manfaat1`,`aturan_masa_manfaat2`,`aturan_masa_manfaat3`,`persentase`,`tabel_masa_manfaat`,`thn_berlaku`) values ('16','KARAWANG','KARAWANG','11','2','3','2','2','1','2','2','2','3','1','1','2016','1','2','5','1','1','2017') ",
+        "INSERT INTO setting_penyusutan (`Id`,`versi_name`,`nama_pemda`,`susut_mode`,`thn_mulai_susut`,`periode_hitung`,`periode_transaksi`,`pelaporan`,`intra`,`ekstra`,`aset_lain-lain`,`rusak_berat`,`kib_e`,`atb`,`penambahan_masa_manfaat`,`tahun_berlaku`,`aturan_masa_manfaat1`,`aturan_masa_manfaat2`,`aturan_masa_manfaat3`,`persentase`,`tabel_masa_manfaat`,`thn_berlaku`) values ('17','SERANG_KOTA','KOTA SERANG','5','1','1','1','1','1','2','2','2','2','2','1','','','','','4','1','2017') ",
+        "INSERT INTO setting_penyusutan (`Id`,`versi_name`,`nama_pemda`,`susut_mode`,`thn_mulai_susut`,`periode_hitung`,`periode_transaksi`,`pelaporan`,`intra`,`ekstra`,`aset_lain-lain`,`rusak_berat`,`kib_e`,`atb`,`penambahan_masa_manfaat`,`tahun_berlaku`,`aturan_masa_manfaat1`,`aturan_masa_manfaat2`,`aturan_masa_manfaat3`,`persentase`,`tabel_masa_manfaat`,`thn_berlaku`) values ('18','PANDEGLANG','PANDEGLANG','7','1','1','1','1','1','2','2','2','3','1','1','','1','','','1','1','2017') ",
+        "INSERT INTO setting_penyusutan (`Id`,`versi_name`,`nama_pemda`,`susut_mode`,`thn_mulai_susut`,`periode_hitung`,`periode_transaksi`,`pelaporan`,`intra`,`ekstra`,`aset_lain-lain`,`rusak_berat`,`kib_e`,`atb`,`penambahan_masa_manfaat`,`tahun_berlaku`,`aturan_masa_manfaat1`,`aturan_masa_manfaat2`,`aturan_masa_manfaat3`,`persentase`,`tabel_masa_manfaat`,`thn_berlaku`) values ('19','BOGOR','BOGOR','10','1','1','1','1','1','2','2','1','2','1','3','','1','2','6','2','2','2017') ",
+        "INSERT INTO setting_penyusutan (`Id`,`versi_name`,`nama_pemda`,`susut_mode`,`thn_mulai_susut`,`periode_hitung`,`periode_transaksi`,`pelaporan`,`intra`,`ekstra`,`aset_lain-lain`,`rusak_berat`,`kib_e`,`atb`,`penambahan_masa_manfaat`,`tahun_berlaku`,`aturan_masa_manfaat1`,`aturan_masa_manfaat2`,`aturan_masa_manfaat3`,`persentase`,`tabel_masa_manfaat`,`thn_berlaku`) values ('20','TASIKMALAYA_KAB','KABUPATEN TASIKMALAYA','6','1','1','1','1','1','2','1','1','1','1','1','','','','','1','1','2017') ",
+        "INSERT INTO setting_penyusutan (`Id`,`versi_name`,`nama_pemda`,`susut_mode`,`thn_mulai_susut`,`periode_hitung`,`periode_transaksi`,`pelaporan`,`intra`,`ekstra`,`aset_lain-lain`,`rusak_berat`,`kib_e`,`atb`,`penambahan_masa_manfaat`,`tahun_berlaku`,`aturan_masa_manfaat1`,`aturan_masa_manfaat2`,`aturan_masa_manfaat3`,`persentase`,`tabel_masa_manfaat`,`thn_berlaku`) values ('21','SERANG_KOTA','KOTA SERANG','5','1','1','1','1','1','2','2','2','4','2','1','','','','','4','1','2017') ",
+        "INSERT INTO setting_penyusutan (`Id`,`versi_name`,`nama_pemda`,`susut_mode`,`thn_mulai_susut`,`periode_hitung`,`periode_transaksi`,`pelaporan`,`intra`,`ekstra`,`aset_lain-lain`,`rusak_berat`,`kib_e`,`atb`,`penambahan_masa_manfaat`,`tahun_berlaku`,`aturan_masa_manfaat1`,`aturan_masa_manfaat2`,`aturan_masa_manfaat3`,`persentase`,`tabel_masa_manfaat`,`thn_berlaku`) values ('22','SUBANG','SUBANG','14','2','3','2','2','1','2','2','2','3','1','1','2016','1','2','5','1','1','2017') ",
+        "INSERT INTO setting_penyusutan (`Id`,`versi_name`,`nama_pemda`,`susut_mode`,`thn_mulai_susut`,`periode_hitung`,`periode_transaksi`,`pelaporan`,`intra`,`ekstra`,`aset_lain-lain`,`rusak_berat`,`kib_e`,`atb`,`penambahan_masa_manfaat`,`tahun_berlaku`,`aturan_masa_manfaat1`,`aturan_masa_manfaat2`,`aturan_masa_manfaat3`,`persentase`,`tabel_masa_manfaat`,`thn_berlaku`) values ('23','TANGERANG','TANGERANG','15','2','3','2','2','1','2','2','2','3','1','1','2016','1','2','5','1','1','2017') ",
+        "INSERT INTO setting_penyusutan (`Id`,`versi_name`,`nama_pemda`,`susut_mode`,`thn_mulai_susut`,`periode_hitung`,`periode_transaksi`,`pelaporan`,`intra`,`ekstra`,`aset_lain-lain`,`rusak_berat`,`kib_e`,`atb`,`penambahan_masa_manfaat`,`tahun_berlaku`,`aturan_masa_manfaat1`,`aturan_masa_manfaat2`,`aturan_masa_manfaat3`,`persentase`,`tabel_masa_manfaat`,`thn_berlaku`) values ('24','BANTEN','BANTEN','16','2','3','2','2','1','2','2','2','3','1','1','2016','1','2','5','1','1','2017') ",
+        "INSERT INTO setting_penyusutan (`Id`,`versi_name`,`nama_pemda`,`susut_mode`,`thn_mulai_susut`,`periode_hitung`,`periode_transaksi`,`pelaporan`,`intra`,`ekstra`,`aset_lain-lain`,`rusak_berat`,`kib_e`,`atb`,`penambahan_masa_manfaat`,`tahun_berlaku`,`aturan_masa_manfaat1`,`aturan_masa_manfaat2`,`aturan_masa_manfaat3`,`persentase`,`tabel_masa_manfaat`,`thn_berlaku`) values ('25','LEBAK','LEBAK','17','2','3','2','2','1','2','2','2','3','1','1','2016','1','2','5','1','1','2017') "
+    ]
+}

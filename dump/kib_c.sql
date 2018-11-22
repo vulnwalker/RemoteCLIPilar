@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.5.44, for debian-linux-gnu (x86_64)
+-- MySQL dump 10.13  Distrib 5.7.24, for Linux (x86_64)
 --
 -- Host: localhost    Database: db_atsb_demo_v3
 -- ------------------------------------------------------
--- Server version	5.5.44-0+deb7u1
+-- Server version	5.7.24-0ubuntu0.16.04.1
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -56,7 +56,7 @@ CREATE TABLE `kib_c` (
   `dokumen_tgl` date DEFAULT NULL,
   `dokumen_no` varchar(50) COLLATE latin1_general_ci DEFAULT NULL,
   `luas` decimal(10,2) DEFAULT NULL,
-  `status_tanah` char(1) COLLATE latin1_general_ci DEFAULT NULL,
+  `status_tanah` char(1) COLLATE latin1_general_ci DEFAULT NULL COMMENT '1=Milik PEMDA, 2=Milik Negara, 3=Tanah Ulayat, 4=Tanah Hak',
   `kode_tanah` varchar(50) COLLATE latin1_general_ci DEFAULT NULL,
   `ket` text COLLATE latin1_general_ci,
   `tahun` char(4) COLLATE latin1_general_ci NOT NULL,
@@ -68,7 +68,7 @@ CREATE TABLE `kib_c` (
   KEY `a1` (`a1`,`a`,`b`,`c1`,`c`,`d`,`e`,`e1`),
   KEY `f` (`f1`,`f2`,`f`,`g`,`h`,`i`,`j`),
   KEY `secondary` (`c1`,`c`,`d`,`e`,`e1`,`f1`,`f2`,`f`,`g`,`h`,`i`,`j`,`tahun`,`noreg`)
-) ENGINE=InnoDB AUTO_INCREMENT=10476 DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=10479 DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -80,4 +80,4 @@ CREATE TABLE `kib_c` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-08-15 14:42:16
+-- Dump completed on 2018-11-22  9:56:36

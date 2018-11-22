@@ -1,0 +1,14 @@
+{
+    "ROUTINE_NAME": "sp_insert_log",
+    "ROUTINE_DEFINITION": "424547494E0A0A0A2020696E7365727420696E746F20745F6C6F6720286C6F67292076616C756573286C6F675F293B20202020200A0A0A454E44",
+    "ROUTINE_TYPE": "PROCEDURE",
+    "PARAMETERS": [
+        {
+            "PARAMETER_NAME": "log_",
+            "DTD_IDENTIFIER": "varchar(255)",
+            "ORDINAL_POSITION": "1",
+            "CHARACTER_SET_NAME": "latin1",
+            "COLLATION_NAME": "latin1_general_ci"
+        }
+    ]
+}

@@ -143,11 +143,11 @@
         },
         {
           "table_name": "ref_modul",
-          "json_file": "struktur/ref_modul.json",
+          "json_file": "struktur/ref_modul.json"
         },
         {
           "table_name": "setting",
-          "json_file": "struktur/setting.json",
+          "json_file": "struktur/setting.json"
         }
     ]
 }]

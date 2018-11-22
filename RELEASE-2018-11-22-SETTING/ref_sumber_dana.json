@@ -1,0 +1,110 @@
+{
+    "tableName": "ref_sumber_dana",
+    "dumpFile": "dump\/ref_sumber_dana.sql",
+    "index": [
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "Id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "jenis",
+            "key_name": "jenis",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "Id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "c1",
+            "key_name": "c1",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "c",
+            "key_name": "c1",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "d",
+            "key_name": "c1",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "e",
+            "key_name": "c1",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "e1",
+            "key_name": "c1",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "c1",
+            "key_name": "c1",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "c",
+            "key_name": "c1",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "d",
+            "key_name": "c1",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "nama",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        }
+    ],
+    "colums": [
+        {
+            "COLUMN_NAME": "nama",
+            "COLUMN_TYPE": "varchar(100)",
+            "CHARACTER_SET_NAME": "latin1",
+            "COLLATION_NAME": "latin1_swedish_ci",
+            "IS_NULLABLE": "NO"
+        }
+    ],
+    "default_value": [
+        "INSERT INTO ref_sumber_dana (`nama`) values ('APBD') ",
+        "INSERT INTO ref_sumber_dana (`nama`) values ('BANPROV') ",
+        "INSERT INTO ref_sumber_dana (`nama`) values ('Block Grand') ",
+        "INSERT INTO ref_sumber_dana (`nama`) values ('BLUD') ",
+        "INSERT INTO ref_sumber_dana (`nama`) values ('BOS APBD') ",
+        "INSERT INTO ref_sumber_dana (`nama`) values ('BOS APBN') ",
+        "INSERT INTO ref_sumber_dana (`nama`) values ('DAK') ",
+        "INSERT INTO ref_sumber_dana (`nama`) values ('Hibah Provinsi') ",
+        "INSERT INTO ref_sumber_dana (`nama`) values ('Hibah Pusat') ",
+        "INSERT INTO ref_sumber_dana (`nama`) values ('JKN') ",
+        "INSERT INTO ref_sumber_dana (`nama`) values ('Komite') ",
+        "INSERT INTO ref_sumber_dana (`nama`) values ('Taufan Sumber Dana') ",
+        "INSERT INTO ref_sumber_dana (`nama`) values ('Wakaf') "
+    ]
+}

@@ -1,0 +1,137 @@
+[
+    {
+        "databaseName": "db_atisisbada_2018",
+        "tables": [
+            {
+                "table_name": "pengaturan_persediaan",
+                "json_file": "27Agustus/pengaturan_persediaan.json"
+            },
+            {
+                "table_name": "saldo_awal",
+                "json_file": "27Agustus/saldo_awal.json"
+            },
+            {
+                "table_name": "t_kartu_persediaan",
+                "json_file": "27Agustus/t_kartu_persediaan.json"
+            },
+            {
+                "table_name": "pengeluaran",
+                "json_file": "27Agustus/pengeluaran.json"
+            },
+            {
+                "table_name": "distribusi",
+                "json_file": "27Agustus/distribusi.json"
+            },
+            {
+                "table_name": "cek_fisik",
+                "json_file": "27Agustus/cek_fisik.json"
+            },
+            {
+                "table_name": "pemusnahan_persediaan",
+                "json_file": "27Agustus/pemusnahan_persediaan.json"
+            },
+            {
+                "table_name": "detail_pengeluaran",
+                "json_file": "27Agustus/detail_pengeluaran.json"
+            },
+            {
+                "table_name": "rincian_distribusi",
+                "json_file": "27Agustus/rincian_distribusi.json"
+            },
+            {
+                "table_name": "detail_rincian_distribusi",
+                "json_file": "27Agustus/detail_rincian_distribusi.json"
+            },
+            {
+                "table_name": "closing_persediaan",
+                "json_file": "27Agustus/closing_persediaan.json"
+            },
+            {
+                "table_name": "lock_barang_kurang",
+                "json_file": "27Agustus/lock_barang_kurang.json"
+            },
+            {
+                "table_name": "lock_barang_tambah",
+                "json_file": "27Agustus/lock_barang_tambah.json"
+            },
+            {
+                "table_name": "rincian_lock_barang",
+                "json_file": "27Agustus/rincian_lock_barang.json"
+            },
+            {
+                "table_name": "temp_lock_kurang",
+                "json_file": "27Agustus/temp_lock_kurang.json"
+            },
+            {
+                "table_name": "temp_lock_tambah",
+                "json_file": "27Agustus/temp_lock_tambah.json"
+            },
+            {
+                "table_name": "t_persediaan_lock_barang",
+                "json_file": "27Agustus/t_persediaan_lock_barang.json"
+            },
+            {
+                "table_name": "check_barang_persediaan",
+                "json_file": "27Agustus/check_barang_persediaan.json"
+            },
+            {
+                "table_name": "delete_temp_detail_rincian_distribusi",
+                "json_file": "27Agustus/delete_temp_detail_rincian_distribusi.json"
+            },
+            {
+                "table_name": "temp_detail_rincian_distribusi",
+                "json_file": "27Agustus/temp_detail_rincian_distribusi.json"
+            },
+            {
+                "table_name": "delete_temp_pengeluaran",
+                "json_file": "27Agustus/delete_temp_pengeluaran.json"
+            },
+            {
+                "table_name": "delete_temp_rincian_distribusi",
+                "json_file": "27Agustus/delete_temp_rincian_distribusi.json"
+            },
+            {
+                "table_name": "check_barang_persediaan",
+                "json_file": "27Agustus/check_barang_persediaan.json"
+            },
+            {
+                "table_name": "ref_penerima_pengeluaran",
+                "json_file": "27Agustus/ref_penerima_pengeluaran.json"
+            }
+        ],
+        "views": [
+            {
+                "table_name": "view_daftar_persediaan",
+                "json_file": "27Agustus/view_daftar_persediaan.json"
+            },
+            {
+                "table_name": " view_daftar_persediaan_rekap",
+                "json_file": "27Agustus/view_daftar_persediaan_rekap.json"
+            },
+            {
+                "table_name": " view_daftar_persediaan_rekap_semester_2",
+                "json_file": "27Agustus/view_daftar_persediaan_rekap_semester_2.json"
+            },
+            {
+                "table_name": " view_daftar_persediaan_semester_2",
+                "json_file": "27Agustus/view_daftar_persediaan_semester_2.json"
+            },
+            {
+                "table_name": " view_penerimaan_distribusi",
+                "json_file": "27Agustus/view_penerimaan_distribusi.json"
+            }
+        ],
+        "triggers": [
+            {
+                "trigger_name": "anggaran_kas_bef_ins",
+                "json_file": "trigger/anggaran_kas_bef_ins.json"
+            }
+        ],
+        "routines": [
+            {
+                "routine_name": "example_procedure",
+                "json_file": "routine/example_procedure.json"
+            }
+        ]
+    }
+]

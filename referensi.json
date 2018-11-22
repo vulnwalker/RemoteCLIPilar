@@ -1,0 +1,41 @@
+[{
+    "databaseName": "db_atisisbada_sukabumi_2018",
+    "tables": [
+        {
+          "table_name": "admin",
+          "json_file": "referensi/admin.json"
+        },
+        {
+          "table_name": "setting",
+          "json_file": "referensi/setting.json"
+        },
+        {
+         "table_name": "settingperencanaan",
+          "json_file": "referensi/settingperencanaan.json"
+        },
+        {
+          "table_name": "tahap_rka",
+          "json_file": "referensi/tahap_rka.json"
+        },
+        {
+          "table_name": "pengaturan_persediaan",
+          "json_file": "referensi/pengaturan_persediaan.json"
+        },
+        {
+          "table_name": "ref_modul",
+          "json_file": "referensi/ref_modul.json"
+        },
+        {
+          "table_name": "ref_tahap_anggaran",
+          "json_file": "referensi/ref_modul.json"
+        },
+        {
+          "table_name": "ref_menu",
+          "json_file": "referensi/ref_menu.json"
+        },
+        {
+          "table_name": "ref_cara_pemenuhan",
+          "json_file": "referensi/ref_cara_pemenuhan"
+        }
+    ]
+}]

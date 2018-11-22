@@ -1,0 +1,170 @@
+{
+    "tableName": "ref_rincian_template",
+    "dumpFile": "dump\/ref_rincian_template.sql",
+    "index": [
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "Id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "jenis",
+            "key_name": "jenis",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "Id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "c1",
+            "key_name": "c1",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "c",
+            "key_name": "c1",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "d",
+            "key_name": "c1",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "e",
+            "key_name": "c1",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "e1",
+            "key_name": "c1",
+            "non_uniqe": "1"
+        }
+    ],
+    "colums": [
+        {
+            "COLUMN_NAME": "id",
+            "COLUMN_TYPE": "int(11)",
+            "CHARACTER_SET_NAME": null,
+            "COLLATION_NAME": null,
+            "IS_NULLABLE": "NO"
+        },
+        {
+            "COLUMN_NAME": "c1",
+            "COLUMN_TYPE": "smallint(3)",
+            "CHARACTER_SET_NAME": null,
+            "COLLATION_NAME": null,
+            "IS_NULLABLE": "NO"
+        },
+        {
+            "COLUMN_NAME": "c",
+            "COLUMN_TYPE": "char(2)",
+            "CHARACTER_SET_NAME": "latin1",
+            "COLLATION_NAME": "latin1_general_ci",
+            "IS_NULLABLE": "NO"
+        },
+        {
+            "COLUMN_NAME": "d",
+            "COLUMN_TYPE": "char(2)",
+            "CHARACTER_SET_NAME": "latin1",
+            "COLLATION_NAME": "latin1_general_ci",
+            "IS_NULLABLE": "NO"
+        },
+        {
+            "COLUMN_NAME": "e",
+            "COLUMN_TYPE": "char(2)",
+            "CHARACTER_SET_NAME": "latin1",
+            "COLLATION_NAME": "latin1_general_ci",
+            "IS_NULLABLE": "NO"
+        },
+        {
+            "COLUMN_NAME": "e1",
+            "COLUMN_TYPE": "char(3)",
+            "CHARACTER_SET_NAME": "latin1",
+            "COLLATION_NAME": "latin1_general_ci",
+            "IS_NULLABLE": "NO"
+        },
+        {
+            "COLUMN_NAME": "jumlah",
+            "COLUMN_TYPE": "int(11) unsigned",
+            "CHARACTER_SET_NAME": null,
+            "COLLATION_NAME": null,
+            "IS_NULLABLE": "NO"
+        },
+        {
+            "COLUMN_NAME": "refid_template",
+            "COLUMN_TYPE": "int(11)",
+            "CHARACTER_SET_NAME": null,
+            "COLLATION_NAME": null,
+            "IS_NULLABLE": "NO"
+        },
+        {
+            "COLUMN_NAME": "nama_sub_unit",
+            "COLUMN_TYPE": "text",
+            "CHARACTER_SET_NAME": "latin1",
+            "COLLATION_NAME": "latin1_general_ci",
+            "IS_NULLABLE": "NO"
+        },
+        {
+            "COLUMN_NAME": "status",
+            "COLUMN_TYPE": "char(1)",
+            "CHARACTER_SET_NAME": "latin1",
+            "COLLATION_NAME": "latin1_general_ci",
+            "IS_NULLABLE": "YES"
+        },
+        {
+            "COLUMN_NAME": "sttemp",
+            "COLUMN_TYPE": "char(1)",
+            "CHARACTER_SET_NAME": "latin1",
+            "COLLATION_NAME": "latin1_general_ci",
+            "IS_NULLABLE": "YES"
+        },
+        {
+            "COLUMN_NAME": "tgl_create",
+            "COLUMN_TYPE": "datetime",
+            "CHARACTER_SET_NAME": null,
+            "COLLATION_NAME": null,
+            "IS_NULLABLE": "YES"
+        },
+        {
+            "COLUMN_NAME": "tgl_update",
+            "COLUMN_TYPE": "datetime",
+            "CHARACTER_SET_NAME": null,
+            "COLLATION_NAME": null,
+            "IS_NULLABLE": "YES"
+        }
+    ],
+    "default_value": [
+        "INSERT INTO ref_rincian_template (`id`,`c1`,`c`,`d`,`e`,`e1`,`jumlah`,`refid_template`,`nama_sub_unit`,`status`,`sttemp`,`tgl_create`,`tgl_update`) values ('13','1','01','01','02','001','10','2','UPT Pendidikan Kec. Angsana','1','0','2018-04-23 09:54:07','2018-04-27 10:47:32') ",
+        "INSERT INTO ref_rincian_template (`id`,`c1`,`c`,`d`,`e`,`e1`,`jumlah`,`refid_template`,`nama_sub_unit`,`status`,`sttemp`,`tgl_create`,`tgl_update`) values ('14','1','01','01','02','002','10','2','SDN Angsana 1','1','0','2018-04-23 09:54:07','2018-04-27 10:47:32') ",
+        "INSERT INTO ref_rincian_template (`id`,`c1`,`c`,`d`,`e`,`e1`,`jumlah`,`refid_template`,`nama_sub_unit`,`status`,`sttemp`,`tgl_create`,`tgl_update`) values ('15','1','01','01','02','003','10','2','SDN Angsana 2','1','0','2018-04-23 09:54:07','2018-04-27 10:47:32') ",
+        "INSERT INTO ref_rincian_template (`id`,`c1`,`c`,`d`,`e`,`e1`,`jumlah`,`refid_template`,`nama_sub_unit`,`status`,`sttemp`,`tgl_create`,`tgl_update`) values ('16','1','01','01','03','002','10','2','SDN Bandung 1','1','0','2018-04-23 09:54:26','2018-04-27 10:47:32') ",
+        "INSERT INTO ref_rincian_template (`id`,`c1`,`c`,`d`,`e`,`e1`,`jumlah`,`refid_template`,`nama_sub_unit`,`status`,`sttemp`,`tgl_create`,`tgl_update`) values ('17','1','01','01','03','003','10','2','SDN Bandung 2','1','0','2018-04-23 09:54:26','2018-04-27 10:47:32') ",
+        "INSERT INTO ref_rincian_template (`id`,`c1`,`c`,`d`,`e`,`e1`,`jumlah`,`refid_template`,`nama_sub_unit`,`status`,`sttemp`,`tgl_create`,`tgl_update`) values ('18','1','01','01','03','004','10','2','SDN Banjar 1','1','0','2018-04-23 09:54:26','2018-04-27 10:47:32') ",
+        "INSERT INTO ref_rincian_template (`id`,`c1`,`c`,`d`,`e`,`e1`,`jumlah`,`refid_template`,`nama_sub_unit`,`status`,`sttemp`,`tgl_create`,`tgl_update`) values ('19','1','01','01','03','005','10','2','SDN Banjar 2','1','0','2018-04-23 09:54:26','2018-04-27 10:47:32') ",
+        "INSERT INTO ref_rincian_template (`id`,`c1`,`c`,`d`,`e`,`e1`,`jumlah`,`refid_template`,`nama_sub_unit`,`status`,`sttemp`,`tgl_create`,`tgl_update`) values ('26','1','02','01','01','001','3','3','Dinas Kesehatan','1','0','2018-04-23 11:02:24','2018-04-23 11:04:38') ",
+        "INSERT INTO ref_rincian_template (`id`,`c1`,`c`,`d`,`e`,`e1`,`jumlah`,`refid_template`,`nama_sub_unit`,`status`,`sttemp`,`tgl_create`,`tgl_update`) values ('27','1','02','01','02','001','2','3','Puskesmas Cadasari','1','0','2018-04-23 11:04:31','2018-04-23 11:04:38') ",
+        "INSERT INTO ref_rincian_template (`id`,`c1`,`c`,`d`,`e`,`e1`,`jumlah`,`refid_template`,`nama_sub_unit`,`status`,`sttemp`,`tgl_create`,`tgl_update`) values ('32','1','01','01','01','001','7','9','Dinas Pendidikan dan Kebudayaan','1','0','2018-04-24 11:19:40','2018-04-24 11:19:46') ",
+        "INSERT INTO ref_rincian_template (`id`,`c1`,`c`,`d`,`e`,`e1`,`jumlah`,`refid_template`,`nama_sub_unit`,`status`,`sttemp`,`tgl_create`,`tgl_update`) values ('33','1','01','01','02','006','10','2','SDN Cikayas 2','1','0','2018-04-27 10:47:08','2018-04-27 10:47:32') ",
+        "INSERT INTO ref_rincian_template (`id`,`c1`,`c`,`d`,`e`,`e1`,`jumlah`,`refid_template`,`nama_sub_unit`,`status`,`sttemp`,`tgl_create`,`tgl_update`) values ('34','1','01','01','02','001','7','9','UPT Pendidikan Kec. Angsana','1','0','2018-05-08 15:44:28','2018-05-08 15:44:28') ",
+        "INSERT INTO ref_rincian_template (`id`,`c1`,`c`,`d`,`e`,`e1`,`jumlah`,`refid_template`,`nama_sub_unit`,`status`,`sttemp`,`tgl_create`,`tgl_update`) values ('35','1','01','01','02','002','7','9','SDN Angsana 1','1','0','2018-05-08 15:45:00','2018-05-08 15:45:00') ",
+        "INSERT INTO ref_rincian_template (`id`,`c1`,`c`,`d`,`e`,`e1`,`jumlah`,`refid_template`,`nama_sub_unit`,`status`,`sttemp`,`tgl_create`,`tgl_update`) values ('36','10','01','01','01','001','2500','11','tes 10','1','0','2018-08-16 16:32:50','2018-08-16 16:32:50') "
+    ]
+}

@@ -1,0 +1,6 @@
+{
+    "VIEW_NAME": "v1_tagihan",
+    "VIEW_SOURCE": "CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v1_tagihan` AS select `b`.`nm_tagihan` AS `nm_tagihan`,`b`.`keterangan` AS `ket_jns_tagihan`,`a`.`Id` AS `Id`,`a`.`c1` AS `c1`,`a`.`c` AS `c`,`a`.`d` AS `d`,`a`.`no_tagihan` AS `no_tagihan`,`a`.`tgl_tagihan` AS `tgl_tagihan`,`a`.`refid_jns_tagihan` AS `refid_jns_tagihan`,`a`.`keterangan` AS `keterangan` from (`ref_tagihan` `a` left join `ref_jenis_tagihan` `b` on((`a`.`refid_jns_tagihan` = `b`.`Id`)))",
+    "CHARSET": "utf8",
+    "COLLATION": "utf8_general_ci"
+}

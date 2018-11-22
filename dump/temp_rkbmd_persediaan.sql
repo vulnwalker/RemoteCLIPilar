@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.5.44, for debian-linux-gnu (x86_64)
+-- MySQL dump 10.13  Distrib 5.7.24, for Linux (x86_64)
 --
 -- Host: localhost    Database: db_atsb_demo_v3
 -- ------------------------------------------------------
--- Server version	5.5.44-0+deb7u1
+-- Server version	5.7.24-0ubuntu0.16.04.1
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -23,7 +23,7 @@
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `temp_rkbmd_persediaan` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `c1` char(1) NOT NULL,
+  `c1` int(11) NOT NULL,
   `c` char(2) NOT NULL,
   `d` char(2) NOT NULL,
   `bk` tinyint(3) NOT NULL,
@@ -48,7 +48,7 @@ CREATE TABLE `temp_rkbmd_persediaan` (
   `id_anggaran` int(11) NOT NULL,
   `status` text NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=10 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=26 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -60,4 +60,4 @@ CREATE TABLE `temp_rkbmd_persediaan` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-08-15 14:42:25
+-- Dump completed on 2018-11-22  9:57:01

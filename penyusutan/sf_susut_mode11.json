@@ -1,0 +1,49 @@
+{
+    "ROUTINE_NAME": null,
+    "ROUTINE_DEFINITION": null,
+    "ROUTINE_TYPE": null,
+    "PARAMETERS": [
+        {
+            "PARAMETER_NAME": null,
+            "DTD_IDENTIFIER": "longtext",
+            "ORDINAL_POSITION": "0",
+            "CHARACTER_SET_NAME": "latin1",
+            "COLLATION_NAME": "latin1_general_ci"
+        },
+        {
+            "PARAMETER_NAME": "idbi_",
+            "DTD_IDENTIFIER": "int(11)",
+            "ORDINAL_POSITION": "1",
+            "CHARACTER_SET_NAME": null,
+            "COLLATION_NAME": null
+        },
+        {
+            "PARAMETER_NAME": "tgl_susut_",
+            "DTD_IDENTIFIER": "date",
+            "ORDINAL_POSITION": "2",
+            "CHARACTER_SET_NAME": null,
+            "COLLATION_NAME": null
+        },
+        {
+            "PARAMETER_NAME": "uid_",
+            "DTD_IDENTIFIER": "varchar(20)",
+            "ORDINAL_POSITION": "3",
+            "CHARACTER_SET_NAME": "latin1",
+            "COLLATION_NAME": "latin1_general_ci"
+        },
+        {
+            "PARAMETER_NAME": "jns_trans2_",
+            "DTD_IDENTIFIER": "int(11)",
+            "ORDINAL_POSITION": "4",
+            "CHARACTER_SET_NAME": null,
+            "COLLATION_NAME": null
+        },
+        {
+            "PARAMETER_NAME": "id_koreksi_",
+            "DTD_IDENTIFIER": "int(11)",
+            "ORDINAL_POSITION": "5",
+            "CHARACTER_SET_NAME": null,
+            "COLLATION_NAME": null
+        }
+    ]
+}

@@ -1,0 +1,849 @@
+QQ
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < SettingApp  SettingApp
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < admin  admin
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < admin_aktivitas  admin_aktivitas
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < anggaran_kas  anggaran_kas
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < api_akses  api_akses
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < barang_tidak_tercatat  barang_tidak_tercatat
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < barcode_data_print  barcode_data_print
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < barcode_status_print  barcode_status_print
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < bast_mutasi  bast_mutasi
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < bi_kib_a_tmp  bi_kib_a_tmp
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < bi_kib_b_tmp  bi_kib_b_tmp
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < bi_kib_c_tmp  bi_kib_c_tmp
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < bi_kib_d_tmp  bi_kib_d_tmp
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < bi_kib_e_tmp  bi_kib_e_tmp
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < bi_kib_f_tmp  bi_kib_f_tmp
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < bi_kib_g_tmp  bi_kib_g_tmp
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < bi_susut_tmp  bi_susut_tmp
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < bpk  bpk
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < buku_induk  buku_induk
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < buku_induk_del  buku_induk_del
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < buku_induk_thn  buku_induk_thn
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < cancel_distribusi_posting  cancel_distribusi_posting
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < cek_fisik  cek_fisik
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < chatx  chatx
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < check_barang_persediaan  check_barang_persediaan
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < closing_persediaan  closing_persediaan
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < common  common
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < current_filter  current_filter
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < default_tahap  default_tahap
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < delete_temp_detail_rincian_distribusi  delete_temp_detail_rincian_distribusi
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < delete_temp_pengeluaran  delete_temp_pengeluaran
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < delete_temp_rincian_distribusi  delete_temp_rincian_distribusi
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < detail_pengeluaran  detail_pengeluaran
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < detail_renja  detail_renja
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < detail_renja_v2  detail_renja_v2
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < detail_renja_v3  detail_renja_v3
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < detail_rincian_distribusi  detail_rincian_distribusi
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < distribusi  distribusi
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < dkb  dkb
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < dkbp_persediaan  dkbp_persediaan
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < dkpb  dkpb
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < dokum  dokum
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < floodprotection  floodprotection
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < footer  footer
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < galery  galery
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < gambar  gambar
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < gambarBanner  gambarBanner
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < gambar_hist  gambar_hist
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < gambar_upload  gambar_upload
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < gantirugi  gantirugi
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < gantirugi_bayar  gantirugi_bayar
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < general_setting  general_setting
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < grup  grup
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < history_barang  history_barang
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < id_tmp  id_tmp
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < idbi_tmp  idbi_tmp
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < images  images
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < imagesData  imagesData
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < images_kategori  images_kategori
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < instansi  instansi
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < inventaris  inventaris
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < jurnal_aset  jurnal_aset
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < kdpiutang  kdpiutang
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < ketetapanpajak  ketetapanpajak
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < kib_a  kib_a
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < kib_b  kib_b
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < kib_c  kib_c
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < kib_d  kib_d
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < kib_e  kib_e
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < kib_f  kib_f
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < kib_g  kib_g
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < kir  kir
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < link  link
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < listtable  listtable
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < lock_barang_kurang  lock_barang_kurang
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < lock_barang_tambah  lock_barang_tambah
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < log_no_reg  log_no_reg
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < managemen_pengguna  managemen_pengguna
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < menu  menu
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < menu_bar  menu_bar
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < mutasi_sebagian  mutasi_sebagian
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < nomor_spd  
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < panitia_pemeriksa  panitia_pemeriksa
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < pegawai  pegawai
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < pemanfaatan  pemanfaatan
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < pembiayaan  pembiayaan
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < pemeliharaan  pemeliharaan
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < pemindahtanganan  pemindahtanganan
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < pemusnahan  pemusnahan
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < pemusnahan_det  pemusnahan_det
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < pemusnahan_panitia  pemusnahan_panitia
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < pemusnahan_persediaan  pemusnahan_persediaan
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < pendaftaran_objek_pajak  pendaftaran_objek_pajak
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < pendaftaran_wajib_pajak  pendaftaran_wajib_pajak
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < penerimaan  penerimaan
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < penerimaan_persediaan  penerimaan_persediaan
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < penetapan  penetapan
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < penetapan_objek_pajak  penetapan_objek_pajak
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < penetapan_rkbmd  penetapan_rkbmd
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < penetapan_wajib_pajak  penetapan_wajib_pajak
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < pengadaan  pengadaan
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < pengadaan_pemeliharaan  pengadaan_pemeliharaan
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < pengadaan_persediaan  pengadaan_persediaan
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < pengadaan_sk  pengadaan_sk
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < pengamanan  pengamanan
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < pengaturan_persediaan  pengaturan_persediaan
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < pengeluaran  pengeluaran
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < pengeluaran_persediaan  pengeluaran_persediaan
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < pengeluaran_vlama  pengeluaran_vlama
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < penggunaan  penggunaan
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < penggunaan_det  penggunaan_det
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < penggunaan_ketetapan  penggunaan_ketetapan
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < penghapusan  penghapusan
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < penghapusan_sebagian  penghapusan_sebagian
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < penghapusan_usul  penghapusan_usul
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < penghapusan_usul_det  penghapusan_usul_det
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < penghapusan_usulsk  penghapusan_usulsk
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < penghapusan_usulsk_det  penghapusan_usulsk_det
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < penilaian  penilaian
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < penilaian_manfaat  penilaian_manfaat
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < penilaian_pindahtangan  penilaian_pindahtangan
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < penyusutan  penyusutan
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < penyusutan_koreksi  penyusutan_koreksi
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < penyusutan_log  penyusutan_log
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < penyusutan_sesi  penyusutan_sesi
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < perencanaan_persediaan  perencanaan_persediaan
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < pindah_renja_v3  pindah_renja_v3
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < pindah_rkbmd_v3  pindah_rkbmd_v3
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < ref_bank  ref_bank
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < ref_barang  ref_barang
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < ref_barang_hist  ref_barang_hist
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < ref_barang_jabarlv6  ref_barang_jabarlv6
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < ref_barang_p108  ref_barang_p108
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < ref_barang_persediaan  ref_barang_persediaan
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < ref_barang_v2  ref_barang_v2
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < ref_bast  ref_bast
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < ref_cara_pemenuhan  ref_cara_pemenuhan
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < ref_data_penetapan  ref_data_penetapan
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < ref_default_tmp  ref_default_tmp
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < ref_dokumensumber  ref_dokumensumber
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < ref_gudang  ref_gudang
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < ref_gudang_persediaan  ref_gudang_persediaan
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < ref_hargabarang_persediaan  ref_hargabarang_persediaan
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < ref_jabatan  ref_jabatan
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < ref_jenis_pemeliharaan  ref_jenis_pemeliharaan
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < ref_jenis_tagihan  ref_jenis_tagihan
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < ref_jns_jurnal  ref_jns_jurnal
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < ref_jurnal  ref_jurnal
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < ref_kapitalisasi  ref_kapitalisasi
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < ref_kategori_perda  ref_kategori_perda
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < ref_kategori_tandatangan  ref_kategori_tandatangan
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < ref_kelengkapan_dokumen  ref_kelengkapan_dokumen
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < ref_kode_pajak  ref_kode_pajak
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < ref_kode_pajak_while  ref_kode_pajak_while
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < ref_kotakec  ref_kotakec
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < ref_lra  ref_lra
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < ref_menu  ref_menu
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < ref_menu_copy  ref_menu_copy
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < ref_merk_persediaan  ref_merk_persediaan
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < ref_modul  ref_modul
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < ref_nm_pejabat_sp  ref_nm_pejabat_sp
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < ref_nomor_dokumen  ref_nomor_dokumen
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < ref_norek_bendahara  ref_norek_bendahara
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < ref_pangkat  ref_pangkat
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < ref_pegawai  ref_pegawai
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < ref_pejabat  ref_pejabat
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < ref_pekerjaan  ref_pekerjaan
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < ref_pemda  ref_pemda
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < ref_pemilik  ref_pemilik
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < ref_penerima_pengeluaran  ref_penerima_pengeluaran
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < ref_penerimaan_tandatangan  ref_penerimaan_tandatangan
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < ref_penerimabarang  ref_penerimabarang
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < ref_penyedia  ref_penyedia
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < ref_penyerah_pengeluaran  ref_penyerah_pengeluaran
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < ref_penyusutan  ref_penyusutan
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < ref_perda  ref_perda
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < ref_potongan  ref_potongan
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < ref_potongan_spm  ref_potongan_spm
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < ref_program  ref_program
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < ref_provkotakecdes  ref_provkotakecdes
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < ref_rekening  ref_rekening
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < ref_rekening_daerah  ref_rekening_daerah
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < ref_rincian_template  ref_rincian_template
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < ref_ruang  ref_ruang
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < ref_ruang_awal  ref_ruang_awal
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < ref_ruas_jalan  ref_ruas_jalan
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < ref_satuan_persediaan  ref_satuan_persediaan
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < ref_satuan_rekening  ref_satuan_rekening
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < ref_skpd  ref_skpd
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < ref_skpd_  ref_skpd_
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < ref_skpd_bdg  ref_skpd_bdg
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < ref_skpd_urusan  ref_skpd_urusan
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < ref_sp_potongan  ref_sp_potongan
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < ref_spec_persediaan  ref_spec_persediaan
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < ref_standar_satuan_harga  ref_standar_satuan_harga
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < ref_statusbarang2  ref_statusbarang2
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < ref_std_harga  ref_std_harga
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < ref_std_kebutuhan  ref_std_kebutuhan
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < ref_sumber_dana  ref_sumber_dana
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < ref_tagihan  ref_tagihan
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < ref_tahap_anggaran  ref_tahap_anggaran
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < ref_tahap_anggaran_v3  ref_tahap_anggaran_v3
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < ref_tambah_manfaat  ref_tambah_manfaat
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < ref_tambah_manfaat_hist  ref_tambah_manfaat_hist
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < ref_tandatangan  ref_tandatangan
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < ref_template  ref_template
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < ref_templatebarang  ref_templatebarang
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < ref_templatebarang_det  ref_templatebarang_det
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < ref_tim_anggaran  ref_tim_anggaran
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < ref_type_persediaan  ref_type_persediaan
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < ref_urusan  ref_urusan
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < ref_wilayah  ref_wilayah
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < ref_wilayah1  ref_wilayah1
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < refskpd_urusan  refskpd_urusan
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < report  report
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < rincian_belanja  rincian_belanja
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < rincian_distribusi  rincian_distribusi
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < rincian_lock_barang  rincian_lock_barang
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < rka  rka
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < rkb  rkb
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < rkb_standar  rkb_standar
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < rkbmd_pemeliharaan  rkbmd_pemeliharaan
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < rkbmd_pemeliharaan_v3  rkbmd_pemeliharaan_v3
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < rkpb  rkpb
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < saldo_awal  saldo_awal
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < sensus  sensus
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < sensus_scan  sensus_scan
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < service_no_reg  service_no_reg
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < setting  setting
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < settingDb  settingDb
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < settingKetetapan  settingKetetapan
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < setting_inventaris  setting_inventaris
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < setting_inventaris_history  
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < setting_kolom  setting_kolom
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < setting_penyusutan  setting_penyusutan
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < setting_saldo_awal_keu  setting_saldo_awal_keu
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < setting_tanda_tangan  setting_tanda_tangan
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < setting_tim_anggaran  setting_tim_anggaran
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < settingperencanaan  settingperencanaan
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < settingperencanaan_v3  settingperencanaan_v3
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < shortcut  shortcut
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < skpd_renja_v3  skpd_renja_v3
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < skpd_report_dpa  skpd_report_dpa
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < skpd_report_dpa_1  skpd_report_dpa_1
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < skpd_report_dpa_2_1  skpd_report_dpa_2_1
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < skpd_report_dpa_2_2  skpd_report_dpa_2_2
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < skpd_report_dpa_2_2_1  skpd_report_dpa_2_2_1
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < skpd_report_plafon  skpd_report_plafon
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < skpd_report_renja  skpd_report_renja
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < skpd_report_rka  skpd_report_rka
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < skpd_report_rka_1  skpd_report_rka_1
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < skpd_report_rka_21  skpd_report_rka_21
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < skpd_report_rka_22  skpd_report_rka_22
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < skpd_report_rka_221  skpd_report_rka_221
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < skpd_report_rkbmd  skpd_report_rkbmd
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < struktur_menu  struktur_menu
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < sync_renja  sync_renja
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < sync_rka  sync_rka
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < system  system
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < system_menu  system_menu
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < system_modul  system_modul
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < system_shortcut  system_shortcut
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < system_shortcut2  system_shortcut2
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < t_asetlainlain  t_asetlainlain
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < t_atribusi  t_atribusi
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < t_atribusi_dokumen  t_atribusi_dokumen
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < t_atribusi_rincian  t_atribusi_rincian
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < t_atribusi_rincian_hist  t_atribusi_rincian_hist
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < t_backup  t_backup
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < t_birm  t_birm
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < t_birm_Bck  t_birm_Bck
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < t_birm_double  t_birm_double
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < t_birm_error  t_birm_error
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < t_birm_pekerjaan  t_birm_pekerjaan
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < t_birm_pekerjaan_double  t_birm_pekerjaan_double
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < t_birm_rekening  t_birm_rekening
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < t_birm_rekening_double  t_birm_rekening_double
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < t_bku  t_bku
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < t_cek_bi  t_cek_bi
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < t_cek_bi_tmp  t_cek_bi_tmp
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < t_closing  t_closing
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < t_closing_hist  t_closing_hist
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < t_distribusi  t_distribusi
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < t_history  t_history
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < t_history_aset  t_history_aset
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < t_jurnal_aset  t_jurnal_aset
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < t_jurnal_aset_ekstra  t_jurnal_aset_ekstra
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < t_jurnal_aset_lainnya  t_jurnal_aset_lainnya
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < t_jurnal_aset_rekap  t_jurnal_aset_rekap
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < t_jurnal_aset_tetap  t_jurnal_aset_tetap
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < t_jurnal_aset_thn  t_jurnal_aset_thn
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < t_jurnal_keuangan  t_jurnal_keuangan
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < t_jurnal_keuangan_det  t_jurnal_keuangan_det
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < t_jurnal_penyusutan  t_jurnal_penyusutan
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < t_jurnal_penyusutan_koreksi  t_jurnal_penyusutan_koreksi
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < t_kapitalisasi  t_kapitalisasi
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < t_kartu_persediaan  t_kartu_persediaan
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < t_kondisi  t_kondisi
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < t_koreksi  t_koreksi
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < t_koreksi_penyusutan  t_koreksi_penyusutan
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < t_log  t_log
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < t_nomor_spd  t_nomor_spd
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < t_nomor_spd_det  t_nomor_spd_det
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < t_penerimaan_barang  t_penerimaan_barang
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < t_penerimaan_barang_det  t_penerimaan_barang_det
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < t_penerimaan_postbi_idbi  t_penerimaan_postbi_idbi
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < t_penerimaan_postbi_temp  t_penerimaan_postbi_temp
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < t_penerimaan_rek_biaya  t_penerimaan_rek_biaya
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < t_penerimaan_rekening  t_penerimaan_rekening
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < t_penerimaan_rekening_det  t_penerimaan_rekening_det
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < t_penerimaan_retensi  t_penerimaan_retensi
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < t_penerimaan_retensi_det  t_penerimaan_retensi_det
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < t_penerimaan_retensi_rekening  t_penerimaan_retensi_rekening
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < t_pengaturan  t_pengaturan
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < t_pengeluaran_kas  t_pengeluaran_kas
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < t_pengeluaran_kas_pot  t_pengeluaran_kas_pot
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < t_pengeluaran_kas_rek  t_pengeluaran_kas_rek
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < t_persediaan_lock_barang  t_persediaan_lock_barang
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < t_rencana_pemanfaatan  t_rencana_pemanfaatan
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < t_rencana_pemindahtanganan  t_rencana_pemindahtanganan
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < t_rencana_penghapusan  t_rencana_penghapusan
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < t_saldo_keu  t_saldo_keu
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < t_saldo_keu_det  t_saldo_keu_det
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < t_spp  t_spp
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < t_spp_kelengkapan_dok  t_spp_kelengkapan_dok
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < t_spp_potongan  t_spp_potongan
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < t_spp_rekening  t_spp_rekening
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < t_transaksi  t_transaksi
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < t_tree  t_tree
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < tabel_anggaran  tabel_anggaran
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < tabel_anggaran_v3  tabel_anggaran_v3
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < tabel_dpa  tabel_dpa
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < tabel_spd  
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < tahap_rka  tahap_rka
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < tandatangankuasapenggunabarang_v3  tandatangankuasapenggunabarang_v3
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < tandatanganpengelolabarang_v3  tandatanganpengelolabarang_v3
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < tandatanganpenggunabarang_v3  tandatanganpenggunabarang_v3
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < temp_alokasi_rka  temp_alokasi_rka
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < temp_data  temp_data
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < temp_data_det  temp_data_det
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < temp_detail_rincian_distribusi  temp_detail_rincian_distribusi
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < temp_detail_template  temp_detail_template
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < temp_detail_volume_rka_2_2_1  temp_detail_volume_rka_2_2_1
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < temp_jabatan  temp_jabatan
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < temp_list_select_rkbmd_pemeliharaan  temp_list_select_rkbmd_pemeliharaan
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < temp_lock  temp_lock
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < temp_lock_kurang  temp_lock_kurang
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < temp_lock_tambah  temp_lock_tambah
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < temp_pengeluaran  temp_pengeluaran
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < temp_rekening_rka_belanja_langsung  temp_rekening_rka_belanja_langsung
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < temp_rekening_rka_belanja_tidak_langsung  temp_rekening_rka_belanja_tidak_langsung
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < temp_rekening_rka_belanja_tidak_langsung_ppkd  temp_rekening_rka_belanja_tidak_langsung_ppkd
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < temp_rekening_rka_pembiayaan_penerimaan  temp_rekening_rka_pembiayaan_penerimaan
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < temp_rekening_rka_pembiayaan_penerimaan_ppkd  temp_rekening_rka_pembiayaan_penerimaan_ppkd
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < temp_rekening_rka_pembiayaan_pengeluaran  temp_rekening_rka_pembiayaan_pengeluaran
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < temp_rekening_rka_pembiayaan_pengeluaran_ppkd  temp_rekening_rka_pembiayaan_pengeluaran_ppkd
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < temp_rekening_rka_pendapatan_dp  temp_rekening_rka_pendapatan_dp
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < temp_rekening_rka_pendapatan_dp_ppkd  temp_rekening_rka_pendapatan_dp_ppkd
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < temp_rekening_rka_pendapatan_lp  temp_rekening_rka_pendapatan_lp
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < temp_rekening_rka_pendapatan_lp_ppkd  temp_rekening_rka_pendapatan_lp_ppkd
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < temp_rekening_rka_pendapatan_pad  temp_rekening_rka_pendapatan_pad
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < temp_rekening_rka_pendapatan_pad_ppkd  temp_rekening_rka_pendapatan_pad_ppkd
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < temp_remove_rka_1_dp  temp_remove_rka_1_dp
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < temp_remove_rka_1_dp_ppkd  temp_remove_rka_1_dp_ppkd
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < temp_remove_rka_1_lp  temp_remove_rka_1_lp
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < temp_remove_rka_1_lp_ppkd  temp_remove_rka_1_lp_ppkd
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < temp_remove_rka_1_pad  temp_remove_rka_1_pad
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < temp_remove_rka_1_pad_ppkd  temp_remove_rka_1_pad_ppkd
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < temp_remove_rka_21  temp_remove_rka_21
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < temp_remove_rka_21_ppkd  temp_remove_rka_21_ppkd
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < temp_remove_rka_221  temp_remove_rka_221
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < temp_remove_rka_31  temp_remove_rka_31
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < temp_remove_rka_31_ppkd  temp_remove_rka_31_ppkd
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < temp_remove_rka_32  temp_remove_rka_32
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < temp_remove_rka_32_ppkd  temp_remove_rka_32_ppkd
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < temp_rincian_belanja_barang_jasa  temp_rincian_belanja_barang_jasa
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < temp_rincian_belanja_langsung  temp_rincian_belanja_langsung
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < temp_rincian_belanja_modal  temp_rincian_belanja_modal
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < temp_rincian_belanja_tidak_langsung  temp_rincian_belanja_tidak_langsung
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < temp_rincian_belanja_tidak_langsung_ppkd  temp_rincian_belanja_tidak_langsung_ppkd
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < temp_rincian_distribusi  temp_rincian_distribusi
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < temp_rincian_pembiayaan_penerimaan  temp_rincian_pembiayaan_penerimaan
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < temp_rincian_pembiayaan_penerimaan_ppkd  temp_rincian_pembiayaan_penerimaan_ppkd
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < temp_rincian_pembiayaan_pengeluaran  temp_rincian_pembiayaan_pengeluaran
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < temp_rincian_pembiayaan_pengeluaran_ppkd  temp_rincian_pembiayaan_pengeluaran_ppkd
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < temp_rincian_pendapatan_dp  temp_rincian_pendapatan_dp
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < temp_rincian_pendapatan_dp_ppkd  temp_rincian_pendapatan_dp_ppkd
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < temp_rincian_pendapatan_lp  temp_rincian_pendapatan_lp
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < temp_rincian_pendapatan_lp_ppkd  temp_rincian_pendapatan_lp_ppkd
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < temp_rincian_pendapatan_pad  temp_rincian_pendapatan_pad
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < temp_rincian_pendapatan_pad_ppkd  temp_rincian_pendapatan_pad_ppkd
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < temp_rka_1  temp_rka_1
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < temp_rka_21  temp_rka_21
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < temp_rka_221  temp_rka_221
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < temp_rka_ppkd_1  temp_rka_ppkd_1
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < temp_rka_ppkd_21  temp_rka_ppkd_21
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < temp_rka_ppkd_31  temp_rka_ppkd_31
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < temp_rka_ppkd_32  temp_rka_ppkd_32
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < temp_rkbmd_pemeliharaan  temp_rkbmd_pemeliharaan
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < temp_rkbmd_pemeliharaan_v3  temp_rkbmd_pemeliharaan_v3
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < temp_rkbmd_pengadaan  temp_rkbmd_pengadaan
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < temp_rkbmd_pengadaan_v3  temp_rkbmd_pengadaan_v3
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < temp_rkbmd_persediaan  temp_rkbmd_persediaan
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < temp_spd  temp_spd
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < temp_standar_kebutuhan  temp_standar_kebutuhan
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < temp_sub_rincian_belanja_langsung  temp_sub_rincian_belanja_langsung
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < temp_sub_rincian_belanja_tidak_langsung  temp_sub_rincian_belanja_tidak_langsung
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < temp_sub_rincian_belanja_tidak_langsung_ppkd  temp_sub_rincian_belanja_tidak_langsung_ppkd
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < temp_sub_rincian_pembiayaan_penerimaan  temp_sub_rincian_pembiayaan_penerimaan
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < temp_sub_rincian_pembiayaan_penerimaan_ppkd  temp_sub_rincian_pembiayaan_penerimaan_ppkd
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < temp_sub_rincian_pembiayaan_pengeluaran  temp_sub_rincian_pembiayaan_pengeluaran
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < temp_sub_rincian_pembiayaan_pengeluaran_ppkd  temp_sub_rincian_pembiayaan_pengeluaran_ppkd
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < temp_sub_rincian_pendapatan_dp  temp_sub_rincian_pendapatan_dp
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < temp_sub_rincian_pendapatan_dp_ppkd  temp_sub_rincian_pendapatan_dp_ppkd
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < temp_sub_rincian_pendapatan_lp  temp_sub_rincian_pendapatan_lp
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < temp_sub_rincian_pendapatan_lp_ppkd  temp_sub_rincian_pendapatan_lp_ppkd
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < temp_sub_rincian_pendapatan_pad  temp_sub_rincian_pendapatan_pad
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < temp_sub_rincian_pendapatan_pad_ppkd  temp_sub_rincian_pendapatan_pad_ppkd
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < temp_template  temp_template
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < temp_urutan  temp_urutan
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < tempusr  tempusr
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < tmp_belumpost_jurnalrekap  tmp_belumpost_jurnalrekap
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < tmp_saldoawal  tmp_saldoawal
+
+mysql -uroot -pAdminpwa75 db_atisisbada_2018 < user  user

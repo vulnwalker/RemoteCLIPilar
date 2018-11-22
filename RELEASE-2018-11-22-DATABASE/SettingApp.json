@@ -1,0 +1,29 @@
+{
+    "tableName": "SettingApp",
+    "dumpFile": "dump\/SettingApp.sql",
+    "index": null,
+    "colums": [
+        {
+            "COLUMN_NAME": "nama",
+            "COLUMN_TYPE": "varchar(50)",
+            "CHARACTER_SET_NAME": "latin1",
+            "COLLATION_NAME": "latin1_general_ci",
+            "IS_NULLABLE": "YES"
+        },
+        {
+            "COLUMN_NAME": "warna",
+            "COLUMN_TYPE": "text",
+            "CHARACTER_SET_NAME": "latin1",
+            "COLLATION_NAME": "latin1_general_ci",
+            "IS_NULLABLE": "YES"
+        },
+        {
+            "COLUMN_NAME": "gambar",
+            "COLUMN_TYPE": "text",
+            "CHARACTER_SET_NAME": "latin1",
+            "COLLATION_NAME": "latin1_general_ci",
+            "IS_NULLABLE": "YES"
+        }
+    ],
+    "default_value": null
+}

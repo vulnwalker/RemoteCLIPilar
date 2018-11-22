@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.5.44, for debian-linux-gnu (x86_64)
+-- MySQL dump 10.13  Distrib 5.7.24, for Linux (x86_64)
 --
 -- Host: localhost    Database: db_atsb_demo_v3
 -- ------------------------------------------------------
--- Server version	5.5.44-0+deb7u1
+-- Server version	5.7.24-0ubuntu0.16.04.1
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -38,8 +38,18 @@ CREATE TABLE `ref_tahap_anggaran` (
   `tgl_update` text COLLATE latin1_general_ci NOT NULL,
   `user` text COLLATE latin1_general_ci NOT NULL,
   PRIMARY KEY (`id_tahap`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ref_tahap_anggaran`
+--
+
+LOCK TABLES `ref_tahap_anggaran` WRITE;
+/*!40000 ALTER TABLE `ref_tahap_anggaran` DISABLE KEYS */;
+INSERT INTO `ref_tahap_anggaran` VALUES (1,'','MURNI','2017','1','1','PENYUSUNAN','','','','','','','',''),(2,'','MURNI','2017','2','2','PENYUSUNAN','','','','','','','',''),(3,'','MURNI','2017','3','3','PENYUSUNAN','','','','','','','',''),(4,'','MURNI','2017','4','KOREKSI PENGGUNA','KOREKSI PENGGUNA','','','','','','','',''),(5,'','MURNI','2017','5','KOREKSI PENGELOLA','KOREKSI PENGELOLA','','','','','','','',''),(6,'','MURNI','2017','1','1','PENYUSUNAN','','','','','','','',''),(7,'','MURNI','2017','2','2','PENYUSUNAN','','','','','','','',''),(8,'','MURNI','2017','3','3','PENYUSUNAN','','','','','','','',''),(9,'','MURNI','2017','4','KOREKSI PENGGUNA','KOREKSI PENGGUNA','','','','','','','',''),(10,'','MURNI','2017','5','KOREKSI PENGELOLA','KOREKSI PENGELOLA','','','','','','','',''),(11,'','MURNI','2019','1','1','PENYUSUNAN','','','','','','','',''),(12,'','MURNI','2019','2','2','PENYUSUNAN','','','','','','','',''),(13,'','MURNI','2019','3','3','PENYUSUNAN','','','','','','','',''),(14,'','MURNI','2019','4','KOREKSI PENGGUNA','KOREKSI PENGGUNA','','','','','','','',''),(15,'','MURNI','2019','5','KOREKSI PENGELOLA','KOREKSI PENGELOLA','','','','','','','',''),(16,'','MURNI','','1','1','PENYUSUNAN','','','','','','','',''),(17,'','MURNI','','2','2','PENYUSUNAN','','','','','','','',''),(18,'','MURNI','','3','3','PENYUSUNAN','','','','','','','',''),(19,'','MURNI','','4','KOREKSI PENGGUNA','KOREKSI PENGGUNA','','','','','','','',''),(20,'','MURNI','','5','KOREKSI PENGELOLA','KOREKSI PENGELOLA','','','','','','','',''),(21,'','MURNI','2018','1','1','PENYUSUNAN','','','','','','','',''),(22,'','MURNI','2018','2','2','PENYUSUNAN','','','','','','','',''),(23,'','MURNI','2018','3','3','PENYUSUNAN','','','','','','','',''),(24,'','MURNI','2018','4','KOREKSI PENGGUNA','KOREKSI PENGGUNA','','','','','','','',''),(25,'','MURNI','2018','5','KOREKSI PENGELOLA','KOREKSI PENGELOLA','','','','','','','','');
+/*!40000 ALTER TABLE `ref_tahap_anggaran` ENABLE KEYS */;
+UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -50,4 +60,4 @@ CREATE TABLE `ref_tahap_anggaran` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-08-15 14:42:20
+-- Dump completed on 2018-11-22 10:13:26

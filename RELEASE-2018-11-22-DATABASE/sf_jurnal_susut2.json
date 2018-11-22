@@ -1,0 +1,21 @@
+{
+    "ROUTINE_NAME": "sf_jurnal_susut2",
+    "ROUTINE_DEFINITION": "424547494E0A20206465636C6172652063656B5F20746578743B0A2020202020202020202063616C6C2073705F6A75726E616C5F73757375742869645F293B0A202072657475726E2063656B5F3B0A454E44",
+    "ROUTINE_TYPE": "FUNCTION",
+    "PARAMETERS": [
+        {
+            "PARAMETER_NAME": null,
+            "DTD_IDENTIFIER": "longtext",
+            "ORDINAL_POSITION": "0",
+            "CHARACTER_SET_NAME": "latin1",
+            "COLLATION_NAME": "latin1_swedish_ci"
+        },
+        {
+            "PARAMETER_NAME": "id_",
+            "DTD_IDENTIFIER": "int(11)",
+            "ORDINAL_POSITION": "1",
+            "CHARACTER_SET_NAME": null,
+            "COLLATION_NAME": null
+        }
+    ]
+}

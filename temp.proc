@@ -1,4 +1,389 @@
 DELIMITER ;; 
- CREATE PROCEDURE `example_procedure` (tes tinyint(2) )  
-BEGIN
-end;;
+ CREATE FUNCTION `sf_susut_mode13` (idbi_ int(11) ,tgl_susut_ date ,uid_ varchar(20) ,jns_trans2_ int(11) ,id_koreksi_ int(11) ) RETURNS longtext 
+BEGIN    
+ 
+  #penyusutan Sukabumi Kota
+  #sumber source susut_mode_12   
+    # 20180802 rusyad : c1 ganti type
+      
+  declare stop_, kondisi_ int;
+  declare update_bi, con_thn_mulai_susut_, thn_mulai_susut_ int;  
+  declare thn_tgl_susut_, sem_tgl_susut_ int;
+  declare masa_manfaat_awl_,masa_manfaat_, persen_residu_ int;  
+  declare masa_manfaat_bi_, thn_perolehan_, thn_susut_ak_bi_ int;  
+  declare thn_susut_ak_,thn_ke_ int;
+  declare cek_thn_susut_ int;
+  declare residu_bi_, nilai_sisa_, sem_susut_ak_bi_, idbi_awal_ int;
+  declare tgl_buku_ date;  
+  declare masa_manfaat_brg_, residu_brg_ int;  
+  declare jml_harga_bi_ decimal(18,2);
+  declare nilai_buku_ decimal(18,2);  
+  declare masa_manfaat_tot_ int;  
+  declare harga_susut_ decimal(18,2);
+  declare c_,d_,e_ char(2);  
+  declare e1_ char(3);
+  declare f_,g_,h_,i_ char(2);  
+  declare j_ char(3);
+  declare c1_, staset_ int;
+  declare penambahan_nilai_buku_, penambahan_hrg_rehab_ decimal(18,2);
+  declare penambahan_masa_manfaat_, penambahan_masa_manfaat_rehab_ int;
+  declare penambahan_nilai_buku_prev_, penambahan_hrg_rehab_prev_ decimal(18,2);
+  declare penambahan_masa_manfaat_prev_, penambahan_masa_manfaat_rehab_prev_ int;
+  declare tot_rehab_, tot_rehab_aset_, tot_rehab_manfaat_, tot_rehab_prev_, tot_rehab_penghapusan_ decimal(18,2);  
+  declare nilai_perolehan_ decimal(18,2); 
+  declare tot_manfaat_ int;
+  declare hrg_rehab_ decimal(18,2);
+  declare masa_manfaat_rehab_ int;
+  declare sisa_masa_manfaat_,sisa_masa_manfaat_awl_ int;  
+  declare akum_masa_manfaat_ int;
+  declare akum_nilai_buku_,akum_harga_susut_,akum_stlh_susut_ decimal(18,2);   
+  declare jml_data_ int;
+  declare cek_, hasil_susut_ longtext;    
+  declare tgl_susut2_ , tgl_koreksi_ date;    
+  declare percen_penghapusan decimal(10,2);  
+
+  set nilai_buku_ = 0;
+  set masa_manfaat_ = 0;
+  set masa_manfaat_tot_ = 0;
+  set masa_manfaat_awl_ = 0;
+  set masa_manfaat_rehab_ = 0;    
+  set persen_residu_ = 0;  
+  set con_thn_mulai_susut_ = 0;  
+  set thn_tgl_susut_ = year(tgl_susut_);  
+  set sem_tgl_susut_ = 2;
+  set penambahan_nilai_buku_prev_ = 0;
+  set penambahan_hrg_rehab_prev_ = 0;
+  set penambahan_masa_manfaat_prev_ = 0;  
+  set penambahan_masa_manfaat_rehab_prev_ = 0;
+  set hrg_rehab_ = 0; 
+  set masa_manfaat_rehab_ = 0;    
+  set akum_nilai_buku_ = 0;
+  set akum_harga_susut_ = 0;  
+  set akum_stlh_susut_ = 0;
+  set akum_masa_manfaat_ = 0;  
+  set sisa_masa_manfaat_=0;  
+  set thn_ke_=1;
+  #set harga_susut_ = 0;
+  set stop_ = 0;
+  set cek_ = '';    
+  set hasil_susut_ = 'gagal';  
+    
+ #cek idbi NULL
+ select idawal into idbi_awal_ from buku_induk where id = idbi_; 
+ if idbi_awal_ is not NULL then  
+    #set tgl koreksi jika erjadi transaksi koreksi penyusutan   
+    if jns_trans2_ = 31 then            
+         select tgl into tgl_koreksi_ from t_koreksi_penyusutan where id = id_koreksi_;
+      end if;      
+
+      #ambil tahun mulai susut dari tabel setting  
+      select nilai into con_thn_mulai_susut_ from setting where Id = 'THN_MULAI_SUSUT';        
+    
+      # ambil data buku_induk  
+      select kondisi, ifnull(masa_manfaat,0), thn_perolehan, thn_susut_ak, jml_harga, nilai_sisa , tgl_buku, c1, c, d, e, e1, f, g, h, i, j, if(bln_susut_ak > 6, 2,1) , idawal, staset 
+        into kondisi_, masa_manfaat_bi_, thn_perolehan_, thn_susut_ak_bi_, jml_harga_bi_, residu_bi_, tgl_buku_, c1_, c_, d_, e_, e1_, f_, g_, h_, i_ , j_, sem_susut_ak_bi_  ,idbi_awal_, staset_
+        from buku_induk where id = idbi_;    
+      
+      # ambil data ref_barang  
+      select masa_manfaat, residu into masa_manfaat_brg_, residu_brg_
+        from  ref_barang where f= f_ and g=g_ and h=h_ and i= i_ and j=j_;
+    
+      # cari masa_manfaat, residu
+      if masa_manfaat_bi_ = NULL or masa_manfaat_bi_ = 0 then  
+         set masa_manfaat_ = masa_manfaat_brg_;     
+         set persen_residu_ = if(residu_brg_ is null, 0, residu_brg_);   
+      else   
+         set masa_manfaat_ = masa_manfaat_bi_;     
+         set persen_residu_ = if(residu_brg_ is null, 0, residu_brg_);        
+      end if;
+      
+      #cari tahun mulai susut
+      set thn_mulai_susut_ = if( con_thn_mulai_susut_ >  thn_perolehan_ , con_thn_mulai_susut_,thn_perolehan_);
+      
+      #cari tahun susut akum
+      set thn_susut_ak_ = if( thn_susut_ak_bi_ > thn_mulai_susut_,thn_susut_ak_bi_,thn_mulai_susut_);  
+    
+     #=====================================cari data penyusutan sebelumnya=====================================#
+      #cari penambahan sebelumnya  
+      select sum(ifnull(hrg_perolehan,0)), sum(masa_manfaat)#, sum(hrg_rehab),sum(ifnull(masa_manfaat_rehab,0))
+        into penambahan_nilai_buku_prev_, penambahan_masa_manfaat_prev_#, penambahan_hrg_rehab_prev_, penambahan_masa_manfaat_rehab_prev_ 
+        from penyusutan where idbi = idbi_ AND id_koreksi=0;    
+    
+      #cari akum susut, akum nilai buku, akum masa manfaat sebelumnya  
+       select (tahun+1),akum_nilai_buku,nilai_buku_stlh_susut,akum_susut,akum_masa_manfaat,thn_ke+1,sisa_masa_manfaat 
+        into thn_susut_ak_,akum_nilai_buku_,akum_stlh_susut_,akum_harga_susut_,akum_masa_manfaat_,thn_ke_,sisa_masa_manfaat_
+        from penyusutan where idbi = idbi_ AND id_koreksi=0 order by id Desc limit 0,1;
+    
+      set penambahan_nilai_buku_prev_ = if(penambahan_nilai_buku_prev_ is null, 0, penambahan_nilai_buku_prev_);  
+      set penambahan_hrg_rehab_prev_ = if(penambahan_hrg_rehab_prev_ is null, 0, penambahan_hrg_rehab_prev_);  
+      set penambahan_masa_manfaat_prev_ = if(penambahan_masa_manfaat_prev_ is null, 0, penambahan_masa_manfaat_prev_);  
+      set penambahan_masa_manfaat_rehab_prev_ = if(penambahan_masa_manfaat_rehab_prev_ is null, 0, penambahan_masa_manfaat_rehab_prev_);
+     #=====================================================================================================#
+    
+       set masa_manfaat_tot_ = if(penambahan_masa_manfaat_prev_ = 0, masa_manfaat_, penambahan_masa_manfaat_prev_);
+       set nilai_buku_ = if(penambahan_nilai_buku_prev_ = 0, nilai_buku_, penambahan_nilai_buku_prev_);
+       set masa_manfaat_ = masa_manfaat_tot_;
+       set sisa_masa_manfaat_awl_=masa_manfaat_;  
+        
+       while stop_ = 0 do
+    
+          #============================== set stop ==============================#       
+          if stop_ = 0 && kondisi_ = 3 then       
+             set stop_ = 1 ;         
+             set cek_ = concat(cek_ , 'stop karena rusak berat ');
+          end if;  
+          if stop_ = 0 && masa_manfaat_ <= 0 then  
+              set stop_ = 1; # stop karena masa manfaat belum di set      
+              set cek_ = concat(cek_ , 'stop karena masa manfaat belum di set ');
+          elseif stop_ = 0 && thn_tgl_susut_ < thn_susut_ak_ then  
+              set stop_ = 1; # stop karena tanggal susut > tanggal terakhir disusutkan      
+              set cek_ = concat(cek_ , 'stop karena tanggal susut > tanggal terakhir disusutkan');            
+          elseif stop_ = 0 && sisa_masa_manfaat_ = 1 && (f_ = '01' OR f_ = '02' OR f_ = '05' OR f_ = '06') THEN
+              set stop_ = 1; # stop karena tanggal susut > umur ekoknomis barang     
+              set cek_ = concat(cek_ , 'stop karena tanggal susut > tanggal terakhir disusutkan');
+          end if; 
+          if stop_ = 0 then 
+               if thn_susut_ak_<=thn_tgl_susut_ then 
+                  #cek stop karena penghapusan
+                  select count(*) into jml_data_
+                  #from penghapusan where year(tgl_penghapusan)=thn_susut_ak_ and id_bukuinduk = idbi_ ;
+                  from penghapusan where (year(tgl_penghapusan)=thn_susut_ak_ or  tgl_susut_ >= tgl_penghapusan) and id_bukuinduk = idbi_ ; #tgl_susut_ >= tgl_penghapusan, brarti sudah dihapuskn tidak perlu disusutkn
+                  if jml_data_ > 0 then 
+                     set stop_ = 1;             
+                     set cek_ = concat(cek_,'stop karena penghapusan');
+                  end if;        
+                  #cek stop karena pindah aset
+                  /*select count(*) into jml_data_
+                  from t_history_aset where year(tgl)=thn_susut_ak_ and (staset_baru=9 or staset_baru=10) and idbi = idbi_ ;
+                  if jml_data_ > 0 then 
+                     set stop_ = 1;             
+                     set cek_ = concat(cek_ , 'stop karena pindah aset');
+                  end if;*/
+                  #cek stop karena ganti rugi
+                  select count(*) into jml_data_
+                  from gantirugi where ( year(tgl_gantirugi)=thn_susut_ak_ or tgl_susut_>=tgl_gantirugi) and id_bukuinduk = idbi_ ;
+                  #from gantirugi where year(tgl_gantirugi)=thn_susut_ak_ and id_bukuinduk = idbi_ ;
+                  if jml_data_ > 0 then 
+                     set stop_ = 1;             
+                     set cek_ = concat(cek_ , 'stop karena ganti rugi');
+                  end if;          
+                  #cek stop karena pemindahtanganan
+                  select count(*) into jml_data_
+                  #from pemindahtanganan where year(tgl_pemindahtanganan)=thn_susut_ak_ and id_bukuinduk = idbi_ ;
+                  from pemindahtanganan where ( year(tgl_pemindahtanganan)=thn_susut_ak_ or tgl_susut_>=tgl_pemindahtanganan ) and id_bukuinduk = idbi_ ;
+                  if jml_data_ > 0 then 
+                     set stop_ = 1;             
+                     set cek_ = concat(cek_ , 'stop karena pemindahtanganan');
+                  end if;              
+               end if;
+          end if;
+          #=====================================================================================================#
+         #==============================cari harga rehab dan masa manfaat rehab ==============================#          
+
+          set hrg_rehab_ = 0;   
+          set masa_manfaat_rehab_ = 0;          
+          if jns_trans2_=31 and jns_koreksi_<>6 then  # jika koreksi    
+            set tgl_susut2_ = tgl_koreksi_;
+          else       
+             set tgl_susut2_ = tgl_susut_;
+          end if;  
+
+          #ketika awal penyusutan
+          if akum_masa_manfaat_ = '' then 
+              SELECT  IFNULL(SUM(biaya_pemeliharaan),0) INTO tot_rehab_
+                FROM pemeliharaan WHERE idbi_awal = idbi_awal_ 
+                and tgl_pemeliharaan <= tgl_susut2_ 
+                AND YEAR(tgl_perolehan) <= thn_susut_ak_ 
+                and tambah_aset=1; 
+              SET hrg_rehab_ = hrg_rehab_ + IFNULL(tot_rehab_,0); 
+              
+              SELECT IFNULL(SUM(biaya_pengamanan),0) INTO tot_rehab_
+                FROM pengamanan WHERE idbi_awal = idbi_awal_ 
+                and tgl_pengamanan <= tgl_susut2_ 
+                AND YEAR(tgl_perolehan) <= thn_susut_ak_;
+              SET hrg_rehab_ = hrg_rehab_ + IFNULL(tot_rehab_,0); 
+              
+              SELECT IFNULL(SUM(harga_hapus),0) INTO tot_rehab_
+                FROM penghapusan_sebagian WHERE idbi_awal = idbi_awal_ 
+                and tgl_penghapusan <= tgl_susut2_ 
+                AND YEAR(tgl_perolehan) <= thn_susut_ak_;
+              SET hrg_rehab_ = hrg_rehab_ - IFNULL(tot_rehab_,0); 
+              
+              SELECT IFNULL(SUM(harga_baru-harga),0) INTO tot_rehab_
+                FROM t_koreksi WHERE idbi_awal = idbi_awal_ 
+                and tgl <= tgl_susut2_ 
+                AND YEAR(tgl_perolehan) <= thn_susut_ak_;
+              SET hrg_rehab_ = hrg_rehab_ + IFNULL(tot_rehab_,0); 
+              
+              SELECT IFNULL(SUM(nilai_barang+nilai_barang_asal),0) INTO tot_rehab_
+                FROM penilaian WHERE idbi_awal = idbi_awal_ 
+                and tgl_penilaian <= tgl_susut2_ 
+                AND YEAR(tgl_perolehan) <= thn_susut_ak_;
+              SET hrg_rehab_ = hrg_rehab_ + IFNULL(tot_rehab_,0);
+              SET masa_manfaat_rehab_ = 0;                      
+          else          
+
+          #ketika ada penghapusan sebagian          
+              if stop_ = 0 then
+              select ifnull(sum(harga_hapus),0) into tot_rehab_penghapusan_ 
+                from penghapusan_sebagian where idbi_awal = idbi_awal_ 
+                and tgl_penghapusan <= tgl_susut2_ 
+                and year(tgl_perolehan)=thn_susut_ak_; 
+                  if tot_rehab_penghapusan_ > 0 then 
+                      set harga_susut_ = akum_harga_susut_;  
+                      set akum_nilai_buku_ = nilai_buku_-tot_rehab_penghapusan_;                                     
+                      set percen_penghapusan = akum_nilai_buku_/nilai_buku_;                      
+                      #set akum_nilai_buku_ =akum_nilai_buku_*percen_penghapusan;                     
+                      #set akum_harga_susut_hapus_ =akum_harga_susut_*percen_penghapusan;    
+                      set akum_harga_susut_ =akum_harga_susut_*percen_penghapusan;    
+                      set akum_stlh_susut_ = akum_stlh_susut_*percen_penghapusan;                                                         
+                      set nilai_buku_ = nilai_buku_-tot_rehab_penghapusan_;  
+                      set penambahan_hrg_rehab_ = 0-tot_rehab_penghapusan_;                                          
+                      set penambahan_nilai_buku_prev_ = penambahan_nilai_buku_prev_-tot_rehab_penghapusan_;                      
+                      set harga_susut_ = akum_harga_susut_-harga_susut_;
+                      #simpan ke tabel penyusutan      
+                      
+                          insert into penyusutan 
+                               (tgl,tahun,sem,bulan,idbi,idbi_awal,harga,uid,tgl_update,thn_perolehan,hrg_perolehan,hrg_rehab,masa_manfaat,masa_manfaat_rehab,
+                               residu,akum_nilai_buku,nilai_buku_stlh_susut,akum_susut,akum_masa_manfaat,thn_ke,sisa_masa_manfaat,sisa_masa_manfaat_thn,stat,                   
+                               staset,c1,c,d,e,e1,f,g,h,i,j,jns_trans2,bulan_awl, id_koreksi_tambah, ket)
+                               values
+                               (tgl_susut2_, thn_susut_ak_, 0, 0, idbi_, idbi_awal_, harga_susut_, uid_, now(), thn_perolehan_, 
+                               penambahan_hrg_rehab_, penambahan_hrg_rehab_, 0, 0, persen_residu_,
+                               akum_nilai_buku_, akum_stlh_susut_,akum_harga_susut_,masa_manfaat_tot_,thn_ke_,sisa_masa_manfaat_,sisa_masa_manfaat_,1,
+                               staset_,c1_,c_,d_,e_,e1_,f_,g_,h_,i_,j_,if(jns_trans2_=30,41,jns_trans2_),1, id_koreksi_,'koreksi penghapusan sebagian');                    
+                  end if;                                 
+                end if;
+
+              select ifnull(sum(if(tambah_aset=1,biaya_pemeliharaan,0)),0), 
+              ifnull(sum(if(tambah_masamanfaat=1,biaya_pemeliharaan,0)),0)#, 
+             into tot_rehab_aset_, tot_rehab_manfaat_ 
+                from pemeliharaan where idbi_awal = idbi_awal_ and year(tgl_perolehan)=thn_susut_ak_ and tambah_aset=1 and year(tgl_pemeliharaan)<=year(tgl_susut2_); 
+              
+              #total harga rehab sebelumnya
+              select ifnull(sum(biaya_pemeliharaan),0) into tot_rehab_prev_#, ifnull(sum(masa_manfaat),0) 
+                from pemeliharaan where idbi_awal = idbi_awal_ and year(tgl_perolehan)<thn_susut_ak_ and tambah_masamanfaat=1 and year(tgl_pemeliharaan)<=year(tgl_susut2_);  
+              
+              #set nilai perolehan sebelumnya
+              set nilai_perolehan_ = jml_harga_bi_ + tot_rehab_prev_;
+              
+              #ambil masa manfaat rehab now         
+              #select sf_get_tambah_manfaat(f_,g_,h_,i_,j_,tot_rehab_manfaat_,nilai_perolehan_) into masa_manfaat_rehab_;
+              select sf_get_tambah_manfaat(f_,g_,h_,i_,j_,tot_rehab_manfaat_,akum_stlh_susut_) into masa_manfaat_rehab_;
+              if (masa_manfaat_rehab_+sisa_masa_manfaat_) > masa_manfaat_brg_ THEN #jika penambahan melebihi manfaat awal, maka kembali ke masa manfaat awal
+    			  SET masa_manfaat_rehab_ = masa_manfaat_brg_-sisa_masa_manfaat_+1;
+              else          
+                  SET masa_manfaat_rehab_ = masa_manfaat_rehab_;  
+              end if; 
+        
+              set hrg_rehab_ = ifnull(tot_rehab_aset_,0);#;hrg_rehab_ ;#+ tot_rehab_aset_ + ifnull(tot_rehab_,0); 
+              set masa_manfaat_rehab_ = ifnull(masa_manfaat_rehab_,0);#+ ifnull(tot_manfaat_,0); 
+       
+              #ambil dari pengamanan
+              select ifnull(sum(biaya_pengamanan),0) into tot_rehab_
+                from pengamanan where idbi_awal = idbi_awal_ and year(tgl_perolehan)=thn_susut_ak_ and tambah_aset=1 and year(tgl_pengamanan)<=year(tgl_susut2_);
+              set hrg_rehab_ = hrg_rehab_ + ifnull(tot_rehab_,0); 
+              #ambil dari penghapusan sebagian
+              select ifnull(sum(harga_hapus),0) into tot_rehab_
+                from penghapusan_sebagian where idbi_awal = idbi_awal_ and year(tgl_perolehan)=thn_susut_ak_ and year(tgl_penghapusan)<=year(tgl_susut2_);
+              set hrg_rehab_ = hrg_rehab_ - ifnull(tot_rehab_,0); 
+              #ambil dari Koreksi
+              select ifnull(sum(harga_baru-harga),0) into tot_rehab_
+                from t_koreksi where idbi_awal = idbi_awal_ and year(tgl_perolehan)=thn_susut_ak_  and year(tgl)<=year(tgl_susut2_);
+              set hrg_rehab_ = hrg_rehab_ + ifnull(tot_rehab_,0); 
+               #ambil dari Penilaian
+              select ifnull(sum(nilai_barang-nilai_barang_asal),0) into tot_rehab_
+                from penilaian where idbi_awal = idbi_awal_ and year(tgl_perolehan)=thn_susut_ak_ and year(tgl_penilaian)<=year(tgl_susut2_);
+              set hrg_rehab_ = hrg_rehab_ + ifnull(tot_rehab_,0); 
+          end if; 
+        #=====================================================================================================#                 
+         if akum_masa_manfaat_ = ''  then       
+              #cari nilai buku
+              set nilai_buku_ = nilai_buku_+jml_harga_bi_+hrg_rehab_;
+              
+              #cari masa manfaat total
+              set masa_manfaat_tot_ =  masa_manfaat_tot_+masa_manfaat_rehab_;
+          else          
+              #cari nilai buku
+              set nilai_buku_ = nilai_buku_+hrg_rehab_;
+              
+              #cari masa manfaat total
+              set masa_manfaat_tot_ =  masa_manfaat_tot_+masa_manfaat_rehab_;
+          end if; 
+          
+          #cari penambahan nilai buku      
+          set penambahan_nilai_buku_ = nilai_buku_-penambahan_nilai_buku_prev_;      
+                
+          #cari penambahan harga rehab      
+          set penambahan_hrg_rehab_ = hrg_rehab_;#-penambahan_hrg_rehab_prev_;      
+     
+          #cari penambahan masa manfaat      
+          set penambahan_masa_manfaat_ = masa_manfaat_tot_-penambahan_masa_manfaat_prev_;      
+    
+          #cari penambahan masa manfaat rehab     
+          set penambahan_masa_manfaat_rehab_ = masa_manfaat_rehab_;#-penambahan_masa_manfaat_rehab_prev_;      
+    
+          #cari sisa masa manfaat
+          if akum_masa_manfaat_ = ''  then      
+             set sisa_masa_manfaat_=sisa_masa_manfaat_awl_+penambahan_masa_manfaat_rehab_;   #sisa masa manfaat unruk pertama kali   
+          elseif sisa_masa_manfaat_ = 0 && penambahan_masa_manfaat_rehab_ <> 0 then          
+             set sisa_masa_manfaat_ = sisa_masa_manfaat_+penambahan_masa_manfaat_;    #sisa masa manfaat jika ada penambahan masa manfaat setelah masa manaat habis untuk kib c & d
+          elseif sisa_masa_manfaat_ = 0 then          
+             set sisa_masa_manfaat_ = sisa_masa_manfaat_;  #sisa masa manfaat set 0 jika masa manfaat habis untuk kib c & d   
+          else
+            set sisa_masa_manfaat_=sisa_masa_manfaat_-1+penambahan_masa_manfaat_; #sisa masa manfaat ketika melanjutkan penyusutan dan masa manfaat masih ada           
+          end if;    
+  
+    
+          #cari akum nilai buku
+          set akum_nilai_buku_ = akum_nilai_buku_+penambahan_nilai_buku_; 
+    
+          #cari harga susut
+          set harga_susut_ = ((akum_nilai_buku_-akum_harga_susut_)-(persen_residu_/100*akum_nilai_buku_))/sisa_masa_manfaat_;      
+          set harga_susut_ = if(harga_susut_ is null, 0, harga_susut_);
+          
+          set akum_harga_susut_=akum_harga_susut_+harga_susut_;
+          set akum_stlh_susut_=nilai_buku_-akum_harga_susut_;      
+          set akum_masa_manfaat_=akum_masa_manfaat_+masa_manfaat_tot_;             
+          if stop_ = 0 then          
+          if jns_trans2_=31 then  # jika koreksi    
+            set tgl_susut2_ = tgl_koreksi_;
+          else       
+             set tgl_susut2_ = tgl_susut_;
+          end if;  
+              #simpan ke tabel penyusutan      
+              insert into penyusutan 
+                   (tgl,tahun,sem,bulan,idbi,idbi_awal,harga,uid,tgl_update,thn_perolehan,hrg_perolehan,hrg_rehab,masa_manfaat,masa_manfaat_rehab,
+                   residu,akum_nilai_buku,nilai_buku_stlh_susut,akum_susut,akum_masa_manfaat,thn_ke,sisa_masa_manfaat,sisa_masa_manfaat_thn,stat,                   
+                   staset,c1,c,d,e,e1,f,g,h,i,j,jns_trans2, id_koreksi_tambah)
+                   values
+                   (tgl_susut2_, thn_susut_ak_, 2, 12, idbi_, idbi_awal_, harga_susut_, uid_, now(), thn_perolehan_, 
+                   penambahan_nilai_buku_, penambahan_hrg_rehab_, penambahan_masa_manfaat_, penambahan_masa_manfaat_rehab_, persen_residu_,
+                   akum_nilai_buku_, akum_stlh_susut_,akum_harga_susut_,masa_manfaat_tot_,thn_ke_,sisa_masa_manfaat_,sisa_masa_manfaat_,1,
+                   staset_,c1_,c_,d_,e_,e1_,f_,g_,h_,i_,j_,jns_trans2_, id_koreksi_);   
+                   
+             set penambahan_nilai_buku_prev_ = nilai_buku_;         
+             set penambahan_masa_manfaat_prev_ = masa_manfaat_tot_;        
+             set penambahan_hrg_rehab_prev_ = hrg_rehab_;
+             set penambahan_masa_manfaat_rehab_prev_ = masa_manfaat_rehab_;
+             
+             set update_bi = 1;
+             set thn_susut_ak_ = thn_susut_ak_+1;         
+    
+             #set tahun ke      
+             set thn_ke_=thn_ke_+1;
+                
+             if update_bi =1 then     
+                update buku_induk set masa_manfaat=masa_manfaat_tot_, nilai_sisa=persen_residu_, thn_susut_ak=thn_susut_ak_-1,        
+                       bln_susut_ak=12, thn_susut_aw=thn_mulai_susut_, bln_susut_aw=1 where id=idbi_;               
+             set hasil_susut_ = 'sukses';   
+             end if;          
+          end if;
+       end while;
+   else
+       set cek_='idbi NULL';   
+   end if;
+   set cek_=concat(cek_,'|||', hasil_susut_);
+  RETURN cek_;
+#END susut_thn;
+END;;

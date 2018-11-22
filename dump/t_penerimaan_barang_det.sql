@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.5.44, for debian-linux-gnu (x86_64)
+-- MySQL dump 10.13  Distrib 5.7.24, for Linux (x86_64)
 --
 -- Host: localhost    Database: db_atsb_demo_v3
 -- ------------------------------------------------------
--- Server version	5.5.44-0+deb7u1
+-- Server version	5.7.24-0ubuntu0.16.04.1
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -23,7 +23,7 @@
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `t_penerimaan_barang_det` (
   `Id` int(11) NOT NULL AUTO_INCREMENT,
-  `c1` char(1) COLLATE latin1_general_ci NOT NULL DEFAULT '0',
+  `c1` smallint(3) unsigned NOT NULL DEFAULT '0',
   `c` char(2) COLLATE latin1_general_ci NOT NULL DEFAULT '00',
   `d` char(2) COLLATE latin1_general_ci NOT NULL DEFAULT '00',
   `e` char(2) COLLATE latin1_general_ci NOT NULL DEFAULT '00',
@@ -100,7 +100,7 @@ CREATE TABLE `t_penerimaan_barang_det` (
   KEY `c1` (`c1`,`c`,`d`,`e`,`e1`),
   KEY `f1` (`f1`,`f2`,`f`,`g`,`h`,`i`,`j`),
   KEY `refid` (`refid_terima`)
-) ENGINE=InnoDB AUTO_INCREMENT=11083 DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci ROW_FORMAT=COMPACT;
+) ENGINE=InnoDB AUTO_INCREMENT=11385 DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci ROW_FORMAT=COMPACT;
 /*!40101 SET character_set_client = @saved_cs_client */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -112,4 +112,4 @@ CREATE TABLE `t_penerimaan_barang_det` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-08-15 14:42:22
+-- Dump completed on 2018-11-22  9:56:53

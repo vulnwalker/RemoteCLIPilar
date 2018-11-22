@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 5.5.44, for debian-linux-gnu (x86_64)
 --
--- Host: localhost    Database: db_atsb_demo_v3
+-- Host: localhost    Database: db_atisisbada_2018
 -- ------------------------------------------------------
 -- Server version	5.5.44-0+deb7u1
 
@@ -55,7 +55,7 @@ CREATE TABLE `tabel_spd` (
   `jenis_dpa` text NOT NULL,
   `nomor_spd` text NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -67,4 +67,4 @@ CREATE TABLE `tabel_spd` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-08-15 14:42:23
+-- Dump completed on 2018-09-07 10:37:13

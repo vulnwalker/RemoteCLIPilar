@@ -1,0 +1,266 @@
+{
+    "tableName": "ref_templatebarang",
+    "dumpFile": "dump\/ref_templatebarang.sql",
+    "index": [
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "Id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "jenis",
+            "key_name": "jenis",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "Id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "c1",
+            "key_name": "c1",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "c",
+            "key_name": "c1",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "d",
+            "key_name": "c1",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "e",
+            "key_name": "c1",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "e1",
+            "key_name": "c1",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "c1",
+            "key_name": "c1",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "c",
+            "key_name": "c1",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "d",
+            "key_name": "c1",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "nama",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "Id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "c1",
+            "key_name": "c1",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "c",
+            "key_name": "c1",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "d",
+            "key_name": "c1",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "e",
+            "key_name": "c1",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "e1",
+            "key_name": "c1",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "Id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        }
+    ],
+    "colums": [
+        {
+            "COLUMN_NAME": "Id",
+            "COLUMN_TYPE": "int(11)",
+            "CHARACTER_SET_NAME": null,
+            "COLLATION_NAME": null,
+            "IS_NULLABLE": "NO"
+        },
+        {
+            "COLUMN_NAME": "c1",
+            "COLUMN_TYPE": "smallint(3) unsigned",
+            "CHARACTER_SET_NAME": null,
+            "COLLATION_NAME": null,
+            "IS_NULLABLE": "NO"
+        },
+        {
+            "COLUMN_NAME": "c",
+            "COLUMN_TYPE": "char(2)",
+            "CHARACTER_SET_NAME": "latin1",
+            "COLLATION_NAME": "latin1_general_ci",
+            "IS_NULLABLE": "NO"
+        },
+        {
+            "COLUMN_NAME": "d",
+            "COLUMN_TYPE": "char(2)",
+            "CHARACTER_SET_NAME": "latin1",
+            "COLLATION_NAME": "latin1_general_ci",
+            "IS_NULLABLE": "NO"
+        },
+        {
+            "COLUMN_NAME": "e",
+            "COLUMN_TYPE": "char(2)",
+            "CHARACTER_SET_NAME": "latin1",
+            "COLLATION_NAME": "latin1_general_ci",
+            "IS_NULLABLE": "NO"
+        },
+        {
+            "COLUMN_NAME": "e1",
+            "COLUMN_TYPE": "char(3)",
+            "CHARACTER_SET_NAME": "latin1",
+            "COLLATION_NAME": "latin1_general_ci",
+            "IS_NULLABLE": "NO"
+        },
+        {
+            "COLUMN_NAME": "nama_tmplt",
+            "COLUMN_TYPE": "varchar(255)",
+            "CHARACTER_SET_NAME": "latin1",
+            "COLLATION_NAME": "latin1_general_ci",
+            "IS_NULLABLE": "YES"
+        },
+        {
+            "COLUMN_NAME": "keterangan",
+            "COLUMN_TYPE": "text",
+            "CHARACTER_SET_NAME": "latin1",
+            "COLLATION_NAME": "latin1_general_ci",
+            "IS_NULLABLE": "YES"
+        },
+        {
+            "COLUMN_NAME": "jns_trans",
+            "COLUMN_TYPE": "char(1)",
+            "CHARACTER_SET_NAME": "latin1",
+            "COLLATION_NAME": "latin1_general_ci",
+            "IS_NULLABLE": "YES"
+        },
+        {
+            "COLUMN_NAME": "sttemp",
+            "COLUMN_TYPE": "char(1)",
+            "CHARACTER_SET_NAME": "latin1",
+            "COLLATION_NAME": "latin1_general_ci",
+            "IS_NULLABLE": "YES"
+        },
+        {
+            "COLUMN_NAME": "tgl_create",
+            "COLUMN_TYPE": "datetime",
+            "CHARACTER_SET_NAME": null,
+            "COLLATION_NAME": null,
+            "IS_NULLABLE": "YES"
+        },
+        {
+            "COLUMN_NAME": "tgl_update",
+            "COLUMN_TYPE": "datetime",
+            "CHARACTER_SET_NAME": null,
+            "COLLATION_NAME": null,
+            "IS_NULLABLE": "YES"
+        },
+        {
+            "COLUMN_NAME": "uid",
+            "COLUMN_TYPE": "varchar(255)",
+            "CHARACTER_SET_NAME": "latin1",
+            "COLLATION_NAME": "latin1_general_ci",
+            "IS_NULLABLE": "YES"
+        },
+        {
+            "COLUMN_NAME": "uid_create",
+            "COLUMN_TYPE": "varchar(255)",
+            "CHARACTER_SET_NAME": "latin1",
+            "COLLATION_NAME": "latin1_general_ci",
+            "IS_NULLABLE": "YES"
+        },
+        {
+            "COLUMN_NAME": "tgl_template",
+            "COLUMN_TYPE": "date",
+            "CHARACTER_SET_NAME": null,
+            "COLLATION_NAME": null,
+            "IS_NULLABLE": "YES"
+        }
+    ],
+    "default_value": [
+        "INSERT INTO ref_templatebarang (`Id`,`c1`,`c`,`d`,`e`,`e1`,`nama_tmplt`,`keterangan`,`jns_trans`,`sttemp`,`tgl_create`,`tgl_update`,`uid`,`uid_create`,`tgl_template`) values ('1','1','01','01','01','001','TEMPLATE-1','','1','0','2018-04-16 09:10:36','2018-04-16 09:10:36','bewok','bewok','2017-12-31') ",
+        "INSERT INTO ref_templatebarang (`Id`,`c1`,`c`,`d`,`e`,`e1`,`nama_tmplt`,`keterangan`,`jns_trans`,`sttemp`,`tgl_create`,`tgl_update`,`uid`,`uid_create`,`tgl_template`) values ('3','1','01','01','01','001','TEMPLATE-2','','1','0','2018-04-16 09:10:36','2018-04-16 09:10:36','bewok','bewok','2017-12-31') ",
+        "INSERT INTO ref_templatebarang (`Id`,`c1`,`c`,`d`,`e`,`e1`,`nama_tmplt`,`keterangan`,`jns_trans`,`sttemp`,`tgl_create`,`tgl_update`,`uid`,`uid_create`,`tgl_template`) values ('4','2','17','01','01','001','ILMU PENGETAHUAN PRAKTIS','BELANJA MODAL BUKU ILMU PENGETAHUAN PRAKTIS','1','0','2018-04-16 09:10:36','2018-04-16 09:10:36','bewok','bewok','2017-03-08') ",
+        "INSERT INTO ref_templatebarang (`Id`,`c1`,`c`,`d`,`e`,`e1`,`nama_tmplt`,`keterangan`,`jns_trans`,`sttemp`,`tgl_create`,`tgl_update`,`uid`,`uid_create`,`tgl_template`) values ('7','2','17','01','01','001','TEMPLATE-1','','1','0','2018-04-16 09:10:36','2018-04-16 09:10:36','dpad2017','dpad2017','2018-01-12') ",
+        "INSERT INTO ref_templatebarang (`Id`,`c1`,`c`,`d`,`e`,`e1`,`nama_tmplt`,`keterangan`,`jns_trans`,`sttemp`,`tgl_create`,`tgl_update`,`uid`,`uid_create`,`tgl_template`) values ('8','2','17','01','01','001','bahasa','','1','0','2018-04-16 09:10:36','2018-04-16 09:10:36','dpad2','dpad2','2018-01-12') ",
+        "INSERT INTO ref_templatebarang (`Id`,`c1`,`c`,`d`,`e`,`e1`,`nama_tmplt`,`keterangan`,`jns_trans`,`sttemp`,`tgl_create`,`tgl_update`,`uid`,`uid_create`,`tgl_template`) values ('9','2','17','01','01','001','arsitektur','','1','0','2018-04-16 09:10:36','2018-04-16 09:10:36','dpad2017','dpad2017','2018-01-12') ",
+        "INSERT INTO ref_templatebarang (`Id`,`c1`,`c`,`d`,`e`,`e1`,`nama_tmplt`,`keterangan`,`jns_trans`,`sttemp`,`tgl_create`,`tgl_update`,`uid`,`uid_create`,`tgl_template`) values ('10','2','17','01','01','001','PENGADAAN BUKU SOSIAL','','1','0','2018-04-16 09:10:36','2018-04-16 09:10:36','dpad','dpad','2018-01-12') ",
+        "INSERT INTO ref_templatebarang (`Id`,`c1`,`c`,`d`,`e`,`e1`,`nama_tmplt`,`keterangan`,`jns_trans`,`sttemp`,`tgl_create`,`tgl_update`,`uid`,`uid_create`,`tgl_template`) values ('12','2','17','01','01','001','Bahasa 2','','1','0','2018-04-16 09:10:36','2018-04-16 09:10:36','dpad2','dpad2','2018-01-15') ",
+        "INSERT INTO ref_templatebarang (`Id`,`c1`,`c`,`d`,`e`,`e1`,`nama_tmplt`,`keterangan`,`jns_trans`,`sttemp`,`tgl_create`,`tgl_update`,`uid`,`uid_create`,`tgl_template`) values ('13','2','17','01','01','001','Bahasa 3','','1','0','2018-04-16 09:10:36','2018-04-16 09:10:36','dpad2','dpad2','2018-01-15') ",
+        "INSERT INTO ref_templatebarang (`Id`,`c1`,`c`,`d`,`e`,`e1`,`nama_tmplt`,`keterangan`,`jns_trans`,`sttemp`,`tgl_create`,`tgl_update`,`uid`,`uid_create`,`tgl_template`) values ('14','2','17','01','01','001','PENGADAAN BUKU SOSIAL 2','','1','0','2018-04-16 09:10:36','2018-04-16 09:10:36','dpad','dpad','2018-01-15') ",
+        "INSERT INTO ref_templatebarang (`Id`,`c1`,`c`,`d`,`e`,`e1`,`nama_tmplt`,`keterangan`,`jns_trans`,`sttemp`,`tgl_create`,`tgl_update`,`uid`,`uid_create`,`tgl_template`) values ('16','2','17','01','01','001','PENGADAAN BUKU SOSIAL 3','','1','0','2018-04-16 09:10:36','2018-04-16 09:10:36','dpad','dpad','2018-01-15') ",
+        "INSERT INTO ref_templatebarang (`Id`,`c1`,`c`,`d`,`e`,`e1`,`nama_tmplt`,`keterangan`,`jns_trans`,`sttemp`,`tgl_create`,`tgl_update`,`uid`,`uid_create`,`tgl_template`) values ('19','2','17','01','01','001','Geografi','','1','0','2018-04-16 09:10:36','2018-04-16 09:10:36','dpad','dpad','2018-01-16') ",
+        "INSERT INTO ref_templatebarang (`Id`,`c1`,`c`,`d`,`e`,`e1`,`nama_tmplt`,`keterangan`,`jns_trans`,`sttemp`,`tgl_create`,`tgl_update`,`uid`,`uid_create`,`tgl_template`) values ('20','2','17','01','01','001','BUKU AGAMA','','1','0','2018-04-16 09:10:36','2018-04-16 09:10:36','dpad3','dpad3','2018-01-17') ",
+        "INSERT INTO ref_templatebarang (`Id`,`c1`,`c`,`d`,`e`,`e1`,`nama_tmplt`,`keterangan`,`jns_trans`,`sttemp`,`tgl_create`,`tgl_update`,`uid`,`uid_create`,`tgl_template`) values ('22','2','17','01','01','001','filsafat','','1','0','2018-04-16 09:10:36','2018-04-16 09:10:36','dpad3','dpad3','2018-01-17') ",
+        "INSERT INTO ref_templatebarang (`Id`,`c1`,`c`,`d`,`e`,`e1`,`nama_tmplt`,`keterangan`,`jns_trans`,`sttemp`,`tgl_create`,`tgl_update`,`uid`,`uid_create`,`tgl_template`) values ('23','2','17','01','01','001','KARYA UMUM','','1','0','2018-04-16 09:10:36','2018-04-16 09:10:36','dpad2','dpad2','2018-01-18') ",
+        "INSERT INTO ref_templatebarang (`Id`,`c1`,`c`,`d`,`e`,`e1`,`nama_tmplt`,`keterangan`,`jns_trans`,`sttemp`,`tgl_create`,`tgl_update`,`uid`,`uid_create`,`tgl_template`) values ('27','1','02','01','07','001','DOPLER','DANA JKN','1','0','2018-04-16 09:10:36','2018-04-16 09:10:36','pkmbanjar','pkmbanjar','2017-05-10') ",
+        "INSERT INTO ref_templatebarang (`Id`,`c1`,`c`,`d`,`e`,`e1`,`nama_tmplt`,`keterangan`,`jns_trans`,`sttemp`,`tgl_create`,`tgl_update`,`uid`,`uid_create`,`tgl_template`) values ('29','1','02','01','07','001','PULVERIZER-S TYPE MU','DANA JKN','1','0','2018-04-16 09:10:36','2018-04-16 09:10:36','pkmbanjar','pkmbanjar','2017-11-06') ",
+        "INSERT INTO ref_templatebarang (`Id`,`c1`,`c`,`d`,`e`,`e1`,`nama_tmplt`,`keterangan`,`jns_trans`,`sttemp`,`tgl_create`,`tgl_update`,`uid`,`uid_create`,`tgl_template`) values ('31','1','02','01','07','001','ms windows 10 home','DANA JKN','1','0','2018-04-16 09:10:36','2018-04-16 09:10:36','pkmbanjar','pkmbanjar','2017-04-18') ",
+        "INSERT INTO ref_templatebarang (`Id`,`c1`,`c`,`d`,`e`,`e1`,`nama_tmplt`,`keterangan`,`jns_trans`,`sttemp`,`tgl_create`,`tgl_update`,`uid`,`uid_create`,`tgl_template`) values ('35','2','17','01','01','001','BUKU LAINNYA','','1','0','2018-04-16 09:10:36','2018-04-16 09:10:36','perpus2','perpus2','2018-03-01') ",
+        "INSERT INTO ref_templatebarang (`Id`,`c1`,`c`,`d`,`e`,`e1`,`nama_tmplt`,`keterangan`,`jns_trans`,`sttemp`,`tgl_create`,`tgl_update`,`uid`,`uid_create`,`tgl_template`) values ('37','2','17','01','01','001','agama 2','','1','0','2018-04-16 09:10:36','2018-04-16 09:10:36','perpus3','perpus3','2018-03-01') ",
+        "INSERT INTO ref_templatebarang (`Id`,`c1`,`c`,`d`,`e`,`e1`,`nama_tmplt`,`keterangan`,`jns_trans`,`sttemp`,`tgl_create`,`tgl_update`,`uid`,`uid_create`,`tgl_template`) values ('41','7','01','36','01','001','buku','test nunu','2','0','2018-04-17 14:56:54','2018-04-17 14:58:12','nunu','nunu','2018-04-17') ",
+        "INSERT INTO ref_templatebarang (`Id`,`c1`,`c`,`d`,`e`,`e1`,`nama_tmplt`,`keterangan`,`jns_trans`,`sttemp`,`tgl_create`,`tgl_update`,`uid`,`uid_create`,`tgl_template`) values ('42','1','01','01','01','001','TEMPLATE-3','','1','0','2018-04-17 16:00:41','2018-04-17 16:03:12','syfa','syfa','2018-04-17') ",
+        "INSERT INTO ref_templatebarang (`Id`,`c1`,`c`,`d`,`e`,`e1`,`nama_tmplt`,`keterangan`,`jns_trans`,`sttemp`,`tgl_create`,`tgl_update`,`uid`,`uid_create`,`tgl_template`) values ('43','7','01','36','01','001','buku-buku','test','1','0','2018-04-18 13:01:03','2018-04-30 11:03:08','nunu','nunu','2018-04-18') ",
+        "INSERT INTO ref_templatebarang (`Id`,`c1`,`c`,`d`,`e`,`e1`,`nama_tmplt`,`keterangan`,`jns_trans`,`sttemp`,`tgl_create`,`tgl_update`,`uid`,`uid_create`,`tgl_template`) values ('44','4','05','01','01','001','TEMPLATE-1','tes','1','0','2018-04-20 11:35:37','2018-04-20 14:09:29','dev1','dev1','2018-04-20') ",
+        "INSERT INTO ref_templatebarang (`Id`,`c1`,`c`,`d`,`e`,`e1`,`nama_tmplt`,`keterangan`,`jns_trans`,`sttemp`,`tgl_create`,`tgl_update`,`uid`,`uid_create`,`tgl_template`) values ('48','1','01','01','01','001','TEMPLATE-4','-','1','0','2018-04-23 10:32:12','2018-04-23 10:33:45','julius','julius','2018-04-23') ",
+        "INSERT INTO ref_templatebarang (`Id`,`c1`,`c`,`d`,`e`,`e1`,`nama_tmplt`,`keterangan`,`jns_trans`,`sttemp`,`tgl_create`,`tgl_update`,`uid`,`uid_create`,`tgl_template`) values ('51','1','01','01','01','001','TEMPLATE-1','','2','0','2018-04-24 09:30:00','2018-04-24 09:31:34','julius','julius','2018-04-24') ",
+        "INSERT INTO ref_templatebarang (`Id`,`c1`,`c`,`d`,`e`,`e1`,`nama_tmplt`,`keterangan`,`jns_trans`,`sttemp`,`tgl_create`,`tgl_update`,`uid`,`uid_create`,`tgl_template`) values ('54','1','01','01','01','001','TEMPLATE-5','','1','0','2018-04-27 10:18:24','2018-04-27 10:20:09','julius','julius','2018-04-27') ",
+        "INSERT INTO ref_templatebarang (`Id`,`c1`,`c`,`d`,`e`,`e1`,`nama_tmplt`,`keterangan`,`jns_trans`,`sttemp`,`tgl_create`,`tgl_update`,`uid`,`uid_create`,`tgl_template`) values ('55','1','01','01','01','001','TEMPLATE-6','','1','0','2018-04-27 10:19:21','2018-04-27 10:45:57','julius','julius','2017-04-27') ",
+        "INSERT INTO ref_templatebarang (`Id`,`c1`,`c`,`d`,`e`,`e1`,`nama_tmplt`,`keterangan`,`jns_trans`,`sttemp`,`tgl_create`,`tgl_update`,`uid`,`uid_create`,`tgl_template`) values ('60','1','01','01','01','001','TEMPLATE-9','tes','1','0','2018-05-09 11:06:08','2018-05-09 11:11:54','anto','anto','2018-05-09') ",
+        "INSERT INTO ref_templatebarang (`Id`,`c1`,`c`,`d`,`e`,`e1`,`nama_tmplt`,`keterangan`,`jns_trans`,`sttemp`,`tgl_create`,`tgl_update`,`uid`,`uid_create`,`tgl_template`) values ('61','1','01','01','01','001','23\/hibah\/ APBN\/2017','','1','0','2018-05-09 11:14:07','2018-05-09 11:16:37','anto','anto','2018-05-09') ",
+        "INSERT INTO ref_templatebarang (`Id`,`c1`,`c`,`d`,`e`,`e1`,`nama_tmplt`,`keterangan`,`jns_trans`,`sttemp`,`tgl_create`,`tgl_update`,`uid`,`uid_create`,`tgl_template`) values ('65','1','01','01','01','001','TEMPLATE-13','','1','0','2018-07-04 14:57:33','2018-07-04 16:56:46','julius','julius','2018-07-04') ",
+        "INSERT INTO ref_templatebarang (`Id`,`c1`,`c`,`d`,`e`,`e1`,`nama_tmplt`,`keterangan`,`jns_trans`,`sttemp`,`tgl_create`,`tgl_update`,`uid`,`uid_create`,`tgl_template`) values ('66','1','01','01','01','001','TEMPLATE-14','','1','0','2018-07-05 10:39:00','2018-07-05 10:39:00','julius','julius','2018-07-05') ",
+        "INSERT INTO ref_templatebarang (`Id`,`c1`,`c`,`d`,`e`,`e1`,`nama_tmplt`,`keterangan`,`jns_trans`,`sttemp`,`tgl_create`,`tgl_update`,`uid`,`uid_create`,`tgl_template`) values ('76','7','01','01','01','001','TEMPLATE-1','tes','2','0','2018-07-19 11:43:54','2018-07-19 11:46:21','julius','julius','2018-07-19') ",
+        "INSERT INTO ref_templatebarang (`Id`,`c1`,`c`,`d`,`e`,`e1`,`nama_tmplt`,`keterangan`,`jns_trans`,`sttemp`,`tgl_create`,`tgl_update`,`uid`,`uid_create`,`tgl_template`) values ('77','7','01','01','01','001','TEMPLATE-2','','2','0','2018-07-19 13:03:27','2018-07-19 13:03:27','julius','julius','2018-07-19') ",
+        "INSERT INTO ref_templatebarang (`Id`,`c1`,`c`,`d`,`e`,`e1`,`nama_tmplt`,`keterangan`,`jns_trans`,`sttemp`,`tgl_create`,`tgl_update`,`uid`,`uid_create`,`tgl_template`) values ('78','7','01','01','01','001','TEMPLATE-1','','1','0','2018-07-19 13:08:08','2018-07-19 13:08:08','julius','julius','2018-07-19') ",
+        "INSERT INTO ref_templatebarang (`Id`,`c1`,`c`,`d`,`e`,`e1`,`nama_tmplt`,`keterangan`,`jns_trans`,`sttemp`,`tgl_create`,`tgl_update`,`uid`,`uid_create`,`tgl_template`) values ('79','10','01','01','01','001','TEMPLATE-1','Pembelian Buku','1','0','2018-08-16 16:29:59','2018-08-16 16:31:47','syfa','syfa','2018-08-16') "
+    ]
+}

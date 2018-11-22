@@ -1,0 +1,1110 @@
+{
+    "tableName": "footer",
+    "dumpFile": "dump\/footer.sql",
+    "index": [
+        {
+            "column_name": "uid",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "Id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "Id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "Id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "uid",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "Id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "c",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "d",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "e",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "e1",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "f",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "idall",
+            "key_name": "idall",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "idawal",
+            "key_name": "idawal",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "idall2",
+            "key_name": "idall2",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "bk_p",
+            "key_name": "bk",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "ck_p",
+            "key_name": "bk",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "dk_p",
+            "key_name": "bk",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "p",
+            "key_name": "bk",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "q",
+            "key_name": "bk",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "status_barang",
+            "key_name": "status_barang",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "tgl_buku",
+            "key_name": "tgl_buku",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "id_lama",
+            "key_name": "id_lama",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "staset",
+            "key_name": "staset",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "kondisi",
+            "key_name": "kondisi",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "tahun",
+            "key_name": "tahun",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "thn_perolehan",
+            "key_name": "thn_perolehan",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "c1",
+            "key_name": "c",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "c",
+            "key_name": "c",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "d",
+            "key_name": "c",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "e",
+            "key_name": "c",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "e1",
+            "key_name": "c",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "f1",
+            "key_name": "f",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "f2",
+            "key_name": "f",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "f",
+            "key_name": "f",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "g",
+            "key_name": "f",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "h",
+            "key_name": "f",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "i",
+            "key_name": "f",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "j",
+            "key_name": "f",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "refid_terima",
+            "key_name": "refid_terima",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "refid_terima_det",
+            "key_name": "refid_terima",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "c1",
+            "key_name": "secondary",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "c",
+            "key_name": "secondary",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "d",
+            "key_name": "secondary",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "e",
+            "key_name": "secondary",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "e1",
+            "key_name": "secondary",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "f1",
+            "key_name": "secondary",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "f2",
+            "key_name": "secondary",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "f",
+            "key_name": "secondary",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "g",
+            "key_name": "secondary",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "h",
+            "key_name": "secondary",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "i",
+            "key_name": "secondary",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "j",
+            "key_name": "secondary",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "thn_perolehan",
+            "key_name": "secondary",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "idall",
+            "key_name": "idall",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "idawal",
+            "key_name": "idawal",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "idall2",
+            "key_name": "idall2",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "a1",
+            "key_name": "secondary",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "a",
+            "key_name": "secondary",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "b",
+            "key_name": "secondary",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "c",
+            "key_name": "secondary",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "d",
+            "key_name": "secondary",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "e",
+            "key_name": "secondary",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "e1",
+            "key_name": "secondary",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "f",
+            "key_name": "secondary",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "g",
+            "key_name": "secondary",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "h",
+            "key_name": "secondary",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "i",
+            "key_name": "secondary",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "j",
+            "key_name": "secondary",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "thn_perolehan",
+            "key_name": "secondary",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "noreg",
+            "key_name": "secondary",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "idbi",
+            "key_name": "idbi",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "idall",
+            "key_name": "idall",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "idawal",
+            "key_name": "idawal",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "idall2",
+            "key_name": "idall2",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "bk_p",
+            "key_name": "bk",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "ck_p",
+            "key_name": "bk",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "dk_p",
+            "key_name": "bk",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "p",
+            "key_name": "bk",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "q",
+            "key_name": "bk",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "status_barang",
+            "key_name": "status_barang",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "tgl_buku",
+            "key_name": "tgl_buku",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "id_lama",
+            "key_name": "id_lama",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "staset",
+            "key_name": "staset",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "kondisi",
+            "key_name": "kondisi",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "tahun",
+            "key_name": "tahun",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "thn_perolehan",
+            "key_name": "thn_perolehan",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "c1",
+            "key_name": "c",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "c",
+            "key_name": "c",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "d",
+            "key_name": "c",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "e",
+            "key_name": "c",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "e1",
+            "key_name": "c",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "f1",
+            "key_name": "f",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "f2",
+            "key_name": "f",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "f",
+            "key_name": "f",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "g",
+            "key_name": "f",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "h",
+            "key_name": "f",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "i",
+            "key_name": "f",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "j",
+            "key_name": "f",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "refid_terima",
+            "key_name": "refid_terima",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "refid_terima_det",
+            "key_name": "refid_terima",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "c1",
+            "key_name": "secondary",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "c",
+            "key_name": "secondary",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "d",
+            "key_name": "secondary",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "e",
+            "key_name": "secondary",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "e1",
+            "key_name": "secondary",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "f1",
+            "key_name": "secondary",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "f2",
+            "key_name": "secondary",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "f",
+            "key_name": "secondary",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "g",
+            "key_name": "secondary",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "h",
+            "key_name": "secondary",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "i",
+            "key_name": "secondary",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "j",
+            "key_name": "secondary",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "thn_perolehan",
+            "key_name": "secondary",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "idall",
+            "key_name": "idall",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "idawal",
+            "key_name": "idawal",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "idall2",
+            "key_name": "idall2",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "a1",
+            "key_name": "secondary",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "a",
+            "key_name": "secondary",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "b",
+            "key_name": "secondary",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "c",
+            "key_name": "secondary",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "d",
+            "key_name": "secondary",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "e",
+            "key_name": "secondary",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "e1",
+            "key_name": "secondary",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "f",
+            "key_name": "secondary",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "g",
+            "key_name": "secondary",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "h",
+            "key_name": "secondary",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "i",
+            "key_name": "secondary",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "j",
+            "key_name": "secondary",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "thn_perolehan",
+            "key_name": "secondary",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "noreg",
+            "key_name": "secondary",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "staset",
+            "key_name": "staset",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "kondisi",
+            "key_name": "kondisi",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "status_barang",
+            "key_name": "status_barang",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "c",
+            "key_name": "c",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "d",
+            "key_name": "c",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "e",
+            "key_name": "c",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "e1",
+            "key_name": "c",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "f",
+            "key_name": "f",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "g",
+            "key_name": "f",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "h",
+            "key_name": "f",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "i",
+            "key_name": "f",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "j",
+            "key_name": "f",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "tgl_periode",
+            "key_name": "tgl_periode",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "idbi",
+            "key_name": "idbi",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "tgl_periode",
+            "key_name": "idbi",
+            "non_uniqe": "1"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "Id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "a1",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "a",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "b",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "c",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "d",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "e",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "e1",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "f",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "g",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "h",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "i",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "j",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "tahun",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "Id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "a",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "b",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "c",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "d",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "e",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "e1",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "f",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "g",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "h",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "i",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "j",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "tahun",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "Id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        }
+    ],
+    "colums": [
+        {
+            "COLUMN_NAME": "id",
+            "COLUMN_TYPE": "int(11)",
+            "CHARACTER_SET_NAME": null,
+            "COLLATION_NAME": null,
+            "IS_NULLABLE": "NO"
+        },
+        {
+            "COLUMN_NAME": "title",
+            "COLUMN_TYPE": "text",
+            "CHARACTER_SET_NAME": "latin1",
+            "COLLATION_NAME": "latin1_swedish_ci",
+            "IS_NULLABLE": "NO"
+        },
+        {
+            "COLUMN_NAME": "image_aktif",
+            "COLUMN_TYPE": "text",
+            "CHARACTER_SET_NAME": "latin1",
+            "COLLATION_NAME": "latin1_swedish_ci",
+            "IS_NULLABLE": "NO"
+        },
+        {
+            "COLUMN_NAME": "image_pasif",
+            "COLUMN_TYPE": "text",
+            "CHARACTER_SET_NAME": "latin1",
+            "COLLATION_NAME": "latin1_swedish_ci",
+            "IS_NULLABLE": "NO"
+        },
+        {
+            "COLUMN_NAME": "nomor_urut",
+            "COLUMN_TYPE": "text",
+            "CHARACTER_SET_NAME": "latin1",
+            "COLLATION_NAME": "latin1_swedish_ci",
+            "IS_NULLABLE": "NO"
+        },
+        {
+            "COLUMN_NAME": "url",
+            "COLUMN_TYPE": "text",
+            "CHARACTER_SET_NAME": "latin1",
+            "COLLATION_NAME": "latin1_swedish_ci",
+            "IS_NULLABLE": "NO"
+        },
+        {
+            "COLUMN_NAME": "hint",
+            "COLUMN_TYPE": "text",
+            "CHARACTER_SET_NAME": "latin1",
+            "COLLATION_NAME": "latin1_swedish_ci",
+            "IS_NULLABLE": "NO"
+        },
+        {
+            "COLUMN_NAME": "status",
+            "COLUMN_TYPE": "text",
+            "CHARACTER_SET_NAME": "latin1",
+            "COLLATION_NAME": "latin1_swedish_ci",
+            "IS_NULLABLE": "NO"
+        }
+    ],
+    "default_value": null
+}

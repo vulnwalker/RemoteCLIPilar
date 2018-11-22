@@ -1,0 +1,117 @@
+[
+    {
+        "databaseName": "db_atisisbada_sukabumi_2018",
+        "tables": [
+            {
+                "table_name": "ref_dokumensumber",
+                "json_file": "RELEASE-2018-11-03-SETTING/ref_dokumensumber.json"
+            },
+            {
+                "table_name": "ref_jenis_pemeliharaan",
+                "json_file": "RELEASE-2018-11-03-SETTING/ref_jenis_pemeliharaan.json"
+            },
+            {
+                "table_name": "ref_pangkat",
+                "json_file": "RELEASE-2018-11-03-SETTING/ref_pangkat.json"
+            },
+            {
+                "table_name": "ref_penerimaan_barang_info",
+                "json_file": "RELEASE-2018-11-03-SETTING/ref_penerimaan_barang_info.json"
+            },
+            {
+                "table_name": "ref_penerimaan_tandatangan",
+                "json_file": "RELEASE-2018-11-03-SETTING/ref_penerimaan_tandatangan.json"
+            },
+            {
+                "table_name": "ref_penyedia",
+                "json_file": "RELEASE-2018-11-03-SETTING/ref_penyedia.json"
+            },
+            {
+                "table_name": "ref_rincian_template",
+                "json_file": "RELEASE-2018-11-03-SETTING/ref_rincian_template.json"
+            },
+            {
+                "table_name": "ref_template",
+                "json_file": "RELEASE-2018-11-03-SETTING/ref_template.json"
+            },
+            {
+                "table_name": "ref_sumber_dana",
+                "json_file": "RELEASE-2018-11-03-SETTING/ref_sumber_dana.json"
+            },
+            {
+                "table_name": "ref_tandatangan",
+                "json_file": "RELEASE-2018-11-03-SETTING/ref_tandatangan.json"
+            },
+            {
+                "table_name": "ref_templatebarang",
+                "json_file": "RELEASE-2018-11-03-SETTING/ref_templatebarang.json"
+            },
+            {
+                "table_name": "ref_templatebarang_det",
+                "json_file": "RELEASE-2018-11-03-SETTING/ref_templatebarang_det.json"
+            },
+            {
+                "table_name": "setting",
+                "json_file": "RELEASE-2018-11-03-SETTING/setting.json"
+            },
+            {
+                "table_name": "t_pengaturan",
+                "json_file": "RELEASE-2018-11-03-SETTING/t_pengaturan.json"
+            },
+            {
+                "table_name": "ref_menu",
+                "json_file": "RELEASE-2018-11-03-SETTING/ref_menu.json"
+            },
+            {
+                "table_name": "ref_modul",
+                "json_file": "RELEASE-2018-11-03-SETTING/ref_modul.json"
+            },
+            {
+                "table_name": "settingperencanaan",
+                "json_file": "RELEASE-2018-11-03-SETTING/settingperencanaan.json"
+            },
+            {
+                "table_name": "tahap_rka",
+                "json_file": "RELEASE-2018-11-03-SETTING/tahap_rka.json"
+            },
+            {
+                "table_name": "pengaturan_persediaan",
+                "json_file": "RELEASE-2018-11-03-SETTING/pengaturan_persediaan.json"
+            },
+            {
+                "table_name": "ref_tahap_anggaran",
+                "json_file": "RELEASE-2018-11-03-SETTING/ref_tahap_anggaran.json"
+            },
+            {
+                "table_name": "ref_cara_pemenuhan",
+                "json_file": "RELEASE-2018-11-03-SETTING/ref_cara_pemenuhan.json"
+            },
+            {
+                "table_name": "setting_penyusutan",
+                "json_file": "RELEASE-2018-11-03-SETTING/setting_penyusutan.json"
+            },
+            {
+                "table_name": "setting_inventaris",
+                "json_file": "RELEASE-2018-11-03-SETTING/setting_inventaris.json"
+            }
+        ],
+        "views": [
+            {
+                "view_name": "",
+                "json_file": "RELEASE-2018-11-03-SETTING/.json"
+            }
+        ],
+        "triggers": [
+            {
+                "trigger_name": "",
+                "json_file": "RELEASE-2018-11-03-SETTING/.json"
+            }
+        ],
+        "routines": [
+            {
+                "routine_name": "",
+                "json_file": "RELEASE-2018-11-03-SETTING/.json"
+            }
+        ]
+    }
+]
